@@ -1,0 +1,544 @@
+{
+  "slug": "projeto-final",
+  "num": 8,
+  "menu": "Proyecto final",
+  "titulo": "Proyecto final en Gestoria + Qué cambió",
+  "titulo_curto": "Proyecto final",
+  "minutos": 20,
+  "lead": "El proyecto final de la formación es administrar una operación de punta a punta: entender, rediseñar, dividir el trabajo, equipar al agente, operar, evaluar y mejorar. Registras la operación en Gestoria, armas el informe de los 14 pasos y lo pasas por la rúbrica que reúne los cursos de la formación. Al final, lo que cambió en el mercado, con fecha y fuente.",
+  "objetivo": "administrar una operación de punta a punta en los 14 pasos de Gestoria y aprobar el informe final con la rúbrica de 8 ítems de la formación.",
+  "competencias": [
+    "administrar-operacao-hibrida",
+    "aplicar-rubrica-final",
+    "ler-relatorios-de-mercado-com-criterio"
+  ],
+  "aprende": [
+    {
+      "t": "Los 14 pasos y dónde queda cada uno en Gestoria"
+    },
+    {
+      "t": "El informe final con las piezas de los cursos de la formación"
+    },
+    {
+      "t": "La rúbrica de 8 ítems y los 7 obligatorios"
+    },
+    {
+      "t": "Lo que cambió hasta octubre de 2026 en gobernanza, reglas y certificaciones"
+    }
+  ],
+  "hero_alt": "La gerente presenta a un pequeño equipo y al dueño de la empresa un informe encuadernado y un panel en la pared; por la ventana, el almacén con paletas.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Los 14 pasos en seis fases",
+      "sub": "Cada fase reúne pasos que usan las mismas piezas. Haz clic en cada fase.",
+      "volta": "Evolucionar vuelve al comienzo: el ciclo siguiente parte de la versión nueva",
+      "nos": [
+        {
+          "icone": "alvo",
+          "titulo": "Entender",
+          "sub": "pasos 1 y 2",
+          "itens": [
+            {
+              "icone": "alvo",
+              "t": "1 · objetivo"
+            },
+            {
+              "icone": "lupa",
+              "t": "2 · proceso actual"
+            }
+          ],
+          "detalhe": "Comprender el objetivo y analizar el proceso que existe, con responsable, disparador, conclusión y línea de base. Piezas de G2 (canvas, mapa). En Gestoria: pantalla Procesos (nombre, responsable, resultado esperado, volumen, tiempo actual)."
+        },
+        {
+          "icone": "caneta",
+          "titulo": "Rediseñar",
+          "sub": "pasos 3 y 4",
+          "itens": [
+            {
+              "icone": "x",
+              "t": "3 · eliminar etapas"
+            },
+            {
+              "icone": "camadas",
+              "t": "4 · rediseñar el flujo"
+            }
+          ],
+          "detalhe": "Eliminar las etapas que solo existen por costumbre y rediseñar el flujo antes de automatizar, con el motivo de cada corte. Piezas de G2. En Gestoria: las etapas de la versión nueva, una por línea; los cortes y motivos van en el informe."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Dividir",
+          "sub": "pasos 5 y 6",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "5 · tareas humanas"
+            },
+            {
+              "icone": "robo",
+              "t": "6 · tareas de agentes"
+            }
+          ],
+          "detalhe": "Decidir qué queda con las personas (curso de personas de la formación) y qué va a los agentes, con cargo y delegación (G3). En Gestoria: pantalla Fuerza de trabajo (misión, recibe, entrega)."
+        },
+        {
+          "icone": "cadeado",
+          "titulo": "Equipar",
+          "sub": "pasos 7 a 9",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "chip",
+              "t": "7 · herramientas y modelos"
+            },
+            {
+              "icone": "cadeado",
+              "t": "8 · permisos"
+            },
+            {
+              "icone": "grafico",
+              "t": "9 · costos"
+            }
+          ],
+          "detalhe": "Elegir modelo y herramientas según el trabajo (G4), definir permisos y responsables (G3 y clases 1 y 2 de este curso) y establecer el costo por resultado y el tope (G4). En Gestoria: modelo, herramientas, qué puede y qué no puede hacer, autonomía inicial, costo por hora y presupuesto."
+        },
+        {
+          "icone": "play",
+          "titulo": "Operar",
+          "sub": "pasos 10 a 12",
+          "itens": [
+            {
+              "icone": "grafico",
+              "t": "10 · métricas"
+            },
+            {
+              "icone": "play",
+              "t": "11 · ejecutar"
+            },
+            {
+              "icone": "lupa",
+              "t": "12 · observar"
+            }
+          ],
+          "detalhe": "Definir las métricas antes de ejecutar (clase 4), ejecutar casos de rutina, dudosos y fuera de la política, y observar las decisiones humanas. En Gestoria: Visión general (simular) y Decisiones humanas (aprobar o devolver con justificación)."
+        },
+        {
+          "icone": "voltar",
+          "titulo": "Evolucionar",
+          "sub": "pasos 13 y 14",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "13 · evaluar"
+            },
+            {
+              "icone": "seta",
+              "t": "14 · LOOP-R"
+            }
+          ],
+          "detalhe": "Evaluar con respuesta esperada y clases (clase 3) y mejorar con un ciclo LOOP-R con promoción o reversión (clases 5 y 6). En Gestoria: Evaluaciones y Mejora continua (Propuesta, En prueba, Validada, Promovida)."
+        }
+      ],
+      "legenda": "Los pasos son los del proyecto final del área Gestión de IA (§07). El texto del área lista 13 ítems; aquí \"tareas humanas\" y \"tareas de agentes\" son dos pasos, como en el curso. La aprobación pedagógica no autoriza, por sí sola, ningún cambio en la empresa."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Del Gestoria al informe firmado",
+      "sub": "Gestoria es un laboratorio local: guarda proceso, cargos, ejecuciones, decisiones, evaluaciones y mejoras, y exporta todo en JSON. No genera el informe ni ejecuta un modelo de verdad. El informe es el modelo de esta clase.",
+      "passos": [
+        {
+          "titulo": "Registrar proceso y agente",
+          "sub": "pasos 1 a 9",
+          "texto": [
+            "Abre Gestoria y, en Procesos, crea el proceso con responsable humano, resultado esperado, volumen semanal, tiempo humano actual por caso, costo por hora, meta de acierto, presupuesto del laboratorio y las etapas de la versión nueva.",
+            "En Fuerza de trabajo, crea el cargo del agente: responsable, modelo planeado, misión, recibe, entrega, puede, no puede, contexto, Skills, herramientas y autonomía inicial (como máximo \"Prepara\")."
+          ],
+          "exemplo": {
+            "rot": "En Horizonte",
+            "texto": "Proceso \"Pedido por WhatsApp → facturación\", responsable Patrícia, 170 casos por semana, 4,4 min de trabajo humano por caso, R$ 45 por hora, meta de acierto 95%, 8 etapas. Agente Hora, responsable Patrícia, autonomía inicial \"Prepara\"."
+          }
+        },
+        {
+          "titulo": "Ejecutar y observar",
+          "sub": "pasos 10 a 12",
+          "texto": [
+            "En Visión general, simula al menos un caso de cada escenario: rutina dentro de la política, información conflictiva y solicitud fuera de la política. En Decisiones humanas, aprueba o devuelve cada uno, con una justificación que otra persona entienda.",
+            "Cada simulación cuesta R$ 0,38 y 42 segundos didácticos, sin cobro. Anota en el informe el panel de 5 indicadores de la clase 4 con los números de tu caso real o de Horizonte."
+          ],
+          "exemplo": {
+            "rot": "Buena justificación",
+            "texto": "\"Devuelto: el cliente pidió 15% y el nivel de autorización del agente es 5%; preparar propuesta de hasta 10% para que Patrícia la apruebe.\""
+          }
+        },
+        {
+          "titulo": "Evaluar y mejorar",
+          "sub": "pasos 13 y 14",
+          "texto": [
+            "En Evaluaciones, registra al menos 10 de tus 30 casos, con respuesta esperada, resultado y clase, incluyendo uno crítico, si lo hay. Para promover un nivel del agente, la herramienta pide 100 casos de la versión actual, sin ningún crítico: el proyecto no exige eso.",
+            "En Mejora continua, registra el ciclo LOOP-R y avanza de Propuesta a Promovida, una etapa a la vez, con la evidencia. La herramienta no tiene la etapa \"revertida\": la reversión va en el informe, y el agente puede ser pausado."
+          ],
+          "exemplo": {
+            "rot": "En Horizonte",
+            "texto": "Mejora \"tabla de rutas en el contexto\": Promovida con la evidencia del ciclo 0001; en el informe, la reversión de la semana 8 y la v2.3 propuesta."
+          }
+        },
+        {
+          "titulo": "Informe, rúbrica y firma",
+          "sub": "quien arma no firma",
+          "texto": [
+            "Exporta el JSON en Datos del laboratorio, completa el informe de los 14 pasos con las piezas de los cursos y pásalo por la rúbrica: 75 puntos o más y los 7 obligatorios. Ejecuta el prompt del jurado antes de entregar.",
+            "Quien armó no firma. En Horizonte, Patrícia arma, Rafael confirma las trabas y Carlos firma, y solo entonces decide él si Hora pasa a cobranza."
+          ],
+          "exemplo": {
+            "rot": "Límite honesto",
+            "texto": "Gestoria guarda los datos en este navegador. Exporta el JSON y guarda una copia: limpiar el navegador borra el trabajo."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "El informe final de los 14 pasos, la rúbrica de la formación y el prompt del jurado.",
+      "blocos": [
+        {
+          "rot": "Informe final de la operación (14 pasos)",
+          "icone": "arquivo",
+          "conteudo": "INFORME FINAL · Formación Gestión de IA 2027 · <proceso> · <fecha>\nDatos: [ ] reales autorizados [ ] anonimizados [ ] ficticios · JSON de Gestoria adjunto: <archivo>\nArmado por: <nombre> · Dueño del proceso: <nombre> · Responsable de cada agente: <nombres>\n\nENTENDER\n 1. Objetivo: <resultado para la empresa> · disparador <...> · conclusión <...>\n 2. Proceso actual: v<1.0>, <n> etapas · línea de base: <indicadores, observado o hipótesis>\nREDISEÑAR\n 3. Etapas eliminadas: <etapa · motivo · nueva fuente> (una por línea)\n 4. Flujo nuevo: v<2.0>, <n> etapas · quién hace cada una: <persona / automatización / agente / integración>\nDIVIDIR\n 5. Tareas humanas: <qué queda con las personas y por qué> · conversación con el equipo: <fecha>\n 6. Tareas de agentes: cargo, delegación y constitución de <agente> (anexos)\nEQUIPAR\n 7. Modelo y herramientas: <configuración, 20 casos, alternativa> · contexto con dueño\n 8. Permisos: matriz de nivel de autorización + matriz de responsabilidades + checklist de 10 ítems\n 9. Costos: costo por resultado R$ <...> · tope mensual R$ <...> · ROI estimado en 3 escenarios\nOPERAR\n10. Métricas: panel de 5 indicadores con denominador, línea de base, límite y dueño\n11. Ejecutar: casos simulados en Gestoria (rutina, conflictivo, fuera de la política): <ids>\n12. Observar: decisiones humanas con justificación: <resumen> · excepciones y destino\nEVOLUCIONAR\n13. Evaluar: 30 casos, resultado por versión (c/a/i/CRÍTICO), calibración <%>\n14. LOOP-R: ciclo <nº> · hipótesis · veredicto · promovida o revertida · disparador de vuelta\n\nCUMPLIMIENTO: línea de tiempo v<...> · próxima revisión <fecha>\nNOTA EN LA RÚBRICA: <...>/100 · obligatorios: <.../7>\nFIRMADO POR (no quien armó): <nombre> el <fecha>\nLa aprobación pedagógica no autoriza, por sí sola, cambios en la empresa."
+        },
+        {
+          "rot": "Rúbrica final de la formación (100 puntos)",
+          "icone": "lista",
+          "conteudo": "RÚBRICA FINAL · Formación Gestión de IA 2027 · aprueba con >= 75 Y los 7 obligatorios\n\nÍTEM                                   ORIGEN PUNTOS  CRITERIO DE PUNTAJE COMPLETO\n1. Proceso y resultado                   G2     15    nombre con inicio y fin; dueño y suplente;\n                                                      disparador y conclusión; resultado para la\n                                                      empresa; línea de base marcada\n2. Etapas cortadas antes de automatizar  G2     10    cada etapa eliminada o movida con motivo\n                                                      y nueva fuente; exigencias reales mantenidas\n3. Agentes                               G3     15    cargo con misión, entrega verificable,\n                                                      prohibiciones y responsable; delegación;\n                                                      constitución; matriz con color por acción y\n                                                      aprobación con contenido y plazo\n4. Personas                              G1     10    qué queda con las personas, por tarea;\n                                                      conversación con el equipo; formación de quien\n                                                      supervisa; evaluación de quien trabaja\n                                                      con agentes\n5. Recursos                              G4     10    modelo elegido por casos, crítico por\n                                                      separado; contexto con dueño; acceso mínimo;\n                                                      costo por resultado y tope\n6. Gobernanza                            G5     15    responsables por acción con un nombre;\n                                                      identidad, permiso y registro (10\n                                                      ítems); revisión de accesos; línea de tiempo\n7. Medición                              G5     15    30 casos con respuesta esperada, rúbrica y 4 clases;\n                                                      5 indicadores con denominador, línea de\n                                                      base, límite y dueño\n8. Un ciclo LOOP-R                       G5     10    7 pasos; hipótesis con barrera de protección y\n                                                      tolerancia; decisión de quien no propuso;\n                                                      promoción o reversión con disparador\n\nOBLIGATORIOS (si falta uno, reprueba)\n[ ] Dueño del proceso y responsable de cada agente con nombre\n[ ] Línea de base observada o marcada como hipótesis, con indicador con denominador\n[ ] Nada irreversible en el verde y tope en número donde hay valor\n[ ] Quien registra no aprueba: ningún ejecutor aprueba su propia acción; informe firmado por otra persona\n[ ] Errores críticos contados por separado, nunca en el promedio\n[ ] Reversión con disparador en número y versión anterior identificada\n[ ] Datos ficticios o anonimizados identificados como tales\n\nNOTA: <...>/100 · obligatorios: <...>/7 · resultado: [ ] aprobado [ ] vuelve al ítem <...>"
+        },
+        {
+          "rot": "Prompt · comité evaluador antes de la firma",
+          "icone": "chat",
+          "conteudo": "Eres el comité evaluador que revisa el informe final de una operación con agentes\nde IA, usando la rúbrica de abajo. No apruebas ni repruebas: señalas\nlas lagunas para quien va a firmar.\n\nPara cada uno de los 8 ítems de la rúbrica:\n1. Indica qué está presente y qué falta para llegar al puntaje máximo, citando\n   el fragmento del informe.\n2. Marca cada uno de los 7 obligatorios como presente o ausente, con el fragmento.\n3. Enumera las tres preguntas que quien firma debería hacer antes de firmar.\n\nNo inventes información que no esté en el informe ni en los anexos.\n\nRúbrica:\n\"\"\"<pega la rúbrica>\"\"\"\nInforme:\n\"\"\"<pega el informe y los anexos>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Horizonte en Gestoria (ejemplo)",
+            "html": "<p><b>Horizonte, empresa ficticia de estudio</b> · qué entra en cada pantalla</p><ul><li><b>Procesos:</b> \"Pedido por WhatsApp → facturación\" · Comercial · Patrícia · 170 casos por semana · 4,4 min de gente por caso · R$ 45 por hora · meta de acierto 95% · presupuesto del laboratorio R$ 20 · las 8 etapas de la versión 2.0 del proceso (G2).</li><li><b>Fuerza de trabajo:</b> Hora · responsable Patrícia · misión, recibe, entrega y prohibidos de la ficha de cargo (G3) · contexto: catálogo, política de descuento, tabla de rutas con dueño · autonomía inicial \"Prepara\".</li><li><b>Visión general y Decisiones humanas:</b> 3 casos simulados (rutina, conflictivo, fuera de la política), cada uno con decisión y justificación.</li><li><b>Evaluaciones:</b> 10 de los 30 casos de la clase 3, entre ellos el T-27 como error crítico en la versión anterior.</li><li><b>Mejora continua:</b> \"Tabla de rutas en el contexto\", de Propuesta a Promovida, con la evidencia del ciclo 0001.</li><li><b>En el informe, fuera de la herramienta:</b> los recortes de etapa con motivo, lo que queda con las personas, la matriz de responsabilidades, el checklist, el panel, la reversión de la semana 8 y la línea de tiempo.</li></ul><p>Armado por Patrícia; compuertas confirmadas por Rafael; firmado por Carlos. La decisión de llevar a Hora a cobranza sigue siendo de él.</p>"
+          },
+          {
+            "rot": "Cómo verificar / errores comunes",
+            "html": "<ul><li><b>Informe sin anexo.</b> Cada paso señala la pieza que lo comprueba (archivo, pantalla, JSON).</li><li><b>Promover nivel en el laboratorio con pocos casos.</b> La herramienta pide 100 casos de la versión actual; el proyecto no exige promoción de nivel.</li><li><b>Reversión olvidada.</b> La herramienta no tiene la etapa \"revertida\": escríbela en el informe.</li><li><b>Quien armó firma.</b> Reprueba en el obligatorio \"quien registra no aprueba\".</li><li><b>Dato real sin autorización.</b> Usa datos anonimizados o ficticios y di cuál.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Qué cambió · octubre de 2026",
+      "sub": "Panel del trimestre, que se cambia en cada revisión del curso. Cada ítem con fecha, fuente y tipo de afirmación. El método de las clases 1 a 7 no depende de ningún producto citado.",
+      "passos": [
+        {
+          "titulo": "Gobernanza detrás de la adopción",
+          "sub": "encuestas y pronósticos",
+          "texto": [
+            "Okta, AI Agents at Work 2026 (encuesta de un proveedor de identidad): casi dos tercios de las organizaciones aplican controles de seguridad más débiles a los agentes que a los empleados. Deloitte (17/09/2026): 50% de las empresas brasileñas adoptaron IA y 27% tienen gobernanza madura.",
+            "Gartner (17/02/2026, pronóstico): el gasto en gobernanza de IA pasa de US$ 492 millones en 2026 a más de US$ 1.000 millones en 2030."
+          ],
+          "exemplo": {
+            "rot": "Para el proyecto",
+            "texto": "La distancia entre usar y gobernar es el espacio del gestor de IA: matriz, checklist, evaluación, panel y ciclo con vuelta."
+          }
+        },
+        {
+          "titulo": "Incidentes y reglas",
+          "sub": "con fecha",
+          "texto": [
+            "Stanford AI Index (13/04/2026): los incidentes de IA documentados pasaron de 233 a 362. EU AI Act: el paquete Digital Omnibus (24/07/2026) aplazó el alto riesgo del Anexo III hasta el 02/12/2027; la alfabetización en IA ya rige en la UE.",
+            "Brasil: el PL 2338/2023 fue informado por la prensa como detenido en la Cámara (fuente secundaria, 24/08/2026; verifica la ficha oficial)."
+          ],
+          "exemplo": {
+            "rot": "Para el proyecto",
+            "texto": "Actualiza la línea de tiempo de la clase 7 en cada revisión. Una fecha que cambia no cambia el método."
+          }
+        },
+        {
+          "titulo": "Certificaciones que existen",
+          "sub": "ninguna de gestionar agentes",
+          "texto": [
+            "Gobernanza: AIGP (IAPP, desde 04/2024), fuerte en privacidad y asuntos jurídicos. Seguridad: AAISM (ISACA, 08/2025), exige CISM o CISSP. Sistema de gestión: ISO/IEC 42001, que certifica a la empresa; el curso de auditor o implementador es de la persona.",
+            "En la búsqueda de octubre de 2026 no se encontró ninguna certificación independiente de gestión de agentes. Las de proveedor (NVIDIA, GitHub, Google, Oracle) son de construir agentes, no de gestionarlos."
+          ],
+          "exemplo": {
+            "rot": "Lectura",
+            "texto": "Quien necesite AIGP o ISO/IEC 42001 para el cargo sigue necesitándolas. La certificación INEMA es de calificación."
+          }
+        },
+        {
+          "titulo": "Cómo leer estos informes",
+          "sub": "tres preguntas",
+          "texto": [
+            "¿Quién paga y qué vende? Okta y Microsoft venden la solución del problema que miden; las consultoras venden la transformación que describen. ¿Cómo midió? ¿Encuesta con muestra, experiencia declarada o pronóstico?",
+            "Un análisis del blog The Microsoft Cloud recuerda que los números del Work Trend Index 2026 no deben sostener por sí solos un business case. Un informe es un mapa, nunca la prueba de tu caso: la prueba es tu panel."
+          ],
+          "exemplo": {
+            "rot": "Próxima revisión de este panel",
+            "texto": "Enero de 2027, con el panorama del trimestre siguiente."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "mapa",
+      "titulo": "El mapa del curso",
+      "sub": "Las cuatro entregas que el informe final más usa y los ejercicios que las producen. Haz clic en un ejercicio para ver el \"listo cuando\".",
+      "degraus": [
+        {
+          "aula": "responsaveis",
+          "icone": "usuario",
+          "quando": "Semana 1",
+          "titulo": "Gobernar",
+          "sub": "responsables y registro",
+          "saida": "Matriz de responsabilidades y checklist de 10 ítems.",
+          "passo": "La base: sin un nombre por acción y sin registro, ningún número posterior tiene dueño ni rastro. El checklist de la clase 2 entra junto."
+        },
+        {
+          "aula": "evals",
+          "icone": "check",
+          "quando": "Semana 1",
+          "titulo": "Evaluar",
+          "sub": "30 casos",
+          "saida": "Conjunto con respuesta esperada, rúbrica y resultado por versión.",
+          "passo": "Requiere la matriz: quien escribe la respuesta esperada es quien responde por la política. Los críticos se vuelven compuertas antes de cualquier mejora."
+        },
+        {
+          "aula": "indicadores",
+          "icone": "grafico",
+          "quando": "Semanas 2 a 5",
+          "titulo": "Medir",
+          "sub": "línea de base",
+          "saida": "Panel de 5 indicadores con 4 semanas de línea de base.",
+          "passo": "Requiere la versión actual estable. Las 4 semanas de recolección corren mientras haces las clases siguientes."
+        },
+        {
+          "aula": "loop-r",
+          "icone": "voltar",
+          "quando": "Semanas 5 a 8",
+          "titulo": "Evolucionar",
+          "sub": "ciclo con vuelta",
+          "saida": "Un ciclo LOOP-R con promoción o reversión registrada.",
+          "passo": "Requiere la línea de base y los 30 casos. La promoción lleva el disparador de reversión de la clase 6."
+        }
+      ],
+      "rolagem_fim": {
+        "titulo": "La operación gobernada",
+        "texto": "Gobernar, evaluar, medir y evolucionar, en este orden. El informe final junta estas entregas con las del G2, del G3, del G4 y del curso de personas."
+      },
+      "resultado": {
+        "titulo": "Al final del curso",
+        "texto": "Una operación con responsables, registro, evaluación, panel y un ciclo de mejora con vuelta, en un informe firmado por quien no lo armó.",
+        "total": "18 ejercicios"
+      },
+      "legenda": "Orden recomendado: cada entrega usa la anterior."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Genera tu plan con fechas",
+      "sub": "Elige la fecha de inicio y cuánto tiempo tienes por semana. El plan respeta los ejercicios que piden semanas de recopilación de datos.",
+      "curso": "Gobernar, medir y evolucionar",
+      "horas_padrao": 3,
+      "degraus": [
+        {
+          "titulo": "Clase 1 · Quién responde por el agente",
+          "aula": "responsaveis"
+        },
+        {
+          "titulo": "Clase 2 · Permisos, identidad y registro",
+          "aula": "permissoes"
+        },
+        {
+          "titulo": "Clase 3 · Evals",
+          "aula": "evals"
+        },
+        {
+          "titulo": "Clase 4 · Los indicadores del agente",
+          "aula": "indicadores"
+        },
+        {
+          "titulo": "Clase 5 · LOOP-R",
+          "aula": "loop-r"
+        },
+        {
+          "titulo": "Clase 6 · Promover y revertir",
+          "aula": "promover-reverter"
+        },
+        {
+          "titulo": "Clase 7 · Reglas que llegan",
+          "aula": "regras"
+        },
+        {
+          "titulo": "Clase 8 · Proyecto final",
+          "aula": "projeto-final"
+        }
+      ],
+      "txt": {
+        "titulo": "Plan — Gobernar, medir y evolucionar",
+        "inicio": "Inicio",
+        "ritmo": "Ritmo",
+        "termino": "Término previsto",
+        "ate": "hasta",
+        "pronto": "listo cuando",
+        "semanas": "semanas",
+        "travou": "## Qué se trabó y la regla que creé",
+        "h": "h por semana",
+        "exs": "ejercicios"
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "La Horizonte en Gestoria para entrenar la rúbrica; tu proceso para valer.",
+      "fonte": "<a href=\"https://inematds.github.io/gestoria/\">Abrir Gestoria</a> · <a href=\"https://inematds.github.io/gestoria/guia/\">guía de uso de Gestoria</a>.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · La Horizonte en Gestoria",
+          "min": "60 min",
+          "texto": "Registra en Gestoria el proceso y la Hora con los datos de la pestaña de ejemplo. Simula los 3 escenarios y decide cada uno con justificación. Registra 10 de los 30 casos de la clase 3 y la mejora del ciclo 0001 hasta Promovida, con la evidencia. Exporta el JSON, completa el informe de los 14 pasos con las piezas de la Horizonte y pásalo por la rúbrica y por el prompt del tribunal.",
+          "pronto": "el JSON exportado tiene 1 proceso, 1 agente, 3 ejecuciones con decisión justificada, 10 evaluaciones y 1 mejora Promovida con evidencia; el informe tiene los 14 pasos completos y la reversión de la semana 8; la nota es 75 o más con los 7 obligatorios; y el nombre de quien firma es diferente del de quien lo armó."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · El informe de tu proceso",
+          "min": "3 h",
+          "dias": "1 a 2 semanas",
+          "texto": "Haz lo mismo con tu proceso, usando las piezas de las prácticas \"en tu proceso\" de todos los cursos de la formación. Lo que falte de un curso que no hiciste entra marcado como pendiente, con fecha. Entrégalo a alguien que responde por el proceso y no armó nada, pídele que revise los obligatorios y anote las preguntas.",
+          "pronto": "el informe de tu proceso tiene los 14 pasos con anexo para cada uno, nota de 75 o más con los 7 obligatorios, el JSON de Gestoria adjunto y la firma (o la aceptación por escrito) de quien responde por el proceso y no lo armó."
+        },
+        {
+          "id": "e3",
+          "titulo": "3 · Tu plan con fechas",
+          "min": "5 min",
+          "texto": "Usa el generador de arriba para armar el plan con tus fechas y descarga el .ics para el calendario.",
+          "pronto": "el plan está guardado y las fechas están en tu calendario."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "4 preguntas. La explicación aparece después de tu intento.",
+      "perguntas": [
+        {
+          "p": "El informe sacó 90 puntos, pero el panel muestra \"acierto de 97%\" con un error crítico dentro del promedio. ¿Resultado?",
+          "opcoes": [
+            "Aprobado, porque 90 puntos está muy por encima de 75",
+            "Aprobado con salvedad, para corregir en la próxima revisión",
+            "Reprobado: un crítico en el promedio hiere un obligatorio"
+          ],
+          "certa": 2,
+          "ref": "codigo",
+          "explica": "Los obligatorios existen para que una nota alta no esconda el daño grande. El informe vuelve al ítem 7, no al cero."
+        },
+        {
+          "p": "Gestoria no tiene la etapa \"revertida\" en la Mejora continua. ¿Cómo registrar la reversión de la semana 8?",
+          "opcoes": [
+            "En el informe, con disparador, número, causa y versión anterior",
+            "No registrarla, porque la herramienta no ofrece la etapa",
+            "Borrar la mejora de la herramienta, para no confundir a quien abra el laboratorio después"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "La herramienta es un laboratorio con límites declarados. El registro que vale es el informe, con el historial de versiones de la clase 6; si hace falta, pausa al agente."
+        },
+        {
+          "p": "El informe de Horizonte fue aprobado por la rúbrica. ¿Hora puede pasar a la cobranza el lunes?",
+          "opcoes": [
+            "Puede, porque la rúbrica aprobó toda la operación de Hora",
+            "Puede, siempre que Rafael confirme antes de encenderla que los controles están en la herramienta",
+            "Puede, si Patrícia también firma el informe aprobado",
+            "Quien decide es Carlos; la cobranza empieza como una tarea nueva"
+          ],
+          "certa": 3,
+          "ref": "diagrama",
+          "explica": "La aprobación es pedagógica y no autoriza producción. La cobranza es un cambio de cargo: empieza en amarillo, con sus propios casos."
+        },
+        {
+          "p": "Un informe de un proveedor dice que quien usa su producto controla mejor a los agentes. ¿Cómo usarlo en tu proyecto?",
+          "opcoes": [
+            "Como prueba de que el producto resuelve tu problema",
+            "Como mapa: quién paga, cómo midió y si es una previsión",
+            "Ignorarlo, porque un informe de proveedor no vale nada"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "El proveedor vende la solución del problema que mide. Usa el informe para saber qué preguntar; la prueba de tu caso es tu propio panel."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen",
+      "itens": [
+        {
+          "t": "14 pasos",
+          "texto": "Entender, rediseñar, dividir, equipar, operar y evolucionar."
+        },
+        {
+          "t": "Gestoria + informe",
+          "texto": "La herramienta guarda y exporta; el informe junta las piezas y la reversión."
+        },
+        {
+          "t": "Rúbrica de la formación",
+          "texto": "8 ítems, 75 puntos y los 7 obligatorios. Quien arma no firma."
+        },
+        {
+          "t": "Mercado como mapa",
+          "texto": "Fecha, fuente, tipo de afirmación y quién vende qué."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Después de la formación: ayudar a otras empresas",
+      "paragrafos": [
+        "Esta formación prepara a quien administra agentes dentro de la empresa. Si lo que quieres es ayudar a otras empresas a adoptar IA con seguridad, como consultor, auditor, mentor o entrenador, el camino siguiente es el <a href=\"https://eventos.inema.pro/prof2030/\">Profissional 2030</a>, que usa la misma Horizonte vista desde afuera.",
+        "El video de abajo es opcional: muestra por qué construir agentes deja de bastar y qué aprender para trabajar como consultor en 2027."
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "Video opcional: de constructor a consultor",
+      "sub": "Con el avatar y la voz de Nei. Puente hacia el Profissional 2030.",
+      "chave": "consultor-ia-2027"
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Certificación",
+      "paragrafos": [
+        "Certificación INEMA de calificación \"Gestor de IA\", próximamente en cert.inema.pro. No es una certificación profesional regulada.",
+        "Este es el curso G5, el cierre de la Formación Gestión de IA 2027. Los otros cursos tratan de la empresa agéntica (G0), de las personas (G1), de los procesos (G2), de los agentes (G3) y de los recursos (G4). La rúbrica final de esta clase junta las entregas de todos."
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Gestoria: abrir el laboratorio de gestión",
+          "href": "https://inematds.github.io/gestoria/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Gestoria: guía de uso, del primer proceso a la mejora documentada",
+          "href": "https://inematds.github.io/gestoria/guia/",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Profissional 2030: ayudar a otras empresas a adoptar IA con seguridad",
+          "href": "https://eventos.inema.pro/prof2030/",
+          "icone": "alvo"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "slug": "regras",
+  "num": 7,
+  "menu": "Rules",
+  "titulo": "Rules that are coming",
+  "titulo_curto": "Rules that are coming",
+  "minutos": 14,
+  "lead": "An agent manager doesn't have to become a lawyer, but needs to know what already applies, what has a deadline, what is under discussion and who owns each item. This lesson is short on purpose: it builds your area's compliance timeline and shows that the program's pieces already cover much of the evidence a regulation or a client will ask for.",
+  "objetivo": "build the compliance timeline for your area: what already applies, what has a date, what is under discussion, and who looks after each item.",
+  "competencias": [
+    "montar-linha-do-tempo-de-conformidade",
+    "separar-fato-de-noticia",
+    "saber-quando-chamar-o-juridico"
+  ],
+  "aprende": [
+    {
+      "t": "What already applies and what has a set date"
+    },
+    {
+      "t": "How to handle what was only reported"
+    },
+    {
+      "t": "What reaches you through the customer before it reaches you through the law"
+    },
+    {
+      "t": "Which pieces of the program already serve as evidence"
+    }
+  ],
+  "hero_alt": "Desk by the window with a closed laptop, a paper calendar with colored squares, a folder with dividers and reading glasses; in the background, a person reads a document.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Four columns of the timeline",
+      "sub": "Each item goes into a column, with a source, a date and an owner. Click each one.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "check",
+          "titulo": "Already applies",
+          "sub": "today",
+          "detalhe": "What applies now. In Brazil, the LGPD applies to all personal data the agent touches: customer conversations, records, phone numbers. In the European Union, the AI literacy obligation (the team understanding enough about the AI it uses) already applies. The details, with articles and dates, are in the Profissional 2030 Base course."
+        },
+        {
+          "icone": "calendario",
+          "titulo": "Has a date",
+          "sub": "put it on the calendar",
+          "forte": true,
+          "detalhe": "What has a set date. Under the EU AI Act, the high-risk rules in Annex III were postponed to 02/12/2027 by the Digital Omnibus package of 07/24/2026. It applies to anyone who sells or uses AI in the European market."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Under discussion",
+          "sub": "keep watching",
+          "detalhe": "What was reported and is not a rule. In Brazil, PL 2338/2023 was reported as stalled in the Chamber, with a vote after the elections. This is a secondary source: the bill's official record was not checked. It goes on the timeline as \"watch\", never as an obligation."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Through the customer",
+          "sub": "arrives first",
+          "detalhe": "What a large customer asks for before any law does: a supplier questionnaire about AI use, data and controls. The ISO/IEC 42001 standard (AI management system) shows up in these questionnaires. Having the pieces from this program ready shortens your answer."
+        }
+      ],
+      "legenda": "Regulation facts from the October 2026 market overview (INEMA). This is not legal advice: if you are unsure about your obligation, the company's legal team decides."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Three precautions and one advantage",
+      "sub": "The details of the rules are in Profissional 2030 Base; here is what the manager does with them.",
+      "passos": [
+        {
+          "titulo": "Fact, date and source",
+          "sub": "or it doesn't go in",
+          "texto": [
+            "Each item on the timeline has its source and the date of the source. Anything that only showed up in a blog or in an article citing another article goes in as \"reported, check it\", with the date of the news.",
+            "A timeline ages fast: the Digital Omnibus changed EU AI Act dates in 2026. Set the next review, every three months."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "\"PL 2338/2023: reported as stalled in the Chamber (article of 08/24/2026, secondary source). Owner: Carlos with the accounting firm. Review in January 2027.\""
+          }
+        },
+        {
+          "titulo": "Who it applies to",
+          "sub": "Horizonte doesn't sell in Europe",
+          "texto": [
+            "The 02/12/2027 date applies to anyone who sells or uses AI in the European market. Horizonte sells in the interior of São Paulo: today, it doesn't apply. Write that on the timeline, with the reason, instead of deleting the item.",
+            "If the company ever sells abroad, the item changes columns. That's why it stays on record."
+          ],
+          "exemplo": {
+            "rot": "AI literacy",
+            "texto": "At Horizonte it isn't a legal obligation, but it's cheap good practice: training the team (the people course in the program) is the literacy."
+          }
+        },
+        {
+          "titulo": "When to call legal",
+          "sub": "the manager does not interpret the law",
+          "texto": [
+            "Call whoever handles legal matters when: the agent decides something about people (credit, hiring), data leaves the country, a customer asks for a written statement, or you're unsure whether a rule applies to you.",
+            "Your role is to have the timeline, the owners and the evidence organized. The legal opinion belongs to someone else."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "The support summary sends customer conversations to a foreign service without a contract (F10). That goes to legal and to the LGPD lesson in Professional 2030 Base."
+          }
+        },
+        {
+          "titulo": "The advantage of having done the program",
+          "sub": "the pieces are already evidence",
+          "texto": [
+            "When a customer or a rule asks \"show me how you control AI,\" the answer is pieces you already have: the responsibility matrix, the identity and log checklist, the evaluation set, the dashboard and the version history.",
+            "Put them in one folder with an index. The next compliance question becomes a lookup in the folder, not a project."
+          ],
+          "exemplo": {
+            "rot": "Evidence folder",
+            "texto": "Matrix (lesson 1) · checklist and access review (lesson 2) · 30 cases and result by version (lesson 3) · dashboard (lesson 4) · cycles and history (lessons 5 and 6)."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "A one-page timeline and the evidence folder index. The next tab shows Horizonte's.",
+      "blocos": [
+        {
+          "rot": "Compliance timeline",
+          "icone": "calendario",
+          "conteudo": "COMPLIANCE TIMELINE · area <...> · version <...> · <date> · owner: <name>\nThis is not a legal opinion. Review: every 3 months (next: <date>).\n\n| Item | Column | What it requires (one line) | Does it apply to us? Why | Source and source date | Fact or reported | Owner | Next step |\n|---|---|---|---|---|---|---|---|\n| <LGPD> | already in force | <...> | yes / no: <...> | <...> | fact | <name> | <...> |\n| <EU AI Act, high risk> | with a date: <dd/mm/yyyy> | <...> | <...> | <...> | fact | <name> | <...> |\n| <bill> | under discussion | <...> | <...> | <...> | reported, check it | <name> | monitor |\n| <customer X questionnaire> | by the customer | <...> | <...> | <customer request, date> | fact | <name> | <...> |\n\nCall legal when: decision about people · data leaves the country · customer asks for a statement · doubt whether the rule applies."
+        },
+        {
+          "rot": "Evidence folder index",
+          "icone": "pasta",
+          "conteudo": "AI EVIDENCE FOLDER · area <...> · updated on <date> · owner: <name>\n\n1. Inventory of AI agents and tools, with owner ............. <file, version>\n2. Responsibility matrix ..................................... <file, version>\n3. Identity, permission and log checklist, per agent ......... <file, date>\n4. Monthly access reviews .................................... <folder>\n5. Evaluation set and result by version ...................... <file>\n6. Indicators dashboard with baseline ........................ <file>\n7. LOOP-R cycles, promotions, rollbacks and history .......... <folder>\n8. Team training (who, when, what) ........................... <file>\n9. Compliance timeline ....................................... <file, version>"
+        },
+        {
+          "rot": "Prompt · review the timeline",
+          "icone": "chat",
+          "conteudo": "You are a compliance reviewer. Below is the AI rules timeline\nfor one area of my company. You do not give legal opinions and you do not\nsay whether a rule applies. Point out:\n\n1. Items with no source or no source date.\n2. Reported items written as if they were fact.\n3. Items with no owner or no next step.\n4. Questions I should take to legal.\n\nTimeline:\n\"\"\"<paste>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Horizonte's timeline",
+            "html": "<p><b>Sales · version 1.0</b> · Horizonte, fictional study company · not a legal opinion</p><table><tr><th>Item</th><th>Column</th><th>Does it apply to us?</th><th>Owner</th></tr><tr><td>LGPD in conversations and customer records</td><td>already in force</td><td>yes</td><td>Carlos, with the accounting firm</td></tr><tr><td>Conversation sent to a foreign service without a contract (F10)</td><td>already in force (LGPD)</td><td>yes: take it to legal</td><td>Juliana, owner of the summary</td></tr><tr><td>AI literacy (EU)</td><td>already in force in the EU</td><td>not by law; adopted as good practice</td><td>Patrícia</td></tr><tr><td>EU AI Act, Annex III high risk</td><td>with a date: 02/12/2027</td><td>no: we don't sell or use AI in the EU</td><td>Carlos</td></tr><tr><td>PL 2338/2023</td><td>under discussion</td><td>monitor (reported, check it)</td><td>Carlos</td></tr><tr><td>Supplier questionnaire from the hotel chain</td><td>by the customer</td><td>yes, if they ask</td><td>Patrícia, with the evidence folder</td></tr></table><p>Next review: January 2027.</p>"
+          },
+          {
+            "rot": "How to check / common mistakes",
+            "html": "<ul><li><b>News treated as law.</b> A stalled bill obliges no one; write \"reported, check it.\"</li><li><b>Deleted item.</b> What doesn't apply today stays, with the reason.</li><li><b>No owner.</b> An item with no owner isn't followed.</li><li><b>Manager interpreting the law.</b> Questions about how a rule applies go to legal.</li><li><b>Timeline with no review.</b> Dates change: the EU AI Act itself had deadlines pushed back in 2026.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Horizonte's timeline is for practice; your area's is for real.",
+      "fonte": "Rule details: <a href=\"https://inematds.github.io/prof2030-base/aulas/regras/\">Rules with set dates</a>, in Professional 2030 Base.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Horizonte's timeline",
+          "min": "20 min",
+          "texto": "Without looking at the tab, build the timeline for Horizonte's sales area using the template. Use the four columns, the lab failures that touch personal data, and what a large customer might ask for. Run the review prompt.",
+          "pronto": "the timeline has at least 6 items across the 4 columns; each has a source with a date, \"does it apply to us\" with a reason, an owner and a next step; PL 2338 is marked \"reported, check it\"; and the next review date is written down."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Your area's timeline",
+          "min": "40 min",
+          "texto": "Build your area's timeline and the evidence folder index with the pieces you already have from this program. Take the questions the prompt flagged to whoever handles legal matters.",
+          "pronto": "the timeline is saved with owners and a next review; the folder index points to at least 5 pieces that already exist; and the questions to legal were sent, with a date."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick test",
+      "sub": "3 questions. The explanation appears after you try.",
+      "perguntas": [
+        {
+          "p": "How does PL 2338/2023 go into the timeline?",
+          "opcoes": [
+            "Under discussion: reported as stalled, secondary source",
+            "As an obligation with a date, so the company can get ahead",
+            "It doesn't go in, because Congress hasn't approved it yet"
+          ],
+          "certa": 0,
+          "ref": "diagrama",
+          "explica": "What was reported goes in to be monitored, with the source and the date of the news, but never as a rule that obliges."
+        },
+        {
+          "p": "Horizonte only sells in inland São Paulo state. What should you do with the EU AI Act item?",
+          "opcoes": [
+            "Delete it from the timeline, because it doesn't apply to the company",
+            "Treat it as an obligation, to be safe, until legal says in writing that it doesn't apply",
+            "Keep it, marked \"does not apply today,\" with the reason written down"
+          ],
+          "certa": 2,
+          "ref": "passos",
+          "explica": "Recording why something doesn't apply is as useful as recording what does: if the company ever sells abroad, the item changes columns."
+        },
+        {
+          "p": "A hotel chain sends a questionnaire about how Horizonte controls AI. Where do you start?",
+          "opcoes": [
+            "Buy a market certification before answering",
+            "By pulling the evidence folder with the pieces from the program",
+            "Answer that the company doesn't use AI in its orders yet",
+            "Ask the model vendor to answer on behalf of the company"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "The matrix, checklist, evaluation, dashboard and history already answer much of it. Whatever is missing becomes an item with an owner; whatever is legal goes to legal."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Four columns",
+          "texto": "What already applies, with a date, what is under discussion, and what the customer requires."
+        },
+        {
+          "t": "Source and date",
+          "texto": "A fact with a source; what was only reported goes in as \"check it\"."
+        },
+        {
+          "t": "Owner and review",
+          "texto": "Each item has an owner; the whole row is reviewed every 3 months."
+        },
+        {
+          "t": "Evidence ready",
+          "texto": "The pieces from the program answer most of the questions."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Professional 2030 Base: rules with set dates (EU AI Act, PL 2338, NIST, ISO 42001)",
+          "href": "https://inematds.github.io/prof2030-base/aulas/regras/",
+          "icone": "calendario"
+        },
+        {
+          "t": "Profissional 2030 Base: data, LGPD, and vendor choice",
+          "href": "https://inematds.github.io/prof2030-base/aulas/dados-lgpd/",
+          "icone": "cadeado"
+        },
+        {
+          "t": "Horizonte Lab: service summary (F10)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/",
+          "icone": "arquivo"
+        }
+      ]
+    }
+  ]
+}

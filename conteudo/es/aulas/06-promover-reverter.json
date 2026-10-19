@@ -1,0 +1,430 @@
+{
+  "slug": "promover-reverter",
+  "num": 6,
+  "menu": "Promover",
+  "titulo": "Promover y revertir",
+  "titulo_curto": "Promover y revertir",
+  "minutos": 20,
+  "lead": "La v2.2 de Hora ganó la prueba y fue promovida. Una semana después, la logística cambió el día de entrega de una ruta y la tabla del agente quedó vieja. Las conversaciones asumidas por Juliana siguieron bajas, pero las promesas de plazo incumplidas pasaron del límite. Promover y revertir son etapas planificadas: en esta clase escribes las dos antes de necesitarlas.",
+  "objetivo": "tratar la promoción y la reversión como etapas planificadas: promover con un disparador de regreso escrito y revertir por el disparador, sin caza de culpables.",
+  "competencias": [
+    "promover-com-janela-de-vigia",
+    "escrever-gatilho-de-reversao",
+    "reverter-sem-caca-ao-culpado"
+  ],
+  "aprende": [
+    {
+      "t": "Qué acompaña a una promoción: fases, vigilancia y disparador de regreso"
+    },
+    {
+      "t": "Calcular el disparador para no revertir por casualidad"
+    },
+    {
+      "t": "Revertir rápido, avisando antes y guardando la versión"
+    },
+    {
+      "t": "El historial de versiones y el nivel de autorización del propio ciclo"
+    }
+  ],
+  "hero_alt": "En una sala de vidrio, la gerente señala en una pantalla una línea roja que sube junto a una verde, mientras el dueño de la empresa escucha con atención.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "De la promoción a la siguiente candidata",
+      "sub": "Promover no es el final del ciclo. Haz clic en cada etapa.",
+      "volta": "Mantenida o revertida, la lección va al historial y alimenta la siguiente hipótesis",
+      "nos": [
+        {
+          "icone": "check",
+          "titulo": "Validada",
+          "sub": "B ganó",
+          "detalhe": "La candidata pasó los 30 casos y el piloto (clase 5). Todavía no es la oficial: falta la decisión de quien no la propuso y el plan de vuelta por escrito."
+        },
+        {
+          "icone": "seta",
+          "titulo": "Promovida",
+          "sub": "con plan de vuelta",
+          "forte": true,
+          "detalhe": "Se convierte en la versión oficial, por decisión registrada. Junto con la promoción quedan escritos: la ventana de vigilancia, el disparador de reversión con número, quién decide, cómo volver y dónde está la versión anterior."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Vigilancia",
+          "sub": "dos semanas",
+          "detalhe": "En las primeras semanas después de la promoción, las barreras de protección se revisan con más frecuencia. El piloto midió pocas semanas; la operación completa puede traer situaciones que el piloto no tuvo."
+        },
+        {
+          "icone": "portao",
+          "titulo": "Disparador",
+          "sub": "número escrito",
+          "detalhe": "Si una barrera de protección pasa del límite escrito en la promoción, o si hay un error crítico, la versión vuelve atrás. El límite ya considera la variación normal de la semana, para no revertir por casualidad."
+        },
+        {
+          "icone": "voltar",
+          "titulo": "Revierte",
+          "sub": "e investiga",
+          "detalhe": "La versión anterior vuelve por los pasos escritos, con aviso previo a quienes se ven afectados. Después vienen la causa, el arreglo y una candidata nueva, que pasa otra vez por los 30 casos y por el piloto."
+        }
+      ],
+      "legenda": "Área Gestión de IA, regla 3: promover y revertir son etapas, no accidentes. Números de Horizonte: ficticios de estudio, en semanas relativas."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cuatro reglas para promover y volver",
+      "sub": "El G2 versionó el proceso y el G3 promovió acciones de autonomía. Aquí la versión es la del paquete del agente (prompt, contexto, modelo, herramientas) que salió de un ciclo LOOP-R.",
+      "passos": [
+        {
+          "titulo": "La promoción lleva el plan de vuelta",
+          "sub": "escrito antes, no en medio del susto",
+          "texto": [
+            "Carlos aprobó la v2.2 en la semana 7 con el plan de vuelta ya escrito: ventana de vigilancia de dos semanas; disparador de promesas de plazo incumplidas por encima de 3,4% en una semana, o un error crítico; quién decide, Patrícia; cómo volver, Rafael apunta la Hora a la v2.1 en un máximo de 2 horas.",
+            "Decidir la vuelta después del problema es decidir en medio del susto, y casi siempre termina en una discusión sobre culpas."
+          ],
+          "exemplo": {
+            "rot": "Regla",
+            "texto": "Promover requiere la aprobación de quien no propuso. Revertir por el disparador escrito es deber de quien opera y no espera una reunión."
+          }
+        },
+        {
+          "titulo": "El disparador considera el azar",
+          "sub": "no toda caída es una caída",
+          "texto": [
+            "Las promesas incumplidas son un evento raro: en 160 conversaciones de plazo por semana, la tasa varía sola. El disparador suma a la tasa del piloto (1,5%) dos errores estándar de la semana: 2 × √(0,015 × 0,985 ÷ 160) ≈ 1,9 puntos. Límite: 3,4%.",
+            "Así, una semana con 4 promesas incumplidas (2,5%) no revierte; una con 7 (4,4%) sí revierte. La cuenta es la misma que usa el LOOP-R para la tolerancia."
+          ],
+          "exemplo": {
+            "rot": "Contraejemplo",
+            "texto": "En el ejemplo del LOOP-R, 6 reclamos contra 1, en 300 por versión, con tolerancia cero, descartó una buena idea por casualidad."
+          }
+        },
+        {
+          "titulo": "Revertir rápido, sin culpables",
+          "sub": "lo que pasó en la semana 8",
+          "texto": [
+            "En la semana 8, logística cambió el día de entrega de la ruta de Sorocaba y la tabla no se actualizó. Promesas incumplidas: 7 de 158 (4,4%), por encima de 3,4%. Las conversaciones asumidas por Juliana seguían en 19,0%: la meta iba bien, la barrera de protección cayó.",
+            "Patrícia decidió por el disparador; Juliana fue avisada antes; Rafael apuntó a la v2.1 en 2 horas; la v2.2 quedó guardada. Carlos fue informado con el número."
+          ],
+          "exemplo": {
+            "rot": "Causa, no culpable",
+            "texto": "La tabla no tenía vigencia ni aviso de cambio de ruta. El arreglo está en el documento (responsable, vigencia, aviso), no en Valdir."
+          }
+        },
+        {
+          "titulo": "Historial y nivel de autorización del ciclo",
+          "sub": "el loop también tiene nivel",
+          "texto": [
+            "Cada versión recibe una línea en el historial: qué cambió, por qué, quién aprobó, la situación. La versión revertida no se borra; se convierte en memoria de lo que no funcionó y por qué.",
+            "El propio ciclo tiene nivel de autorización. En el LOOP-R, L0 solo propone; L1 promueve con la aprobación de una persona en cada cambio; L2 promueve solo, y únicamente después de al menos cinco promociones en L1 sin ninguna reversión. Horizonte está en L1."
+          ],
+          "exemplo": {
+            "rot": "Próximo paso",
+            "texto": "v2.3: la misma tabla, con Valdir como responsable, vigencia semanal y aviso de cambio de ruta. Vuelve a los 30 casos y a un piloto nuevo."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "El registro de promoción, el de reversión y el historial de versiones. La pestaña de al lado muestra los de Horizonte.",
+      "blocos": [
+        {
+          "rot": "Registro de promoción",
+          "icone": "seta",
+          "conteudo": "PROMOCIÓN · agente <nombre> · de v<actual> a v<candidata> · ciclo LOOP-R nº <...>\nPropuesta por: <nombre> · Aprobada por (no quien propuso): <nombre> el <fecha>\nTarjeta de decisión adjunta: [ ] sí\n\nFASES: <primero un segmento, después todos, o todos de una vez, y por qué>\nVENTANA DE VIGILANCIA: <n semanas> · barreras de protección revisadas <con qué frecuencia>, por <nombre>\n\nDISPARADOR DE REVERSIÓN (escrito ahora)\n  <barrera de protección> por encima de <límite> en <período>\n  cuenta del límite: <tasa del piloto> + 2 × raíz(p × (1 - p) ÷ <N del período>) = <...>\n  o: 1 error crítico\nQUIÉN DECIDE LA VUELTA: <nombre> · sin esperar aprobación\nCÓMO VOLVER: <pasos, quién hace cada uno, en cuánto tiempo>\nQUIÉN RECIBE AVISO ANTES: <nombres> · VERSIÓN ANTERIOR GUARDADA EN: <dónde>"
+        },
+        {
+          "rot": "Registro de reversión",
+          "icone": "voltar",
+          "conteudo": "REVERSIÓN · agente <nombre> · de v<promovida> a v<anterior> · <fecha y hora>\nDisparador que se activó: <indicador> = <valor> (<n> de <N>) · límite escrito: <...>\nMeta del cambio en la misma semana: <valor> (para el registro, no para decidir)\nDecidido por: <nombre> · avisados antes: <nombres> · ejecutado por: <nombre> en <tiempo>\nVersión revertida guardada en: <dónde>\n\nCAUSA PROBABLE: <qué cambió en el mundo o en el agente>\nARREGLO PROPUESTO: <...> · nueva candidata: v<...> · vuelve a los 30 casos y al piloto: <fechas>\nAPRENDIZAJE PARA EL HISTORIAL: <una frase>"
+        },
+        {
+          "rot": "Historial de versiones del agente",
+          "icone": "memoria",
+          "conteudo": "HISTORIAL · agente <nombre> · dueño: <nombre> · nivel de autorización del ciclo: [ ] L0 propone [ ] L1 una persona aprueba cada cambio [ ] L2 promueve solo\n\n| Versión | Qué cambió | Por qué (evidencia) | Aprobado por | Situación | Fecha |\n|---|---|---|---|---|---|\n| <v> | <...> | <...> | <nombre> | en uso / guardada / revertida / propuesta | <...> |\n\nRegla: ninguna línea se borra. La versión revertida queda con el motivo.\nL2 solo después de 5 promociones en L1 sin reversión."
+        },
+        {
+          "rot": "Prompt · revisar el plan de vuelta",
+          "icone": "chat",
+          "conteudo": "Eres revisor de cambios. Abajo está el registro de promoción de una\nnueva versión de un agente de IA. No decidas si la promoción es buena. Señala:\n\n1. Si el disparador de reversión tiene número, período y la cuenta del límite.\n2. Si el límite es tan estrecho que la variación normal lo activa, o tan\n   amplio que nunca se activa.\n3. Si quién decide la vuelta, los pasos y el tiempo están escritos.\n4. Quién se vería afectado por la vuelta y no está en la lista de avisados.\n\nRegistro:\n\"\"\"<pega aquí>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Promoción y reversión de la Hora",
+            "html": "<p><b>Hora v2.1 → v2.2 → v2.1</b> · Horizonte, empresa ficticia de estudio · semanas relativas</p><ul><li><b>Semana 7, promoción:</b> propuesta de Patrícia, aprobada por Carlos con la tarjeta de decisión del ciclo 0001. Todas las conversaciones en la v2.2. Ventana de vigilancia de 2 semanas.</li><li><b>Disparador:</b> promesas de plazo incumplidas por encima de 3,4% en una semana (1,5% del piloto + 1,9 puntos), o 1 error crítico. Decide: Patrícia. Vuelta: Rafael apunta a la v2.1 en hasta 2 h. Avisada antes: Juliana.</li><li><b>Semana 8, reversión:</b> 7 de 158 promesas incumplidas (4,4%). Asumidas por Juliana: 30 de 158 (19,0%). Revertido en 2 h, v2.2 guardada, Carlos informado.</li><li><b>Causa probable:</b> la ruta de Sorocaba cambió de día y la tabla no tenía vigencia ni aviso.</li><li><b>Próxima candidata:</b> v2.3, tabla con Valdir como dueño, vigencia semanal y aviso de cambio.</li></ul>"
+          },
+          {
+            "rot": "Historial de la Hora",
+            "html": "<table><tr><th>Versión</th><th>Qué cambió</th><th>Situación</th></tr><tr><td>2.0</td><td>Dossier del G3: cargo, constitución, matriz</td><td>guardada</td></tr><tr><td>2.1</td><td>Traba: la suma del día del mismo cliente por encima de R$ 5 mil va a aprobación (caso T-27)</td><td>en uso</td></tr><tr><td>2.2</td><td>Tabla de rutas en el paquete de contexto (ciclo 0001)</td><td>revertida en la semana 8: promesas incumplidas 4,4% &gt; 3,4%</td></tr><tr><td>2.3</td><td>Tabla de rutas con dueño, vigencia semanal y aviso de cambio</td><td>propuesta</td></tr></table><p>Nivel de autorización del ciclo: L1. Ninguna línea borrada.</p>"
+          },
+          {
+            "rot": "Cómo verificar / errores comunes",
+            "html": "<ul><li><b>Promover sin disparador.</b> En el momento del problema, nadie sabe si hay que volver.</li><li><b>Disparador sin cuenta.</b> Muy estrecho, revierte por casualidad; muy amplio, nunca se activa.</li><li><b>Esperar una reunión para volver.</b> Revertir por el disparador escrito no pide aprobación.</li><li><b>Borrar la versión que falló.</b> Es la memoria de lo que no funcionó.</li><li><b>Buscar culpables.</b> La pregunta es qué cambió y qué protección faltó.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "simconversa",
+      "titulo": "Simulación: Carlos no quiere volver",
+      "sub": "Conversación simulada para practicar. El disparador se activó y al dueño le gustó la versión nueva. Responde con lo que está escrito en el registro de promoción.",
+      "personagem": {
+        "nome": "Carlos · dueño de Horizonte (simulación)",
+        "papel": "Horizonte Distribuidora, empresa ficticia de estudio"
+      },
+      "inicio": "abre",
+      "falas": {
+        "abre": {
+          "cliente": "Patrícia, vi en el grupo que quieres volver la Hora a la versión antigua. Juliana nunca tuvo tanto tiempo libre: las conversaciones de plazo que ella asumía cayeron de 45% a 18%. ¿Por qué volver?",
+          "opcoes": [
+            {
+              "t": "Porque el disparador que escribimos antes de promover se activó: las promesas de plazo incumplidas subieron a 4,4% en la semana, 7 de 158, y el límite era 3,4%. La meta mejoró, pero la barrera de protección cayó.",
+              "vai": "criterio",
+              "nota": 2,
+              "comenta": "Trajiste el número, el límite acordado y separaste meta de barrera de protección. La decisión no es tu opinión: es lo que se escribió antes."
+            },
+            {
+              "t": "Tienes razón. Lo dejo como está y le pido a logística que avise cuando cambie alguna ruta.",
+              "vai": "fim-mantem",
+              "nota": 0,
+              "comenta": "El disparador escrito antes de promover se activó y lo ignoraste porque la meta se veía bien. Los clientes siguen recibiendo promesas de entrega que no se cumplen."
+            },
+            {
+              "t": "Porque ayer recibí dos reclamos de clientes.",
+              "vai": "criterio",
+              "nota": 1,
+              "comenta": "Los reclamos son reales, pero dos reclamos no son un criterio. Eso deja espacio para que Carlos piense que es exagerado."
+            }
+          ]
+        },
+        "criterio": {
+          "cliente": "Pero 7 entregas en un universo de 158 es poco. ¿No es mala suerte?",
+          "opcoes": [
+            {
+              "t": "No sé decirlo, pero prefiero no arriesgar.",
+              "vai": "como",
+              "nota": 1,
+              "comenta": "La decisión es correcta, pero sin el argumento. La próxima vez, Carlos va a pedir que no se revierta."
+            },
+            {
+              "t": "El límite ya considera el azar: se calculó con la variación normal de una semana de unas 160 conversaciones. Con 4 promesas incumplidas no volveríamos; con 7, se pasó. Y para el cliente que esperó la entrega, no fue mala suerte.",
+              "vai": "como",
+              "nota": 2,
+              "comenta": "Mostraste que la duda de Carlos ya estaba en la cuenta del disparador y recordaste quién paga por el error."
+            },
+            {
+              "t": "Puede ser. Esperemos un mes más para estar seguros.",
+              "vai": "fim-espera",
+              "nota": 0,
+              "comenta": "Un mes con el disparador activado son cuatro semanas de promesas que no se cumplen. Esperar más datos sirve antes de promover, no después del límite."
+            }
+          ]
+        },
+        "como": {
+          "cliente": "Bueno. ¿Y volver no va a desordenar todo? Juliana vuelve a quedar sobrecargada.",
+          "opcoes": [
+            {
+              "t": "Apago la Hora hoy y dejo que Juliana atienda hasta descubrir la causa.",
+              "vai": "fim-desliga",
+              "nota": 0,
+              "comenta": "La v2.1 funcionaba y está guardada. Apagar todo cambia un problema en una ruta por una operación entera detenida."
+            },
+            {
+              "t": "Volver es el paso escrito: Rafael apunta la Hora a la v2.1 en hasta 2 horas, Juliana es avisada antes y la v2.2 queda guardada. Su carga vuelve a la que ya conocemos y medimos.",
+              "vai": "causa",
+              "nota": 2,
+              "comenta": "Revertir según el plan es rápido y predecible: versión conocida, aviso antes, nada borrado."
+            },
+            {
+              "t": "Vuelvo solo en las ciudades con reclamos y mantengo la v2.2 en las otras.",
+              "vai": "causa",
+              "nota": 1,
+              "comenta": "Parece cuidadoso, pero es una versión nueva que nadie probó. La vuelta segura es a la versión conocida."
+            }
+          ]
+        },
+        "causa": {
+          "cliente": "¿Y la idea de la tabla de rutas muere ahí?",
+          "opcoes": [
+            {
+              "t": "Le pido a Rafael que corrija la tabla hoy y promovemos de nuevo mañana.",
+              "vai": "fim-pressa",
+              "nota": 1,
+              "comenta": "Arreglar está bien; promover mañana sin prueba repite el atajo que el ciclo existe para evitar."
+            },
+            {
+              "t": "Muere. Fue un error intentarlo.",
+              "vai": "fim-desiste",
+              "nota": 0,
+              "comenta": "La idea pasó la prueba; lo que falló fue el mantenimiento de la tabla. Tirar la hipótesis es perder lo que el ciclo enseñó."
+            },
+            {
+              "t": "No. La causa probable es la tabla sin un dueño que la actualice: logística cambió el día de Sorocaba y nadie tocó el documento. Pongo a Valdir como dueño, vigencia semanal y aviso de cambio, corro de nuevo los 30 casos y el piloto, y te traigo la tarjeta de decisión.",
+              "vai": "fim-bom",
+              "nota": 2,
+              "comenta": "Encontraste la causa sin buscar culpables, arreglaste la protección que faltaba y devolviste la decisión a quien aprueba, con evidencia."
+            }
+          ]
+        },
+        "fim-mantem": {
+          "fim": true,
+          "titulo": "El disparador ignorado",
+          "texto": "La v2.2 se quedó. En las semanas siguientes, más clientes de Sorocaba esperaron entregas que no llegaron, y la regla de volver se volvió una sugerencia. En la próxima promoción, nadie va a tomar en serio el disparador."
+        },
+        "fim-espera": {
+          "fim": true,
+          "titulo": "Esperar después del límite",
+          "texto": "Esperar un mes con el disparador activado convirtió un problema de una ruta en cuatro semanas de promesas incumplidas. Más datos sirven para decidir promover; para volver, el límite ya es la decisión."
+        },
+        "fim-desliga": {
+          "fim": true,
+          "titulo": "Remedio peor que la enfermedad",
+          "texto": "Con Hora apagada, Juliana asumió todo, la cola creció y los clientes de todas las ciudades esperaron. La versión anterior estaba guardada y funcionaba: revertir es volver a la versión conocida, no apagar."
+        },
+        "fim-desiste": {
+          "fim": true,
+          "titulo": "La lección tirada a la basura",
+          "texto": "La tabla de rutas salió de la cola de ideas. Juliana volvió a asumir casi la mitad de las conversaciones sobre plazos, y la empresa perdió una mejora que había ganado la prueba. Lo que necesitaba arreglo era el mantenimiento del documento."
+        },
+        "fim-pressa": {
+          "fim": true,
+          "titulo": "Promoción sin prueba",
+          "texto": "La tabla fue corregida y la v2.2 volvió al día siguiente, sin pasar por los casos ni por el piloto. Salió bien esta vez, pero el próximo cambio de ruta va a repetir el problema: faltó dueño, vigencia y aviso, y faltó la prueba."
+        },
+        "fim-bom": {
+          "fim": true,
+          "titulo": "Volver sin drama, mejorar con método",
+          "texto": "La v2.1 volvió en dos horas, Juliana fue avisada antes y Carlos entendió el número. La causa se convirtió en protección en el documento, y la v2.3 entra en la cola con prueba y tarjeta de decisión. Promover y revertir fueron etapas, no accidentes."
+        }
+      },
+      "licao": "La promoción lleva el plan de vuelta escrito de antemano. El disparador ya considera el azar; cuando se activa, se vuelve a la versión conocida, avisando antes y guardando la nueva. Después, causa en lugar de culpable y una prueba nueva antes de promover otra vez."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "Los registros de Horizonte son para practicar; la promoción y la vuelta ensayada de tu agente son para valer de verdad.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Promoción, reversión e historial de Hora",
+          "min": "30 min",
+          "texto": "Con los números de esta clase, completa el registro de promoción de la v2.2 (semana 7) y el de reversión (semana 8). Rehaz la cuenta del disparador. Arma el historial de Hora con las versiones 2.0 a 2.3 y marca el nivel de autorización del ciclo.",
+          "pronto": "la promoción tiene un aprobador distinto de quien la propuso, ventana de vigilancia, disparador con número y la cuenta (1,5% + 1,9 = 3,4%), quién decide la vuelta, los pasos con tiempo y los avisados; la reversión tiene el número que activó el disparador (7 de 158), la causa probable y la próxima candidata; y el historial tiene 4 líneas, ninguna borrada."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · La vuelta ensayada de tu agente",
+          "min": "45 min",
+          "dias": "1 semana",
+          "texto": "Para el cambio de tu ciclo de la clase 5 (o para el próximo cambio de tu agente), escribe el registro de promoción con el disparador calculado. Después ensaya la vuelta en un ambiente de prueba o fuera de horario: apunta a la versión anterior, cronometra y verifica que no se haya perdido nada.",
+          "pronto": "el registro de promoción está guardado con el disparador en número y la cuenta; la vuelta fue ensayada una vez con el tiempo medido; el historial de versiones de tu agente existe; y quien decide la vuelta confirmó por escrito que lo sabe."
+        },
+        {
+          "id": "e3",
+          "titulo": "3 · La conversación con Carlos",
+          "min": "10 min",
+          "texto": "Haz la simulación de arriba hasta llegar al puntaje máximo. Si te equivocas, lee el comentario y empieza de nuevo.",
+          "pronto": "la simulación terminó en \"Volver sin drama, mejorar con método\" con 8 de 8 puntos."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "4 preguntas. La explicación aparece después de tu intento.",
+      "perguntas": [
+        {
+          "p": "Después de la promoción, la meta de la v2.2 seguía excelente, pero una barrera de protección pasó del límite escrito. ¿Qué vale?",
+          "opcoes": [
+            "La barrera de protección: el disparador escrito de antemano manda volver",
+            "La meta, porque el cambio vino para mejorarla",
+            "El promedio entre la meta y la barrera de protección esa semana"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "La barrera de protección existe para que una meta bonita no esconda un estrago. Si cae más allá del límite, la versión vuelve."
+        },
+        {
+          "p": "En una semana con 4 promesas incumplidas de 160 (2,5%), con límite de 3,4%, ¿qué hacer?",
+          "opcoes": [
+            "Revertir, porque empeoró respecto al 1,5% del piloto",
+            "Apagar el agente hasta que logística revise las rutas",
+            "Abrir un nuevo ciclo de prueba antes de decidir cualquier cosa",
+            "Mantener y seguir vigilando: está dentro de la variación normal"
+          ],
+          "certa": 3,
+          "ref": "passos",
+          "explica": "El límite fue calculado para no revertir por azar. Revertir por debajo de él es cambiar el criterio por ansiedad."
+        },
+        {
+          "p": "¿Quién necesita aprobar la reversión hecha por el disparador escrito?",
+          "opcoes": [
+            "Carlos, en una reunión programada para discutir con el equipo si se vuelve o no",
+            "Solo quien fue nombrado para decidir la vuelta, sin esperar reunión",
+            "Rafael, que es quien ejecuta el cambio de versión en el sistema"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Promover pide aprobación de quien no lo propuso; volver a la versión conocida, por el disparador acordado, no espera reunión. Carlos es informado con el número."
+        },
+        {
+          "p": "¿A partir de cuándo un ciclo LOOP-R puede promover solo (L2)?",
+          "opcoes": [
+            "Desde el primer ciclo, si el modelo usado es de punta",
+            "Después de cinco promociones en L1 sin ninguna reversión",
+            "Nunca: toda promoción necesita siempre a una persona"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "El propio ciclo gana nivel de autorización como un agente: con evidencia y un nivel a la vez. Horizonte acaba de revertir una promoción, así que sigue en L1."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen",
+      "itens": [
+        {
+          "t": "Promoción con vuelta",
+          "texto": "Vigilancia, disparador en número, quién decide y cómo volver, escritos de antemano."
+        },
+        {
+          "t": "Disparador con cuenta",
+          "texto": "Tasa del piloto más dos errores estándar de la semana: ni revierte por casualidad, ni nunca."
+        },
+        {
+          "t": "Volver sin culpables",
+          "texto": "Versión conocida, aviso antes, nada borrado; después, causa y protección."
+        },
+        {
+          "t": "Historial y nivel de autorización",
+          "texto": "Cada versión queda registrada; el ciclo sube de L1 a L2 solo con evidencia."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "G2 · Proceso con versión (registro de cambio y reversión del proceso)",
+          "href": "https://inematds.github.io/gestao-ia-processos-v72/aulas/versao/",
+          "icone": "git"
+        },
+        {
+          "t": "G3 · Confianza progresiva (promover y rebajar la autonomía de una acción)",
+          "href": "https://inematds.github.io/gestao-ia-agentes-v72/aulas/confianca/",
+          "icone": "escudo"
+        },
+        {
+          "t": "LOOP-R: promover y revertir en la guía",
+          "href": "https://inematds.github.io/loop-r/guia/",
+          "icone": "voltar"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "slug": "indicadores",
+  "num": 4,
+  "menu": "Indicators",
+  "titulo": "The agent's indicators",
+  "titulo_curto": "Indicators",
+  "minutos": 20,
+  "lead": "The Hora dashboard shows requests going up, and Carlos concludes it is paying for itself. The dashboard only measures volume: it doesn't tell you whether Hora got it right, how much each request cost, or how much human work is still needed. In this lesson you replace that dashboard with five agent indicators, each with a numerator, a denominator, a baseline and a limit that triggers an action.",
+  "objetivo": "track the agent on a 5-indicator dashboard with numerator, denominator, baseline and limit, fixing the dashboard that only shows volume.",
+  "competencias": [
+    "definir-indicadores-com-denominador",
+    "separar-erro-critico-da-media",
+    "medir-intervencao-humana"
+  ],
+  "aprende": [
+    {
+      "t": "What is missing in each column of a volume dashboard"
+    },
+    {
+      "t": "The agent's 5 indicators: quality, time, cost, autonomy and intervention"
+    },
+    {
+      "t": "Baseline when the \"before\" was never measured"
+    },
+    {
+      "t": "Limits that trigger action, and the indicator that improves when the agent gets worse"
+    }
+  ],
+  "hero_alt": "A manager with a mug in hand looks at a wall monitor with five panels of simple charts, one of them with a red border.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Five indicators and one alarm",
+      "sub": "Each indicator is a fraction with a period and a source. The critical error stays out of all of them: it is counted separately. Click each one.",
+      "nos": [
+        {
+          "icone": "check",
+          "titulo": "Quality",
+          "sub": "accuracy in the sample",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "x",
+              "t": "critical errors",
+              "sub": "counted separately"
+            }
+          ],
+          "detalhe": "Correct ÷ conversations judged in a sample drawn every week, using the rubric from lesson 3. Next to it, the count of critical errors, which never goes into the percentage. At Hora: 148 of 160 (92.5%) in the 4 baseline weeks; 0 critical."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Time",
+          "sub": "median and p95",
+          "detalhe": "From the customer's first contact to the confirmed order, across completed orders. Median for the typical case and p95 (the time that 95% of orders stay under) so it doesn't hide the ones that get stuck. At Hora: median of 18 min, p95 of 4 h 40 min, almost always waiting for approval."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Cost",
+          "sub": "per outcome",
+          "detalhe": "Total process cost ÷ completed orders: AI, tools, maintenance, people hours and rework, the G4 calculation. At Hora: R$ 4,542 ÷ 680 = R$ 6.68 per completed order. The cost per conversation that the vendor shows (R$ 0.31) is not this number."
+        },
+        {
+          "icone": "robo",
+          "titulo": "Autonomy",
+          "sub": "with no one involved",
+          "detalhe": "Orders completed with no human intervention ÷ orders completed. At Hora: 510 of 680 (75.0%). Heads up: this number goes up if Hora stops asking for approval when it should. It has no target on its own; it only counts next to quality and critical errors."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Intervention",
+          "sub": "human minutes",
+          "detalhe": "Human minutes (review, conversations taken over, rework) ÷ orders completed. It shows the weight of the human work, not just whether it happened. At Hora: 49.8 h in the month = 2,988 min ÷ 680 = 4.4 min per order."
+        }
+      ],
+      "legenda": "Indicators from the Gestoria method and the AI Management area (§06). In the Gestoria tool, the Overview boards have the same names: accuracy, critical errors, autonomous work, cost per case. Horizonte values: fictional, for study."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "From the volume dashboard to the agent dashboard",
+      "sub": "The lab's F11 was already fixed in G2 with three process indicators. Here the topic is the agent.",
+      "passos": [
+        {
+          "titulo": "What each column does not show",
+          "sub": "four columns, four gaps",
+          "texto": [
+            "The lab dashboard has four columns. Conversations is volume: it goes up with a promotion, the time of year, or too much discount. Orders closed has no before and no comparison. Average satisfaction comes from a button that about 6% of customers answer.",
+            "Response time measures the speed of the first message, not of the order. No column tells you whether Hora got it right, how much it cost, or how much human work it created."
+          ],
+          "exemplo": {
+            "rot": "Test for each column",
+            "texto": "Does this number change if Hora gives a wrong discount? If it doesn't, it's no good for governing the agent."
+          }
+        },
+        {
+          "titulo": "Baseline without the before",
+          "sub": "you can't invent the past",
+          "texto": [
+            "Data collection started on the same day Hora came in, in July. The \"before Hora\" was never measured and can't be measured now. What you can do: measure four weeks of the current version and use that as the baseline against which every change will be compared.",
+            "Estimates of the before (like the 8 to 12 minutes per order from G4) remain estimates and show up that way on the dashboard, never as observed."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Baseline: Hora v2.1, four weeks, 3,600 conversations and 680 orders completed. Every dashboard value states the period and the n."
+          }
+        },
+        {
+          "titulo": "Limit that triggers action",
+          "sub": "a number with no action is decoration",
+          "texto": [
+            "Each indicator gets a limit and a defined action for when it is crossed. Quality below 90% in a week: the sample doubles and the cause goes into the weekly review. One critical error: the action goes back to yellow right away and an incident is opened.",
+            "The limits are a decision for whoever is accountable for the operation, looking at the baseline. Write them before you need them."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "p95 of time above 6 h: look at the approval queue. Cost above R$ 7.50 in the month: review. Intervention above 6 min per order: see where the hours went."
+          }
+        },
+        {
+          "titulo": "The indicator that misleads",
+          "sub": "autonomy alone",
+          "texto": [
+            "If the target is \"raise autonomy\", the fastest way is for Hora to stop asking for approval. The number gets better and the operation gets worse. That's why autonomy and intervention are only read next to quality and critical errors.",
+            "In the Work Trend Index 2025, Microsoft proposed the human-agent ratio metric: the balance between human oversight and agent efficiency. It's a vendor proposal; your dashboard measures that balance with indicators 4 and 5."
+          ],
+          "exemplo": {
+            "rot": "Question for each indicator",
+            "texto": "How does this number improve without the operation improving? If the answer is easy, it needs a pair that watches over it."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The one-page dashboard and the sheet for each indicator. The tab next to this one shows Hora's.",
+      "blocos": [
+        {
+          "rot": "Agent dashboard (5 indicators)",
+          "icone": "grafico",
+          "conteudo": "AGENT DASHBOARD · <name> v<...> · period <from> to <to> · dashboard owner: <name>\nBaseline: <version>, <n weeks>, <cases> cases · data source: <systems>\n\n| # | Indicator | Numerator ÷ denominator | Baseline (n) | This week | Limit → action | Owner |\n|---|---|---|---|---|---|---|\n| 1 | Quality | correct ÷ judged (sample of <n>/week) | <%> (<n>) | <%> | < <%>: <action> | <name> |\n|   | Critical errors | count, outside any average | <n> | <n> | 1: <immediate action> | <name> |\n| 2 | Time | median and p95 of <end − start>, completed cases | <...> | <...> | p95 > <...>: <action> | <name> |\n| 3 | Cost per outcome | total process cost ÷ completed cases | R$ <...> | R$ <...> | > R$ <...>: <action> | <name> |\n| 4 | Autonomy | completed without intervention ÷ completed | <%> | <%> | only with 1 and criticals stable | <name> |\n| 5 | Human intervention | human minutes ÷ completed cases | <min> | <min> | > <min>: <action> | <name> |\n\nOFF THE DASHBOARD (volume, not outcome): <conversations, messages, satisfaction with low response>\nESTIMATED, NOT OBSERVED: <\"before\" values, with the source of the estimate>"
+        },
+        {
+          "rot": "Indicator sheet",
+          "icone": "arquivo",
+          "conteudo": "INDICATOR <n> · <name> · agent <name> · owner: <name>\n\nManagement question: <what we want to know>\nNumerator: <what is counted> · Denominator: <the universe>\nPeriod: <week> · compare with: <baseline, same type of period>\nSource: <system, field, sample> · who pulls it: <name>\nBaseline: <value> · [ ] observed (n = <...>, from <date> to <date>) [ ] estimated (source: <...>)\nLimit: <value> → action: <what happens, who does it, how fast>\nPair that watches: <indicator that exposes this one if it improves the wrong way>\nDo not confuse with: <what this number does not show>"
+        },
+        {
+          "rot": "Prompt · how this indicator misleads",
+          "icone": "chat",
+          "conteudo": "You are an indicator analyst. Below is the dashboard of an AI agent\nwith 5 indicators. Do not suggest new indicators. For each one:\n\n1. Say whether the denominator is clear and whether it can change on its own and mislead\n   the comparison.\n2. Give a way for the number to improve without the operation improving.\n3. Say which other indicator on the dashboard would expose that way.\n4. Point out whether any critical error might be hidden inside an average.\n\nDashboard:\n\"\"\"<paste>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Hora dashboard (example)",
+            "html": "<p><b>Hora v2.1 · 4-week baseline</b> · 3,600 conversations, 680 orders completed · Horizonte, fictional study company</p><table><tr><th>Indicator</th><th>Fraction</th><th>Baseline</th><th>Limit → action</th></tr><tr><td>1 Quality</td><td>correct ÷ judged (40 drawn per week)</td><td>148 ÷ 160 = 92.5%</td><td>&lt; 90%: sample doubles</td></tr><tr><td>Critical errors</td><td>count</td><td>0</td><td>1: action goes back to yellow + incident</td></tr><tr><td>2 Time</td><td>median and p95, contact → order confirmed</td><td>18 min · 4 h 40 min</td><td>p95 &gt; 6 h: approval queue</td></tr><tr><td>3 Cost</td><td>process cost ÷ orders completed</td><td>4,542 ÷ 680 = R$ 6.68</td><td>&gt; R$ 7.50: review</td></tr><tr><td>4 Autonomy</td><td>without intervention ÷ completed</td><td>510 ÷ 680 = 75.0%</td><td>no target on its own</td></tr><tr><td>5 Intervention</td><td>human minutes ÷ completed</td><td>2,988 ÷ 680 = 4.4 min</td><td>&gt; 6 min: see where</td></tr></table><p>Off the dashboard: conversations (volume) and average satisfaction (about 6% respond). Estimated: human time before Hora (8 to 12 min per order, G4).</p>"
+          },
+          {
+            "rot": "The lab dashboard, column by column",
+            "html": "<table><tr><th>Column</th><th>What it measures</th><th>What it does not show</th></tr><tr><td>Conversations</td><td>volume of conversations</td><td>whether the conversation became the right order</td></tr><tr><td>Orders closed</td><td>orders per week</td><td>the before, the discount given, the orders corrected</td></tr><tr><td>Average satisfaction</td><td>stars from about 6% of customers</td><td>the opinion of the other 94%</td></tr><tr><td>Response time</td><td>seconds until the 1st message</td><td>how long the order took to be confirmed</td></tr></table><p>Data from the lab's <code>indicadores.json</code> (fictional): from 702 conversations and 141 orders (week of 09/01) to 901 and 168 (week of 10/13).</p>"
+          },
+          {
+            "rot": "How to check / common mistakes",
+            "html": "<ul><li><b>Indicator without a denominator.</b> \"12 conversations taken over\" says nothing without the total.</li><li><b>Critical error in the average.</b> The error that costs money disappears inside 99%.</li><li><b>Average time.</b> One stuck order pulls the average; use median and p95.</li><li><b>Autonomy as a target.</b> It goes up when the agent stops asking for help.</li><li><b>Estimate as observed.</b> The before that nobody measured shows up as estimated, always.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Hora's dashboard for practice; your agent's for real.",
+      "fonte": "Lab piece: <a href=\"https://inematds.github.io/prof2030-lab/pecas/painel/\">Hora dashboard</a> (F11).",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Hora's dashboard",
+          "min": "30 min",
+          "texto": "Open the lab panel and write, for each of the 4 columns, what it measures and what it does not show. Then build Hora's panel from the template, using the baseline numbers from this lesson, and fill in the indicator sheet for number 4 (autonomy) with the pair that watches it.",
+          "pronto": "the 4 columns of the lab panel have \"measures\" and \"does not show\"; the panel has the 5 indicators with numerator, denominator, baseline with n, limit with action, and owner; critical errors appear outside any percentage; and the autonomy sheet says which indicator watches it."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Your agent's panel",
+          "min": "45 min",
+          "dias": "4 semanas de coleta",
+          "texto": "Build your agent's panel with the 5 indicators. Write down where each number comes from and who pulls it. Start the 4-week baseline collection, changing nothing in the agent during that period, and mark everything from before as estimated.",
+          "pronto": "the panel is saved with the 5 sheets; each current value is marked as observed (with n and period) or estimated (with the source); the date the 4 weeks end is on the calendar; and the prompt \"how this indicator misleads\" has been run and answered."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick test",
+      "sub": "5 questions. The explanation appears after your attempt.",
+      "perguntas": [
+        {
+          "p": "Hora's conversations rose from 702 to 901 per week. What does that prove?",
+          "opcoes": [
+            "That volume went up, and nothing about accuracy, cost, or people's work",
+            "That Hora is paying for itself, because it serves far more people per week than in September",
+            "That satisfaction rose too, since more customers are turning to Hora"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "Volume rises for many reasons, including too many discounts. To govern the agent, the number has to change when the agent makes mistakes."
+        },
+        {
+          "p": "The quarter's goal is to raise Hora's autonomy from 75% to 90%. What is the risk?",
+          "opcoes": [
+            "None, because higher autonomy always frees the team to sell",
+            "Juliana being left without work and having to change roles in the company",
+            "AI cost rising a lot, because Hora starts doing more on its own",
+            "Getting there with Hora no longer asking for approval when it should"
+          ],
+          "certa": 3,
+          "ref": "diagrama",
+          "explica": "It's the indicator that improves when the agent gets worse. It needs a pair that watches it: quality in the sample and critical errors."
+        },
+        {
+          "p": "Which of these is an honest baseline for Hora?",
+          "opcoes": [
+            "The numbers from before July, rebuilt from memory by the team",
+            "The market average for sales agents, taken from a report",
+            "Four measured weeks of the current version, with the earlier period as estimated"
+          ],
+          "certa": 2,
+          "ref": "passos",
+          "explica": "You don't invent a past that was never measured. The baseline becomes the measured present, against which every change will be compared."
+        },
+        {
+          "p": "Why use the median and p95 for time, instead of the average?",
+          "opcoes": [
+            "Because one stuck request pulls the average up and hides the typical case",
+            "Because the average is harder to calculate in an ordinary spreadsheet",
+            "Because the agent's vendor requires that format in the contract"
+          ],
+          "certa": 0,
+          "ref": "diagrama",
+          "explica": "The median shows the typical case, and p95 keeps the stuck ones from disappearing. Requests waiting for approval show up in p95."
+        },
+        {
+          "p": "This week's sample had 39 correct out of 40 and one critical error. What does the panel look like?",
+          "opcoes": [
+            "Quality 97.5%, and the critical error only goes into the end-of-month report, with the others",
+            "Quality 97.5% and 1 critical error beside it, which triggers the written action",
+            "Quality 100%, because the critical case was fixed in time"
+          ],
+          "certa": 1,
+          "ref": "codigo",
+          "explica": "The critical error is counted separately and has its own action: the status goes back to yellow and opens an incident. A high percentage does not cancel the alarm."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Five fractions",
+          "texto": "Quality, time, cost, autonomy, and intervention, each with a denominator."
+        },
+        {
+          "t": "Critical errors apart",
+          "texto": "Counted outside the averages, with its own action."
+        },
+        {
+          "t": "Baseline",
+          "texto": "Four weeks measured now; the earlier period only as estimated."
+        },
+        {
+          "t": "Limit and pair",
+          "texto": "Every indicator has a limit with an action and another indicator that watches it."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Horizonte Lab: the panel without a baseline (F11)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/painel/",
+          "icone": "grafico"
+        },
+        {
+          "t": "G2 · Baseline and goal (the process indicators)",
+          "href": "https://inematds.github.io/gestao-ia-processos-v72/aulas/linha-de-base/",
+          "icone": "alvo"
+        },
+        {
+          "t": "G4 · What it costs to produce the outcome (the R$ 6.68 calculation)",
+          "href": "https://inematds.github.io/gestao-ia-recursos-v72/aulas/custo/",
+          "icone": "grafico"
+        }
+      ]
+    }
+  ]
+}

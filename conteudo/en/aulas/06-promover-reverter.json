@@ -1,0 +1,430 @@
+{
+  "slug": "promover-reverter",
+  "num": 6,
+  "menu": "Promote",
+  "titulo": "Promote and roll back",
+  "titulo_curto": "Promote and roll back",
+  "minutos": 20,
+  "lead": "Hora v2.2 won the test and was promoted. A week later, logistics changed the delivery day for one route and the agent's table went stale. The conversations handled by Juliana stayed low, but missed delivery-time promises went over the limit. Promoting and rolling back are planned steps: in this lesson you write both before you need them.",
+  "objetivo": "treat promotion and rollback as planned steps: promote with a written way back, and roll back by the trigger, with no hunt for someone to blame.",
+  "competencias": [
+    "promover-com-janela-de-vigia",
+    "escrever-gatilho-de-reversao",
+    "reverter-sem-caca-ao-culpado"
+  ],
+  "aprende": [
+    {
+      "t": "What comes with a promotion: phases, watch, and a trigger to go back"
+    },
+    {
+      "t": "Calculate the trigger so you don't roll back by chance"
+    },
+    {
+      "t": "Roll back fast, warning first and keeping the version"
+    },
+    {
+      "t": "The version history and the cycle's own authority limit"
+    }
+  ],
+  "hero_alt": "In a glass room, the manager points at a screen where a red line climbs next to a green one, while the company owner listens closely.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From promotion to the next candidate",
+      "sub": "Promoting is not the end of the cycle. Click each step.",
+      "volta": "Kept or rolled back, the lesson goes into the history and feeds the next hypothesis",
+      "nos": [
+        {
+          "icone": "check",
+          "titulo": "Validated",
+          "sub": "B won",
+          "detalhe": "The candidate passed all 30 cases and the pilot (lesson 5). It is not the official version yet: it still needs a decision from someone who did not propose it, and a written rollback plan."
+        },
+        {
+          "icone": "seta",
+          "titulo": "Promoted",
+          "sub": "with a rollback plan",
+          "forte": true,
+          "detalhe": "It becomes the official version, by logged decision. Written down with the promotion: the watch window, the rollback trigger with a number, who decides, how to go back, and where the previous version is kept."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Watch",
+          "sub": "two weeks",
+          "detalhe": "In the first weeks after promotion, the guardrails get checked more often. The pilot ran only a few weeks; the full operation can bring situations the pilot never saw."
+        },
+        {
+          "icone": "portao",
+          "titulo": "Trigger",
+          "sub": "written number",
+          "detalhe": "If a guardrail goes past the limit written at promotion, or if there is a critical error, the version rolls back. The limit already allows for normal week-to-week variation, so you don't roll back by chance."
+        },
+        {
+          "icone": "voltar",
+          "titulo": "Roll back",
+          "sub": "and investigate",
+          "detalhe": "The previous version comes back by the written steps, with notice beforehand to the people affected. Then come the cause, the fix, and a new candidate, which goes through the 30 cases and the pilot again."
+        }
+      ],
+      "legenda": "AI Management Area, rule 3: promoting and rolling back are steps, not accidents. Horizonte numbers: fictional, for study, in relative weeks."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Four rules for promoting and going back",
+      "sub": "G2 put the process under version control and G3 promoted autonomy actions. Here the version is that of the agent package (prompt, context, model, tools) that came out of a LOOP-R cycle.",
+      "passos": [
+        {
+          "titulo": "The promotion carries the rollback plan",
+          "sub": "written beforehand, not in a panic",
+          "texto": [
+            "Carlos approved v2.2 in week 7 with the rollback plan already written: a watch window of two weeks; a trigger of missed delivery-date promises above 3.4% in a week, or one critical error; who decides, Patrícia; how to go back, Rafael points Hora to v2.1 within 2 hours.",
+            "Deciding the rollback after the problem hits is deciding in a panic, and it almost always turns into an argument about blame."
+          ],
+          "exemplo": {
+            "rot": "Rule",
+            "texto": "Promoting needs approval from someone who did not propose it. Rolling back by the written trigger is the duty of whoever operates it, and it does not wait for a meeting."
+          }
+        },
+        {
+          "titulo": "The trigger allows for chance",
+          "sub": "not every dip is a decline",
+          "texto": [
+            "Missed promises are a rare event: across 160 delivery-date conversations a week, the rate moves on its own. The trigger adds two standard errors for the week to the pilot rate (1.5%): 2 × √(0.015 × 0.985 ÷ 160) ≈ 1.9 points. Limit: 3.4%.",
+            "So a week with 4 missed promises (2.5%) does not roll back; a week with 7 (4.4%) does. It is the same calculation LOOP-R uses for tolerance."
+          ],
+          "exemplo": {
+            "rot": "Counterexample",
+            "texto": "In the LOOP-R example, 6 complaints against 1, out of 300 per version, with zero tolerance, threw out a good idea by chance."
+          }
+        },
+        {
+          "titulo": "Roll back fast, with no one to blame",
+          "sub": "what happened in week 8",
+          "texto": [
+            "In week 8, logistics changed the delivery day for the Sorocaba route and the table was not updated. Missed promises: 7 of 158 (4.4%), above 3.4%. The conversations taken over by Juliana stayed at 19.0%: the target was doing fine, the guardrail fell.",
+            "Patrícia decided by the trigger; Juliana was told beforehand; Rafael pointed back to v2.1 within 2 hours; v2.2 was kept in storage. Carlos was informed with the number."
+          ],
+          "exemplo": {
+            "rot": "A cause, not someone to blame",
+            "texto": "The table had no expiry date and no notice for route changes. The fix is in the document (owner, expiry, notice), not in Valdir."
+          }
+        },
+        {
+          "titulo": "Version history and the cycle's authority limit",
+          "sub": "the loop has a level too",
+          "texto": [
+            "Each version gets one line in the history: what changed, why, who approved it, the status. The version that was rolled back is not erased; it becomes a memory of what did not work and why.",
+            "The cycle itself has an authority limit. In LOOP-R, L0 only proposes; L1 promotes with one person's approval for each change; L2 promotes on its own, and only after at least five promotions at L1 with no rollbacks. Horizonte is at L1."
+          ],
+          "exemplo": {
+            "rot": "Next step",
+            "texto": "v2.3: the same table, with Valdir as owner, a weekly expiry date, and a notice for route changes. It goes back through the 30 cases and a new pilot."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The promotion log, the rollback log, and the version history. The tab next to this one shows Horizonte's.",
+      "blocos": [
+        {
+          "rot": "Promotion log",
+          "icone": "seta",
+          "conteudo": "PROMOTION · agent <name> · from v<current> to v<candidate> · LOOP-R cycle no. <...>\nProposed by: <name> · Approved by (not the proposer): <name> on <date>\nDecision card attached: [ ] yes\n\nPHASES: <a slice first, then everyone, or everyone at once, and why>\nWATCH WINDOW: <n weeks> · guardrails checked <how often>, by <name>\n\nROLLBACK TRIGGER (written now)\n  <guardrail> above <limit> in <period>\n  limit calculation: <pilot rate> + 2 × sqrt(p × (1 - p) ÷ <N for the period>) = <...>\n  or: 1 critical error\nWHO DECIDES THE ROLLBACK: <name> · without waiting for approval\nHOW TO GO BACK: <steps, who does each one, in how long>\nWHO IS TOLD BEFOREHAND: <names> · PREVIOUS VERSION KEPT AT: <where>"
+        },
+        {
+          "rot": "Rollback log",
+          "icone": "voltar",
+          "conteudo": "ROLLBACK · agent <name> · from v<promoted> to v<previous> · <date and time>\nTrigger that fired: <indicator> = <value> (<n> of <N>) · written limit: <...>\nTarget of the change in the same week: <value> (for the log, not for deciding)\nDecided by: <name> · notified beforehand: <names> · executed by: <name> in <time>\nRolled-back version kept at: <where>\n\nLIKELY CAUSE: <what changed in the world or in the agent>\nPROPOSED FIX: <...> · new candidate: v<...> · back to the 30 cases and the pilot: <dates>\nLESSON FOR THE HISTORY: <one sentence>"
+        },
+        {
+          "rot": "Agent version history",
+          "icone": "memoria",
+          "conteudo": "HISTORY · agent <name> · owner: <name> · cycle authority limit: [ ] L0 proposes [ ] L1 a person approves each change [ ] L2 promotes on its own\n\n| Version | What changed | Why (evidence) | Approved by | Status | Date |\n|---|---|---|---|---|---|\n| <v> | <...> | <...> | <name> | in use / kept / rolled back / proposed | <...> |\n\nRule: no row is ever deleted. A rolled-back version stays with the reason.\nL2 only after 5 promotions at L1 with no rollback."
+        },
+        {
+          "rot": "Prompt · review the rollback plan",
+          "icone": "chat",
+          "conteudo": "You are a change reviewer. Below is the promotion record for a new\nversion of an AI agent. Do not decide whether the promotion is good. Point out:\n\n1. Whether the rollback trigger has a number, a period and the math behind the limit.\n2. Whether the limit is so tight that normal variation sets it off, or so\n   wide that it never fires.\n3. Whether who decides the rollback, the steps and the time are written down.\n4. Who would be affected by the rollback and is not on the notified list.\n\nRecord:\n\"\"\"<paste>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Hora's promotion and rollback",
+            "html": "<p><b>Hora v2.1 → v2.2 → v2.1</b> · Horizonte, fictional study company · relative weeks</p><ul><li><b>Week 7, promotion:</b> proposed by Patrícia, approved by Carlos with the decision card from cycle 0001. All conversations on v2.2. Watch window of 2 weeks.</li><li><b>Trigger:</b> missed delivery-date promises above 3.4% in a week (1.5% from the pilot + 1.9 points), or 1 critical error. Decides: Patrícia. Rollback: Rafael points it back to v2.1 within 2 h. Notified beforehand: Juliana.</li><li><b>Week 8, rollback:</b> 7 of 158 promises missed (4.4%). Taken over by Juliana: 30 of 158 (19.0%). Rolled back in 2 h, v2.2 kept, Carlos informed.</li><li><b>Likely cause:</b> the Sorocaba route changed days and the table had no expiry date or change alert.</li><li><b>Next candidate:</b> v2.3, route table with Valdir as owner, weekly expiry and a change alert.</li></ul>"
+          },
+          {
+            "rot": "Hora's history",
+            "html": "<table><tr><th>Version</th><th>What changed</th><th>Status</th></tr><tr><td>2.0</td><td>G3 dossier: role, constitution, matrix</td><td>kept</td></tr><tr><td>2.1</td><td>Lock: the day's total for the same customer above R$ 5 mil goes to approval (case T-27)</td><td>in use</td></tr><tr><td>2.2</td><td>Route table in the context package (cycle 0001)</td><td>rolled back in week 8: missed promises 4.4% &gt; 3.4%</td></tr><tr><td>2.3</td><td>Route table with an owner, weekly expiry and a change alert</td><td>proposed</td></tr></table><p>Cycle authority limit: L1. No row deleted.</p>"
+          },
+          {
+            "rot": "How to check / common mistakes",
+            "html": "<ul><li><b>Promoting without a trigger.</b> When the problem hits, nobody knows whether to roll back.</li><li><b>A trigger with no math.</b> Too tight, and it rolls back by chance; too wide, and it never fires.</li><li><b>Waiting for a meeting to roll back.</b> Rolling back by the written trigger needs no approval.</li><li><b>Deleting the version that failed.</b> It is the memory of what did not work.</li><li><b>Looking for someone to blame.</b> The question is what changed and what protection was missing.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "simconversa",
+      "titulo": "Simulation: Carlos doesn't want to roll back",
+      "sub": "A simulated conversation for practice. The trigger fired and the owner liked the new version. Answer with what is written in the promotion record.",
+      "personagem": {
+        "nome": "Carlos · owner of Horizonte (simulation)",
+        "papel": "Horizonte Distribuidora, fictional study company"
+      },
+      "inicio": "abre",
+      "falas": {
+        "abre": {
+          "cliente": "Patrícia, I saw in the group that you want to roll Hora back to the old version. Juliana has never had so much free time: the delivery-date conversations she took over dropped from 45% to 18%. Why roll back?",
+          "opcoes": [
+            {
+              "t": "Because the trigger we wrote before promoting fired: missed delivery-date promises went to 4.4% for the week, 7 of 158, and the limit was 3.4%. The target improved, but the guardrail dropped.",
+              "vai": "criterio",
+              "nota": 2,
+              "comenta": "You brought the number, the agreed limit, and kept the target separate from the guardrail. The decision isn't your opinion: it's what was written beforehand."
+            },
+            {
+              "t": "You're right. I'll leave it as it is and ask logistics to let us know when a route changes.",
+              "vai": "fim-mantem",
+              "nota": 0,
+              "comenta": "The trigger written before promoting fired and you ignored it because the target looked good. Customers keep getting promised deliveries that don't happen."
+            },
+            {
+              "t": "Because I got two customer complaints yesterday.",
+              "vai": "criterio",
+              "nota": 1,
+              "comenta": "The complaints are real, but two complaints are not a criterion. That leaves room for Carlos to think it's an overreaction."
+            }
+          ]
+        },
+        "criterio": {
+          "cliente": "But 7 deliveries out of 158 is small. Isn't it just bad luck?",
+          "opcoes": [
+            {
+              "t": "I can't say, but I'd rather not risk it.",
+              "vai": "como",
+              "nota": 1,
+              "comenta": "The decision is right, but without the argument. Next time, Carlos will ask not to roll back."
+            },
+            {
+              "t": "The limit already accounts for chance: it was calculated from the normal variation of a week of about 160 conversations. With 4 missed promises we would not have rolled back; with 7, it was crossed. And for the customer who waited for the delivery, it wasn't bad luck.",
+              "vai": "como",
+              "nota": 2,
+              "comenta": "You showed that Carlos's doubt was already built into the trigger's math, and you reminded him who pays for the mistake."
+            },
+            {
+              "t": "Maybe. Let's wait another month to be sure.",
+              "vai": "fim-espera",
+              "nota": 0,
+              "comenta": "A month with the trigger fired is four weeks of promises that don't get kept. Waiting for more data makes sense before promoting, not after the limit is crossed."
+            }
+          ]
+        },
+        "como": {
+          "cliente": "Okay. And won't rolling back mess everything up? Juliana will be overloaded again.",
+          "opcoes": [
+            {
+              "t": "I'll turn Hora off today and let Juliana handle it until we find the cause.",
+              "vai": "fim-desliga",
+              "nota": 0,
+              "comenta": "v2.1 worked and is kept. Turning everything off swaps a problem on one route for a whole operation at a standstill."
+            },
+            {
+              "t": "Rolling back is the written step: Rafael points Hora to v2.1 within 2 hours, Juliana is notified beforehand and v2.2 is kept. Her workload goes back to the one we already know and have measured.",
+              "vai": "causa",
+              "nota": 2,
+              "comenta": "Rolling back by the plan is fast and predictable: a known version, notice beforehand, nothing deleted."
+            },
+            {
+              "t": "I'll roll back only in the cities with complaints and keep v2.2 in the others.",
+              "vai": "causa",
+              "nota": 1,
+              "comenta": "It sounds careful, but it's a new version nobody has tested. The safe rollback is to the known version."
+            }
+          ]
+        },
+        "causa": {
+          "cliente": "And does the route table idea just die there?",
+          "opcoes": [
+            {
+              "t": "I'll ask Rafael to fix the table today and we promote again tomorrow.",
+              "vai": "fim-pressa",
+              "nota": 1,
+              "comenta": "Fixing it is right; promoting tomorrow without a test repeats the shortcut the cycle exists to prevent."
+            },
+            {
+              "t": "It dies. It was a mistake to try.",
+              "vai": "fim-desiste",
+              "nota": 0,
+              "comenta": "The idea passed the test; what failed was the upkeep of the table. Throwing out the hypothesis means losing what the cycle taught."
+            },
+            {
+              "t": "No. The likely cause is a table with no up-to-date owner: logistics changed Sorocaba's day and nobody touched the document. I'll make Valdir the owner, add weekly expiry and a change alert, run the 30 cases and the pilot again, and bring you the decision card.",
+              "vai": "fim-bom",
+              "nota": 2,
+              "comenta": "You found the cause without looking for someone to blame, fixed the missing protection and gave the decision back to the person who approves, with evidence."
+            }
+          ]
+        },
+        "fim-mantem": {
+          "fim": true,
+          "titulo": "The ignored trigger",
+          "texto": "v2.2 stayed. In the following weeks, more Sorocaba customers waited for deliveries that never came, and the rule to roll back became a suggestion. At the next promotion, nobody will take the trigger seriously."
+        },
+        "fim-espera": {
+          "fim": true,
+          "titulo": "Waiting past the limit",
+          "texto": "Waiting a month with the trigger fired turned a one-route problem into four weeks of broken promises. More data helps you decide to promote; to roll back, the limit is already the decision."
+        },
+        "fim-desliga": {
+          "fim": true,
+          "titulo": "A cure worse than the disease",
+          "texto": "With Hora switched off, Juliana took over everything, the queue grew, and customers in every city waited. The previous version was saved and working: rolling back means returning to the known version, not switching off."
+        },
+        "fim-desiste": {
+          "fim": true,
+          "titulo": "The lesson thrown away",
+          "texto": "The route table was dropped from the idea queue. Juliana went back to handling almost half of the delivery-date conversations, and the company lost an improvement that had won the test. What needed fixing was the upkeep of the document."
+        },
+        "fim-pressa": {
+          "fim": true,
+          "titulo": "Promotion without a test",
+          "texto": "The table was fixed and v2.2 came back the next day, without going through the cases or the pilot. It worked this time, but the next route change will repeat the problem: it lacked an owner, an expiry date, and a notice, and it lacked the test."
+        },
+        "fim-bom": {
+          "fim": true,
+          "titulo": "Roll back without drama, improve with method",
+          "texto": "v2.1 was back in two hours, Juliana was warned beforehand, and Carlos understood the number. The cause became a safeguard in the document, and v2.3 goes into the queue with a test and a card. Promoting and rolling back were steps, not accidents."
+        }
+      },
+      "licao": "A promotion carries its way back, written beforehand. The trigger already allows for chance; when it fires, you go back to the known version, warning people first and saving the new one. After that, a cause in place of a culprit, and a new test before you promote again."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Horizonte's logs are for practice; the promotion and the rehearsed rollback of your agent are for real.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Hora's promotion, rollback, and history",
+          "min": "30 min",
+          "texto": "Using the numbers from this lesson, fill in the promotion log for v2.2 (week 7) and the rollback log for week 8. Redo the trigger calculation. Build Hora's history with versions 2.0 to 2.3 and mark the cycle's authority limit.",
+          "pronto": "the promotion has an approver different from whoever proposed it, a watch window, a trigger with a number and the calculation (1.5% + 1.9 = 3.4%), who decides the rollback, the steps with times, and the people notified; the rollback has the number that fired it (7 of 158), the probable cause, and the next candidate; and the history has 4 lines, none erased."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Your agent's rehearsed rollback",
+          "min": "45 min",
+          "dias": "1 semana",
+          "texto": "For the change in your lesson 5 cycle (or for your agent's next change), write the promotion log with the calculated trigger. Then rehearse the rollback in a test environment or outside business hours: point to the previous version, time it, and check that nothing was lost.",
+          "pronto": "the promotion log is saved with the trigger as a number and the calculation; the rollback was rehearsed once with the time measured; your agent's version history exists; and whoever decides the rollback confirmed in writing that they know this."
+        },
+        {
+          "id": "e3",
+          "titulo": "3 · The conversation with Carlos",
+          "min": "10 min",
+          "texto": "Run the simulation above until you reach the top score. If you get one wrong, read the comment and start over.",
+          "pronto": "the simulation ended on \"Roll back without drama, improve with method\" with 8 of 8 points."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick test",
+      "sub": "4 questions. The explanation appears after your attempt.",
+      "perguntas": [
+        {
+          "p": "After the promotion, v2.2's goal was still great, but a guardrail went past the written limit. Which one counts?",
+          "opcoes": [
+            "The guardrail: the trigger written beforehand says to roll back",
+            "The goal, because the change was made to improve it",
+            "The average of the goal and the guardrail for that week"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "A guardrail exists so that a nice-looking goal does not hide damage. If it drops past the limit, the version rolls back."
+        },
+        {
+          "p": "In a week with 4 unkept promises out of 160 (2.5%), with a limit of 3.4%, what do you do?",
+          "opcoes": [
+            "Roll back, because it got worse compared with the pilot's 1.5%",
+            "Switch off the agent until logistics checks the routes",
+            "Open a new test cycle before deciding anything",
+            "Keep it and keep watching: it is within normal variation"
+          ],
+          "certa": 3,
+          "ref": "passos",
+          "explica": "The limit was calculated so you do not roll back by chance. Rolling back below it is swapping the criterion for anxiety."
+        },
+        {
+          "p": "Who needs to approve a rollback done by the written trigger?",
+          "opcoes": [
+            "Carlos, in a meeting scheduled to discuss with the team whether to roll back or not",
+            "Only the person named to decide the rollback, without waiting for a meeting",
+            "Rafael, who is the one who performs the version swap in the system"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Promoting requires approval from someone who did not propose it; going back to the known version, by the agreed trigger, does not wait for a meeting. Carlos is informed with the number."
+        },
+        {
+          "p": "From when can a LOOP-R cycle promote on its own (L2)?",
+          "opcoes": [
+            "From the first cycle, if the model used is top-of-the-line",
+            "After five promotions at L1 with no rollback",
+            "Never: every promotion always needs a person"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "The cycle itself earns authority limit like an agent: with evidence and one level at a time. Horizonte just rolled back a promotion, so it stays at L1."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Promotion with a way back",
+          "texto": "Watch window, trigger as a number, who decides, and how to roll back, written beforehand."
+        },
+        {
+          "t": "Trigger with a number",
+          "texto": "The pilot rate plus two standard errors for the week: it neither rolls back by chance nor never rolls back."
+        },
+        {
+          "t": "Roll back with no one to blame",
+          "texto": "Known version, warning first, nothing erased; then the cause and a safeguard."
+        },
+        {
+          "t": "History and authority limit",
+          "texto": "Every version is logged; the cycle moves from L1 to L2 only with evidence."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "G2 · Versioned process (change log and process rollback)",
+          "href": "https://inematds.github.io/gestao-ia-processos-v72/aulas/versao/",
+          "icone": "git"
+        },
+        {
+          "t": "G3 · Progressive trust (promote and demote an action's autonomy)",
+          "href": "https://inematds.github.io/gestao-ia-agentes-v72/aulas/confianca/",
+          "icone": "escudo"
+        },
+        {
+          "t": "LOOP-R: promote and roll back in the guide",
+          "href": "https://inematds.github.io/loop-r/guia/",
+          "icone": "voltar"
+        }
+      ]
+    }
+  ]
+}

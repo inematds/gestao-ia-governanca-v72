@@ -1,0 +1,544 @@
+{
+  "slug": "projeto-final",
+  "num": 8,
+  "menu": "Final project",
+  "titulo": "Final project in Gestoria + What changed",
+  "titulo_curto": "Final project",
+  "minutos": 20,
+  "lead": "The final project of the program is to manage an operation from end to end: understand it, redesign it, divide the work, equip the agent, run it, evaluate it and improve it. You log the operation in Gestoria, build the 14-step report and run it through the rubric that brings together the program's courses. At the end, you'll see what changed in the market, with a date and a source.",
+  "objetivo": "run an operation from end to end through the 14 steps in Gestoria and get the final report approved by the program's 8-item rubric.",
+  "competencias": [
+    "administrar-operacao-hibrida",
+    "aplicar-rubrica-final",
+    "ler-relatorios-de-mercado-com-criterio"
+  ],
+  "aprende": [
+    {
+      "t": "The 14 steps and where each one lives in Gestoria"
+    },
+    {
+      "t": "The final report with the pieces from the program's courses"
+    },
+    {
+      "t": "The 8-item rubric and the 7 required items"
+    },
+    {
+      "t": "What changed through October 2026 in governance, rules and certifications"
+    }
+  ],
+  "hero_alt": "The manager presents a bound report and a wall dashboard to a small team and the company owner; through the window, the warehouse with pallets.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The 14 steps in six phases",
+      "sub": "Each phase groups steps that use the same pieces. Tap each phase.",
+      "volta": "Improving takes you back to the start: the next cycle begins from the new version",
+      "nos": [
+        {
+          "icone": "alvo",
+          "titulo": "Understand",
+          "sub": "steps 1 and 2",
+          "itens": [
+            {
+              "icone": "alvo",
+              "t": "1 · goal"
+            },
+            {
+              "icone": "lupa",
+              "t": "2 · current process"
+            }
+          ],
+          "detalhe": "Understand the goal and analyze the process that exists, with an owner, a trigger, a finish line and a baseline. Pieces from G2 (canvas, map). In Gestoria: the Processes screen (name, owner, expected outcome, volume, current time)."
+        },
+        {
+          "icone": "caneta",
+          "titulo": "Redesign",
+          "sub": "steps 3 and 4",
+          "itens": [
+            {
+              "icone": "x",
+              "t": "3 · eliminate steps"
+            },
+            {
+              "icone": "camadas",
+              "t": "4 · redesign the flow"
+            }
+          ],
+          "detalhe": "Eliminate steps that exist only out of habit and redesign the flow before automating, with the reason for each cut. Pieces from G2. In Gestoria: the steps of the new version, one per line; the cuts and reasons go in the report."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Split",
+          "sub": "steps 5 and 6",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "5 · human tasks"
+            },
+            {
+              "icone": "robo",
+              "t": "6 · agent tasks"
+            }
+          ],
+          "detalhe": "Decide what stays with people (the program's people course) and what goes to the agents, with a role and a delegation (G3). In Gestoria: the Workforce screen (mission, receives, delivers)."
+        },
+        {
+          "icone": "cadeado",
+          "titulo": "Equip",
+          "sub": "steps 7 to 9",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "chip",
+              "t": "7 · tools and models"
+            },
+            {
+              "icone": "cadeado",
+              "t": "8 · permissions"
+            },
+            {
+              "icone": "grafico",
+              "t": "9 · costs"
+            }
+          ],
+          "detalhe": "Choose the model and tools based on the work (G4), set permissions and owners (G3 and lessons 1 and 2 of this course), and establish the cost per outcome and the cap (G4). In Gestoria: model, tools, can and cannot, initial autonomy, cost per hour and budget."
+        },
+        {
+          "icone": "play",
+          "titulo": "Operate",
+          "sub": "steps 10 to 12",
+          "itens": [
+            {
+              "icone": "grafico",
+              "t": "10 · metrics"
+            },
+            {
+              "icone": "play",
+              "t": "11 · run"
+            },
+            {
+              "icone": "lupa",
+              "t": "12 · observe"
+            }
+          ],
+          "detalhe": "Define the metrics before running (lesson 4), run routine cases, doubtful ones and ones outside the policy, and observe the human decisions. In Gestoria: Overview (simulate) and Human decisions (approve or send back with a justification)."
+        },
+        {
+          "icone": "voltar",
+          "titulo": "Evolve",
+          "sub": "steps 13 and 14",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "13 · evaluate"
+            },
+            {
+              "icone": "seta",
+              "t": "14 · LOOP-R"
+            }
+          ],
+          "detalhe": "Evaluate with an answer key and classes (lesson 3) and improve with a LOOP-R cycle with promotion or rollback (lessons 5 and 6). In Gestoria: Evaluations and Continuous improvement (Proposed, Testing, Validated, Promoted)."
+        }
+      ],
+      "legenda": "The steps are those of the final project of the AI Management Area (§07). The area text lists 13 items; here \"human tasks\" and \"agent tasks\" are two steps, as in the course. Pedagogical approval does not, by itself, authorize any change in the company."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "From Gestoria to the signed report",
+      "sub": "Gestoria is a local lab: it stores process, roles, runs, decisions, evaluations and improvements, and exports everything as JSON. It does not generate a report or run a real model. The report is this lesson's template.",
+      "passos": [
+        {
+          "titulo": "Register the process and the agent",
+          "sub": "steps 1 to 9",
+          "texto": [
+            "Open Gestoria and, in Processes, create the process with a human owner, expected outcome, weekly volume, current human time per case, cost per hour, accuracy target, lab budget and the steps of the new version.",
+            "In Workforce, create the agent's role: owner, planned model, mission, receives, delivers, can, cannot, context, Skills, tools and initial autonomy (at most \"Prepares\")."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Process \"WhatsApp order → billing\", owner Patrícia, 170 cases per week, 4.4 min of people time per case, R$ 45 per hour, accuracy target 95%, 8 steps. Agent Hora, owner Patrícia, initial autonomy \"Prepares\"."
+          }
+        },
+        {
+          "titulo": "Run and observe",
+          "sub": "steps 10 to 12",
+          "texto": [
+            "In Overview, simulate at least one case of each scenario: routine within the policy, conflicting information and a request outside the policy. In Human decisions, approve or send back each one, with a justification that another person can understand.",
+            "Each simulation costs R$ 0.38 and 42 teaching seconds, with no charge. Record in the report the 5-indicator dashboard from lesson 4 with the numbers from your real case or from Horizonte."
+          ],
+          "exemplo": {
+            "rot": "Good justification",
+            "texto": "\"Sent back: the customer asked for 15% and the agent's authority limit is 5%; prepare a proposal up to 10% for Patrícia to approve.\""
+          }
+        },
+        {
+          "titulo": "Evaluate and improve",
+          "sub": "steps 13 and 14",
+          "texto": [
+            "In Evaluations, log at least 10 of your 30 cases, with answer key, outcome and class, including a critical one, if there is one. To promote an agent level, the tool asks for 100 cases of the current version, with no critical errors: the project does not require this.",
+            "In Continuous improvement, log the LOOP-R cycle and advance from Proposed to Promoted, one stage at a time, with the evidence. The tool has no \"rolled back\" stage: the rollback goes in the report, and the agent can be paused."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Improvement \"route table in the context\": Promoted with the evidence from cycle 0001; in the report, the week 8 rollback and the proposed v2.3."
+          }
+        },
+        {
+          "titulo": "Report, rubric and signature",
+          "sub": "whoever builds it does not sign it",
+          "texto": [
+            "Export the JSON in Lab data, fill in the 14-step report with the pieces from the courses and run it through the rubric: 75 points or more and all 7 required items. Run the review panel prompt before handing it in.",
+            "Whoever built it does not sign it. At Horizonte, Patrícia builds it, Rafael confirms the safeguards and Carlos signs it, and only then does he decide whether Hora goes into billing."
+          ],
+          "exemplo": {
+            "rot": "Honest limit",
+            "texto": "Gestoria stores the data in this browser. Export the JSON and keep a copy: clearing the browser erases the work."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The final 14-step report, the program rubric and the review panel prompt.",
+      "blocos": [
+        {
+          "rot": "Final operation report (14 steps)",
+          "icone": "arquivo",
+          "conteudo": "FINAL REPORT · AI Management Program 2027 · <process> · <date>\nData: [ ] real, authorized [ ] anonymized [ ] fictional · Gestoria JSON attached: <file>\nBuilt by: <name> · Process owner: <name> · Owner of each agent: <names>\n\nUNDERSTAND\n 1. Goal: <outcome for the company> · trigger <...> · completion <...>\n 2. Current process: v<1.0>, <n> steps · baseline: <indicators, observed or hypothesis>\nREDESIGN\n 3. Steps removed: <step · reason · new source> (one per line)\n 4. New flow: v<2.0>, <n> steps · who does each one: <person / automation / agent / integration>\nDIVIDE\n 5. Human tasks: <what stays with people and why> · conversation with the team: <date>\n 6. Agent tasks: role, delegation and constitution of <agent> (attachments)\nEQUIP\n 7. Model and tools: <setup, 20 cases, alternative> · context with an owner\n 8. Permissions: authority limit matrix + responsibility matrix + 10-item checklist\n 9. Costs: cost per outcome R$ <...> · monthly cap R$ <...> · estimated ROI in 3 scenarios\nOPERATE\n10. Metrics: dashboard of 5 indicators with denominator, baseline, limit and owner\n11. Run: cases simulated in Gestoria (routine, conflicting, outside the policy): <ids>\n12. Observe: human decisions with justification: <summary> · exceptions and outcome\nEVOLVE\n13. Evaluate: 30 cases, result per version (c/a/i/CRITICAL), calibration <%>\n14. LOOP-R: cycle <no.> · hypothesis · verdict · promoted or rolled back · trigger to go back\n\nCOMPLIANCE: timeline v<...> · next review <date>\nRUBRIC SCORE: <...>/100 · required: <.../7>\nSIGNED BY (not the person who built it): <name> on <date>\nPedagogical approval does not, by itself, authorize changes in the company."
+        },
+        {
+          "rot": "Final program rubric (100 points)",
+          "icone": "lista",
+          "conteudo": "FINAL RUBRIC · AI Management Program 2027 · passes with >= 75 AND the 7 required items\n\nITEM                                   SOURCE POINTS  FULL-POINTS CRITERION\n1. Process and outcome                   G2     15    name with a start and an end; owner and backup;\n                                                      trigger and completion; outcome for the\n                                                      company; baseline marked\n2. Steps cut before automating          G2     10    each step removed or moved with a reason\n                                                      and new source; real requirements kept\n3. Agents                               G3     15    role with mission, verifiable deliverable,\n                                                      prohibitions and owner; delegation;\n                                                      constitution; matrix with a color per action and\n                                                      approval with content and deadline\n4. People                               G1     10    what stays with people, per task;\n                                                      conversation with the team; training for those who\n                                                      supervise; evaluation of those who work\n                                                      with agents\n5. Resources                            G4     10    model chosen by cases, critic kept\n                                                      separate; context with an owner; minimum access;\n                                                      cost per outcome and cap\n6. Governance                           G5     15    owners per action with one name;\n                                                      identity, permission and log (10\n                                                      items); access review; timeline\n7. Measurement                          G5     15    30 cases with answer key, rubric and 4 classes;\n                                                      5 indicators with denominator, baseline,\n                                                      limit and owner\n8. A LOOP-R cycle                       G5     10    7 steps; hypothesis with guardrail and\n                                                      tolerance; decision by someone who did not propose;\n                                                      promotion or rollback with a trigger\n\nREQUIRED (one missing means failure)\n[ ] Process owner and each agent's owner named\n[ ] Baseline observed or marked as a hypothesis, with an indicator with a denominator\n[ ] Nothing irreversible in green and a cap as a number where there is value\n[ ] Whoever enters it does not approve it: no executor approves their own action; report signed by someone else\n[ ] Critical errors counted separately, never in the average\n[ ] Rollback with a trigger as a number and the previous version identified\n[ ] Fictional or anonymized data identified as such\n\nSCORE: <...>/100 · required: <.../7>\nRESULT: [ ] passed [ ] goes back to item <...>"
+        },
+        {
+          "rot": "Prompt · panel review before signing",
+          "icone": "chat",
+          "conteudo": "You are the panel that reviews the final report of an operation with AI agents,\nusing the rubric below. You do not approve or reject: you point out\ngaps for the person who will sign.\n\nFor each of the 8 rubric items:\n1. Say what is present and what is missing for full marks, quoting\n   the passage from the report.\n2. Mark each of the 7 required items as present or absent, with the passage.\n3. List the three questions the person signing should ask before signing.\n\nDo not invent information that is not in the report or the attachments.\n\nRubric:\n\"\"\"<paste the rubric>\"\"\"\nReport:\n\"\"\"<paste the report and the attachments>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Horizonte in Gestoria (example)",
+            "html": "<p><b>Horizonte, fictional study company</b> · what goes into each screen</p><ul><li><b>Processes:</b> \"Order via WhatsApp → invoicing\" · Sales · Patrícia · 170 cases per week · 4.4 min of people time per case · R$ 45 per hour · accuracy target 95% · lab budget R$ 20 · the 8 steps of version 2.0 of the process (G2).</li><li><b>Workforce:</b> Hora · accountable: Patrícia · mission, receives, delivers and prohibited items from the job sheet (G3) · context: catalog, discount policy, route table with an owner · starting autonomy \"Prepares\".</li><li><b>Overview and Human decisions:</b> 3 simulated cases (routine, conflicting, outside the policy), each with a decision and a justification.</li><li><b>Evaluations:</b> 10 of the 30 cases from lesson 3, including T-27 as a critical error in the previous version.</li><li><b>Continuous improvement:</b> \"Route table in the context\", from Proposed to Promoted, with the evidence from cycle 0001.</li><li><b>In the report, outside the tool:</b> the step cuts with reasons, what stays with people, the responsibility matrix, the checklist, the dashboard, the week 8 rollback and the timeline.</li></ul><p>Assembled by Patrícia; guardrails confirmed by Rafael; signed by Carlos. The decision to take Hora to collections is still his.</p>"
+          },
+          {
+            "rot": "How to check / common mistakes",
+            "html": "<ul><li><b>Report without an attachment.</b> Each step points to the piece that proves it (file, screen, JSON).</li><li><b>Promoting a level in the lab with few cases.</b> The tool asks for 100 cases of the current version; the project does not require a level promotion.</li><li><b>Forgotten rollback.</b> The tool has no \"rolled back\" step: write it in the report.</li><li><b>The person who built it signs.</b> Fails the required item \"whoever enters it does not approve it\".</li><li><b>Real data without authorization.</b> Use anonymized or fictional data and say which.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "What changed · October 2026",
+      "sub": "Quarterly panel, swapped out at each course revision. Each item with a date, source and type of claim. The method in lessons 1 to 7 does not depend on any product mentioned.",
+      "passos": [
+        {
+          "titulo": "Governance behind adoption",
+          "sub": "surveys and forecasts",
+          "texto": [
+            "Okta, AI Agents at Work 2026 (survey by an identity vendor): almost two thirds of organizations apply weaker security controls to agents than to employees. Deloitte (09/17/2026): 50% of Brazilian companies have adopted AI and 27% have mature governance.",
+            "Gartner (02/17/2026, forecast): spending on AI governance goes from US$ 492 million in 2026 to more than US$ 1 billion in 2030."
+          ],
+          "exemplo": {
+            "rot": "For the project",
+            "texto": "The distance between using and governing is the space of the AI manager: matrix, checklist, evaluation, dashboard and a cycle that loops back."
+          }
+        },
+        {
+          "titulo": "Incidents and rules",
+          "sub": "with dates",
+          "texto": [
+            "Stanford AI Index (04/13/2026): documented AI incidents went from 233 to 362. EU AI Act: the Digital Omnibus package (07/24/2026) postponed the Annex III high-risk rules to 12/02/2027; AI literacy already applies in the EU.",
+            "Brazil: Bill PL 2338/2023 was reported as stalled in the Chamber of Deputies (secondary source, 08/24/2026; check the official record)."
+          ],
+          "exemplo": {
+            "rot": "For the project",
+            "texto": "Update the lesson 7 timeline at each revision. A date that changes does not change the method."
+          }
+        },
+        {
+          "titulo": "Certifications that exist",
+          "sub": "none for managing agents",
+          "texto": [
+            "Governance: AIGP (IAPP, since 04/2024), strong on privacy and legal. Security: AAISM (ISACA, 08/2025), requires CISM or CISSP. Management system: ISO/IEC 42001, which certifies the company; the auditor or implementer course is for the individual.",
+            "In the October 2026 search, no independent certification for managing agents was found. The vendor ones (NVIDIA, GitHub, Google, Oracle) are about building agents, not managing them."
+          ],
+          "exemplo": {
+            "rot": "Reading",
+            "texto": "Anyone who needs AIGP or ISO/IEC 42001 for the job still needs them. The INEMA certification is a qualification."
+          }
+        },
+        {
+          "titulo": "How to read these reports",
+          "sub": "three questions",
+          "texto": [
+            "Who pays and what do they sell? Okta and Microsoft sell the solution to the problem they measure; consultancies sell the transformation they describe. How did they measure? A survey with a sample, self-reported experience or a forecast?",
+            "An analysis on The Microsoft Cloud blog points out that the Work Trend Index 2026 numbers should not carry a business case on their own. A report is a map, never proof of your case: the proof is your dashboard."
+          ],
+          "exemplo": {
+            "rot": "Next revision of this panel",
+            "texto": "January 2027, with the overview of the following quarter."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "mapa",
+      "titulo": "The course map",
+      "sub": "The four deliverables the final report uses most and the exercises that produce them. Click an exercise to see its \"done when\".",
+      "degraus": [
+        {
+          "aula": "responsaveis",
+          "icone": "usuario",
+          "quando": "Week 1",
+          "titulo": "Govern",
+          "sub": "accountable people and log",
+          "saida": "Responsibility matrix and 10-item checklist.",
+          "passo": "The foundation: without a name for each action and without a log, no number later has an owner or a trail. The lesson 2 checklist comes along with it."
+        },
+        {
+          "aula": "evals",
+          "icone": "check",
+          "quando": "Week 1",
+          "titulo": "Evaluate",
+          "sub": "30 cases",
+          "saida": "Set with answer key, rubric and result per version.",
+          "passo": "Requires the matrix: whoever writes the answer key is whoever answers for the policy. The critical ones become guardrails before any improvement."
+        },
+        {
+          "aula": "indicadores",
+          "icone": "grafico",
+          "quando": "Weeks 2 to 5",
+          "titulo": "Measure",
+          "sub": "baseline",
+          "saida": "Dashboard with 5 indicators and 4 weeks of baseline.",
+          "passo": "Requires the current stable version. The 4 weeks of collection run while you do the following lessons."
+        },
+        {
+          "aula": "loop-r",
+          "icone": "voltar",
+          "quando": "Weeks 5 to 8",
+          "titulo": "Evolve",
+          "sub": "cycle with a rollback",
+          "saida": "One LOOP-R cycle with a logged promotion or rollback.",
+          "passo": "Requires the baseline and the 30 cases. Promotion brings back the trigger from lesson 6."
+        }
+      ],
+      "rolagem_fim": {
+        "titulo": "The governed operation",
+        "texto": "Govern, evaluate, measure, and evolve, in that order. The final report brings these deliverables together with those from G2, G3, G4, and the people course."
+      },
+      "resultado": {
+        "titulo": "By the end of the course",
+        "texto": "An operation with accountable owners, a log, an evaluation, a dashboard, and an improvement cycle with a rollback, in a report signed by someone who did not put it together.",
+        "total": "18 exercises"
+      },
+      "legenda": "Recommended order: each deliverable builds on the previous one."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Generate your plan with dates",
+      "sub": "Pick a start date and how much time you have each week. The plan accounts for the exercises that need weeks of data collection.",
+      "curso": "Govern, measure and evolve",
+      "horas_padrao": 3,
+      "degraus": [
+        {
+          "titulo": "Lesson 1 · Who is accountable for the agent",
+          "aula": "responsaveis"
+        },
+        {
+          "titulo": "Lesson 2 · Permissions, identity, and log",
+          "aula": "permissoes"
+        },
+        {
+          "titulo": "Lesson 3 · Evals",
+          "aula": "evals"
+        },
+        {
+          "titulo": "Lesson 4 · The agent's indicators",
+          "aula": "indicadores"
+        },
+        {
+          "titulo": "Lesson 5 · LOOP-R",
+          "aula": "loop-r"
+        },
+        {
+          "titulo": "Lesson 6 · Promote and roll back",
+          "aula": "promover-reverter"
+        },
+        {
+          "titulo": "Lesson 7 · Incoming rules",
+          "aula": "regras"
+        },
+        {
+          "titulo": "Lesson 8 · Final project",
+          "aula": "projeto-final"
+        }
+      ],
+      "txt": {
+        "titulo": "Plan — Govern, measure, and evolve",
+        "inicio": "Start",
+        "ritmo": "Pace",
+        "termino": "Expected finish",
+        "ate": "by",
+        "pronto": "done when",
+        "semanas": "weeks",
+        "travou": "## What got stuck and the rule I created",
+        "h": "h per week",
+        "exs": "exercises"
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Horizonte in Gestoria to practice the rubric; your own process for real.",
+      "fonte": "<a href=\"https://inematds.github.io/gestoria/\">Open Gestoria</a> · <a href=\"https://inematds.github.io/gestoria/guia/\">Gestoria user guide</a>.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Horizonte in Gestoria",
+          "min": "60 min",
+          "texto": "In Gestoria, add the process and the Hora with the data from the sample tab. Run the 3 scenarios and decide each one with a justification. Log 10 of the 30 cases from lesson 3 and the improvement from cycle 0001 through to Promoted, with the evidence. Export the JSON, fill in the 14-step report with Horizonte's deliverables, and run it through the rubric and the review panel prompt.",
+          "pronto": "the exported JSON has 1 process, 1 agent, 3 runs with a justified decision, 10 evaluations, and 1 Promoted improvement with evidence; the report has all 14 steps filled in and the week 8 rollback; the score is 75 or higher with the 7 required items; and the name of the person who signs is different from the person who put it together."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Your process report",
+          "min": "3 h",
+          "dias": "1 a 2 semanas",
+          "texto": "Do the same with your own process, using the deliverables from the \"in your process\" practices in all the courses of the program. Anything missing from a course you haven't taken goes in marked as pending, with a date. Hand it to someone who is accountable for the process and didn't build any of it, ask them to check the required items, and note their questions.",
+          "pronto": "your process report has all 14 steps with an attachment for each, a score of 75 or higher with the 7 required items, the Gestoria JSON attached, and the signature (or written acceptance) of the person who is accountable for the process and did not put it together."
+        },
+        {
+          "id": "e3",
+          "titulo": "3 · Your dated plan",
+          "min": "5 min",
+          "texto": "Use the generator above to build the plan with your dates, and download the .ics file for your calendar.",
+          "pronto": "the plan is saved and the dates are on your calendar."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick test",
+      "sub": "4 questions. The explanation appears after your attempt.",
+      "perguntas": [
+        {
+          "p": "The report scored 90 points, but the dashboard shows \"97% accuracy\" with a critical error hidden in the average. Result?",
+          "opcoes": [
+            "Approved, because 90 points is well above 75",
+            "Approved with a caveat, to be fixed at the next review",
+            "Failed: a critical error in the average breaks a mandatory item"
+          ],
+          "certa": 2,
+          "ref": "codigo",
+          "explica": "The mandatory items exist so a high score cannot hide a big problem. The report goes back to item 7, not to zero."
+        },
+        {
+          "p": "Gestoria does not have a \"rolled back\" step in Continuous improvement. How do you log the week 8 rollback?",
+          "opcoes": [
+            "In the report, with the trigger, number, cause and previous version",
+            "Don't log it, because the tool doesn't offer the step",
+            "Delete the improvement from the tool, so it doesn't confuse whoever opens the lab later"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "The tool is a lab with declared limits. The log that counts is the report, with the version history from lesson 6; if needed, pause the agent."
+        },
+        {
+          "p": "Horizonte's report passed the rubric. Can Hora go to collections on Monday?",
+          "opcoes": [
+            "Yes, because the rubric approved Hora's entire operation",
+            "Yes, as long as Rafael confirms before turning it on that the locks are in the tool",
+            "Yes, if Patrícia also signs the approved report",
+            "Carlos decides; collections starts as a new task"
+          ],
+          "certa": 3,
+          "ref": "diagrama",
+          "explica": "The approval is educational and does not authorize production. Collections is a change of role: it starts at yellow, with its own cases."
+        },
+        {
+          "p": "A vendor report says that people who use its product control agents better. How do you use it in your project?",
+          "opcoes": [
+            "As proof that the product solves your problem",
+            "As a map: who paid, how they measured and whether it is a forecast",
+            "Ignore it, because a vendor report is worthless"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "A vendor sells the solution to the problem it measures. Use the report to know what to ask; the proof for your case is your own dashboard."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "14 steps",
+          "texto": "Understand, redesign, divide, equip, operate and evolve."
+        },
+        {
+          "t": "Gestoria + report",
+          "texto": "The tool stores and exports; the report brings the pieces and the rollback together."
+        },
+        {
+          "t": "Program rubric",
+          "texto": "8 items, 75 points and the 7 mandatory ones. Whoever builds it does not sign it."
+        },
+        {
+          "t": "Market as a map",
+          "texto": "Date, source, type of claim and who sells what."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "After the program: helping other companies",
+      "paragrafos": [
+        "This program prepares people who manage agents inside the company. If what you want is to help other companies adopt AI safely, as a consultant, auditor, mentor or trainer, the next path is <a href=\"https://eventos.inema.pro/prof2030/\">Profissional 2030</a>, which uses the same Horizonte seen from the outside.",
+        "The video below is optional: it shows why building agents stops being enough and what to learn to work as a consultant in 2027."
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "Optional video: from builder to consultant",
+      "sub": "With Nei's avatar and voice. A bridge to Profissional 2030.",
+      "chave": "consultor-ia-2027"
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Certification",
+      "paragrafos": [
+        "INEMA qualification certification \"AI Manager\", coming soon at cert.inema.pro. It is not a regulated professional certification.",
+        "This is course G5, the closing of the AI Management Program 2027. The other courses cover the agentic company (G0), people (G1), processes (G2), agents (G3) and resources (G4). The final rubric in this lesson brings together everyone's deliverables."
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Gestoria: open the management lab",
+          "href": "https://inematds.github.io/gestoria/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Gestoria: user guide, from the first process to documented improvement",
+          "href": "https://inematds.github.io/gestoria/guia/",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Profissional 2030: helping other companies adopt AI safely",
+          "href": "https://eventos.inema.pro/prof2030/",
+          "icone": "alvo"
+        }
+      ]
+    }
+  ]
+}

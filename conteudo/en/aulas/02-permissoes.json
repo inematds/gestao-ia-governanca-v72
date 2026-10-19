@@ -1,0 +1,279 @@
+{
+  "slug": "permissoes",
+  "num": 2,
+  "menu": "Permissions",
+  "titulo": "Permissions, identity and log",
+  "titulo_curto": "Permissions and log",
+  "minutos": 18,
+  "lead": "In G3 you decided the color of each action, and in G4 you contracted each tool with minimum access. What's left is to check that this really exists and keeps existing. At Horizonte, the log of actions was turned off \"to save space\" and the email assistant was approved with a \"go ahead\" on WhatsApp. This lesson gives the manager a 10-item checklist to review every month.",
+  "objetivo": "make sure each agent action has its own identity, a permission granted in writing, and a log that says who, when, what and with which version.",
+  "competencias": [
+    "exigir-identidade-propria-do-agente",
+    "conceder-permissao-por-escrito",
+    "conferir-registro-e-revisar-acessos"
+  ],
+  "aprende": [
+    {
+      "t": "Why the agent needs its own identity"
+    },
+    {
+      "t": "Grant permission in writing, with scope and expiration"
+    },
+    {
+      "t": "The log that answers the five questions"
+    },
+    {
+      "t": "The monthly access review and the agent's off switch"
+    }
+  ],
+  "hero_alt": "An IT technician and the sales manager look together at a monitor showing a list of lines and colored switches, some of them turned off; a network rack stands in the background.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Four checks for the manager",
+      "sub": "You don't configure anything: you check that it exists and ask for what's missing. Click each step.",
+      "volta": "Every month, and whenever an agent, tool or person changes",
+      "nos": [
+        {
+          "icone": "usuario",
+          "titulo": "Identity",
+          "sub": "own account",
+          "detalhe": "The agent acts with an account that has its own name, never with a person's password. That way you can tell what was the agent, limit only the agent and turn off only the agent. The credential is kept on the server, outside the prompt and the browser, and you know who has access to it."
+        },
+        {
+          "icone": "cadeado",
+          "titulo": "Permission",
+          "sub": "granted in writing",
+          "forte": true,
+          "detalhe": "Each permission was requested, approved by whoever is accountable for the area (lesson 1) and noted down, with scope and expiration. Nothing comes \"as the tool's default.\" The list of permissions matches the G3 authority limit matrix and the G4 tool contract."
+        },
+        {
+          "icone": "memoria",
+          "titulo": "Log",
+          "sub": "five questions",
+          "detalhe": "Every action leaves a line that answers: who (which agent, which version), when, what, how much and who approved it. The agent and whoever operates it cannot delete or edit the log."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Review",
+          "sub": "someone reads it",
+          "detalhe": "A log nobody reads protects nothing. One person reads a sample every week, gets an alert for critical events and reviews access once a month. When the agent is retired, its credentials are revoked the same day."
+        }
+      ],
+      "legenda": "The technical risks (exposed key, injection, too much permission) and LGPD are covered in the Base course of Profissional 2030; here the subject is what the manager checks. Horizonte: fictional study company."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "What each check asks for",
+      "sub": "Four lab problems, seen from the side of the person accountable for the area.",
+      "passos": [
+        {
+          "titulo": "Own identity",
+          "sub": "the agent doesn't use your password",
+          "texto": [
+            "If Hora acted with Patrícia's login, the log would say it was Patrícia, and turning off Hora would mean locking out Patrícia. Ask for an account in the agent's name in every system it uses.",
+            "The credential for that account stays on the server, kept by IT. You don't need to see it: you need to know who has access to it and when it was last changed."
+          ],
+          "exemplo": {
+            "rot": "In the lab",
+            "texto": "The email assistant's configuration carries the token inside the file itself. Patrícia's request to Rafael: token in a server vault, with the list of who has access."
+          }
+        },
+        {
+          "titulo": "Permission granted, not inherited",
+          "sub": "\"go ahead and turn it on\" is not a grant",
+          "texto": [
+            "The email assistant was given read, send, delete and empty the trash, all approved in one go, because Carlos replied \"go ahead and turn it on\" on WhatsApp. Nobody requested each permission or said how long it was valid.",
+            "A grant has a request, a scope, an approver and an expiration. Whoever requests it doesn't grant it alone, and whoever configures it doesn't decide what is allowed."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Request #3: email assistant reads comercial@ and prepares replies. Scope: only that mailbox. Approves: Patrícia. Valid for: 90 days. Send: with approval for each email. Delete: not allowed."
+          }
+        },
+        {
+          "titulo": "The log of the five questions",
+          "sub": "and that nobody deletes",
+          "texto": [
+            "Hora had the log turned off \"to save database space\". When finance asked who approved the Hotel order, nobody knew. A log is what turns \"I think it was\" into \"this is how it happened\".",
+            "One line per action: who and which version, when, what, how much, who approved. Stored in a place the agent and the operator can't edit, for as long as the company decides."
+          ],
+          "exemplo": {
+            "rot": "Log line",
+            "texto": "Hora v2.0 · 16:44 · created order for Hotel Fazenda Recanto · R$ 28,120 list price, no discount · approved by Patrícia at 17:02, exact order · conversation c-202."
+          }
+        },
+        {
+          "titulo": "Review and turn off",
+          "sub": "the manager's month",
+          "texto": [
+            "Once a month, compare each agent's access list with the matrix. Access that is left over gets removed. Along with that, check a sample of the log and test the off switch.",
+            "Okta (AI Agents at Work 2026, a survey by an identity vendor that sells the solution) treats agent identity as a topic of its own and reports weaker controls for agents than for employees in almost two thirds of organizations."
+          ],
+          "exemplo": {
+            "rot": "Shutdown",
+            "texto": "An agent that is retired has its credentials revoked the same day, like an employee who leaves. The log is kept."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The 10-item checklist, the log line and the monthly review. The next tab shows the checklist applied to Hora.",
+      "blocos": [
+        {
+          "rot": "Agent governance checklist (10 items)",
+          "icone": "check",
+          "conteudo": "GOVERNANCE CHECKLIST · agent: <name> · version <...> · checked by <name> on <date>\nFor each item: yes / no · where you can see it (file, screen, person who confirmed)\n\nIDENTITY\n[ ] 1. The agent acts with its own account, in its own name, in every system.\n[ ] 2. The account has a named human owner (responsibility matrix from lesson 1).\n[ ] 3. The credential stays on the server, outside the prompt, the browser and spreadsheets;\n       who has access to it is listed.\nPERMISSION\n[ ] 4. Each permission was requested and approved in writing, with scope and expiration.\n[ ] 5. The permissions match the authority limit matrix and the tool contract;\n       nothing more.\n[ ] 6. No irreversible action within reach (pay, delete, change price, mass send).\nLOG\n[ ] 7. Every action logged: who and version, when, what, how much, who approved.\n[ ] 8. The agent and whoever operates it can't delete or edit the log; retention period defined.\nREVIEW\n[ ] 9. Someone reads a sample every week and gets an alert for critical events.\n[ ] 10. Access review every month and shutdown tested (pause, revoke, who takes over).\n\nFor each \"no\": owner <name> · deadline <date> · meanwhile: <action stays at yellow / paused>"
+        },
+        {
+          "rot": "Action log line",
+          "icone": "memoria",
+          "conteudo": "LOG · one line per agent action\n\n| Date and time | Agent and version | Action (verb + object) | Amount | Case / conversation | Approval (who, when, on what) | Result |\n|---|---|---|---|---|---|---|\n| <dd/mm hh:mm> | <name vX.Y> | <created order / sent email / gave discount> | <R$> | <id> | <name, time, exact content> or <waived within the limit> | <done / returned / failed> |\n\nQuestions every line answers: who (and in which version), when, what, how much, who approved."
+        },
+        {
+          "rot": "Monthly access review",
+          "icone": "calendario",
+          "conteudo": "MONTHLY REVIEW · <month> · led by <name> with <IT>\n\n| Agent | System | Permission today | In the matrix? | Used this month? | Decision |\n|---|---|---|---|---|---|\n| <name> | <system> | <read / write / send / delete> | yes / no | yes / no | keep / reduce / remove |\n\nLog sample read: <n> lines · findings: <...>\nOff switch tested on <date> · time to stop: <minutes> · who took over: <name>\nCredentials changed on <date> · retired agents with access revoked: <list or none>"
+        },
+        {
+          "rot": "Prompt · check the checklist against the files",
+          "icone": "chat",
+          "conteudo": "You are an IT auditor. Below are the governance checklist of an AI agent\nfilled in by a manager and the agent's configuration files.\nDo not fix the configuration. For each of the 10 items:\n\n1. Say whether the files confirm the manager's \"yes\", citing the field.\n2. Point out any item marked \"yes\" without evidence.\n3. Point out any permission in the files that does not appear in the matrix.\n\nDo not invent fields that are not in the files.\n\nChecklist:\n\"\"\"<paste>\"\"\"\nConfiguration files:\n\"\"\"<paste>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Hora checklist (lab)",
+            "html": "<p><b>Hora · as it is in the lab × Patrícia's request</b> · Horizonte, fictional study company</p><table><tr><th>Item</th><th>Today (lab configuration)</th><th>Request</th></tr><tr><td>1 Own account</td><td>yes: its own WhatsApp number</td><td>also check in the orders app</td></tr><tr><td>2 Owner</td><td><b>no</b>: \"Rafael (outsourced IT)\"</td><td>Patrícia (lesson 1)</td></tr><tr><td>3 Credential</td><td>not reported</td><td>Rafael lists where it is kept and who has access</td></tr><tr><td>4 Written grant</td><td><b>no</b>: tools enabled without a request</td><td>one request per tool</td></tr><tr><td>5 Matches the matrix</td><td><b>no</b>: create order with no limit on amount or discount</td><td>caps in the tool (G3)</td></tr><tr><td>6 Irreversible out</td><td><b>no</b>: no human approval</td><td>paid, price and delete out</td></tr><tr><td>7 Log</td><td><b>no</b>: conversations and actions are not saved</td><td>turn on, with version</td></tr><tr><td>8 Nobody deletes</td><td>not applicable: there is no log</td><td>retention out of Hora's reach</td></tr><tr><td>9 Someone reads</td><td><b>no</b></td><td>Patrícia, 40 conversations per week (lesson 4)</td></tr><tr><td>10 Review and turn off</td><td><b>no</b></td><td>1st Monday of the month; off switch tested</td></tr></table><p>Also in the lab: the model version is set as \"modelo-exemplo\", with no number. Without a version, the log doesn't say which Hora did what.</p>"
+          },
+          {
+            "rot": "How to check / common mistakes",
+            "html": "<ul><li><b>Ticking \"yes\" from memory.</b> Each \"yes\" points to where you can see it: the file field, the screen or the person who confirmed.</li><li><b>Log without a version.</b> Without the agent's version, you can't tell whether the error comes from the new version or the old one.</li><li><b>A log the agent edits.</b> If whoever is being logged can delete the line, it proves nothing.</li><li><b>Review without a date.</b> \"Let's take a look\" is not a review: put it on the calendar.</li><li><b>Shutdown never tested.</b> You only find out the button doesn't work on the day you need it.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "The Hora checklist uses the lab files; the one for your agent uses yours.",
+      "fonte": "Lab pieces: <a href=\"https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/\">Hora configuration</a> and <a href=\"https://inematds.github.io/prof2030-lab/pecas/mcp-email/\">email assistant</a>. Technical risks and LGPD: <a href=\"https://inematds.github.io/prof2030-base/aulas/riscos/\">risks lesson</a> and <a href=\"https://inematds.github.io/prof2030-base/aulas/dados-lgpd/\">data and LGPD lesson</a> from Profissional 2030 Base.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · The Hora and assistant checklist",
+          "min": "30 min",
+          "texto": "Open the Hora configuration and the email assistant configuration in the lab. Apply the checklist to both, marking where each answer shows up. Then write the log line that should exist for the hotel order (conversation c-202), with Patrícia's approval.",
+          "pronto": "both checklists have all 10 items answered yes or no, with the file field that shows each answer; every \"no\" has an owner and a deadline; and the log line for the hotel order answers the 5 questions, with the Hora version."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Your agent's checklist",
+          "min": "40 min",
+          "texto": "Ask IT (or the vendor) for the configuration of the agent you chose in lesson 1 and the list of who has access to the credentials. Apply the checklist, run the check prompt, and put the first monthly access review on the calendar, with the off switch test.",
+          "pronto": "your agent's checklist is saved with all 10 items and the evidence for each; every \"no\" has an owner and a deadline; and the monthly review is on the calendar with a date, attendees, and the off switch test."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick test",
+      "sub": "4 questions. The explanation appears after your attempt.",
+      "perguntas": [
+        {
+          "p": "Why shouldn't the Hora act with Patrícia's login, even if it's faster to set up?",
+          "opcoes": [
+            "Because the system slows down when two users share the same account",
+            "Because Patrícia would have to pay for an extra license in the order app and on WhatsApp",
+            "Because the log would say it was Patrícia, and turning off the Hora would lock her out"
+          ],
+          "certa": 2,
+          "ref": "passos",
+          "explica": "An own identity is what lets you know who did it, give the agent only what it needs, and turn it off without turning off a person."
+        },
+        {
+          "p": "Carlos replied \"go ahead and turn it on\" on WhatsApp, and the email assistant started sending and deleting without approval. What was missing?",
+          "opcoes": [
+            "A written grant for each permission, with scope, approver, and expiration",
+            "A stronger password, changed every month on the business email account",
+            "A more careful AI model that asks before deleting an email",
+            "A clear warning in the prompt asking the assistant to never delete anything"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "\"Go ahead and turn it on\" authorizes turning it on; it doesn't define what the tool can do. Without a written grant, permissions come at the tool's default, which is usually broad. A request in the prompt is a rule in the text, not a lock."
+        },
+        {
+          "p": "Which log line is useful for investigating a wrong order?",
+          "opcoes": [
+            "\"Hora · order created successfully at 4:44 PM, customer served, all good\"",
+            "\"Service completed by the agent on time; customer satisfied; no open issues\"",
+            "\"Hora v2.0 · 16:44 · Hotel Fazenda Recanto · R$ 28,120 · approved: Patrícia 17:02\""
+          ],
+          "certa": 2,
+          "ref": "codigo",
+          "explica": "Only the third answers the five questions: who and which version, when, what, how much, and who approved."
+        },
+        {
+          "p": "You marked \"yes\" on the item \"log of every action,\" but the agent can delete its own lines. Now what?",
+          "opcoes": [
+            "It stays \"yes,\" because the log exists and is turned on",
+            "It stays \"yes\" with a footnote, until someone actually deletes a line",
+            "Just write in the prompt that the agent can't delete",
+            "Item 8 fails: it becomes \"no,\" with an owner and a deadline for the lock"
+          ],
+          "certa": 3,
+          "ref": "codigo",
+          "explica": "The log protects because no one who is in it can change it. Asking the agent through the prompt is a rule in the text; the lock has to be in the system."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Identity",
+          "texto": "Account with the agent's name; credential on the server, with a list of who has access."
+        },
+        {
+          "t": "Permission",
+          "texto": "Requested and granted in writing, with scope, approver, and expiration."
+        },
+        {
+          "t": "Log",
+          "texto": "Who and version, when, what, how much, who approved. No one inside can delete it."
+        },
+        {
+          "t": "Review",
+          "texto": "Weekly sample, access every month, off switch tested, revoke the same day."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Profissional 2030 Base: the risks that sink projects (exposed key, injection, too many permissions)",
+          "href": "https://inematds.github.io/prof2030-base/aulas/riscos/",
+          "icone": "escudo"
+        },
+        {
+          "t": "Profissional 2030 Base: data, LGPD, and vendor choice",
+          "href": "https://inematds.github.io/prof2030-base/aulas/dados-lgpd/",
+          "icone": "cadeado"
+        },
+        {
+          "t": "Horizonte Lab: email assistant (F9)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/mcp-email/",
+          "icone": "enviar"
+        }
+      ]
+    }
+  ]
+}

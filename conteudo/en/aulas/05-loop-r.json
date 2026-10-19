@@ -1,0 +1,324 @@
+{
+  "slug": "loop-r",
+  "num": 5,
+  "menu": "LOOP-R",
+  "titulo": "LOOP-R: the process that learns",
+  "titulo_curto": "LOOP-R",
+  "minutos": 20,
+  "lead": "Hora handles nine hundred conversations a week and, the next week, works the same way. Every run generates evidence that nobody uses. LOOP-R closes the cycle: the run becomes evidence, the evidence becomes a hypothesis, the hypothesis becomes a test, and only what is proven goes into the next version. In this lesson you run a full cycle on Hora, from running to promoting.",
+  "objetivo": "run a complete LOOP-R cycle, from executing to promoting, with a hypothesis, a test against the baseline and a decision from someone who did not propose it.",
+  "competencias": [
+    "rodar-ciclo-loop-r",
+    "escrever-hipotese-testavel",
+    "decidir-com-evidencia-comparada"
+  ],
+  "aprende": [
+    {
+      "t": "The seven steps of the cycle and who does each one"
+    },
+    {
+      "t": "Separate what is strong from what is noise in the evidence"
+    },
+    {
+      "t": "Write the hypothesis with a metric, guardrail and tolerance"
+    },
+    {
+      "t": "Test against the current version and decide with a five-line card"
+    }
+  ],
+  "hero_alt": "Four people standing in front of a whiteboard with arrows drawn in a circle and colorful sticky notes along the cycle.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The LOOP-R cycle",
+      "sub": "Seven steps and the loop back. Click each one to see what happens at Horizonte.",
+      "volta": "Repeat: the next run already uses the new version, and the cycle starts over",
+      "nos": [
+        {
+          "icone": "play",
+          "titulo": "Run",
+          "sub": "current version",
+          "detalhe": "The agent works on the official version and each run becomes a log line (lesson 2). At Horizonte: Hora v2.1, during the 4 weeks of the baseline (lesson 4)."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Observe",
+          "sub": "count",
+          "detalhe": "Count without interpreting: how many cases, of what type, with what result. At Horizonte: 640 of the 3,600 conversations had a question about delivery time or route, and Juliana took over 288 of them (45.0%)."
+        },
+        {
+          "icone": "chat",
+          "titulo": "Critique",
+          "sub": "cause and strength",
+          "detalhe": "Say what failed and how much the evidence can bear. With 640 cases, the evidence is strong; with 12, it would be just an observation to keep. Likely cause: Hora does not have the table of routes by city and day, and answers delivery-time questions with generic text."
+        },
+        {
+          "icone": "caneta",
+          "titulo": "Propose",
+          "sub": "if, then, because",
+          "forte": true,
+          "detalhe": "A testable hypothesis with what must not get worse. IF the route table goes into the context package, THEN the delivery-time conversations taken over by Juliana drop from 45% to 25% or less, BECAUSE Hora answers from the source. Must not get worse: missed delivery-time promises, zero critical errors, AI cost up to R$ 0.35 per conversation."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Experiment",
+          "sub": "A against B",
+          "detalhe": "First the 30 cases from lesson 3, then a pilot with the current version (A) and the candidate (B) side by side, with the number of cases that proves it. At Horizonte: two weeks, alternating days, about 330 delivery-time conversations on each version."
+        },
+        {
+          "icone": "check",
+          "titulo": "Validate",
+          "sub": "one of three",
+          "detalhe": "The answer is one of three: B won, A stays or insufficient sample. Never \"it seems better.\" At Horizonte: taken over dropped from 44.8% to 18.1%, guardrails within tolerance, 30 cases with no regression: B won."
+        },
+        {
+          "icone": "seta",
+          "titulo": "Promote",
+          "sub": "whoever did not propose it",
+          "detalhe": "The candidate version becomes the official one by decision of a person who did not propose the change, with the five-line card in hand. The previous one is kept. At Horizonte: Patrícia proposes, Carlos approves. Lesson 6 covers what comes next."
+        }
+      ],
+      "legenda": "AI Management Area cycle (§05). The course and the LOOP-R videos summarize the same cycle in five letters, with nine assistants. Horizonte numbers: fictional, for study."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "The four decisions of the cycle",
+      "sub": "The cycle has seven steps, but four of them call for a manager's decision.",
+      "passos": [
+        {
+          "titulo": "Strong, moderate or weak",
+          "sub": "before proposing",
+          "texto": [
+            "Not every observation deserves a test. The LOOP-R ruler: with 90 cases or more, the evidence is strong and becomes a priority hypothesis; from 30 to 89, moderate; below 30, weak, and it goes to an \"observed, not tested\" list until more cases pile up.",
+            "A one-off complaint opens a question, not a change. That is the rule of the method: feedback does not change the agent in production."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "640 delivery-time conversations: strong. \"Tuesday sells more,\" with 14 orders: weak, goes to the list."
+          }
+        },
+        {
+          "titulo": "Hypothesis with a guardrail",
+          "sub": "what improves and what must not get worse",
+          "texto": [
+            "Every hypothesis states the change, the metric that should improve, why, and what must not get worse, with the tolerance written down beforehand. Zero tolerance on a rare event throws out good ideas by chance.",
+            "LOOP-R calculates the tolerance as two standard errors of today's rate in the planned sample. For missed promises, 1.2% in 330 conversations, that comes to 1.2 points: the limit is 2.4%."
+          ],
+          "exemplo": {
+            "rot": "Veto",
+            "texto": "Another idea, \"offer free shipping to close the deal,\" was vetoed before the test: it touches price, which is an invariant of the policy."
+          }
+        },
+        {
+          "titulo": "The sample size that proves it",
+          "sub": "do the math before, not after",
+          "texto": [
+            "Before testing, work out how many cases the test needs. With the two-proportion formula that LOOP-R uses (95% confidence, 80% power), seeing a drop from 45% to 25% takes about 89 delivery-time conversations in each version.",
+            "With less than the minimum, the answer is \"insufficient sample,\" even if B looks like it's winning. Stopping early because it's winning is the most common way to promote noise."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Two-week pilot: 330 delivery-time conversations on A and 326 on B, well above 89."
+          }
+        },
+        {
+          "titulo": "Who decides, and with what",
+          "sub": "the five-line card",
+          "texto": [
+            "Whoever proposed it does not approve it. The decision comes on a five-line card: hypothesis, result with N, what was watched, cost and the three options (approve, reject, wait for more data). With no answer by the deadline, the default is not to promote.",
+            "In LOOP-R, the five letters sum up the cycle for anyone just starting: Localizar, Operar, Observar, Propor and Reforçar. They are the same steps, in fewer words."
+          ],
+          "exemplo": {
+            "rot": "Horizonte card",
+            "texto": "Route table in the context · taken over 44.8% → 18.1% (N 330/326) · broken promises 1.2% → 1.5%, within 2.4%; critical 0 · AI R$ 0.31 → R$ 0.33 per conversation · approve, reject or wait."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "Video: the method in five letters",
+      "sub": "Track 2 of the LOOP-R course, with Nei's avatar and voice. Watch it when you can: the lesson doesn't depend on it.",
+      "chave": "loop-r-t2"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The cycle log and the decision card. The tab next to it shows Hora's cycle filled in.",
+      "blocos": [
+        {
+          "rot": "LOOP-R cycle log",
+          "icone": "lista",
+          "conteudo": "LOOP-R CYCLE no. <0001> · process <...> · agent <name> · current version <vX.Y> · owner: <name>\n\n1. RUN   version <vX.Y> from <date> to <date> · cases: <n>\n2. OBSERVE   <what was counted, with N> · source: <log, sample>\n3. CRITIQUE   what failed: <...> · strength: [ ] strong (N >= 90) [ ] moderate (30-89) [ ] weak (< 30)\n              probable cause: <...>\n4. PROPOSE     IF <change> THEN <metric> goes from <...> to <...> BECAUSE <...>\n              WITHOUT WORSENING: <guardrail> (tolerance <...>, calculated as <...>) · critical = 0 · cost <ceiling>\n              vetoed: <ideas and the invariant they violated>\n5. TRY candidate <vX.Y+1> · 30 cases: <c/a/i/CRITICAL> · regressions <...>\n              pilot: <how A and B are split> from <date> to <date> · minimum per variant: <n> (math: <...>)\n6. VALIDATE    A: <result, N> · B: <result, N> · guardrails: <...>\n              verdict: [ ] B won [ ] A stays [ ] insufficient sample\n7. PROMOTE   proposed by <name> · decided by <someone else> on <date>: [ ] approve [ ] reject [ ] wait\n              previous version kept at: <where> · rollback trigger: <lesson 6>\n\nREPEAT: learning recorded at <where> · next hypothesis in the queue: <...>"
+        },
+        {
+          "rot": "Decision card (5 lines)",
+          "icone": "check",
+          "conteudo": "CYCLE <no.> · hypothesis: \"<change in one sentence>\"\nResult:  <metric> <A> → <B>  (N = <nA> vs <nB>, minimum <n>)\nWatched:    <guardrail 1> <A> → <B> (limit <...>) · critical <n> · 30 cases: regressions <n>\nCost:      <cost of the test and effect on cost per outcome>\nDecision:    [approve]  [reject]  [wait for more data]  · decides: <name, not whoever proposed it> by <date>"
+        },
+        {
+          "rot": "Prompt · critique the hypothesis before the test",
+          "icone": "chat",
+          "conteudo": "You are the critic of an improvement cycle. Below are the observed\nevidence and the hypothesis proposed for an AI agent. Do not propose another\nhypothesis and do not decide. Point out:\n\n1. Whether the evidence has enough N to be strong, moderate or weak.\n2. Whether the hypothesis states the change, the metric, the reason and what cannot get worse.\n3. Whether the guardrail's tolerance was written beforehand and how it was calculated.\n4. One alternative explanation for the problem that the test should rule out.\n\nEvidence:\n\"\"\"<paste>\"\"\"\nHypothesis:\n\"\"\"<paste>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Hora's cycle 0001 (example)",
+            "html": "<p><b>Cycle no. 0001 · Hora v2.1 → v2.2</b> · Horizonte, fictional study company · relative weeks</p><ol><li><b>Run:</b> v2.1, weeks 1 to 4, 3,600 conversations.</li><li><b>Observe:</b> 640 delivery-time or route conversations; Juliana took over 288 (45.0%). In the 30 cases, 2 of the 4 incorrect ones are about delivery time.</li><li><b>Critique:</b> strong strength (N = 640). Probable cause: the route and days-per-city table is missing.</li><li><b>Propose:</b> IF the table (owner: Valdir, logistics) goes into the package, THEN taken over from 45% to 25% or less. Without worsening: broken promises (tolerance 1.2 points), critical 0, AI up to R$ 0.35 per conversation. Vetoed: free shipping.</li><li><b>Try:</b> 30 cases on v2.2: 24 correct, 4 acceptable, 2 incorrect, 0 critical, no regression. Pilot in weeks 5 and 6, even days v2.1 and odd days v2.2; minimum of 89 per version.</li><li><b>Validate:</b> taken over A 148/330 (44.8%) × B 59/326 (18.1%); broken promises A 4/330 (1.2%) × B 5/326 (1.5%), limit 2.4%; critical 0 and 0. Verdict: B won.</li><li><b>Promote:</b> proposal by Patrícia (observation by Juliana); Carlos approves in week 7. v2.1 is kept.</li></ol>"
+          },
+          {
+            "rot": "The LOOP-R example",
+            "html": "<p>The LOOP-R repository has four cycles run by the assistants on synthetic data (an aesthetics clinic, proposals over WhatsApp). The example itself says what is real and what is simulated.</p><ul><li><b>0001:</b> the first idea was vetoed by the guardian; the second was designed.</li><li><b>0002:</b> response from 19.3% to 29.7%, but complaints 6 against 1 with zero tolerance: \"A stays.\" The lesson was to fix the tolerance for a rare event.</li><li><b>0003:</b> new hypothesis designed; another vetoed.</li><li><b>0004:</b> response from 19.3% to 29.3%, guardrails within limits: promoted to v2. Conversion did not move: the link between the signal and the money is still unproven.</li></ul>"
+          },
+          {
+            "rot": "How to check / common mistakes",
+            "html": "<ul><li><b>Changing because of a complaint.</b> One case opens a question; change only after the test.</li><li><b>Hypothesis without a guardrail.</b> Improving what you measure by worsening what you don't.</li><li><b>Tolerance decided afterward.</b> Written after the result, it becomes a justification.</li><li><b>Stopping when it's winning.</b> Before the minimum, the answer is \"insufficient sample.\"</li><li><b>Whoever proposed it approves.</b> Whoever proposes believes in the idea; whoever decides needs to look at the card.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Hora's cycle with this lesson's numbers; your own cycle, on a process of yours.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Hora's cycle 0001",
+          "min": "30 min",
+          "texto": "Without looking at the example tab, fill in the cycle log with this lesson's Horizonte numbers, across the seven steps. Run the critic prompt on your hypothesis and answer the alternative explanation it points out. Finish with the five-line card.",
+          "pronto": "the log has all 7 steps filled in; the hypothesis has a change, a metric with a starting value and a target, a reason, and a guardrail with a tolerance; the minimum per version is written with the math; the verdict is one of the three answers; and the card names who decides, someone other than who proposed it."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · A cycle on your own process",
+          "min": "2 h in total",
+          "dias": "3 a 6 semanas",
+          "texto": "Use the lesson 4 panel to find the problem with strong or moderate evidence. Write the hypothesis with a guardrail, run the candidate on your 30 cases, run the pilot with the sample size that proves it, and take the card to whoever decides. If the sample doesn't reach the minimum, record \"insufficient sample\" and what to do next.",
+          "pronto": "your cycle log has all 7 steps with numbers and N; the candidate passed the 30 cases with no critical; the verdict was given by someone who didn't propose; and the decision (approve, reject or wait) is recorded with a date."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick test",
+      "sub": "5 questions. The explanation appears after your attempt.",
+      "perguntas": [
+        {
+          "p": "An important customer complained that Hora got the delivery time wrong. What does LOOP-R say to do?",
+          "opcoes": [
+            "Change the prompt today, so the error doesn't happen again tomorrow",
+            "Turn Hora off until Juliana reviews all of the week's delivery-time conversations",
+            "Log it and count similar cases before proposing a change"
+          ],
+          "certa": 2,
+          "ref": "passos",
+          "explica": "Feedback opens a question; it doesn't change the agent in production. One case is a weak signal; with enough N it becomes a hypothesis and a test."
+        },
+        {
+          "p": "Halfway through the pilot, version B has 60 delivery-time conversations and is doing much better. The minimum was 89. What should you do?",
+          "opcoes": [
+            "Keep going until the minimum; before it, it's an insufficient sample",
+            "Promote now, because the difference is big and clear",
+            "Swap the metric for one that already has enough data"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "Stopping early because it's winning is the most common way to promote noise. Only a guardrail failing justifies stopping early."
+        },
+        {
+          "p": "Which of these is a testable hypothesis?",
+          "opcoes": [
+            "\"Improve Hora's delivery-time answers by the end of the month, with more care in the replies\"",
+            "\"Use a smarter model to answer about delivery times\"",
+            "\"Train Hora better so it understands the delivery routes\"",
+            "\"IF the route table is added, THEN conversations handled by people drop from 45% to 25%\""
+          ],
+          "certa": 3,
+          "ref": "diagrama",
+          "explica": "A hypothesis has a change, a metric with numbers and the why, plus what must not get worse. The others are wishes with no numbers."
+        },
+        {
+          "p": "In the LOOP-R example, the answer rate rose from 19% to 30%, but complaints were 6 against 1 with zero tolerance. What was learned?",
+          "opcoes": [
+            "That the hypothesis was bad and should not have been tested",
+            "That a guardrail gets in the way and should be ignored in a test",
+            "That the tolerance for a rare event has to be calculated beforehand"
+          ],
+          "certa": 2,
+          "ref": "codigo",
+          "explica": "6 against 1 in 300 per version is not a difference (p ≈ 0.12). The system followed the rule; the rule was wrong and has been fixed."
+        },
+        {
+          "p": "Who approves promoting Hora v2.2?",
+          "opcoes": [
+            "Patrícia, who proposed the change and knows the problem well",
+            "Carlos, who did not propose it, looking at the five-line card",
+            "Rafael, who will apply the change to Hora's configuration"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Whoever proposes does not approve, and neither does whoever applies (lesson 1). At Horizonte, a change to Hora is approved by Carlos."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Seven steps",
+          "texto": "Do, observe, critique, propose, experiment, validate, promote. And repeat."
+        },
+        {
+          "t": "Strength of evidence",
+          "texto": "Strong at 90 or more; weak below 30 goes on the watch list."
+        },
+        {
+          "t": "Complete hypothesis",
+          "texto": "Change, metric, why, and a guardrail with the tolerance written beforehand."
+        },
+        {
+          "t": "One of three",
+          "texto": "B won, A stays, or insufficient sample. Whoever did not propose it decides."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "Going further: why the company doesn't improve",
+      "sub": "Track 1 of the LOOP-R course (optional).",
+      "chave": "loop-r-t1"
+    },
+    {
+      "tipo": "video",
+      "titulo": "Going further: the loop's assistants",
+      "sub": "Track 3 of the LOOP-R course (optional): the nine assistants, each with its own role.",
+      "chave": "loop-r-t3"
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "LOOP-R course: your company that learns on its own (5 tracks)",
+          "href": "https://inematds.github.io/loop-r/curso/",
+          "icone": "play"
+        },
+        {
+          "t": "LOOP-R: user guide and the worked example",
+          "href": "https://inematds.github.io/loop-r/guia/",
+          "icone": "lupa"
+        },
+        {
+          "t": "LOOP-R on video: the 5 tracks with chapters and captions",
+          "href": "https://inematds.github.io/loop-r/videos/",
+          "icone": "video"
+        }
+      ]
+    }
+  ]
+}

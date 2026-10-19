@@ -1,0 +1,329 @@
+{
+  "id": "gestao-ia-governanca-v72",
+  "lang": "es",
+  "url": "https://inematds.github.io/gestao-ia-governanca-v72/es/",
+  "nome": "Gobernar, medir y evolucionar",
+  "sub": "Formación Gestión de IA 2027 · G5",
+  "volta": {
+    "t": "Área Gestión de IA",
+    "href": "https://eventos.inema.pro/gestao-ia/"
+  },
+  "lado_card": {
+    "rot": "Formación Gestión de IA 2027 · G5",
+    "t": "Empieza por la puerta de entrada",
+    "texto": "El G0 muestra la empresa agéntica y el papel del gestor de 2027. Los demás cursos de la formación parten de él, y este cierra la formación con el proyecto final.",
+    "link": "Ir al G0",
+    "href": "https://inematds.github.io/gestao-ia-base-v72/"
+  },
+  "rodape": "INEMA.CLUB · contenido abierto y gratuito · formato INEMA Learning v7.2 · <a href=\"https://eventos.inema.pro/gestao-ia/\">eventos.inema.pro/gestao-ia</a> · <a href=\"https://inematds.github.io/prof2030-lab/\">laboratorio Horizonte (empresa ficticia de estudio)</a> · <a href=\"https://inematds.github.io/gestoria/\">Gestoria</a> · <a href=\"https://inema.club/\">inema.club</a>",
+  "videos": {
+    "loop-r-t1": {
+      "titulo": "LOOP-R · Ruta 1: Por qué tu empresa no mejora",
+      "duracao": "17 min 50 s",
+      "mp4": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t1-pt.mp4",
+      "vtt": "assets/vtt/loop-r-t1.vtt",
+      "poster": "assets/img/loop-r-t1.jpg",
+      "pagina": "https://inematds.github.io/loop-r/videos/",
+      "idiomas": {
+        "en": {
+          "mp4": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t1-en-en.mp4",
+          "vtt": "assets/vtt/loop-r-t1-en.vtt",
+          "duracao": "18 min 23 s",
+          "pagina": "https://inematds.github.io/loop-r/videos/en.html"
+        },
+        "es": {
+          "mp4": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t1-es-es.mp4",
+          "vtt": "assets/vtt/loop-r-t1-es.vtt",
+          "duracao": "16 min 16 s",
+          "pagina": "https://inematds.github.io/loop-r/videos/es.html"
+        }
+      }
+    },
+    "loop-r-t2": {
+      "titulo": "LOOP-R · Ruta 2: El método",
+      "duracao": "17 min 02 s",
+      "mp4": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t2-pt.mp4",
+      "vtt": "assets/vtt/loop-r-t2.vtt",
+      "poster": "assets/img/loop-r-t2.jpg",
+      "pagina": "https://inematds.github.io/loop-r/videos/",
+      "idiomas": {
+        "en": {
+          "mp4": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t2-en-en.mp4",
+          "vtt": "assets/vtt/loop-r-t2-en.vtt",
+          "duracao": "17 min 43 s",
+          "pagina": "https://inematds.github.io/loop-r/videos/en.html"
+        },
+        "es": {
+          "mp4": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t2-es-es.mp4",
+          "vtt": "assets/vtt/loop-r-t2-es.vtt",
+          "duracao": "15 min 43 s",
+          "pagina": "https://inematds.github.io/loop-r/videos/es.html"
+        }
+      }
+    },
+    "loop-r-t3": {
+      "titulo": "LOOP-R · Ruta 3: Los asistentes del loop",
+      "duracao": "17 min 20 s",
+      "mp4": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t3-pt.mp4",
+      "vtt": "assets/vtt/loop-r-t3.vtt",
+      "poster": "assets/img/loop-r-t3.jpg",
+      "pagina": "https://inematds.github.io/loop-r/videos/",
+      "idiomas": {
+        "en": {
+          "mp4": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t3-en-en.mp4",
+          "vtt": "assets/vtt/loop-r-t3-en.vtt",
+          "duracao": "17 min 48 s",
+          "pagina": "https://inematds.github.io/loop-r/videos/en.html"
+        },
+        "es": {
+          "mp4": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t3-es-es.mp4",
+          "vtt": "assets/vtt/loop-r-t3-es.vtt",
+          "duracao": "15 min 39 s",
+          "pagina": "https://inematds.github.io/loop-r/videos/es.html"
+        }
+      }
+    },
+    "consultor-ia-2027": {
+      "titulo": "De constructor a consultor: qué aprender para 2027",
+      "duracao": "5 min 02 s",
+      "mp4": "https://github.com/inematds/consultor-ia-2027/releases/download/video-v2.0.0/consultor-ia-2027-completo-16x9.mp4",
+      "vtt": "assets/vtt/consultor-ia-2027.vtt",
+      "poster": "assets/img/consultor-ia-2027.jpg",
+      "pagina": "https://inematds.github.io/consultor-ia-2027/videos/",
+      "idiomas": {
+        "en": {
+          "mp4": "https://github.com/inematds/consultor-ia-2027/releases/download/video-v2.0.0/consultor-ia-2027-completo-16x9-en.mp4",
+          "vtt": "assets/vtt/consultor-ia-2027-en.vtt",
+          "duracao": "3 min 41 s",
+          "pagina": "https://inematds.github.io/consultor-ia-2027/videos/en/"
+        },
+        "es": {
+          "mp4": "https://github.com/inematds/consultor-ia-2027/releases/download/video-v2.0.0/consultor-ia-2027-completo-16x9-es.mp4",
+          "vtt": "assets/vtt/consultor-ia-2027-es.vtt",
+          "duracao": "4 min 03 s",
+          "pagina": "https://inematds.github.io/consultor-ia-2027/videos/es/"
+        }
+      }
+    }
+  },
+  "inicio": {
+    "kicker": "Formación Gestión de IA 2027 · G5 · cierre · 8 clases",
+    "titulo": "Gobernar, medir y evolucionar",
+    "lead": "Un agente que funciona hoy no basta: alguien tiene que responder por él, ver lo que hizo, saber si está bien y mejorarlo sin perder el control. En ocho clases nombras a los responsables, revisas permisos y registro, armas la evaluación y los indicadores, haces correr un ciclo LOOP-R con vuelta y cierras la formación con el proyecto final en Gestoria.",
+    "cta": "Empezar por la clase 1",
+    "cta2": {
+      "t": "Ver el área Gestión de IA",
+      "href": "https://eventos.inema.pro/gestao-ia/"
+    },
+    "capa_alt": "La gerente comercial y el dueño de una distribuidora miran juntos un panel de cinco indicadores en la pared; al fondo, a través del vidrio, el stock de bidones de productos de limpieza.",
+    "numeros": [
+      {
+        "v": "8",
+        "t": "clases de 14 a 20 minutos"
+      },
+      {
+        "v": "18",
+        "t": "ejercicios con \"listo cuando\""
+      },
+      {
+        "v": "27",
+        "t": "modelos y prompts para copiar"
+      },
+      {
+        "v": "1",
+        "t": "proyecto final con rúbrica de la formación"
+      }
+    ],
+    "aulas_titulo": "Las clases",
+    "aulas_sub": "En el orden en que la operación gana gobierno: quién responde, qué está permitido y registrado, cómo se evalúa y se mide, cómo se mejora con vuelta, qué pide la ley. La clase 8 junta todo en el proyecto final de la formación.",
+    "cursos": {
+      "titulo": "Los 6 cursos de la formación",
+      "sub": "Este es el G5, el cierre. El proyecto final de la clase 8 usa las entregas de todos: proceso (G2), agentes (G3), recursos (G4), personas (G1) y gobierno y medida (G5). Los cursos aún no publicados se abren a medida que quedan listos.",
+      "abrir": "Abrir el curso",
+      "itens": [
+        {
+          "rot": "G0 · puerta de entrada",
+          "t": "La empresa agéntica y el gestor de 2027",
+          "l": "Qué cambió en la gestión, qué dicen las consultoras, Brasil, la carrera y tu primer proceso.",
+          "href": "https://inematds.github.io/gestao-ia-base-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g0.jpg"
+        },
+        {
+          "rot": "G2 · procesos",
+          "t": "Procesos: el proceso no es sagrado",
+          "l": "Desmontar el proceso antes de automatizar: eliminar, simplificar, rediseñar y decidir quién hace cada etapa.",
+          "href": "https://inematds.github.io/gestao-ia-processos-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g2.jpg"
+        },
+        {
+          "rot": "G3 · agentes",
+          "t": "Agentes: contratar, delegar y supervisar",
+          "l": "Cargo, delegación, constitución, nivel de autorización, confianza progresiva, equipo de agentes y cola de excepciones.",
+          "href": "https://inematds.github.io/gestao-ia-agentes-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g3.jpg"
+        },
+        {
+          "rot": "G4 · recursos",
+          "t": "Recursos: modelos, datos y presupuesto",
+          "l": "Elegir el modelo para cada caso, cuidar el contexto y el conocimiento de la empresa y medir el costo por resultado.",
+          "href": "https://inematds.github.io/gestao-ia-recursos-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g4.jpg"
+        },
+        {
+          "rot": "G1 · personas",
+          "t": "Personas: liderar al equipo híbrido",
+          "l": "Lo que queda en manos de las personas, la conversación sobre el cambio, el júnior que supervisa agentes y la formación del equipo.",
+          "href": "https://inematds.github.io/gestao-ia-pessoas-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g1.jpg"
+        },
+        {
+          "rot": "G5 · cierre · tú estás aquí",
+          "t": "Gobernar, medir y evolucionar",
+          "l": "Responsables, permisos y registro; evaluación e indicadores; un ciclo LOOP-R con vuelta y el proyecto final en Gestoria.",
+          "href": "https://inematds.github.io/gestao-ia-governanca-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g5.jpg"
+        }
+      ]
+    },
+    "blocos": [
+      {
+        "t": "Para quién es",
+        "itens": [
+          "Gestor de área, dueño de una pequeña o mediana empresa, líder de operaciones o de RR. HH. que ya tiene agentes de IA trabajando en el equipo.",
+          "Para quien no programa y no quiere programar: aquí gobiernas, mides y mejoras la operación. Construir un agente es otro curso.",
+          "Para quien hizo los otros cursos de la formación (o tiene sus piezas) y quiere cerrar con el proyecto final. Se puede hacer solo, pero la clase 8 rinde más con las entregas del G2, del G3 y del G4."
+        ]
+      },
+      {
+        "t": "Lo que sales haciendo",
+        "itens": [
+          "Una matriz de responsabilidades en la que quien registra no aprueba y todo agente tiene una persona que responde por él.",
+          "Un checklist de identidad, permiso y registro aplicado a tu agente, con revisión mensual programada.",
+          "Un conjunto de 30 casos con respuesta esperada y un panel de 5 indicadores con denominador y línea de base.",
+          "Un ciclo LOOP-R registrado, con hipótesis, prueba, decisión y el disparador de reversión escrito antes de promover."
+        ]
+      },
+      {
+        "t": "El caso que atraviesa el curso",
+        "itens": [
+          "La <b>Horizonte Distribuidora</b>, <a href=\"https://inematds.github.io/prof2030-lab/\">empresa ficticia de estudio</a> de 40 personas que distribuye productos de limpieza en el interior de São Paulo.",
+          "Tú haces el papel de <b>Patrícia Lima, gerente comercial</b>, responsable de la <b>Hora</b>, el agente que vende por WhatsApp. Carlos, el dueño, quiere ampliar la Hora al cobro; tú pides que la decisión espere a que la operación esté gobernada y medida.",
+          "Las fallas del laboratorio se convierten en problemas de gestión: un agente con TI como responsable, el registro apagado, una herramienta activada con un \"puedes activarla\" por WhatsApp y un panel sin línea de base."
+        ]
+      }
+    ]
+  },
+  "ui": {
+    "pular": "Saltar al contenido",
+    "aulas": "Clases",
+    "concluido": "completado",
+    "aula": "Clase",
+    "nesta_aula": "En esta clase vas a aprender:",
+    "objetivo": "Objetivo:",
+    "proxima_aula": "Próxima clase",
+    "aula_anterior": "Clase anterior",
+    "voltar_inicio": "Volver al inicio del curso",
+    "marcar_concluida": "Marcar la clase como completada",
+    "dg_dica": "Haz clic en cada bloque del diagrama para ver qué hace.",
+    "copiar": "Copiar",
+    "copiado": "Copiado",
+    "selo_simulacao": "Simulación: ejemplo ilustrativo",
+    "selo_real": "Ejemplo del repositorio",
+    "pronto_quando": "Listo cuando:",
+    "fiz": "Hice este ejercicio",
+    "video_pagina": "Página del video con guion",
+    "pergunta": "Pregunta",
+    "de": "de",
+    "cert_tag": "competencia",
+    "correto": "Correcto",
+    "errado": "No es esa",
+    "quiz_aguarda": "Elige una alternativa. La explicación aparece después de tu intento.",
+    "proxima_pergunta": "Siguiente pregunta",
+    "quiz_ver": "Ver resultado",
+    "quiz_fim": "Prueba terminada",
+    "quiz_total": "Acertaste {a} de {n}. Si aciertas todas, la clase se marca como completada.",
+    "aparencia": "Apariencia",
+    "tamanho_texto": "Tamaño del texto",
+    "tema": "Tema",
+    "tema_escuro": "Oscuro",
+    "tema_papel": "Papel claro",
+    "role_dica": "Desplázate por la página: cada etapa de abajo ilumina su parte del diagrama.",
+    "pre_requisito": "requiere",
+    "ver_aula": "Ver la clase",
+    "mapa_dica": "Haz clic en un ejercicio para ver qué hacer y el \"listo cuando\".",
+    "etapas": "Etapas",
+    "exercicios": "ejercicios",
+    "rever": "Repasar:",
+    "revisar_erradas": "Revisar las erróneas",
+    "refazer": "Rehacer la prueba",
+    "h_semana": "h por semana",
+    "data_inicio": "Fecha de inicio",
+    "ritmo": "Tiempo disponible",
+    "gerar_plano": "Generar mi plan",
+    "baixar_md": "Descargar plan.md",
+    "baixar_ics": "Descargar para el calendario (.ics)",
+    "ind_estudo": "Estudio (clases)",
+    "ind_pratica": "Práctica declarada",
+    "ind_nota": "Práctica = ejercicios que marcaste como hechos. La comprobación viene en la prueba de la certificación.",
+    "estudo": {
+      "titulo": "Tu estudio",
+      "continuar": "Continuar donde lo dejé",
+      "comecar": "Empezar por la clase 1",
+      "cta_continuar": "Continuar la clase {n}",
+      "hoje": "hoy",
+      "ontem": "ayer",
+      "ha_dias": "hace {n} días",
+      "desempenho": "Desempeño en las pruebas",
+      "notas": "Mis anotaciones",
+      "dados": "Copiar mis datos",
+      "sem_testes": "Aún no hiciste ninguna prueba. La prueba está al final de cada clase.",
+      "nao_fez": "prueba aún no hecha",
+      "ultimo": "Último",
+      "melhor": "Mejor",
+      "tentativas": "intentos",
+      "tentativa": "intento",
+      "tudo_certo": "Acertaste todo en la última prueba.",
+      "rever": "Para repasar",
+      "resposta": "Respuesta correcta:",
+      "ir_teste": "Rehacer la prueba",
+      "sem_notas": "Aún no hay anotaciones. En la lección, selecciona un fragmento del texto y toca Marcar o Anotar.",
+      "so_marcado": "(solo marcado)",
+      "marcar": "Marcar",
+      "anotar": "Anotar",
+      "salvar": "Guardar",
+      "apagar": "Borrar marca",
+      "fechar": "Cerrar",
+      "nota_ph": "Escribe tu anotación sobre este fragmento…",
+      "um_bloco": "Marca dentro de un solo párrafo.",
+      "nao_marca": "Este fragmento no se puede marcar.",
+      "dados_exp": "Tu progreso, tus anotaciones y las notas de las pruebas se quedan solo en este navegador. Descarga una copia (.json) para guardarla o para continuar en otra computadora u otro navegador; allí, carga la copia. Cargar se suma a lo que ya existe y no borra nada.",
+      "exportar": "Descargar copia",
+      "importar": "Cargar copia",
+      "import_ok": "Copia cargada ({n} elementos). Actualizando la página…",
+      "import_erro": "Archivo no reconocido. No se cambió nada.",
+      "import_outro": "Esta copia es de otro curso. No se cambió nada.",
+      "export_ok": "Copia descargada."
+    },
+    "conv_dica": "Elige tu respuesta. El comentario aparece enseguida y la conversación sigue según tu elección.",
+    "conv_voce": "Tú",
+    "conv_escolha": "Tu respuesta",
+    "conv_boa": "Buena elección",
+    "conv_meio": "Se puede mejorar",
+    "conv_ruim": "Elección débil",
+    "conv_fim": "Fin de la conversación",
+    "conv_placar": "Hiciste {p} de {m} puntos posibles.",
+    "conv_licao": "Lección:",
+    "conv_recomecar": "Reiniciar la conversación",
+    "conv_feita": "Tu mejor puntaje: {p} de {m} puntos.",
+    "comecar": "Comenzar la lección",
+    "nesta_vai": "En esta lección vas a",
+    "trocar_tema": "Cambiar tema claro/oscuro"
+  },
+  "icone": "escudo"
+}

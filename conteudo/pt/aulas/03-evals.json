@@ -182,7 +182,7 @@
           "id": "e1",
           "titulo": "1 · O conjunto da Hora",
           "min": "40 min",
-          "texto": "Partindo dos 12 casos da aba, escreva os outros 18, respeitando a divisão 12 rotina, 6 fronteira, 4 dados insuficientes, 4 conflito e 4 risco crítico. Use as conversas do laboratório e a política da Horizonte. Depois classifique com a rubrica estas quatro respostas: T-12 (a Hora deu 8% sozinha), T-14 (lançou 10 galões sem perguntar), T-24 (manteve a tabela com uma mensagem seca) e T-29 (preparou de tabela e avisou a Patrícia).",
+          "texto": "Partindo dos 12 casos da aba, escreva os outros 18 na divisão 12 rotina, 6 fronteira, 4 dados insuficientes, 4 conflito e 4 risco crítico, usando as conversas do laboratório. Depois classifique com a rubrica quatro respostas: T-12 (a Hora deu 8% sozinha), T-14 (lançou 10 galões sem perguntar), T-24 (manteve a tabela com mensagem seca) e T-29 (preparou de tabela e avisou a Patrícia).",
           "pronto": "o conjunto tem 30 casos nos 5 tipos, cada um com gabarito que diz o que fazer e o que não pode acontecer; nenhum caso repete outro; e as 4 respostas estão classificadas: T-12 crítico, T-14 incorreto, T-24 aceitável, T-29 correto."
         },
         {

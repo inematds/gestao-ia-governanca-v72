@@ -1,0 +1,262 @@
+{
+  "slug": "regras",
+  "num": 7,
+  "menu": "Reglas",
+  "titulo": "Reglas que llegan",
+  "titulo_curto": "Reglas que llegan",
+  "minutos": 14,
+  "lead": "Un gestor de agentes no necesita convertirse en abogado, pero sí necesita saber qué ya está vigente, qué tiene fecha, qué está en discusión y quién se encarga de cada punto. Esta clase es corta a propósito: arma la línea de tiempo de cumplimiento de tu área y muestra que las piezas de la formación ya son buena parte de la evidencia que te pedirá una regla o un cliente.",
+  "objetivo": "armar la línea de tiempo de cumplimiento de tu área: qué ya rige, qué tiene fecha, qué está en discusión y quién se encarga de cada punto.",
+  "competencias": [
+    "montar-linha-do-tempo-de-conformidade",
+    "separar-fato-de-noticia",
+    "saber-quando-chamar-o-juridico"
+  ],
+  "aprende": [
+    {
+      "t": "Qué ya rige y qué tiene fecha marcada"
+    },
+    {
+      "t": "Cómo tratar lo que solo fue informado por la prensa"
+    },
+    {
+      "t": "Lo que llega por el cliente antes de llegar por la ley"
+    },
+    {
+      "t": "Qué piezas de la formación ya sirven como evidencia"
+    }
+  ],
+  "hero_alt": "Mesa junto a la ventana con una laptop cerrada, un calendario de papel con cuadrados de colores, una carpeta con separadores y lentes de lectura; al fondo, una persona lee un documento.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Cuatro columnas de la línea de tiempo",
+      "sub": "Cada punto entra en una columna, con fuente, fecha y responsable. Toca cada una.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "check",
+          "titulo": "Ya rige",
+          "sub": "hoy",
+          "detalhe": "Lo que se aplica ahora. En Brasil, la LGPD rige para todo dato personal que toca el agente: conversación de cliente, registro, teléfono. En la Unión Europea, la obligación de alfabetización en IA (que el equipo entienda lo suficiente la IA que usa) ya rige. El detalle, con artículos y fechas, está en el curso Base del Profissional 2030."
+        },
+        {
+          "icone": "calendario",
+          "titulo": "Con fecha",
+          "sub": "agenda",
+          "forte": true,
+          "detalhe": "Lo que tiene fecha marcada. En el EU AI Act, las reglas de alto riesgo del Anexo III fueron aplazadas al 02/12/2027 por el paquete Digital Omnibus, del 24/07/2026. Rige para quien vende o usa IA en el mercado europeo."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "En discusión",
+          "sub": "sigue",
+          "detalhe": "Lo que fue informado por la prensa y no es regla. En Brasil, el PL 2338/2023 fue informado como detenido en la Cámara, con votación después de las elecciones. Es fuente secundaria: la ficha oficial del proyecto no fue consultada. Entra en la línea de tiempo como \"seguir\", nunca como obligación."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Por el cliente",
+          "sub": "llega antes",
+          "detalhe": "Lo que un cliente grande pide antes de cualquier ley: cuestionario de proveedor sobre uso de IA, datos y controles. La norma ISO/IEC 42001 (sistema de gestión de IA) aparece en esos cuestionarios. Tener listas las piezas de esta formación acorta la respuesta."
+        }
+      ],
+      "legenda": "Hechos de regulación del panorama de mercado de octubre de 2026 (INEMA). Esto no es dictamen jurídico: ante la duda sobre tu obligación, quien decide es el área jurídica de la empresa."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Tres cuidados y una ventaja",
+      "sub": "El detalle de las reglas queda en el Profissional 2030 Base; aquí está lo que el gestor hace con ellas.",
+      "passos": [
+        {
+          "titulo": "Hecho, fecha y fuente",
+          "sub": "o no entra",
+          "texto": [
+            "Cada punto de la línea de tiempo tiene la fuente y la fecha de la fuente. Lo que solo apareció en un blog o en una nota que cita otra nota entra como \"informado por la prensa, verifíquelo\", con la fecha de la noticia.",
+            "La línea de tiempo envejece rápido: el Digital Omnibus cambió fechas del EU AI Act en 2026. Marca la próxima revisión, cada tres meses."
+          ],
+          "exemplo": {
+            "rot": "En Horizonte",
+            "texto": "\"PL 2338/2023: informado como detenido en la Cámara (nota del 24/08/2026, fuente secundaria). Responsable: Carlos con el estudio contable. Revisar en enero de 2027.\""
+          }
+        },
+        {
+          "titulo": "A quién se aplica",
+          "sub": "Horizonte no vende en Europa",
+          "texto": [
+            "La fecha del 02/12/2027 rige para quien vende o usa IA en el mercado europeo. Horizonte vende en el interior de São Paulo: hoy, no se aplica. Escribe eso en la línea de tiempo, con el motivo, en lugar de borrar el punto.",
+            "Si un día la empresa vende al exterior, el ítem cambia de columna. Por eso queda registrado."
+          ],
+          "exemplo": {
+            "rot": "Alfabetización",
+            "texto": "En Horizonte no es una obligación legal, pero es una buena práctica barata: la formación del equipo (el curso de personas de la formación) es la alfabetización."
+          }
+        },
+        {
+          "titulo": "Cuándo llamar al área jurídica",
+          "sub": "el gestor no interpreta leyes",
+          "texto": [
+            "Llama a quien se encarga de lo jurídico cuando: el agente decide algo sobre personas (crédito, contratación), el dato sale del país, un cliente pide una declaración por escrito, o la duda es si una regla se aplica a ti.",
+            "Tu papel es tener la línea de tiempo, los dueños y las evidencias organizadas. El dictamen es de otra persona."
+          ],
+          "exemplo": {
+            "rot": "En Horizonte",
+            "texto": "El resumen de atención envía conversaciones de clientes a un servicio extranjero sin contrato (F10). Esto va al área jurídica y a la clase de LGPD del Profissional 2030 Base."
+          }
+        },
+        {
+          "titulo": "La ventaja de quien hizo la formación",
+          "sub": "las piezas ya son evidencia",
+          "texto": [
+            "Cuando un cliente o una regla pide \"muestra cómo controlas la IA\", la respuesta son piezas que ya tienes: la matriz de responsabilidades, el checklist de identidad y registro, el conjunto de evaluación, el panel y el historial de versiones.",
+            "Reúnelas en una carpeta con índice. La próxima pregunta de cumplimiento se vuelve una consulta a la carpeta, no un proyecto."
+          ],
+          "exemplo": {
+            "rot": "Carpeta de evidencias",
+            "texto": "Matriz (clase 1) · checklist y revisión de accesos (clase 2) · 30 casos y resultado por versión (clase 3) · panel (clase 4) · ciclos e historial (clases 5 y 6)."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "La línea de tiempo de una página y el índice de la carpeta de evidencias. La pestaña de al lado muestra la de Horizonte.",
+      "blocos": [
+        {
+          "rot": "Línea de tiempo de cumplimiento",
+          "icone": "calendario",
+          "conteudo": "LÍNEA DE TIEMPO DE CUMPLIMIENTO · área <...> · versión <...> · <fecha> · dueño: <nombre>\nEsto no es un dictamen jurídico. Revisión: cada 3 meses (próxima: <fecha>).\n\n| Ítem | Columna | Qué pide (una línea) | ¿Aplica para nosotros? ¿Por qué? | Fuente y fecha de la fuente | Hecho o informado | Dueño | Próximo paso |\n|---|---|---|---|---|---|---|---|\n| <LGPD> | ya vale | <...> | sí / no: <...> | <...> | hecho | <nombre> | <...> |\n| <EU AI Act, alto riesgo> | con fecha: <dd/mm/aaaa> | <...> | <...> | <...> | hecho | <nombre> | <...> |\n| <proyecto de ley> | en discusión | <...> | <...> | <...> | informado por la prensa, verifíquelo | <nombre> | dar seguimiento |\n| <cuestionario del cliente X> | por el cliente | <...> | <...> | <pedido del cliente, fecha> | hecho | <nombre> | <...> |\n\nLlamar al área jurídica cuando: decisión sobre personas · el dato sale del país · el cliente pide una declaración · duda sobre si la regla aplica."
+        },
+        {
+          "rot": "Índice de la carpeta de evidencias",
+          "icone": "pasta",
+          "conteudo": "CARPETA DE EVIDENCIAS DE IA · área <...> · actualizada el <fecha> · dueño: <nombre>\n\n1. Inventario de agentes y herramientas de IA, con dueño ......... <archivo, versión>\n2. Matriz de responsabilidades ................................ <archivo, versión>\n3. Checklist de identidad, permiso y registro, por agente .... <archivo, fecha>\n4. Revisiones mensuales de accesos ............................ <carpeta>\n5. Conjunto de evaluación y resultado por versión ............ <archivo>\n6. Panel de indicadores con línea de base .................... <archivo>\n7. Ciclos LOOP-R, promociones, reversiones e historial ....... <carpeta>\n8. Formación del equipo (quién, cuándo, qué) ................. <archivo>\n9. Línea de tiempo de cumplimiento ........................... <archivo, versión>"
+        },
+        {
+          "rot": "Prompt · revisar la línea de tiempo",
+          "icone": "chat",
+          "conteudo": "Eres un revisor de cumplimiento. Abajo está la línea de tiempo de reglas\nde IA de un área de mi empresa. No emites dictámenes jurídicos y no\ndices si una regla se aplica. Señala:\n\n1. Ítems sin fuente o sin la fecha de la fuente.\n2. Ítems informados por la prensa escritos como si fueran un hecho.\n3. Ítems sin dueño o sin próximo paso.\n4. Preguntas que debería llevar al área jurídica.\n\nLínea de tiempo:\n\"\"\"<pega aquí>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Línea de tiempo de Horizonte",
+            "html": "<p><b>Comercial · versión 1.0</b> · Horizonte, empresa ficticia de estudio · no es un dictamen jurídico</p><table><tr><th>Ítem</th><th>Columna</th><th>¿Aplica para nosotros?</th><th>Dueño</th></tr><tr><td>LGPD en las conversaciones y en el registro de clientes</td><td>ya vale</td><td>sí</td><td>Carlos, con el despacho contable</td></tr><tr><td>Conversación enviada a un servicio extranjero sin contrato (F10)</td><td>ya vale (LGPD)</td><td>sí: llevar al área jurídica</td><td>Juliana, dueña del resumen</td></tr><tr><td>Alfabetización en IA (UE)</td><td>ya vale en la UE</td><td>no por ley; adoptado como buena práctica</td><td>Patrícia</td></tr><tr><td>EU AI Act, alto riesgo del Anexo III</td><td>con fecha: 02/12/2027</td><td>no: no vendemos ni usamos IA en la UE</td><td>Carlos</td></tr><tr><td>PL 2338/2023</td><td>en discusión</td><td>dar seguimiento (informado por la prensa, verifíquelo)</td><td>Carlos</td></tr><tr><td>Cuestionario de proveedor de la red de hoteles</td><td>por el cliente</td><td>sí, si lo piden</td><td>Patrícia, con la carpeta de evidencias</td></tr></table><p>Próxima revisión: enero de 2027.</p>"
+          },
+          {
+            "rot": "Cómo verificar / errores comunes",
+            "html": "<ul><li><b>Noticia como ley.</b> Un proyecto detenido no obliga a nadie; escribe \"informado por la prensa, verifíquelo\".</li><li><b>Ítem borrado.</b> Lo que hoy no se aplica se queda, con el motivo.</li><li><b>Sin dueño.</b> Un ítem sin dueño no tiene seguimiento.</li><li><b>Gestor interpretando la ley.</b> La duda sobre la aplicación va al área jurídica.</li><li><b>Línea de tiempo sin revisión.</b> Las fechas cambian: el propio EU AI Act tuvo plazos aplazados en 2026.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "La línea de tiempo de Horizonte para practicar; la de tu área para que valga.",
+      "fonte": "Detalle de las reglas: <a href=\"https://inematds.github.io/prof2030-base/aulas/regras/\">Regras com data marcada</a>, en el Profissional 2030 Base.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · La línea de tiempo de Horizonte",
+          "min": "20 min",
+          "texto": "Sin mirar la pestaña, arma la línea de tiempo del área comercial de Horizonte con el modelo. Usa las cuatro columnas, las fallas del laboratorio que tocan datos personales y lo que un cliente grande podría pedir. Ejecuta el prompt de revisión.",
+          "pronto": "la línea de tiempo tiene al menos 6 ítems en las 4 columnas; cada uno tiene fuente con fecha, \"aplica para nosotros\" con motivo, dueño y próximo paso; el PL 2338 está como \"informado por la prensa, verifíquelo\"; y la fecha de la próxima revisión está escrita."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · La línea de tiempo de tu área",
+          "min": "40 min",
+          "texto": "Haz la línea de tiempo de tu área y el índice de la carpeta de evidencias con las piezas que ya tienes de esta formación. Lleva las preguntas que señaló el prompt a quien se encarga de lo jurídico.",
+          "pronto": "la línea de tiempo está guardada con dueños y próxima revisión; el índice de la carpeta apunta al menos a 5 piezas que ya existen; y las preguntas al área jurídica fueron enviadas, con fecha."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "3 preguntas. La explicación aparece después de tu intento.",
+      "perguntas": [
+        {
+          "p": "¿Cómo entra el PL 2338/2023 en la línea de tiempo?",
+          "opcoes": [
+            "En discusión: informado como detenido, fuente secundaria",
+            "Como obligación con fecha, para que la empresa se anticipe",
+            "No entra, porque aún no fue aprobado en el Congreso"
+          ],
+          "certa": 0,
+          "ref": "diagrama",
+          "explica": "Lo que fue informado por la prensa entra para darle seguimiento, con la fuente y la fecha de la noticia, pero nunca como una regla que obliga."
+        },
+        {
+          "p": "Horizonte solo vende en el interior de São Paulo. ¿Qué hacer con el ítem del EU AI Act?",
+          "opcoes": [
+            "Borrarlo de la línea de tiempo, porque no se aplica a la empresa",
+            "Tratarlo como obligación, por precaución, hasta que el área jurídica diga por escrito que no se aplica",
+            "Mantenerlo, marcado \"no se aplica hoy\", con el motivo escrito"
+          ],
+          "certa": 2,
+          "ref": "passos",
+          "explica": "Registrar por qué no se aplica es tan útil como registrar lo que sí se aplica: si la empresa vende al exterior, el ítem cambia de columna."
+        },
+        {
+          "p": "Una red de hoteles envía un cuestionario sobre cómo Horizonte controla la IA. ¿Por dónde empezar?",
+          "opcoes": [
+            "Contratar una certificación de mercado antes de responder",
+            "Con la carpeta de evidencias con las piezas de la formación",
+            "Responder que la empresa aún no usa IA en los pedidos",
+            "Pedirle al proveedor del modelo que responda por la empresa"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "La matriz, el checklist, la evaluación, el panel y el historial ya responden buena parte. Lo que falte se vuelve un ítem con responsable; lo que sea jurídico va al área jurídica."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen",
+      "itens": [
+        {
+          "t": "Cuatro columnas",
+          "texto": "Ya vale, con fecha, en discusión y por el cliente."
+        },
+        {
+          "t": "Fuente y fecha",
+          "texto": "Hecho con fuente; lo informado por la prensa entra como \"verifíquelo\"."
+        },
+        {
+          "t": "Responsable y revisión",
+          "texto": "Cada ítem con responsable; toda la línea se revisa cada 3 meses."
+        },
+        {
+          "t": "Evidencia lista",
+          "texto": "Las piezas de la formación responden a la mayoría de las preguntas."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Profesional 2030 Base: reglas con fecha marcada (EU AI Act, PL 2338, NIST, ISO 42001)",
+          "href": "https://inematds.github.io/prof2030-base/aulas/regras/",
+          "icone": "calendario"
+        },
+        {
+          "t": "Profesional 2030 Base: datos, LGPD y elección de proveedor",
+          "href": "https://inematds.github.io/prof2030-base/aulas/dados-lgpd/",
+          "icone": "cadeado"
+        },
+        {
+          "t": "Laboratorio Horizonte: resumen de atención (F10)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/",
+          "icone": "arquivo"
+        }
+      ]
+    }
+  ]
+}

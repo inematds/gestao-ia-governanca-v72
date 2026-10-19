@@ -6,7 +6,7 @@
   "titulo_curto": "LOOP-R",
   "minutos": 20,
   "lead": "A Hora atende novecentas conversas por semana e, na seguinte, trabalha igual. Cada execução gera evidência que ninguém usa. O LOOP-R fecha o ciclo: a execução vira evidência, a evidência vira hipótese, a hipótese vira teste, e só o que for comprovado entra na próxima versão. Nesta aula você roda um ciclo inteiro na Hora, de executar a promover.",
-  "objetivo": "rodar um ciclo LOOP-R completo, de executar a promover, com hipótese, teste comparado à linha de base e decisão de quem não propôs a mudança.",
+  "objetivo": "rodar um ciclo LOOP-R completo, de executar a promover, com hipótese, teste contra a linha de base e decisão de quem não propôs.",
   "competencias": [
     "rodar-ciclo-loop-r",
     "escrever-hipotese-testavel",

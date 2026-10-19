@@ -1,0 +1,290 @@
+{
+  "slug": "responsaveis",
+  "num": 1,
+  "menu": "Accountable parties",
+  "titulo": "Who is accountable for the agent",
+  "titulo_curto": "Who is accountable",
+  "minutos": 18,
+  "lead": "In Hora's configuration, the \"owner\" field says: Rafael, outsourced IT. He maintains the tool, but he is not accountable for the discount Hora gave or the order she closed. In this lesson you build the operation's responsibility matrix, action by action, with a rule accounting has used for decades: whoever enters it does not approve it.",
+  "objetivo": "name, action by action, who does it, who is accountable, who is consulted, and who is informed, without the person who enters an action approving it themselves.",
+  "competencias": [
+    "nomear-responsavel-humano",
+    "separar-execucao-de-aprovacao",
+    "montar-matriz-de-responsabilidades"
+  ],
+  "aprende": [
+    {
+      "t": "Why the agent does the work but is never the one accountable"
+    },
+    {
+      "t": "The rule \"whoever enters it does not approve it\" applied to agents"
+    },
+    {
+      "t": "One accountable person per row, with a backup"
+    },
+    {
+      "t": "Who is accountable for changes to the agent itself"
+    }
+  ],
+  "hero_alt": "A manager points to a row on a glass board covered in colored cards laid out in a grid; an IT technician, a service clerk and the business owner look on.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The responsibility matrix",
+      "sub": "For each action in the operation, four roles and a backup. Click each one.",
+      "nos": [
+        {
+          "icone": "robo",
+          "titulo": "Does",
+          "sub": "R · does",
+          "detalhe": "Who carries out the action: the agent, a person or an automation. There can be more than one. At Horizonte, Hora does \"create an order up to R$ 5 mil\"; Juliana does \"register a new customer\"."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Accountable",
+          "sub": "A · one name",
+          "forte": true,
+          "detalhe": "The person who answers for the outcome and decides when the action needs approval. Only one per row, with a name and job title, always from the business. An agent never fills this column, and neither does IT when the outcome is commercial."
+        },
+        {
+          "icone": "chat",
+          "titulo": "Consulted",
+          "sub": "C · before",
+          "detalhe": "Who is heard before the decision because they know something that changes the answer. Rafael is consulted on what the tool can do; finance, on the customer record."
+        },
+        {
+          "icone": "megafone",
+          "titulo": "Informed",
+          "sub": "I · after",
+          "detalhe": "Who finds out what was done, because their work depends on it. Stock is informed of the approved order; Carlos gets the weekly summary of exceptions."
+        },
+        {
+          "icone": "voltar",
+          "titulo": "Backup",
+          "sub": "when absent",
+          "detalhe": "Who takes over \"accountable\" during vacation, illness or a day of meetings. Without a backup, the approval queue stops and the agent waits, or someone approves without the authority to do so. At Horizonte, Juliana backs up Patrícia on routine approvals."
+        }
+      ],
+      "legenda": "This is the RACI matrix (responsible, accountable, consulted, informed) with one extra column, the backup. Horizonte Distribuidora: fictional study company."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Four rules of the matrix",
+      "sub": "They solve two problems from the lab: the agent with IT as the accountable party, and the AI tools with no owner (F12).",
+      "passos": [
+        {
+          "titulo": "The agent does, the person is accountable",
+          "sub": "neither agent nor IT",
+          "texto": [
+            "An agent is not accountable for anything: it doesn't sign, isn't held to account, and doesn't change its behavior because it got scolded. Every row where it does the work needs a person in the \"accountable\" column, by name.",
+            "IT maintains the tool, but isn't accountable for the commercial outcome. Rafael knows whether Hora is up and running; the one who knows whether the discount was a good one is Patrícia."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "The \"owner: Rafael\" field in the configuration becomes two rows: \"keep Hora running\" (Rafael is accountable) and \"sell over WhatsApp\" (Patrícia is accountable, Hora does)."
+          }
+        },
+        {
+          "titulo": "Whoever enters it does not approve it",
+          "sub": "three professions already solved this",
+          "texto": [
+            "In accounting, whoever enters it does not approve it, and the agent never files or pays. In law, the agent reads, counts, prepares and summarizes; the lawyer decides, signs and files. In the clinic, patient data stays out of reach and the limit is decided before the agent is switched on.",
+            "The rule is the same in all three: whoever does the action is not the one who approves it. It applies to the agent and it applies to people."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Hora prepares the 8% discount; Patrícia approves. Patrícia prepares a 12% discount for a large customer; the one who approves is Carlos, not her."
+          }
+        },
+        {
+          "titulo": "One name per row, and the backup",
+          "sub": "a committee is not accountable",
+          "texto": [
+            "If two people are accountable for one row, no one is. Write one name. If the honest answer is \"it depends\", the row is too big: split it into two actions.",
+            "Then look at the whole column: if the same name shows up in almost every row, the operation has a bottleneck. Give each row a backup and check that they know they are the backup."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Patrícia is accountable for 8 of the 12 rows. Juliana is the backup on approvals up to R$ 5 mil; above that, the backup is Carlos."
+          }
+        },
+        {
+          "titulo": "Changing the agent has an owner too",
+          "sub": "configuration is a decision",
+          "texto": [
+            "Changing the prompt, the model, a tool or a limit changes the agent's behavior the way training changes a person's. That action goes in the matrix too: who proposes, who applies, who approves. Whoever proposes and whoever applies do not approve their own change.",
+            "McKinsey calls this framing \"accountability by design\" (responsibility designed in from the start) in its 2025 and 2026 writing on the agentic organization. It's a consulting view, not a measured study."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Change at Hora: Patrícia proposes, Rafael applies, Carlos approves. The email assistant, switched on with a \"go ahead\" on WhatsApp, goes back to this line."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template to copy: responsibility matrix",
+      "sub": "One row per action, not per agent. The next tab shows Horizonte's filled in.",
+      "blocos": [
+        {
+          "rot": "Responsibility matrix (RACI + backup)",
+          "icone": "lista",
+          "conteudo": "RESPONSIBILITY MATRIX · process: <from where to where> · version <1.0> · <date>\nProcess owner: <name and role> · review: <at every change of agent, person or policy>\n\n| Action (verb + object) | Does (R) | Accountable (A) - one name | Consulted (C) | Informed (I) | Backup for A | Approval? (yes/no, on what) |\n|---|---|---|---|---|---|---|\n| <answer a catalog question> | <agent> | <name> | - | <who takes over> | <name> | no |\n| <create an order up to R$ X> | <agent> | <name> | - | <inventory> | <name> | no, within the limit |\n| <discount between a% and b%> | <agent prepares> | <name> | - | <owner> | <name> | yes, the exact discount |\n| <decision above the authority limit> | <person prepares> | <another person> | <...> | <...> | <name> | yes |\n| <keep the agent running> | <IT> | <IT> | <process owner> | <...> | <name> | no |\n| <change prompt, model, tool or limit> | <who applies it> | <who approves it> | <who uses it> | <team> | <name> | yes, the exact change |\n| <pause the agent> | <name> | <name> | - | <who takes over the work> | <name> | no |\n\nRULES\n1. One name per row in the Accountable column. Never an agent. IT only on technical rows.\n2. On a row with approval, whoever does it is not whoever is accountable.\n3. Every AI tool in use in the area has a row (including the ones IT doesn't know about).\n4. Same name on more than half the rows: review backups and workload."
+        },
+        {
+          "rot": "Quick matrix test (6 questions)",
+          "icone": "check",
+          "conteudo": "MATRIX TEST · answer yes or no for each question\n\n[ ] 1. Does every row have exactly one name under Accountable?\n[ ] 2. Does no agent appear under Accountable?\n[ ] 3. On every row with approval, is the doer different from whoever is accountable?\n[ ] 4. Does IT only answer for technical rows (keeping it running, credentials)?\n[ ] 5. Does every row have a backup, and does the backup know it?\n[ ] 6. Is there a row for changing the agent, with a different proposer, applier and approver?\n\nOne \"no\" = the row goes back to the process owner, with a deadline."
+        },
+        {
+          "rot": "Prompt · find the conflict in the matrix",
+          "icone": "chat",
+          "conteudo": "You are an internal controls auditor. Below is the responsibility\nmatrix for an operation with AI agents. Do not rewrite the matrix\nand do not decide for me. Point out:\n\n1. Rows where the same person (or the same agent) does the work and approves it.\n2. Rows without a single named person accountable, or with an agent\n   or IT accountable for a business result.\n3. Actions an agent can perform, judging by the description of its\n   tools, that have no row.\n4. People who are accountable for so many rows that they become a bottleneck.\n\nFor each point, cite the row and say why it is a risk.\n\nMatrix:\n\"\"\"<paste>\"\"\"\nAgent tools:\n\"\"\"<paste the list of what each tool allows>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Horizonte's matrix (example)",
+            "html": "<p><b>Order via WhatsApp → billing · matrix v1.0</b> · Horizonte, fictional study company</p><table><tr><th>Action</th><th>Does</th><th>Accountable</th><th>C / I</th><th>Backup</th></tr><tr><td>Answer catalog and delivery questions</td><td>Hora</td><td>Patrícia</td><td>I: Juliana (takes over if called)</td><td>Juliana</td></tr><tr><td>Create an order up to R$ 5 thousand</td><td>Hora</td><td>Patrícia</td><td>I: inventory</td><td>Juliana</td></tr><tr><td>Discount of 5% to 10%</td><td>Hora prepares</td><td>Patrícia approves</td><td>I: Carlos (weekly summary)</td><td>Juliana</td></tr><tr><td>Order above R$ 5 thousand</td><td>Hora prepares</td><td>Patrícia approves</td><td>I: finance</td><td>Carlos</td></tr><tr><td>Discount above 10%</td><td>Patrícia prepares</td><td>Carlos approves</td><td>C: finance</td><td>-</td></tr><tr><td>Register a new customer</td><td>Juliana</td><td>Patrícia</td><td>C: finance (CNPJ)</td><td>Carlos</td></tr><tr><td>Reply to email at comercial@</td><td>assistant prepares</td><td>Patrícia approves</td><td>I: Juliana</td><td>Juliana</td></tr><tr><td>6 p.m. customer service summary</td><td>summary</td><td>Juliana</td><td>C: Rafael (vendor)</td><td>Patrícia</td></tr><tr><td>Keep Hora and the assistant running</td><td>Rafael</td><td>Rafael</td><td>C: Patrícia</td><td>-</td></tr><tr><td>Change Hora's prompt, model, tool or limit</td><td>Patrícia proposes, Rafael applies</td><td>Carlos approves</td><td>C: Juliana</td><td>-</td></tr><tr><td>Pause Hora</td><td>Patrícia or Rafael</td><td>Patrícia</td><td>I: Juliana takes over, Carlos</td><td>Carlos</td></tr><tr><td>New AI tool in the area</td><td>whoever asked</td><td>Patrícia</td><td>C: Rafael · I: inventory</td><td>Carlos</td></tr></table><p>Patrícia is accountable for 8 of the 12 rows: the backups are written down and notified.</p>"
+          },
+          {
+            "rot": "How to check / common mistakes",
+            "html": "<ul><li><b>A row per agent.</b> \"Hora: Patrícia\" hides that Hora does things with very different levels of risk. One row per action.</li><li><b>Agent as the accountable one.</b> \"Accountable: Hora\" means nothing when it goes wrong.</li><li><b>Whoever enters it approves it.</b> Patrícia prepares and approves her own 12% discount: the row fails test 3.</li><li><b>Forgotten tool.</b> The tools from the lab's internal research (email extension, meeting recorder, personal chatbot) have no row: nobody answers for them.</li><li><b>Backup who doesn't know.</b> Writing the name isn't enough; tell the person and state their limit.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Horizonte's matrix is the training; the one for your process is the one that counts.",
+      "fonte": "Lab pieces: <a href=\"https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/\">Hora's configuration</a>, <a href=\"https://inematds.github.io/prof2030-lab/pecas/mcp-email/\">email assistant</a> and <a href=\"https://inematds.github.io/prof2030-lab/inventario.html\">IT inventory</a> (F12).",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Horizonte's matrix",
+          "min": "30 min",
+          "texto": "Without looking at the example tab, open Hora's configuration, the email assistant's and the lab inventory. List the actions of the three agents (Hora, email assistant, customer service summary) and of the people in the order process. Build the matrix with the template, run the 6-question test, and only then compare with the tab.",
+          "pronto": "the matrix has at least 10 rows covering the 3 agents; each row has a single name under Accountable; no agent and not Rafael is accountable for a commercial result; no row with approval has the same name under Does and Accountable; there is a row for changing Hora; and the 6-question test came out 6 \"yes\"."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · The matrix for your process",
+          "min": "40 min",
+          "texto": "Build the matrix for one of your processes where an agent (or an AI tool) already works. Ask the team which AI tools each person uses in this process and give each one a row. Run the conflict prompt and decide on each point. Show the matrix to the backups.",
+          "pronto": "the matrix is saved with all the process actions and all the AI tools the team mentioned; the 6-question test comes out 6 \"yes\"; and each backup confirmed in writing (message or email) that they know they are a backup."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick test",
+      "sub": "5 questions. The explanation appears after your attempt.",
+      "perguntas": [
+        {
+          "p": "Hora's configuration says \"accountable: Rafael (outsourced IT)\". What is wrong?",
+          "opcoes": [
+            "Nothing, because whoever installed and configured the tool is best placed to answer for it",
+            "The accountable one should be the agent itself, which carries out the actions",
+            "IT maintains the tool, but the business result needs someone from the business",
+            "Carlos is missing, so that two people answer for Hora"
+          ],
+          "certa": 2,
+          "ref": "passos",
+          "explica": "These are two different rows: keeping it running (Rafael) and selling (Patrícia). When a discount goes out wrong, the one who answers is whoever knows the commercial policy. Two names together don't solve it: nobody answers."
+        },
+        {
+          "p": "Patrícia prepares a 12% discount for a large customer. Who approves it?",
+          "opcoes": [
+            "Carlos, because whoever enters it does not approve it, and above 10% it's his call",
+            "Patrícia herself, because she knows the customer, their margin and their purchase history",
+            "Hora, because it calculates the order margin more precisely"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "The rule applies to people too. Patrícia approves what Hora prepares up to 10%; what she prepares herself above that goes to someone else."
+        },
+        {
+          "p": "A matrix row says \"Accountable: Patrícia and Juliana\". What should you do?",
+          "opcoes": [
+            "Keep it, because two people check better than one",
+            "Add Carlos, to break the tie whenever the two disagree on a case",
+            "Leave the row without a name until the next team meeting",
+            "Pick one name and make the other the backup, with a limit"
+          ],
+          "certa": 3,
+          "ref": "passos",
+          "explica": "Shared responsibility becomes nobody's responsibility. One name under Accountable; the other becomes the backup, with the limit written down."
+        },
+        {
+          "p": "Rafael swaps Hora's model for a cheaper one and confirms himself that it turned out fine. What does the matrix say?",
+          "opcoes": [
+            "That's right, because switching models is a technical matter for IT",
+            "Just tell Juliana, who takes over the conversations when Hora gets the model wrong",
+            "Whoever applies the change does not approve it; it goes to whoever the matrix says"
+          ],
+          "certa": 2,
+          "ref": "passos",
+          "explica": "Switching models changes how the agent behaves. At Horizonte, the change is approved by Carlos after it is tested; Rafael applies it and is consulted."
+        },
+        {
+          "p": "In the internal survey, a salesperson pastes the customer spreadsheet into a free chatbot on their personal account. What goes into the matrix?",
+          "opcoes": [
+            "One line for the tool, with who decides whether to keep or cut it",
+            "Nothing, because it's personal use, done on the salesperson's account and outside the company's systems",
+            "Just the salesperson's name in the Informed field of Hora's line"
+          ],
+          "certa": 0,
+          "ref": "codigo",
+          "explica": "This is shadow AI (F12). A tool in use in the process without a line is a tool without an owner. The decision about the data that passes through it is in G4 and in Profissional 2030 Base."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "By action",
+          "texto": "One line per action, with does, accountable, consulted, informed and backup."
+        },
+        {
+          "t": "A person is accountable",
+          "texto": "The agent does; a person from the business is always accountable, by name."
+        },
+        {
+          "t": "Whoever enters it does not approve it",
+          "texto": "It applies to the agent and to people, just like in accounting."
+        },
+        {
+          "t": "A change has an owner",
+          "texto": "Whoever proposes and whoever applies a change to the agent do not approve it."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Accounting and finance notebook: whoever enters it does not approve it",
+          "href": "https://inematds.github.io/arquiteto-agentes-contabil/",
+          "icone": "lista"
+        },
+        {
+          "t": "Law notebook: the agent prepares, the lawyer signs",
+          "href": "https://inematds.github.io/arquiteto-agentes-advocacia/",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Health notebook: what stays out of the agent's reach",
+          "href": "https://inematds.github.io/arquiteto-agentes-saude/",
+          "icone": "escudo"
+        }
+      ]
+    }
+  ]
+}
