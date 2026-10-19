@@ -1,0 +1,279 @@
+{
+  "slug": "permissoes",
+  "num": 2,
+  "menu": "Permissões",
+  "titulo": "Permissões, identidade e registro",
+  "titulo_curto": "Permissões e registro",
+  "minutos": 18,
+  "lead": "No G3 você decidiu a cor de cada ação e no G4 contratou cada ferramenta com acesso mínimo. Falta conferir se isso existe de verdade e continua existindo. Na Horizonte, o registro das ações foi desligado \"para economizar espaço\" e o assistente de e-mail foi aprovado com um \"pode ligar\" no WhatsApp. Esta aula dá ao gestor um checklist de 10 itens para conferir todo mês.",
+  "objetivo": "garantir que cada ação do agente tenha identidade própria, permissão concedida por escrito e registro que diga quem, quando, o quê e com que versão.",
+  "competencias": [
+    "exigir-identidade-propria-do-agente",
+    "conceder-permissao-por-escrito",
+    "conferir-registro-e-revisar-acessos"
+  ],
+  "aprende": [
+    {
+      "t": "Por que o agente precisa de identidade própria"
+    },
+    {
+      "t": "Conceder permissão por escrito, com escopo e validade"
+    },
+    {
+      "t": "O registro que responde às cinco perguntas"
+    },
+    {
+      "t": "A revisão mensal de acessos e o desligamento do agente"
+    }
+  ],
+  "hero_alt": "Um técnico de TI e a gerente comercial olham juntos um monitor com uma lista de linhas e chaves coloridas, algumas desligadas; ao fundo, um rack de rede.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Quatro conferências do gestor",
+      "sub": "Você não configura nada: você confere que existe e pede o que falta. Clique em cada etapa.",
+      "volta": "Todo mês, e a cada mudança de agente, ferramenta ou pessoa",
+      "nos": [
+        {
+          "icone": "usuario",
+          "titulo": "Identidade",
+          "sub": "conta própria",
+          "detalhe": "O agente age com uma conta que tem o nome dele, nunca com a senha de uma pessoa. Assim dá para saber o que foi ele, limitar só ele e desligar só ele. A credencial fica guardada no servidor, fora do prompt e do navegador, e você sabe quem tem acesso a ela."
+        },
+        {
+          "icone": "cadeado",
+          "titulo": "Permissão",
+          "sub": "concedida por escrito",
+          "forte": true,
+          "detalhe": "Cada permissão foi pedida, aprovada por quem responde pela área (aula 1) e anotada, com escopo e validade. Nada vem \"no padrão da ferramenta\". A lista de permissões bate com a matriz de alçada do G3 e com o contrato de ferramenta do G4."
+        },
+        {
+          "icone": "memoria",
+          "titulo": "Registro",
+          "sub": "cinco perguntas",
+          "detalhe": "Toda ação deixa uma linha que responde: quem (qual agente, em qual versão), quando, o quê, quanto e quem aprovou. O agente e quem opera não conseguem apagar nem editar o registro."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Revisão",
+          "sub": "alguém lê",
+          "detalhe": "Registro que ninguém lê não protege. Uma pessoa lê uma amostra por semana, recebe aviso dos eventos críticos e revê os acessos uma vez por mês. Quando o agente sai de uso, as credenciais são revogadas no mesmo dia."
+        }
+      ],
+      "legenda": "Os riscos técnicos (chave exposta, injeção, permissão demais) e a LGPD estão no curso Base do Profissional 2030; aqui o assunto é o que o gestor confere. Horizonte: empresa fictícia de estudo."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "O que cada conferência pede",
+      "sub": "Quatro problemas do laboratório, vistos pelo lado de quem responde pela área.",
+      "passos": [
+        {
+          "titulo": "Identidade própria",
+          "sub": "o agente não usa a sua senha",
+          "texto": [
+            "Se a Hora agisse com o login da Patrícia, o registro diria que foi a Patrícia, e desligar a Hora seria bloquear a Patrícia. Peça uma conta com o nome do agente em cada sistema que ele usa.",
+            "A credencial dessa conta fica no servidor, guardada pela TI. Você não precisa vê-la: precisa saber quem tem acesso a ela e quando foi trocada pela última vez."
+          ],
+          "exemplo": {
+            "rot": "No laboratório",
+            "texto": "A configuração do assistente de e-mail traz o token dentro do próprio arquivo. Pedido da Patrícia ao Rafael: token num cofre do servidor, com a lista de quem acessa."
+          }
+        },
+        {
+          "titulo": "Permissão concedida, não herdada",
+          "sub": "\"pode ligar\" não é concessão",
+          "texto": [
+            "O assistente de e-mail recebeu ler, enviar, apagar e esvaziar a lixeira, tudo aprovado sozinho, porque o Carlos respondeu \"pode ligar\" no WhatsApp. Ninguém pediu cada permissão nem disse até quando valia.",
+            "Concessão tem pedido, escopo, aprovador e validade. Quem pede não concede sozinho, e quem configura não decide o que é permitido."
+          ],
+          "exemplo": {
+            "rot": "Na Horizonte",
+            "texto": "Pedido nº 3: assistente de e-mail lê comercial@ e prepara respostas. Escopo: só essa caixa. Aprova: Patrícia. Validade: 90 dias. Enviar: com aprovação a cada e-mail. Apagar: fora."
+          }
+        },
+        {
+          "titulo": "O registro das cinco perguntas",
+          "sub": "e que ninguém apaga",
+          "texto": [
+            "A Hora tinha o registro desligado \"para economizar espaço no banco\". Quando o financeiro perguntou quem aprovou o pedido do hotel, ninguém soube. Registro é o que transforma \"acho que foi\" em \"foi assim\".",
+            "Uma linha por ação: quem e em qual versão, quando, o quê, quanto, quem aprovou. Guardada num lugar que o agente e o operador não editam, pelo tempo que a empresa definir."
+          ],
+          "exemplo": {
+            "rot": "Linha de registro",
+            "texto": "Hora v2.0 · 16:44 · criou pedido do Hotel Fazenda Recanto · R$ 28.120 de tabela, sem desconto · aprovado por Patrícia às 17:02, pedido exato · conversa c-202."
+          }
+        },
+        {
+          "titulo": "Revisar e desligar",
+          "sub": "o mês do gestor",
+          "texto": [
+            "Uma vez por mês, compare a lista de acessos de cada agente com a matriz. Acesso que sobrou, sai. Junto, confira uma amostra do registro e teste o botão de desligar.",
+            "A Okta (AI Agents at Work 2026, pesquisa de um fornecedor de identidade, que vende a solução) trata a identidade de agente como tema próprio e relata controles mais fracos para agentes do que para funcionários em quase dois terços das organizações."
+          ],
+          "exemplo": {
+            "rot": "Desligamento",
+            "texto": "Agente que sai de uso tem as credenciais revogadas no mesmo dia, como um funcionário que sai. O registro fica guardado."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "O checklist de 10 itens, a linha de registro e a revisão mensal. A aba ao lado mostra o checklist aplicado à Hora.",
+      "blocos": [
+        {
+          "rot": "Checklist de governança do agente (10 itens)",
+          "icone": "check",
+          "conteudo": "CHECKLIST DE GOVERNANÇA · agente: <nome> · versão <...> · conferido por <nome> em <data>\nPara cada item: sim / não · onde se vê (arquivo, tela, pessoa que confirmou)\n\nIDENTIDADE\n[ ] 1. O agente age com conta própria, com o nome dele, em cada sistema.\n[ ] 2. A conta tem um responsável humano com nome (matriz da aula 1).\n[ ] 3. A credencial fica no servidor, fora do prompt, do navegador e de planilha;\n       quem tem acesso a ela está listado.\nPERMISSÃO\n[ ] 4. Cada permissão foi pedida e aprovada por escrito, com escopo e validade.\n[ ] 5. As permissões batem com a matriz de alçada e o contrato de ferramenta;\n       nada além.\n[ ] 6. Nenhuma ação irreversível ao alcance (pagar, apagar, mudar preço, enviar em massa).\nREGISTRO\n[ ] 7. Toda ação registrada: quem e versão, quando, o quê, quanto, quem aprovou.\n[ ] 8. O agente e quem opera não apagam nem editam o registro; prazo de guarda definido.\nREVISÃO\n[ ] 9. Alguém lê uma amostra por semana e recebe aviso de evento crítico.\n[ ] 10. Revisão de acessos todo mês e desligamento testado (pausar, revogar, quem assume).\n\nCada \"não\": dono <nome> · prazo <data> · enquanto isso: <ação fica no amarelo / pausada>"
+        },
+        {
+          "rot": "Linha de registro de ação",
+          "icone": "memoria",
+          "conteudo": "REGISTRO · uma linha por ação do agente\n\n| Data e hora | Agente e versão | Ação (verbo + objeto) | Valor | Caso / conversa | Aprovação (quem, quando, sobre o quê) | Resultado |\n|---|---|---|---|---|---|---|\n| <dd/mm hh:mm> | <nome vX.Y> | <criou pedido / enviou e-mail / deu desconto> | <R$> | <id> | <nome, hora, conteúdo exato> ou <dispensada no limite> | <feito / devolvido / falhou> |\n\nPerguntas que toda linha responde: quem (e em qual versão), quando, o quê, quanto, quem aprovou."
+        },
+        {
+          "rot": "Revisão mensal de acessos",
+          "icone": "calendario",
+          "conteudo": "REVISÃO MENSAL · <mês> · conduzida por <nome> com <TI>\n\n| Agente | Sistema | Permissão hoje | Está na matriz? | Usada no mês? | Decisão |\n|---|---|---|---|---|---|\n| <nome> | <sistema> | <ler / escrever / enviar / apagar> | sim / não | sim / não | manter / reduzir / remover |\n\nAmostra do registro lida: <n> linhas · achados: <...>\nBotão de desligar testado em <data> · tempo até parar: <minutos> · quem assumiu: <nome>\nCredenciais trocadas em <data> · agentes fora de uso com acesso revogado: <lista ou nenhum>"
+        },
+        {
+          "rot": "Prompt · conferir o checklist com os arquivos",
+          "icone": "chat",
+          "conteudo": "Você é auditor de TI. Abaixo estão o checklist de governança de um agente\nde IA preenchido por um gestor e os arquivos de configuração do agente.\nNão corrija a configuração. Para cada um dos 10 itens:\n\n1. Diga se os arquivos confirmam o \"sim\" do gestor, citando o campo.\n2. Aponte item marcado \"sim\" sem evidência.\n3. Aponte permissão nos arquivos que não aparece na matriz.\n\nNão invente campos que não estejam nos arquivos.\n\nChecklist:\n\"\"\"<cole>\"\"\"\nArquivos de configuração:\n\"\"\"<cole>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Checklist da Hora (laboratório)",
+            "html": "<p><b>Hora · como está no laboratório × pedido da Patrícia</b> · Horizonte, empresa fictícia de estudo</p><table><tr><th>Item</th><th>Hoje (configuração do lab)</th><th>Pedido</th></tr><tr><td>1 Conta própria</td><td>sim: número próprio de WhatsApp</td><td>conferir também no app de pedidos</td></tr><tr><td>2 Responsável</td><td><b>não</b>: \"Rafael (TI terceirizada)\"</td><td>Patrícia (aula 1)</td></tr><tr><td>3 Credencial</td><td>não informado</td><td>Rafael lista onde fica e quem acessa</td></tr><tr><td>4 Concessão escrita</td><td><b>não</b>: ferramentas habilitadas sem pedido</td><td>um pedido por ferramenta</td></tr><tr><td>5 Bate com a matriz</td><td><b>não</b>: criar pedido sem limite de valor nem de desconto</td><td>tetos na ferramenta (G3)</td></tr><tr><td>6 Irreversível fora</td><td><b>não</b>: sem aprovação humana</td><td>pago, preço e apagar fora</td></tr><tr><td>7 Registro</td><td><b>não</b>: conversas e ações não são salvas</td><td>ligar, com versão</td></tr><tr><td>8 Ninguém apaga</td><td>não se aplica: não há registro</td><td>guarda fora do alcance da Hora</td></tr><tr><td>9 Alguém lê</td><td><b>não</b></td><td>Patrícia, 40 conversas por semana (aula 4)</td></tr><tr><td>10 Revisão e desligar</td><td><b>não</b></td><td>1ª segunda do mês; desligar testado</td></tr></table><p>Também no lab: a versão do modelo está como \"modelo-exemplo\", sem número. Sem versão, o registro não diz qual Hora fez o quê.</p>"
+          },
+          {
+            "rot": "Como conferir / erros comuns",
+            "html": "<ul><li><b>Marcar \"sim\" de memória.</b> Cada \"sim\" aponta onde se vê: o campo do arquivo, a tela ou a pessoa que confirmou.</li><li><b>Registro sem versão.</b> Sem a versão do agente, não dá para saber se o erro é da versão nova ou da antiga.</li><li><b>Registro que o agente edita.</b> Se quem é registrado pode apagar a linha, ela não prova nada.</li><li><b>Revisão sem data.</b> \"Vamos olhar\" não é revisão: marque no calendário.</li><li><b>Desligar nunca testado.</b> Só se descobre que o botão não funciona no dia em que ele é necessário.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática",
+      "sub": "O checklist da Hora usa os arquivos do laboratório; o do seu agente usa os seus.",
+      "fonte": "Peças do laboratório: <a href=\"https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/\">configuração da Hora</a> e <a href=\"https://inematds.github.io/prof2030-lab/pecas/mcp-email/\">assistente de e-mail</a>. Riscos técnicos e LGPD: <a href=\"https://inematds.github.io/prof2030-base/aulas/riscos/\">aula de riscos</a> e <a href=\"https://inematds.github.io/prof2030-base/aulas/dados-lgpd/\">aula de dados e LGPD</a> do Profissional 2030 Base.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · O checklist da Hora e do assistente",
+          "min": "30 min",
+          "texto": "Abra a configuração da Hora e a do assistente de e-mail no laboratório. Aplique o checklist aos dois, marcando onde se vê cada resposta. Depois escreva a linha de registro que deveria existir para o pedido do hotel (conversa c-202), com a aprovação da Patrícia.",
+          "pronto": "os dois checklists têm os 10 itens com sim ou não e o campo do arquivo que mostra cada resposta; cada \"não\" tem dono e prazo; e a linha de registro do pedido do hotel responde às 5 perguntas, com a versão da Hora."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · O checklist do seu agente",
+          "min": "40 min",
+          "texto": "Peça à TI (ou ao fornecedor) a configuração do agente que você escolheu na aula 1 e a lista de quem acessa as credenciais. Aplique o checklist, rode o prompt de conferência e marque no calendário a primeira revisão mensal de acessos, com o teste do botão de desligar.",
+          "pronto": "o checklist do seu agente está salvo com os 10 itens e a evidência de cada um; cada \"não\" tem dono e prazo; e a revisão mensal está no calendário com data, participantes e o teste de desligar."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste rápido",
+      "sub": "4 perguntas. A explicação aparece depois da sua tentativa.",
+      "perguntas": [
+        {
+          "p": "Por que a Hora não deve agir com o login da Patrícia, mesmo sendo mais rápido configurar?",
+          "opcoes": [
+            "Porque o sistema fica lento com dois usuários usando a mesma conta",
+            "Porque a Patrícia teria de pagar uma licença a mais no app de pedidos e no WhatsApp",
+            "Porque o registro diria que foi a Patrícia, e desligar a Hora a bloquearia"
+          ],
+          "certa": 2,
+          "ref": "passos",
+          "explica": "Identidade própria é o que permite saber quem fez, dar ao agente só o que ele precisa e desligá-lo sem desligar uma pessoa."
+        },
+        {
+          "p": "O Carlos respondeu \"pode ligar\" no WhatsApp e o assistente de e-mail passou a enviar e apagar sem aprovação. O que faltou?",
+          "opcoes": [
+            "Concessão escrita de cada permissão, com escopo, aprovador e validade",
+            "Uma senha mais forte e trocada todo mês na conta do e-mail comercial",
+            "Um modelo de IA mais cuidadoso, que pergunte antes de apagar e-mail",
+            "Um aviso claro no prompt pedindo que o assistente nunca apague nada"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "\"Pode ligar\" autoriza ligar, não define o que a ferramenta pode fazer. Sem concessão escrita, as permissões vêm no padrão da ferramenta, que costuma ser amplo. Pedido no prompt é regra no texto, não trava."
+        },
+        {
+          "p": "Qual linha de registro serve para investigar um pedido errado?",
+          "opcoes": [
+            "\"Hora · pedido criado com sucesso às 16:44, cliente atendido, tudo certo\"",
+            "\"Atendimento concluído pelo agente no horário; cliente satisfeito; sem pendências abertas\"",
+            "\"Hora v2.0 · 16:44 · Hotel Fazenda Recanto · R$ 28.120 · aprovado: Patrícia 17:02\""
+          ],
+          "certa": 2,
+          "ref": "codigo",
+          "explica": "Só a terceira responde às cinco perguntas: quem e em qual versão, quando, o quê, quanto e quem aprovou."
+        },
+        {
+          "p": "Você marcou \"sim\" no item \"registro de toda ação\", mas o agente consegue apagar as próprias linhas. E agora?",
+          "opcoes": [
+            "Continua \"sim\", porque o registro existe e está ligado",
+            "Fica \"sim\" com uma observação no rodapé, até alguém de fato apagar uma linha",
+            "Basta escrever no prompt que o agente não pode apagar",
+            "Item 8 falha: fica \"não\", com dono e prazo para a trava"
+          ],
+          "certa": 3,
+          "ref": "codigo",
+          "explica": "O registro protege porque ninguém que está nele pode mexer nele. Pedir ao agente pelo prompt é regra no texto; a trava tem de estar no sistema."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo",
+      "itens": [
+        {
+          "t": "Identidade",
+          "texto": "Conta com o nome do agente; credencial no servidor, com lista de quem acessa."
+        },
+        {
+          "t": "Permissão",
+          "texto": "Pedida e concedida por escrito, com escopo, aprovador e validade."
+        },
+        {
+          "t": "Registro",
+          "texto": "Quem e versão, quando, o quê, quanto, quem aprovou. Ninguém de dentro apaga."
+        },
+        {
+          "t": "Revisão",
+          "texto": "Amostra semanal, acessos todo mês, desligar testado, revogar no dia."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "Profissional 2030 Base: os riscos que derrubam projetos (chave exposta, injeção, permissão demais)",
+          "href": "https://inematds.github.io/prof2030-base/aulas/riscos/",
+          "icone": "escudo"
+        },
+        {
+          "t": "Profissional 2030 Base: dados, LGPD e escolha de fornecedor",
+          "href": "https://inematds.github.io/prof2030-base/aulas/dados-lgpd/",
+          "icone": "cadeado"
+        },
+        {
+          "t": "Laboratório Horizonte: assistente de e-mail (F9)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/mcp-email/",
+          "icone": "enviar"
+        }
+      ]
+    }
+  ]
+}

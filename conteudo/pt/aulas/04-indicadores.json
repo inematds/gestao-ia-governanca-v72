@@ -1,0 +1,301 @@
+{
+  "slug": "indicadores",
+  "num": 4,
+  "menu": "Indicadores",
+  "titulo": "Os indicadores do agente",
+  "titulo_curto": "Indicadores",
+  "minutos": 20,
+  "lead": "O painel da Hora mostra atendimentos subindo e o Carlos conclui que ela está se pagando. O painel só mede volume: não diz se a Hora acertou, quanto custou cada pedido nem quanto trabalho de gente ainda precisa. Nesta aula você troca esse painel por cinco indicadores do agente, cada um com numerador, denominador, linha de base e um limite que dispara uma ação.",
+  "objetivo": "acompanhar o agente num painel de 5 indicadores com numerador, denominador, linha de base e limite, corrigindo o painel que só mostra volume.",
+  "competencias": [
+    "definir-indicadores-com-denominador",
+    "separar-erro-critico-da-media",
+    "medir-intervencao-humana"
+  ],
+  "aprende": [
+    {
+      "t": "O que falta em cada coluna de um painel de volume"
+    },
+    {
+      "t": "Os 5 indicadores do agente: qualidade, tempo, custo, autonomia e intervenção"
+    },
+    {
+      "t": "Linha de base quando o \"antes\" nunca foi medido"
+    },
+    {
+      "t": "Limites que disparam ação, e o indicador que melhora quando o agente piora"
+    }
+  ],
+  "hero_alt": "Gerente com uma caneca na mão olha um monitor de parede com cinco quadros de gráficos simples, um deles com borda vermelha.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Cinco indicadores e um alarme",
+      "sub": "Cada indicador é uma fração com período e origem. O erro crítico fica fora de todos: é contado à parte. Clique em cada um.",
+      "nos": [
+        {
+          "icone": "check",
+          "titulo": "Qualidade",
+          "sub": "acerto na amostra",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "x",
+              "t": "erros críticos",
+              "sub": "contados à parte"
+            }
+          ],
+          "detalhe": "Corretas ÷ conversas julgadas numa amostra sorteada toda semana, com a rubrica da aula 3. Ao lado, a contagem de erros críticos, que nunca entra na porcentagem. Na Hora: 148 de 160 (92,5%) nas 4 semanas de linha de base; 0 crítico."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Tempo",
+          "sub": "mediana e p95",
+          "detalhe": "Do primeiro contato do cliente ao pedido confirmado, nos pedidos concluídos. Mediana para o caso típico e p95 (o tempo que 95% dos pedidos não passam) para não esconder os que travam. Na Hora: mediana de 18 min, p95 de 4 h 40 min, quase sempre esperando aprovação."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Custo",
+          "sub": "por resultado",
+          "detalhe": "Custo total do processo ÷ pedidos concluídos: IA, ferramentas, manutenção, horas de gente e retrabalho, a conta do G4. Na Hora: R$ 4.542 ÷ 680 = R$ 6,68 por pedido concluído. O custo por conversa que o fornecedor mostra (R$ 0,31) não é este número."
+        },
+        {
+          "icone": "robo",
+          "titulo": "Autonomia",
+          "sub": "sem ninguém",
+          "detalhe": "Pedidos concluídos sem nenhuma intervenção humana ÷ pedidos concluídos. Na Hora: 510 de 680 (75,0%). Atenção: este número sobe se a Hora parar de pedir aprovação quando devia. Ele não tem meta sozinho; só vale ao lado da qualidade e dos críticos."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Intervenção",
+          "sub": "minutos de gente",
+          "detalhe": "Minutos de gente (revisão, conversas assumidas, retrabalho) ÷ pedidos concluídos. Mostra o peso do trabalho humano, não só se ele existiu. Na Hora: 49,8 h no mês = 2.988 min ÷ 680 = 4,4 min por pedido."
+        }
+      ],
+      "legenda": "Indicadores do método Gestoria e da área Gestão de IA (§06). Na ferramenta Gestoria, os quadros da Visão geral têm os mesmos nomes: acerto, erros críticos, trabalho autônomo, custo por caso. Valores da Horizonte: fictícios de estudo."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Do painel de volume ao painel do agente",
+      "sub": "O F11 do laboratório já foi corrigido no G2 com três indicadores do processo. Aqui o assunto é o agente.",
+      "passos": [
+        {
+          "titulo": "O que cada coluna não mostra",
+          "sub": "quatro colunas, quatro lacunas",
+          "texto": [
+            "O painel do laboratório tem quatro colunas. Atendimentos é volume: sobe com promoção, época do ano ou desconto demais. Pedidos fechados não tem o antes nem comparação. Satisfação média vem de um botão que cerca de 6% dos clientes respondem.",
+            "Tempo de resposta mede a velocidade da primeira mensagem, não do pedido. Nenhuma coluna diz se a Hora acertou, quanto custou nem quanto trabalho de gente ela gerou."
+          ],
+          "exemplo": {
+            "rot": "Teste de cada coluna",
+            "texto": "Esse número muda se a Hora der um desconto errado? Se não muda, ele não serve para governar o agente."
+          }
+        },
+        {
+          "titulo": "Linha de base sem o antes",
+          "sub": "não se inventa o passado",
+          "texto": [
+            "A coleta começou no mesmo dia em que a Hora entrou, em julho. O \"antes da Hora\" nunca foi medido e não dá para medir agora. O que dá: medir quatro semanas da versão atual e usar como linha de base contra a qual cada mudança será comparada.",
+            "Estimativas do antes (como os 8 a 12 minutos por pedido do G4) continuam estimativas e aparecem assim no painel, nunca como observadas."
+          ],
+          "exemplo": {
+            "rot": "Na Horizonte",
+            "texto": "Linha de base: Hora v2.1, quatro semanas, 3.600 conversas e 680 pedidos concluídos. Todo valor do painel diz o período e o n."
+          }
+        },
+        {
+          "titulo": "Limite que dispara ação",
+          "sub": "número sem ação é enfeite",
+          "texto": [
+            "Cada indicador ganha um limite e o que acontece quando ele é cruzado. Qualidade abaixo de 90% numa semana: a amostra dobra e a causa entra na revisão semanal. Um erro crítico: a ação volta ao amarelo na hora e abre um incidente.",
+            "Os limites são decisão de quem responde pela operação, olhando a linha de base. Escreva-os antes de precisar deles."
+          ],
+          "exemplo": {
+            "rot": "Na Horizonte",
+            "texto": "p95 do tempo acima de 6 h: olhar a fila de aprovação. Custo acima de R$ 7,50 no mês: revisar. Intervenção acima de 6 min por pedido: ver para onde foram as horas."
+          }
+        },
+        {
+          "titulo": "O indicador que engana",
+          "sub": "autonomia sozinha",
+          "texto": [
+            "Se a meta for \"subir a autonomia\", o jeito mais rápido é a Hora parar de pedir aprovação. O número melhora e a operação piora. Por isso autonomia e intervenção só se leem ao lado da qualidade e dos críticos.",
+            "A Microsoft propôs, no Work Trend Index 2025, a métrica human-agent ratio: o equilíbrio entre a supervisão humana e a eficiência dos agentes. É proposta de fornecedor; o seu painel mede esse equilíbrio com os indicadores 4 e 5."
+          ],
+          "exemplo": {
+            "rot": "Pergunta para cada indicador",
+            "texto": "Como este número melhora sem a operação melhorar? Se a resposta é fácil, ele precisa de um par que o vigie."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "O painel de uma página e a ficha de cada indicador. A aba ao lado mostra o da Hora.",
+      "blocos": [
+        {
+          "rot": "Painel do agente (5 indicadores)",
+          "icone": "grafico",
+          "conteudo": "PAINEL DO AGENTE · <nome> v<...> · período <de> a <até> · dono do painel: <nome>\nLinha de base: <versão>, <n semanas>, <casos> casos · origem dos dados: <sistemas>\n\n| # | Indicador | Numerador ÷ denominador | Linha de base (n) | Esta semana | Limite → ação | Dono |\n|---|---|---|---|---|---|---|\n| 1 | Qualidade | corretas ÷ julgadas (amostra de <n>/semana) | <%> (<n>) | <%> | < <%>: <ação> | <nome> |\n|   | Erros críticos | contagem, fora de qualquer média | <n> | <n> | 1: <ação na hora> | <nome> |\n| 2 | Tempo | mediana e p95 de <fim − início>, casos concluídos | <...> | <...> | p95 > <...>: <ação> | <nome> |\n| 3 | Custo por resultado | custo total do processo ÷ casos concluídos | R$ <...> | R$ <...> | > R$ <...>: <ação> | <nome> |\n| 4 | Autonomia | concluídos sem intervenção ÷ concluídos | <%> | <%> | só com 1 e críticos estáveis | <nome> |\n| 5 | Intervenção humana | minutos de gente ÷ casos concluídos | <min> | <min> | > <min>: <ação> | <nome> |\n\nFORA DO PAINEL (volume, não resultado): <atendimentos, mensagens, satisfação com baixa resposta>\nESTIMADO, NÃO OBSERVADO: <valores do \"antes\", com a origem da estimativa>"
+        },
+        {
+          "rot": "Ficha de indicador",
+          "icone": "arquivo",
+          "conteudo": "INDICADOR <n> · <nome> · agente <nome> · dono: <nome>\n\nPergunta de gestão: <o que queremos saber>\nNumerador: <o que se conta> · Denominador: <o universo>\nPeríodo: <semana> · comparar com: <linha de base, mesmo tipo de período>\nOrigem: <sistema, campo, amostra> · quem extrai: <nome>\nLinha de base: <valor> · [ ] observado (n = <...>, de <data> a <data>) [ ] estimado (fonte: <...>)\nLimite: <valor> → ação: <o que acontece, quem faz, em quanto tempo>\nPar que vigia: <indicador que denuncia se este melhorar do jeito errado>\nNão confundir com: <o que este número não mostra>"
+        },
+        {
+          "rot": "Prompt · como este indicador engana",
+          "icone": "chat",
+          "conteudo": "Você é analista de indicadores. Abaixo está o painel de um agente de IA\ncom 5 indicadores. Não sugira indicadores novos. Para cada um:\n\n1. Diga se o denominador está claro e se pode mudar sozinho e enganar\n   a comparação.\n2. Dê um jeito de o número melhorar sem a operação melhorar.\n3. Diga qual outro indicador do painel denunciaria esse jeito.\n4. Aponte se algum erro crítico pode estar escondido numa média.\n\nPainel:\n\"\"\"<cole>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Painel da Hora (exemplo)",
+            "html": "<p><b>Hora v2.1 · linha de base de 4 semanas</b> · 3.600 conversas, 680 pedidos concluídos · Horizonte, empresa fictícia de estudo</p><table><tr><th>Indicador</th><th>Fração</th><th>Linha de base</th><th>Limite → ação</th></tr><tr><td>1 Qualidade</td><td>corretas ÷ julgadas (40 sorteadas por semana)</td><td>148 ÷ 160 = 92,5%</td><td>&lt; 90%: amostra dobra</td></tr><tr><td>Erros críticos</td><td>contagem</td><td>0</td><td>1: ação volta ao amarelo + incidente</td></tr><tr><td>2 Tempo</td><td>mediana e p95, contato → pedido confirmado</td><td>18 min · 4 h 40 min</td><td>p95 &gt; 6 h: fila de aprovação</td></tr><tr><td>3 Custo</td><td>custo do processo ÷ pedidos concluídos</td><td>4.542 ÷ 680 = R$ 6,68</td><td>&gt; R$ 7,50: revisar</td></tr><tr><td>4 Autonomia</td><td>sem intervenção ÷ concluídos</td><td>510 ÷ 680 = 75,0%</td><td>sem meta sozinho</td></tr><tr><td>5 Intervenção</td><td>minutos de gente ÷ concluídos</td><td>2.988 ÷ 680 = 4,4 min</td><td>&gt; 6 min: ver onde</td></tr></table><p>Fora do painel: atendimentos (volume) e satisfação média (cerca de 6% respondem). Estimado: tempo de gente antes da Hora (8 a 12 min por pedido, G4).</p>"
+          },
+          {
+            "rot": "O painel do laboratório, coluna a coluna",
+            "html": "<table><tr><th>Coluna</th><th>O que mede</th><th>O que não mostra</th></tr><tr><td>Atendimentos</td><td>volume de conversas</td><td>se a conversa virou pedido certo</td></tr><tr><td>Pedidos fechados</td><td>pedidos por semana</td><td>o antes, o desconto dado, os pedidos corrigidos</td></tr><tr><td>Satisfação média</td><td>estrelas de cerca de 6% dos clientes</td><td>a opinião dos outros 94%</td></tr><tr><td>Tempo de resposta</td><td>segundos até a 1ª mensagem</td><td>quanto o pedido levou até ser confirmado</td></tr></table><p>Dados do <code>indicadores.json</code> do laboratório (fictícios): de 702 atendimentos e 141 pedidos (semana de 01/09) a 901 e 168 (semana de 13/10).</p>"
+          },
+          {
+            "rot": "Como conferir / erros comuns",
+            "html": "<ul><li><b>Indicador sem denominador.</b> \"12 conversas assumidas\" não diz nada sem o total.</li><li><b>Crítico na média.</b> O erro que custa dinheiro some dentro de 99%.</li><li><b>Média de tempo.</b> Um pedido travado puxa a média; use mediana e p95.</li><li><b>Autonomia como meta.</b> Sobe quando o agente para de pedir ajuda.</li><li><b>Estimativa como observado.</b> O antes que ninguém mediu aparece como estimado, sempre.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática",
+      "sub": "O painel da Hora para treinar; o do seu agente para valer.",
+      "fonte": "Peça do laboratório: <a href=\"https://inematds.github.io/prof2030-lab/pecas/painel/\">painel da Hora</a> (F11).",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · O painel da Hora",
+          "min": "30 min",
+          "texto": "Abra o painel do laboratório e escreva, para cada uma das 4 colunas, o que ela mede e o que ela não mostra. Depois monte o painel da Hora com o modelo, usando os números da linha de base desta aula, e preencha a ficha de indicador do número 4 (autonomia) com o par que o vigia.",
+          "pronto": "as 4 colunas do painel do lab têm \"mede\" e \"não mostra\"; o painel tem os 5 indicadores com numerador, denominador, linha de base com n, limite com ação e dono; os erros críticos aparecem fora de qualquer porcentagem; e a ficha da autonomia diz qual indicador a vigia."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · O painel do seu agente",
+          "min": "45 min",
+          "dias": "4 semanas de coleta",
+          "texto": "Monte o painel do seu agente com os 5 indicadores. Escreva onde sai cada número e quem extrai. Comece a coleta de 4 semanas da linha de base, sem mudar nada no agente nesse período, e marque como estimado tudo o que vier de antes.",
+          "pronto": "o painel está salvo com as 5 fichas; cada valor de hoje está marcado como observado (com n e período) ou estimado (com a fonte); a data em que as 4 semanas terminam está no calendário; e o prompt \"como este indicador engana\" foi rodado e respondido."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste rápido",
+      "sub": "5 perguntas. A explicação aparece depois da sua tentativa.",
+      "perguntas": [
+        {
+          "p": "Os atendimentos da Hora subiram de 702 para 901 por semana. O que isso prova?",
+          "opcoes": [
+            "Que o volume subiu, e nada sobre acerto, custo ou trabalho de gente",
+            "Que a Hora está se pagando, porque atende muito mais gente por semana do que em setembro",
+            "Que a satisfação subiu junto, já que mais clientes procuram a Hora"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "Volume sobe por muitas razões, inclusive por desconto demais. Para governar o agente, o número tem de mudar quando o agente erra."
+        },
+        {
+          "p": "A meta do trimestre é subir a autonomia da Hora de 75% para 90%. Qual o risco?",
+          "opcoes": [
+            "Nenhum, porque autonomia maior sempre libera a equipe para vender",
+            "A Juliana ficar sem trabalho e precisar mudar de função na empresa",
+            "O custo de IA subir muito, porque a Hora passa a fazer mais sozinha",
+            "Chegar lá com a Hora deixando de pedir aprovação quando devia"
+          ],
+          "certa": 3,
+          "ref": "diagrama",
+          "explica": "É o indicador que melhora quando o agente piora. Ele precisa de um par que o vigie: qualidade na amostra e erros críticos."
+        },
+        {
+          "p": "Qual destas é uma linha de base honesta para a Hora?",
+          "opcoes": [
+            "Os números de antes de julho, reconstruídos de memória pela equipe",
+            "A média de mercado para agentes de vendas, tirada de um relatório",
+            "Quatro semanas medidas da versão atual, com o antes como estimado"
+          ],
+          "certa": 2,
+          "ref": "passos",
+          "explica": "O passado que não foi medido não se inventa. A linha de base passa a ser o presente medido, contra o qual cada mudança será comparada."
+        },
+        {
+          "p": "Por que usar mediana e p95 no tempo, em vez da média?",
+          "opcoes": [
+            "Porque um pedido travado puxa a média e esconde o caso típico",
+            "Porque a média é mais difícil de calcular numa planilha comum",
+            "Porque o fornecedor do agente exige esse formato no contrato"
+          ],
+          "certa": 0,
+          "ref": "diagrama",
+          "explica": "A mediana mostra o caso típico e o p95 não deixa os travados sumirem. Os pedidos que esperam aprovação ficam no p95."
+        },
+        {
+          "p": "A amostra da semana teve 39 corretas em 40 e um erro crítico. Como fica o painel?",
+          "opcoes": [
+            "Qualidade 97,5%, e o crítico entra só no relatório do fim do mês, junto com os outros",
+            "Qualidade 97,5% e 1 crítico ao lado, que dispara a ação escrita",
+            "Qualidade 100%, porque o caso crítico foi corrigido a tempo"
+          ],
+          "certa": 1,
+          "ref": "codigo",
+          "explica": "O crítico é contado à parte e tem ação própria: a ação volta ao amarelo e abre incidente. A porcentagem alta não cancela o alarme."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo",
+      "itens": [
+        {
+          "t": "Cinco frações",
+          "texto": "Qualidade, tempo, custo, autonomia e intervenção, cada uma com denominador."
+        },
+        {
+          "t": "Crítico à parte",
+          "texto": "Contado fora das médias, com ação própria."
+        },
+        {
+          "t": "Linha de base",
+          "texto": "Quatro semanas medidas agora; o antes, só como estimado."
+        },
+        {
+          "t": "Limite e par",
+          "texto": "Todo indicador tem limite com ação e outro que o vigia."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "Laboratório Horizonte: o painel sem linha de base (F11)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/painel/",
+          "icone": "grafico"
+        },
+        {
+          "t": "G2 · Linha de base e meta (os indicadores do processo)",
+          "href": "https://inematds.github.io/gestao-ia-processos-v72/aulas/linha-de-base/",
+          "icone": "alvo"
+        },
+        {
+          "t": "G4 · Quanto custa produzir o resultado (a conta dos R$ 6,68)",
+          "href": "https://inematds.github.io/gestao-ia-recursos-v72/aulas/custo/",
+          "icone": "grafico"
+        }
+      ]
+    }
+  ]
+}

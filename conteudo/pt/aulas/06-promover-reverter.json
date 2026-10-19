@@ -1,0 +1,430 @@
+{
+  "slug": "promover-reverter",
+  "num": 6,
+  "menu": "Promover",
+  "titulo": "Promover e reverter",
+  "titulo_curto": "Promover e reverter",
+  "minutos": 20,
+  "lead": "A v2.2 da Hora ganhou o teste e foi promovida. Uma semana depois, a logística mudou o dia de entrega de uma rota e a tabela do agente ficou velha. As conversas assumidas pela Juliana seguiram baixas, mas as promessas de prazo não cumpridas passaram do limite. Promover e reverter são etapas planejadas: nesta aula você escreve as duas antes de precisar delas.",
+  "objetivo": "tratar promoção e reversão como etapas planejadas: promover com gatilho de volta escrito e reverter pelo gatilho, sem caça ao culpado.",
+  "competencias": [
+    "promover-com-janela-de-vigia",
+    "escrever-gatilho-de-reversao",
+    "reverter-sem-caca-ao-culpado"
+  ],
+  "aprende": [
+    {
+      "t": "O que acompanha uma promoção: fases, vigia e gatilho de volta"
+    },
+    {
+      "t": "Calcular o gatilho para não reverter por acaso"
+    },
+    {
+      "t": "Reverter rápido, avisando antes e guardando a versão"
+    },
+    {
+      "t": "O histórico de versões e a alçada do próprio ciclo"
+    }
+  ],
+  "hero_alt": "Numa sala de vidro, a gerente aponta numa tela uma linha vermelha que sobe ao lado de uma verde, enquanto o dono da empresa escuta com atenção.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Da promoção à próxima candidata",
+      "sub": "Promover não é o fim do ciclo. Clique em cada etapa.",
+      "volta": "Mantida ou revertida, a lição vai para o histórico e alimenta a próxima hipótese",
+      "nos": [
+        {
+          "icone": "check",
+          "titulo": "Validada",
+          "sub": "B ganhou",
+          "detalhe": "A candidata passou nos 30 casos e no piloto (aula 5). Ainda não é a oficial: falta a decisão de quem não propôs e o plano de volta escrito."
+        },
+        {
+          "icone": "seta",
+          "titulo": "Promovida",
+          "sub": "com plano de volta",
+          "forte": true,
+          "detalhe": "Vira a versão oficial, por decisão registrada. Junto com a promoção ficam escritos: a janela de vigia, o gatilho de reversão com número, quem decide, como voltar e onde está a versão anterior."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Vigia",
+          "sub": "duas semanas",
+          "detalhe": "Nas primeiras semanas depois da promoção, os guarda-corpos são olhados com mais frequência. O piloto mediu poucas semanas; a operação inteira pode trazer situações que o piloto não teve."
+        },
+        {
+          "icone": "portao",
+          "titulo": "Gatilho",
+          "sub": "número escrito",
+          "detalhe": "Se um guarda-corpo passar do limite escrito na promoção, ou se houver um erro crítico, a versão volta. O limite já considera a variação normal da semana, para não reverter por acaso."
+        },
+        {
+          "icone": "voltar",
+          "titulo": "Reverte",
+          "sub": "e investiga",
+          "detalhe": "A versão anterior volta pelos passos escritos, com aviso antes a quem é afetado. Depois vem a causa, o conserto e uma candidata nova, que passa de novo pelos 30 casos e pelo piloto."
+        }
+      ],
+      "legenda": "Área Gestão de IA, regra 3: promover e reverter são etapas, não acidentes. Números da Horizonte: fictícios de estudo, em semanas relativas."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Quatro regras para promover e voltar",
+      "sub": "O G2 versionou o processo e o G3 promoveu ações de autonomia. Aqui a versão é a do pacote do agente (prompt, contexto, modelo, ferramentas) que saiu de um ciclo LOOP-R.",
+      "passos": [
+        {
+          "titulo": "A promoção leva o plano de volta",
+          "sub": "escrito antes, não no susto",
+          "texto": [
+            "O Carlos aprovou a v2.2 na semana 7 com o plano de volta já escrito: janela de vigia de duas semanas; gatilho de promessas de prazo não cumpridas acima de 3,4% numa semana, ou um erro crítico; quem decide, a Patrícia; como voltar, o Rafael aponta a Hora para a v2.1 em até 2 horas.",
+            "Decidir a volta depois do problema é decidir no susto, e quase sempre vira discussão sobre culpa."
+          ],
+          "exemplo": {
+            "rot": "Regra",
+            "texto": "Promover pede aprovação de quem não propôs. Reverter pelo gatilho escrito é dever de quem opera e não espera reunião."
+          }
+        },
+        {
+          "titulo": "O gatilho considera o acaso",
+          "sub": "nem toda piora é piora",
+          "texto": [
+            "Promessas não cumpridas são evento raro: em 160 conversas de prazo por semana, a taxa varia sozinha. O gatilho soma à taxa do piloto (1,5%) dois erros-padrão da semana: 2 × √(0,015 × 0,985 ÷ 160) ≈ 1,9 ponto. Limite: 3,4%.",
+            "Assim, uma semana com 4 promessas não cumpridas (2,5%) não reverte; uma com 7 (4,4%) reverte. A conta é a mesma que o LOOP-R usa para a tolerância."
+          ],
+          "exemplo": {
+            "rot": "Contraexemplo",
+            "texto": "No exemplo do LOOP-R, 6 reclamações contra 1, em 300 por versão, com tolerância zero, descartou uma boa ideia por acaso."
+          }
+        },
+        {
+          "titulo": "Reverter rápido, sem culpado",
+          "sub": "o que aconteceu na semana 8",
+          "texto": [
+            "Na semana 8, a logística mudou o dia de entrega da rota de Sorocaba e a tabela não foi atualizada. Promessas não cumpridas: 7 de 158 (4,4%), acima de 3,4%. As conversas assumidas pela Juliana seguiam em 19,0%: a meta ia bem, o guarda-corpo caiu.",
+            "A Patrícia decidiu pelo gatilho; a Juliana foi avisada antes; o Rafael apontou para a v2.1 em 2 horas; a v2.2 ficou guardada. O Carlos foi informado com o número."
+          ],
+          "exemplo": {
+            "rot": "Causa, não culpado",
+            "texto": "A tabela não tinha validade nem aviso de mudança de rota. O conserto é no documento (dono, validade, aviso), não no Valdir."
+          }
+        },
+        {
+          "titulo": "Histórico e alçada do ciclo",
+          "sub": "o loop também tem nível",
+          "texto": [
+            "Cada versão ganha uma linha no histórico: o que mudou, por quê, quem aprovou, a situação. A versão revertida não é apagada; vira memória do que não funcionou e por quê.",
+            "O próprio ciclo tem alçada. No LOOP-R, L0 só propõe; L1 promove com aprovação de uma pessoa a cada mudança; L2 promove sozinho, e só depois de pelo menos cinco promoções em L1 sem nenhuma reversão. A Horizonte está em L1."
+          ],
+          "exemplo": {
+            "rot": "Próximo passo",
+            "texto": "v2.3: a mesma tabela, com o Valdir como dono, validade semanal e aviso de mudança de rota. Volta aos 30 casos e a um piloto novo."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "O registro de promoção, o de reversão e o histórico de versões. A aba ao lado mostra os da Horizonte.",
+      "blocos": [
+        {
+          "rot": "Registro de promoção",
+          "icone": "seta",
+          "conteudo": "PROMOÇÃO · agente <nome> · de v<atual> para v<candidata> · ciclo LOOP-R nº <...>\nProposta por: <nome> · Aprovada por (não quem propôs): <nome> em <data>\nCartão de decisão anexo: [ ] sim\n\nFASES: <recorte primeiro, depois todos, ou todos de uma vez, e por quê>\nJANELA DE VIGIA: <n semanas> · guarda-corpos olhados <com que frequência>, por <nome>\n\nGATILHO DE REVERSÃO (escrito agora)\n  <guarda-corpo> acima de <limite> em <período>\n  conta do limite: <taxa do piloto> + 2 × raiz(p × (1 - p) ÷ <N do período>) = <...>\n  ou: 1 erro crítico\nQUEM DECIDE A VOLTA: <nome> · sem esperar aprovação\nCOMO VOLTAR: <passos, quem faz cada um, em quanto tempo>\nQUEM É AVISADO ANTES: <nomes> · VERSÃO ANTERIOR GUARDADA EM: <onde>"
+        },
+        {
+          "rot": "Registro de reversão",
+          "icone": "voltar",
+          "conteudo": "REVERSÃO · agente <nome> · de v<promovida> para v<anterior> · <data e hora>\nGatilho que disparou: <indicador> = <valor> (<n> de <N>) · limite escrito: <...>\nMeta da mudança na mesma semana: <valor> (para o registro, não para decidir)\nDecidido por: <nome> · avisados antes: <nomes> · executado por: <nome> em <tempo>\nVersão revertida guardada em: <onde>\n\nCAUSA PROVÁVEL: <o que mudou no mundo ou no agente>\nCONSERTO PROPOSTO: <...> · nova candidata: v<...> · volta aos 30 casos e ao piloto: <datas>\nAPRENDIZADO PARA O HISTÓRICO: <uma frase>"
+        },
+        {
+          "rot": "Histórico de versões do agente",
+          "icone": "memoria",
+          "conteudo": "HISTÓRICO · agente <nome> · dono: <nome> · alçada do ciclo: [ ] L0 propõe [ ] L1 pessoa aprova cada mudança [ ] L2 promove sozinho\n\n| Versão | O que mudou | Por quê (evidência) | Aprovado por | Situação | Data |\n|---|---|---|---|---|---|\n| <v> | <...> | <...> | <nome> | em uso / guardada / revertida / proposta | <...> |\n\nRegra: nenhuma linha é apagada. Versão revertida fica com o motivo.\nL2 só depois de 5 promoções em L1 sem reversão."
+        },
+        {
+          "rot": "Prompt · revisar o plano de volta",
+          "icone": "chat",
+          "conteudo": "Você é revisor de mudanças. Abaixo está o registro de promoção de uma\nnova versão de um agente de IA. Não decida se a promoção é boa. Aponte:\n\n1. Se o gatilho de reversão tem número, período e a conta do limite.\n2. Se o limite é tão apertado que a variação normal o dispara, ou tão\n   largo que nunca dispara.\n3. Se quem decide a volta, os passos e o tempo estão escritos.\n4. Quem seria afetado pela volta e não está na lista de avisados.\n\nRegistro:\n\"\"\"<cole>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Promoção e reversão da Hora",
+            "html": "<p><b>Hora v2.1 → v2.2 → v2.1</b> · Horizonte, empresa fictícia de estudo · semanas relativas</p><ul><li><b>Semana 7, promoção:</b> proposta da Patrícia, aprovada pelo Carlos com o cartão do ciclo 0001. Todas as conversas na v2.2. Vigia de 2 semanas.</li><li><b>Gatilho:</b> promessas de prazo não cumpridas acima de 3,4% numa semana (1,5% do piloto + 1,9 ponto), ou 1 erro crítico. Decide: Patrícia. Volta: Rafael aponta para a v2.1 em até 2 h. Avisada antes: Juliana.</li><li><b>Semana 8, reversão:</b> 7 de 158 promessas não cumpridas (4,4%). Assumidas pela Juliana: 30 de 158 (19,0%). Revertido em 2 h, v2.2 guardada, Carlos informado.</li><li><b>Causa provável:</b> a rota de Sorocaba mudou de dia e a tabela não tinha validade nem aviso.</li><li><b>Próxima candidata:</b> v2.3, tabela com o Valdir como dono, validade semanal e aviso de mudança.</li></ul>"
+          },
+          {
+            "rot": "Histórico da Hora",
+            "html": "<table><tr><th>Versão</th><th>O que mudou</th><th>Situação</th></tr><tr><td>2.0</td><td>Dossiê do G3: cargo, constituição, matriz</td><td>guardada</td></tr><tr><td>2.1</td><td>Trava: soma do dia do mesmo cliente acima de R$ 5 mil vai para aprovação (caso T-27)</td><td>em uso</td></tr><tr><td>2.2</td><td>Tabela de rotas no pacote de contexto (ciclo 0001)</td><td>revertida na semana 8: promessas não cumpridas 4,4% &gt; 3,4%</td></tr><tr><td>2.3</td><td>Tabela de rotas com dono, validade semanal e aviso de mudança</td><td>proposta</td></tr></table><p>Alçada do ciclo: L1. Nenhuma linha apagada.</p>"
+          },
+          {
+            "rot": "Como conferir / erros comuns",
+            "html": "<ul><li><b>Promover sem gatilho.</b> Na hora do problema, ninguém sabe se é para voltar.</li><li><b>Gatilho sem conta.</b> Apertado demais, reverte por acaso; largo demais, nunca dispara.</li><li><b>Esperar reunião para voltar.</b> Reverter pelo gatilho escrito não pede aprovação.</li><li><b>Apagar a versão que falhou.</b> Ela é a memória do que não funcionou.</li><li><b>Procurar culpado.</b> A pergunta é o que mudou e que proteção faltou.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "simconversa",
+      "titulo": "Simulação: o Carlos não quer voltar",
+      "sub": "Conversa simulada para treinar. O gatilho disparou e o dono gostou da versão nova. Responda com o que está escrito no registro de promoção.",
+      "personagem": {
+        "nome": "Carlos · dono da Horizonte (simulação)",
+        "papel": "Horizonte Distribuidora, empresa fictícia de estudo"
+      },
+      "inicio": "abre",
+      "falas": {
+        "abre": {
+          "cliente": "Patrícia, vi no grupo que você quer voltar a Hora para a versão antiga. A Juliana nunca teve tanto tempo livre: as conversas de prazo que ela assumia caíram de 45% para 18%. Por que voltar?",
+          "opcoes": [
+            {
+              "t": "Porque o gatilho que escrevemos antes de promover disparou: promessas de prazo não cumpridas foram a 4,4% na semana, 7 de 158, e o limite era 3,4%. A meta melhorou, mas o guarda-corpo caiu.",
+              "vai": "criterio",
+              "nota": 2,
+              "comenta": "Você trouxe o número, o limite combinado e separou meta de guarda-corpo. A decisão não é sua opinião: é o que foi escrito antes."
+            },
+            {
+              "t": "Você tem razão. Deixo como está e peço para a logística avisar quando mudar alguma rota.",
+              "vai": "fim-mantem",
+              "nota": 0,
+              "comenta": "O gatilho escrito antes de promover disparou e você o ignorou porque a meta estava bonita. Os clientes continuam recebendo promessa de entrega que não acontece."
+            },
+            {
+              "t": "Porque recebi duas reclamações de clientes ontem.",
+              "vai": "criterio",
+              "nota": 1,
+              "comenta": "As reclamações são reais, mas duas reclamações não são critério. Isso abre espaço para o Carlos achar que é exagero."
+            }
+          ]
+        },
+        "criterio": {
+          "cliente": "Mas 7 entregas num universo de 158 é pouco. Não é azar?",
+          "opcoes": [
+            {
+              "t": "Não sei dizer, mas prefiro não arriscar.",
+              "vai": "como",
+              "nota": 1,
+              "comenta": "A decisão está certa, mas sem o argumento. Na próxima vez, o Carlos vai pedir para não reverter."
+            },
+            {
+              "t": "O limite já considera o acaso: foi calculado com a variação normal de uma semana de umas 160 conversas. Com 4 promessas falhas a gente não voltaria; com 7, passou. E para o cliente que esperou a entrega, não foi azar.",
+              "vai": "como",
+              "nota": 2,
+              "comenta": "Você mostrou que a dúvida do Carlos já estava na conta do gatilho e lembrou quem paga pelo erro."
+            },
+            {
+              "t": "Pode ser. Vamos esperar mais um mês para ter certeza.",
+              "vai": "fim-espera",
+              "nota": 0,
+              "comenta": "Um mês com o gatilho disparado são quatro semanas de promessas que não se cumprem. Esperar mais dados serve antes de promover, não depois do limite."
+            }
+          ]
+        },
+        "como": {
+          "cliente": "Tá. E voltar não vai bagunçar tudo? A Juliana volta a ficar sobrecarregada.",
+          "opcoes": [
+            {
+              "t": "Desligo a Hora hoje e deixo a Juliana atender até descobrir a causa.",
+              "vai": "fim-desliga",
+              "nota": 0,
+              "comenta": "A v2.1 funcionava e está guardada. Desligar tudo troca um problema numa rota por uma operação inteira parada."
+            },
+            {
+              "t": "Voltar é o passo escrito: o Rafael aponta a Hora para a v2.1 em até 2 horas, a Juliana é avisada antes e a v2.2 fica guardada. A carga dela volta à que a gente já conhece e mediu.",
+              "vai": "causa",
+              "nota": 2,
+              "comenta": "Reverter pelo plano é rápido e previsível: versão conhecida, aviso antes, nada apagado."
+            },
+            {
+              "t": "Volto só nas cidades com reclamação e mantenho a v2.2 nas outras.",
+              "vai": "causa",
+              "nota": 1,
+              "comenta": "Parece cuidadoso, mas é uma versão nova que ninguém testou. A volta segura é para a versão conhecida."
+            }
+          ]
+        },
+        "causa": {
+          "cliente": "E a ideia da tabela de rotas morre aí?",
+          "opcoes": [
+            {
+              "t": "Peço para o Rafael corrigir a tabela hoje e promovemos de novo amanhã.",
+              "vai": "fim-pressa",
+              "nota": 1,
+              "comenta": "Consertar está certo; promover amanhã sem teste repete o atalho que o ciclo existe para evitar."
+            },
+            {
+              "t": "Morre. Foi um erro tentar.",
+              "vai": "fim-desiste",
+              "nota": 0,
+              "comenta": "A ideia ganhou o teste; o que falhou foi a manutenção da tabela. Jogar fora a hipótese é perder o que o ciclo ensinou."
+            },
+            {
+              "t": "Não. A causa provável é a tabela sem dono atualizado: a logística mudou o dia de Sorocaba e ninguém mexeu no documento. Ponho o Valdir como dono, validade semanal e aviso de mudança, rodo os 30 casos e o piloto de novo e trago o cartão para você.",
+              "vai": "fim-bom",
+              "nota": 2,
+              "comenta": "Você achou a causa sem procurar culpado, consertou a proteção que faltava e devolveu a decisão a quem aprova, com evidência."
+            }
+          ]
+        },
+        "fim-mantem": {
+          "fim": true,
+          "titulo": "O gatilho ignorado",
+          "texto": "A v2.2 ficou. Nas semanas seguintes, mais clientes de Sorocaba esperaram entregas que não vieram, e a regra de voltar virou uma sugestão. Na próxima promoção, ninguém vai levar o gatilho a sério."
+        },
+        "fim-espera": {
+          "fim": true,
+          "titulo": "Esperar depois do limite",
+          "texto": "Esperar um mês com o gatilho disparado transformou um problema de uma rota em quatro semanas de promessas falhas. Mais dados servem para decidir promover; para voltar, o limite já é a decisão."
+        },
+        "fim-desliga": {
+          "fim": true,
+          "titulo": "Remédio maior que a doença",
+          "texto": "Com a Hora desligada, a Juliana assumiu tudo, a fila cresceu e os clientes de todas as cidades esperaram. A versão anterior estava guardada e funcionava: reverter é voltar à versão conhecida, não desligar."
+        },
+        "fim-desiste": {
+          "fim": true,
+          "titulo": "A lição jogada fora",
+          "texto": "A tabela de rotas saiu da fila de ideias. A Juliana voltou a assumir quase metade das conversas de prazo, e a empresa perdeu uma melhoria que tinha ganhado o teste. O que precisava de conserto era a manutenção do documento."
+        },
+        "fim-pressa": {
+          "fim": true,
+          "titulo": "Promoção sem teste",
+          "texto": "A tabela foi corrigida e a v2.2 voltou no dia seguinte, sem passar pelos casos nem pelo piloto. Deu certo desta vez, mas a próxima mudança de rota vai repetir o problema: faltou dono, validade e aviso, e faltou o teste."
+        },
+        "fim-bom": {
+          "fim": true,
+          "titulo": "Voltar sem drama, melhorar com método",
+          "texto": "A v2.1 voltou em duas horas, a Juliana foi avisada antes e o Carlos entendeu o número. A causa virou proteção no documento, e a v2.3 entra na fila com teste e cartão. Promover e reverter foram etapas, não acidentes."
+        }
+      },
+      "licao": "Promoção leva o plano de volta escrito antes. O gatilho já considera o acaso; quando ele dispara, volta-se à versão conhecida, avisando antes e guardando a nova. Depois, causa no lugar de culpado e um teste novo antes de promover de novo."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática",
+      "sub": "Os registros da Horizonte para treinar; a promoção e a volta ensaiada do seu agente para valer.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Promoção, reversão e histórico da Hora",
+          "min": "30 min",
+          "texto": "Com os números desta aula, preencha o registro de promoção da v2.2 (semana 7) e o de reversão (semana 8). Refaça a conta do gatilho. Monte o histórico da Hora com as versões 2.0 a 2.3 e marque a alçada do ciclo.",
+          "pronto": "a promoção tem aprovador diferente de quem propôs, janela de vigia, gatilho com número e a conta (1,5% + 1,9 = 3,4%), quem decide a volta, os passos com tempo e os avisados; a reversão tem o número que disparou (7 de 158), a causa provável e a próxima candidata; e o histórico tem 4 linhas, nenhuma apagada."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · A volta ensaiada do seu agente",
+          "min": "45 min",
+          "dias": "1 semana",
+          "texto": "Para a mudança do seu ciclo da aula 5 (ou para a próxima mudança do seu agente), escreva o registro de promoção com o gatilho calculado. Depois ensaie a volta num ambiente de teste ou fora do horário: aponte para a versão anterior, cronometre e confira se nada se perdeu.",
+          "pronto": "o registro de promoção está salvo com gatilho em número e a conta; a volta foi ensaiada uma vez com o tempo medido; o histórico de versões do seu agente existe; e quem decide a volta confirmou por escrito que sabe disso."
+        },
+        {
+          "id": "e3",
+          "titulo": "3 · A conversa com o Carlos",
+          "min": "10 min",
+          "texto": "Faça a simulação acima até chegar ao placar máximo. Se errar, leia o comentário e recomece.",
+          "pronto": "a simulação terminou em \"Voltar sem drama, melhorar com método\" com 8 de 8 pontos."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste rápido",
+      "sub": "4 perguntas. A explicação aparece depois da sua tentativa.",
+      "perguntas": [
+        {
+          "p": "Depois da promoção, a meta da v2.2 seguia ótima, mas um guarda-corpo passou do limite escrito. O que vale?",
+          "opcoes": [
+            "O guarda-corpo: o gatilho escrito antes manda voltar",
+            "A meta, porque foi para melhorá-la que a mudança veio",
+            "A média entre a meta e o guarda-corpo naquela semana"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "Guarda-corpo existe para que uma meta bonita não esconda um estrago. Se ele cai além do limite, a versão volta."
+        },
+        {
+          "p": "Numa semana com 4 promessas não cumpridas em 160 (2,5%), com limite de 3,4%, o que fazer?",
+          "opcoes": [
+            "Reverter, porque piorou em relação ao 1,5% do piloto",
+            "Desligar o agente até a logística conferir as rotas",
+            "Abrir um novo ciclo de teste antes de decidir qualquer coisa",
+            "Manter e seguir vigiando: está dentro da variação normal"
+          ],
+          "certa": 3,
+          "ref": "passos",
+          "explica": "O limite foi calculado para não reverter por acaso. Reverter abaixo dele é trocar o critério pela ansiedade."
+        },
+        {
+          "p": "Quem precisa aprovar a reversão feita pelo gatilho escrito?",
+          "opcoes": [
+            "O Carlos, numa reunião marcada para discutir com a equipe se volta ou não volta",
+            "Só quem foi nomeado para decidir a volta, sem esperar reunião",
+            "O Rafael, que é quem executa a troca de versão no sistema"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Promover pede aprovação de quem não propôs; voltar à versão conhecida, pelo gatilho combinado, não espera reunião. O Carlos é informado com o número."
+        },
+        {
+          "p": "A partir de quando um ciclo LOOP-R pode promover sozinho (L2)?",
+          "opcoes": [
+            "Desde o primeiro ciclo, se o modelo usado for de ponta",
+            "Depois de cinco promoções em L1 sem nenhuma reversão",
+            "Nunca: toda promoção precisa sempre de uma pessoa"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "O próprio ciclo ganha alçada como um agente: com evidência e um nível por vez. A Horizonte acabou de reverter uma promoção, então segue em L1."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo",
+      "itens": [
+        {
+          "t": "Promoção com volta",
+          "texto": "Vigia, gatilho em número, quem decide e como voltar, escritos antes."
+        },
+        {
+          "t": "Gatilho com conta",
+          "texto": "Taxa do piloto mais dois erros-padrão da semana: nem reverte por acaso, nem nunca."
+        },
+        {
+          "t": "Voltar sem culpado",
+          "texto": "Versão conhecida, aviso antes, nada apagado; depois, causa e proteção."
+        },
+        {
+          "t": "Histórico e alçada",
+          "texto": "Toda versão fica registrada; o ciclo sobe de L1 para L2 só com evidência."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "G2 · Processo com versão (registro de mudança e reversão do processo)",
+          "href": "https://inematds.github.io/gestao-ia-processos-v72/aulas/versao/",
+          "icone": "git"
+        },
+        {
+          "t": "G3 · Confiança progressiva (promover e rebaixar a autonomia de uma ação)",
+          "href": "https://inematds.github.io/gestao-ia-agentes-v72/aulas/confianca/",
+          "icone": "escudo"
+        },
+        {
+          "t": "LOOP-R: promover e reverter no guia",
+          "href": "https://inematds.github.io/loop-r/guia/",
+          "icone": "voltar"
+        }
+      ]
+    }
+  ]
+}

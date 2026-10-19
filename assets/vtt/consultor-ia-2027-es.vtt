@@ -1,0 +1,634 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.050
+2027, eso por sí solo, quizá ya no te alcance para pagar las cuentas como hoy.
+
+2
+00:00:04.488 --> 00:00:06.808
+Si trabajas con IA o desarrollo y
+
+3
+00:00:06.808 --> 00:00:08.828
+vives de crear automatizaciones y agentes,
+
+4
+00:00:08.828 --> 00:00:09.808
+tengo una noticia.
+
+5
+00:00:09.808 --> 00:00:11.128
+En 2027,
+
+6
+00:00:11.128 --> 00:00:12.468
+eso por sí solo quizá ya no
+
+7
+00:00:12.468 --> 00:00:13.828
+te alcance para pagar las cuentas como
+
+8
+00:00:13.828 --> 00:00:14.208
+hoy.
+
+9
+00:00:14.208 --> 00:00:16.068
+No porque el trabajo vaya a desaparecer.
+
+10
+00:00:16.068 --> 00:00:17.608
+Sino porque el agente hará buena parte
+
+11
+00:00:17.608 --> 00:00:17.968
+de él.
+
+12
+00:00:17.968 --> 00:00:19.748
+Y tu cliente tendrá acceso al mismo
+
+13
+00:00:19.748 --> 00:00:20.108
+agente.
+
+14
+00:00:20.108 --> 00:00:21.868
+En este video quiero hablar de lo
+
+15
+00:00:21.868 --> 00:00:23.848
+que creo que necesitas aprender ahora para
+
+16
+00:00:23.848 --> 00:00:25.168
+seguir generando ingresos.
+
+17
+00:00:25.168 --> 00:00:26.688
+Y no es otra herramienta.
+
+18
+00:00:26.688 --> 00:00:28.008
+Piensa en tu trabajo de hoy.
+
+19
+00:00:28.008 --> 00:00:29.648
+Brief, conectar la API,
+
+20
+00:00:29.648 --> 00:00:30.608
+armar el flujo,
+
+21
+00:00:30.608 --> 00:00:31.628
+ajustar el prompt,
+
+22
+00:00:31.628 --> 00:00:32.168
+entregar.
+
+23
+00:00:32.168 --> 00:00:33.528
+El agente ya hace gran parte de
+
+24
+00:00:33.528 --> 00:00:33.968
+eso.
+
+25
+00:00:33.968 --> 00:00:35.588
+Y lo hace mejor con cada generación
+
+26
+00:00:35.588 --> 00:00:36.328
+de modelos.
+
+27
+00:00:36.328 --> 00:00:37.768
+Cuando cualquiera puede construir,
+
+28
+00:00:37.768 --> 00:00:39.108
+construir se vuelve un commodity.
+
+29
+00:00:39.108 --> 00:00:41.208
+Y se compite por los commodities en
+
+30
+00:00:41.208 --> 00:00:41.508
+precio.
+
+31
+00:00:41.508 --> 00:00:43.588
+Si tu propuesta es «yo construyo tu
+
+32
+00:00:43.588 --> 00:00:46.048
+agente», estás entrando en una subasta contra
+
+33
+00:00:46.048 --> 00:00:47.508
+el precio de una suscripción.
+
+34
+00:00:47.508 --> 00:00:49.148
+Pero hay algo que el cliente no
+
+35
+00:00:49.148 --> 00:00:50.248
+puede resolver solo,
+
+36
+00:00:50.248 --> 00:00:51.928
+ni siquiera con el mejor agente del
+
+37
+00:00:51.928 --> 00:00:52.568
+mundo.
+
+38
+00:00:52.568 --> 00:00:53.608
+Saber qué hacer.
+
+39
+00:00:53.608 --> 00:00:55.028
+Qué proceso abordar primero.
+
+40
+00:00:55.028 --> 00:00:56.808
+Qué vale la pena automatizar y qué
+
+41
+00:00:56.808 --> 00:00:57.108
+no.
+
+42
+00:00:57.108 --> 00:00:58.348
+Dónde está el riesgo.
+
+43
+00:00:58.348 --> 00:00:59.508
+Y si lo que se hizo está
+
+44
+00:00:59.508 --> 00:01:00.588
+funcionando de verdad.
+
+45
+00:01:00.588 --> 00:01:02.488
+Ahí está el dinero en 2027.
+
+46
+00:01:02.488 --> 00:01:04.048
+Y veo cuatro roles.
+
+47
+00:01:04.048 --> 00:01:05.628
+El primero es el de consultor.
+
+48
+00:01:05.628 --> 00:01:07.488
+En vez de empezar por la herramienta,
+
+49
+00:01:07.488 --> 00:01:09.628
+empiezas por el proceso del cliente.
+
+50
+00:01:09.628 --> 00:01:12.208
+Entras, lo mapeas y entiendes qué entra,
+
+51
+00:01:12.208 --> 00:01:14.628
+quién decide, quién ejecuta y dónde se
+
+52
+00:01:14.628 --> 00:01:15.388
+desperdicia.
+
+53
+00:01:15.388 --> 00:01:17.348
+Y entregas un diagnóstico y un plan:
+
+54
+00:01:17.348 --> 00:01:19.008
+esto queda a cargo de una persona,
+
+55
+00:01:19.008 --> 00:01:20.308
+esto pasa a un agente,
+
+56
+00:01:20.308 --> 00:01:22.748
+esto sigue siendo una automatización tradicional y
+
+57
+00:01:22.748 --> 00:01:24.228
+esto debería dejar de existir.
+
+58
+00:01:24.228 --> 00:01:26.128
+Esto es lo más difícil de automatizar,
+
+59
+00:01:26.128 --> 00:01:27.808
+porque exige entender el negocio,
+
+60
+00:01:27.808 --> 00:01:28.588
+no solo la tecnología.
+
+61
+00:01:28.588 --> 00:01:30.908
+El segundo rol es acompañar al cliente.
+
+62
+00:01:30.908 --> 00:01:33.448
+Un proyecto de IA no termina con
+
+63
+00:01:33.448 --> 00:01:33.928
+la entrega.
+
+64
+00:01:33.928 --> 00:01:34.908
+El modelo cambia,
+
+65
+00:01:34.908 --> 00:01:36.008
+el agente cambia,
+
+66
+00:01:36.008 --> 00:01:37.108
+el proceso cambia.
+
+67
+00:01:37.108 --> 00:01:39.128
+Quien acompaña al cliente mes a mes,
+
+68
+00:01:39.128 --> 00:01:40.488
+ajusta el contexto,
+
+69
+00:01:40.488 --> 00:01:42.508
+revisa las reglas y mide el resultado
+
+70
+00:01:42.508 --> 00:01:43.528
+se vuelve su socio.
+
+71
+00:01:43.528 --> 00:01:45.828
+Y un socio tiene un contrato recurrente.
+
+72
+00:01:45.828 --> 00:01:48.028
+El proyecto del constructor se termina.
+
+73
+00:01:48.028 --> 00:01:49.528
+El tercero es el de mentor.
+
+74
+00:01:49.528 --> 00:01:51.588
+Tu cliente va a querer usar agentes
+
+75
+00:01:51.588 --> 00:01:52.308
+por su cuenta.
+
+76
+00:01:52.308 --> 00:01:54.748
+Puedes luchar contra eso o puedes enseñarle.
+
+77
+00:01:54.748 --> 00:01:56.468
+El mentor enseña al gerente y al
+
+78
+00:01:56.468 --> 00:01:58.208
+equipo a trabajar con agentes:
+
+79
+00:01:58.208 --> 00:02:00.008
+dar contexto, delegar,
+
+80
+00:02:00.008 --> 00:02:01.728
+definir límites y evaluar.
+
+81
+00:02:01.728 --> 00:02:03.248
+En vez de hacerlo por él,
+
+82
+00:02:03.248 --> 00:02:05.128
+haces que aprenda a hacerlo bien.
+
+83
+00:02:05.128 --> 00:02:07.068
+Y quien enseña se vuelve el referente
+
+84
+00:02:07.068 --> 00:02:08.008
+dentro de la empresa.
+
+85
+00:02:08.008 --> 00:02:09.468
+Y el cuarto es un rol que
+
+86
+00:02:09.468 --> 00:02:11.408
+casi nadie está ocupando todavía:
+
+87
+00:02:11.408 --> 00:02:12.088
+auditor.
+
+88
+00:02:12.088 --> 00:02:13.948
+Cuando la empresa tenga decenas de agentes
+
+89
+00:02:13.948 --> 00:02:16.188
+funcionando, alguien tendrá que revisarlos.
+
+90
+00:02:16.188 --> 00:02:17.608
+¿Qué puede hacer ese agente?
+
+91
+00:02:17.608 --> 00:02:18.908
+¿Tiene demasiada autonomía?
+
+92
+00:02:18.908 --> 00:02:20.648
+¿Está usando datos que no debería?
+
+93
+00:02:20.648 --> 00:02:22.028
+¿Quién aprobó esa decisión?
+
+94
+00:02:22.028 --> 00:02:23.868
+¿El resultado es bueno o solo lo
+
+95
+00:02:23.868 --> 00:02:24.628
+parece?
+
+96
+00:02:24.628 --> 00:02:26.788
+Auditar agentes es revisar procesos,
+
+97
+00:02:26.788 --> 00:02:28.288
+riesgos y resultados.
+
+98
+00:02:28.288 --> 00:02:30.088
+Y aquí tu experiencia técnica se vuelve
+
+99
+00:02:30.088 --> 00:02:32.388
+una ventaja: sabes dónde suele equivocarse el
+
+100
+00:02:32.388 --> 00:02:32.788
+agente.
+
+101
+00:02:32.788 --> 00:02:34.668
+Entonces, ¿qué aprender ahora?
+
+102
+00:02:34.668 --> 00:02:36.188
+Primero: procesos.
+
+103
+00:02:36.188 --> 00:02:38.688
+Cómo mapear, medir y rediseñar un proceso.
+
+104
+00:02:38.688 --> 00:02:40.548
+Segundo: gestión de agentes.
+
+105
+00:02:40.548 --> 00:02:42.568
+Objetivo, contexto, herramientas,
+
+106
+00:02:42.568 --> 00:02:44.788
+autonomía, evaluación y supervisión.
+
+107
+00:02:44.788 --> 00:02:46.788
+Tercero: el negocio del cliente.
+
+108
+00:02:46.788 --> 00:02:48.808
+Elige un sector y entiéndelo a fondo.
+
+109
+00:02:48.808 --> 00:02:50.188
+Cuarto: comunicación.
+
+110
+00:02:50.188 --> 00:02:52.348
+Saber explicar, enseñar y convencer a un
+
+111
+00:02:52.348 --> 00:02:53.308
+gerente que no es técnico.
+
+112
+00:02:53.308 --> 00:02:54.748
+Y quinto: evaluación.
+
+113
+00:02:54.748 --> 00:02:56.288
+Saber decir, con criterio,
+
+114
+00:02:56.288 --> 00:02:58.168
+si un agente está dando resultados o
+
+115
+00:02:58.168 --> 00:02:58.328
+no.
+
+116
+00:02:58.328 --> 00:03:00.268
+Fíjate que ninguno de estos puntos es
+
+117
+00:03:00.268 --> 00:03:00.948
+una herramienta.
+
+118
+00:03:00.948 --> 00:03:03.348
+Y no, tu experiencia técnica no pierde
+
+119
+00:03:03.348 --> 00:03:03.548
+valor.
+
+120
+00:03:03.548 --> 00:03:04.448
+Cambia de lugar.
+
+121
+00:03:04.448 --> 00:03:05.568
+Antes era el producto.
+
+122
+00:03:05.568 --> 00:03:07.128
+Ahora es lo que te da credibilidad
+
+123
+00:03:07.128 --> 00:03:09.008
+para diagnosticar, orientar
+
+124
+00:03:09.008 --> 00:03:09.628
+y auditar.
+
+125
+00:03:09.628 --> 00:03:11.868
+Ya no necesitas ser el mejor constructor.
+
+126
+00:03:11.868 --> 00:03:13.848
+Necesitas entender lo suficiente de la técnica
+
+127
+00:03:13.848 --> 00:03:15.988
+para decidir bien y explicarte bien.
+
+128
+00:03:15.988 --> 00:03:17.568
+¿Cómo empezar esta semana?
+
+129
+00:03:17.568 --> 00:03:19.428
+Elige un cliente o tu propia empresa.
+
+130
+00:03:19.428 --> 00:03:20.548
+Elige un proceso.
+
+131
+00:03:20.548 --> 00:03:22.568
+Haz el diagnóstico antes de construir cualquier
+
+132
+00:03:22.568 --> 00:03:23.888
+cosa: qué entra,
+
+133
+00:03:23.888 --> 00:03:25.948
+quién decide, dónde está el cuello de
+
+134
+00:03:25.948 --> 00:03:27.468
+botella, qué queda a cargo de la
+
+135
+00:03:27.468 --> 00:03:30.348
+persona, del agente y de la automatización.
+
+136
+00:03:30.348 --> 00:03:31.548
+Escríbelo en una página.
+
+137
+00:03:31.548 --> 00:03:33.128
+Ese documento ya es un producto de
+
+138
+00:03:33.128 --> 00:03:33.808
+consultoría.
+
+139
+00:03:33.808 --> 00:03:35.488
+En INEMA punto club está el curso
+
+140
+00:03:35.488 --> 00:03:36.828
+de Gestión de Agentes con los siete
+
+141
+00:03:36.828 --> 00:03:38.628
+principios y el área de Gestión de
+
+142
+00:03:38.628 --> 00:03:40.128
+IA en eventos;
+
+143
+00:03:40.128 --> 00:03:41.188
+todo es abierto.
+
+144
+00:03:41.188 --> 00:03:42.308
+Úsalo como base.
+
+145
+00:03:42.308 --> 00:03:44.608
+En 2027, el cliente tendrá el mismo
+
+146
+00:03:44.608 --> 00:03:45.288
+agente que tú.
+
+147
+00:03:45.288 --> 00:03:47.188
+La diferencia estará en quién sabe qué
+
+148
+00:03:47.188 --> 00:03:47.908
+hacer con él.
+
+149
+00:03:47.908 --> 00:03:49.328
+Deja de vender construcción.
+
+150
+00:03:49.328 --> 00:03:50.628
+Empieza a vender claridad,
+
+151
+00:03:50.628 --> 00:03:51.568
+acompañamiento,
+
+152
+00:03:51.568 --> 00:03:52.808
+enseñanza y confianza.
+
+153
+00:03:52.808 --> 00:03:54.448
+De constructor a consultor.
+
+154
+00:03:54.448 --> 00:03:55.548
+De ejecutor a mentor.
+
+155
+00:03:55.548 --> 00:03:57.448
+Y de quien entrega a quien garantiza
+
+156
+00:03:57.448 --> 00:03:58.188
+que funciona.
+
+157
+00:03:58.188 --> 00:04:00.888
+Ese es el profesional de IA que
+
+158
+00:04:00.888 --> 00:04:02.528
+generará ingresos en 2027.
+

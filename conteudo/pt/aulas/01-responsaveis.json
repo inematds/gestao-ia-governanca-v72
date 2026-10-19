@@ -1,0 +1,290 @@
+{
+  "slug": "responsaveis",
+  "num": 1,
+  "menu": "Responsáveis",
+  "titulo": "Quem responde pelo agente",
+  "titulo_curto": "Quem responde",
+  "minutos": 18,
+  "lead": "Na configuração da Hora, o campo \"responsável\" diz: Rafael, TI terceirizada. Ele mantém a ferramenta, mas não responde pelo desconto que a Hora deu nem pelo pedido que ela fechou. Nesta aula você monta a matriz de responsáveis da operação, ação por ação, com uma regra que a contabilidade usa há décadas: quem lança não aprova.",
+  "objetivo": "nomear, ação por ação, quem executa, quem responde, quem é consultado e quem é informado, sem que quem lança aprove a própria ação.",
+  "competencias": [
+    "nomear-responsavel-humano",
+    "separar-execucao-de-aprovacao",
+    "montar-matriz-de-responsabilidades"
+  ],
+  "aprende": [
+    {
+      "t": "Por que o agente executa, mas nunca é o responsável"
+    },
+    {
+      "t": "A regra \"quem lança não aprova\" aplicada a agentes"
+    },
+    {
+      "t": "Um só responsável por linha, com substituto"
+    },
+    {
+      "t": "Quem responde pelas mudanças no próprio agente"
+    }
+  ],
+  "hero_alt": "Gerente aponta uma linha num quadro de vidro coberto de cartões coloridos em grade; um técnico de TI, uma atendente e o dono da empresa observam.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "A matriz de responsabilidades",
+      "sub": "Para cada ação da operação, quatro papéis e um substituto. Clique em cada um.",
+      "nos": [
+        {
+          "icone": "robo",
+          "titulo": "Executa",
+          "sub": "R · faz",
+          "detalhe": "Quem faz a ação: o agente, uma pessoa ou uma automação. Pode haver mais de um executor. Na Horizonte, a Hora executa \"criar pedido até R$ 5 mil\"; a Juliana executa \"cadastrar cliente novo\"."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Responde",
+          "sub": "A · um nome",
+          "forte": true,
+          "detalhe": "A pessoa que responde pelo resultado e decide quando a ação pede aprovação. Uma só por linha, com nome e cargo, sempre do negócio. Agente nunca ocupa esta coluna, e a TI também não, quando o resultado é comercial."
+        },
+        {
+          "icone": "chat",
+          "titulo": "Consultado",
+          "sub": "C · antes",
+          "detalhe": "Quem é ouvido antes da decisão porque sabe algo que muda a resposta. O Rafael é consultado sobre o que a ferramenta consegue fazer; o financeiro, sobre o cadastro do cliente."
+        },
+        {
+          "icone": "megafone",
+          "titulo": "Informado",
+          "sub": "I · depois",
+          "detalhe": "Quem fica sabendo do que foi feito, porque o trabalho dele depende disso. O estoque é informado do pedido aprovado; o Carlos recebe o resumo semanal das exceções."
+        },
+        {
+          "icone": "voltar",
+          "titulo": "Substituto",
+          "sub": "quando falta",
+          "detalhe": "Quem assume o \"responde\" nas férias, na doença ou num dia de reunião. Sem substituto, a fila de aprovação para e o agente espera, ou alguém aprova sem poder. Na Horizonte, a Juliana substitui a Patrícia nas aprovações de rotina."
+        }
+      ],
+      "legenda": "É a matriz RACI (do inglês responsible, accountable, consulted, informed) com uma coluna a mais, o substituto. Horizonte Distribuidora: empresa fictícia de estudo."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Quatro regras da matriz",
+      "sub": "Elas resolvem dois problemas do laboratório: o agente com a TI como responsável e as ferramentas de IA sem dono (F12).",
+      "passos": [
+        {
+          "titulo": "O agente executa, a pessoa responde",
+          "sub": "nem agente, nem TI",
+          "texto": [
+            "Agente não responde por nada: ele não assina, não é cobrado, não muda de comportamento por levar bronca. Toda linha em que ele executa precisa de uma pessoa na coluna \"responde\", com nome.",
+            "A TI mantém a ferramenta, mas não responde pelo resultado comercial. O Rafael sabe se a Hora está no ar; quem sabe se o desconto foi bom é a Patrícia."
+          ],
+          "exemplo": {
+            "rot": "Na Horizonte",
+            "texto": "O campo \"responsável: Rafael\" da configuração vira duas linhas: \"manter a Hora no ar\" (responde o Rafael) e \"vender pelo WhatsApp\" (responde a Patrícia, executa a Hora)."
+          }
+        },
+        {
+          "titulo": "Quem lança não aprova",
+          "sub": "três profissões já resolveram",
+          "texto": [
+            "Na contabilidade, quem lança não aprova e o agente nunca transmite nem paga. Na advocacia, o agente lê, conta, prepara e resume; o advogado decide, assina e protocola. Na clínica, o dado do paciente fica fora do alcance e o limite é decidido antes de ligar o agente.",
+            "A regra é a mesma nos três: quem faz a ação não é quem a aprova. Vale para o agente e vale para as pessoas."
+          ],
+          "exemplo": {
+            "rot": "Na Horizonte",
+            "texto": "A Hora prepara o desconto de 8%; a Patrícia aprova. A Patrícia prepara um desconto de 12% para um cliente grande; quem aprova é o Carlos, não ela."
+          }
+        },
+        {
+          "titulo": "Um nome por linha, e o substituto",
+          "sub": "comitê não responde",
+          "texto": [
+            "Se duas pessoas respondem por uma linha, nenhuma responde. Escreva um nome. Se a resposta honesta é \"depende\", a linha está grande demais: quebre em duas ações.",
+            "Depois olhe a coluna inteira: se o mesmo nome aparece em quase todas as linhas, a operação tem um gargalo. Dê um substituto a cada linha e confira se ele sabe que é substituto."
+          ],
+          "exemplo": {
+            "rot": "Na Horizonte",
+            "texto": "A Patrícia responde por 8 das 12 linhas. A Juliana é substituta nas aprovações até R$ 5 mil; acima disso, o substituto é o Carlos."
+          }
+        },
+        {
+          "titulo": "Mudar o agente também tem dono",
+          "sub": "configuração é decisão",
+          "texto": [
+            "Trocar o prompt, o modelo, uma ferramenta ou um limite muda o comportamento do agente como um treinamento muda o de uma pessoa. Essa ação também entra na matriz: quem propõe, quem aplica, quem aprova. Quem propõe e quem aplica não aprovam a própria mudança.",
+            "A McKinsey chama essa moldura de \"accountability by design\" (responsabilidade desenhada desde o início) em seus textos sobre a organização agêntica, de 2025 e 2026. É visão de consultoria, não estudo medido."
+          ],
+          "exemplo": {
+            "rot": "Na Horizonte",
+            "texto": "Mudança na Hora: a Patrícia propõe, o Rafael aplica, o Carlos aprova. O assistente de e-mail, ligado com um \"pode ligar\" por WhatsApp, volta para essa linha."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo para copiar: matriz de responsabilidades",
+      "sub": "Uma linha por ação, não por agente. A aba ao lado mostra a da Horizonte preenchida.",
+      "blocos": [
+        {
+          "rot": "Matriz de responsabilidades (RACI + substituto)",
+          "icone": "lista",
+          "conteudo": "MATRIZ DE RESPONSABILIDADES · processo: <de onde até onde> · versão <1.0> · <data>\nDono do processo: <nome e cargo> · revisão: <a cada mudança de agente, pessoa ou política>\n\n| Ação (verbo + objeto) | Executa (R) | Responde (A) - um nome | Consultado (C) | Informado (I) | Substituto do A | Aprovação? (sim/não, sobre o quê) |\n|---|---|---|---|---|---|---|\n| <responder dúvida de catálogo> | <agente> | <nome> | - | <quem assume> | <nome> | não |\n| <criar pedido até R$ X> | <agente> | <nome> | - | <estoque> | <nome> | não, no limite |\n| <desconto entre a% e b%> | <agente prepara> | <nome> | - | <dono> | <nome> | sim, o desconto exato |\n| <decisão acima da alçada> | <pessoa prepara> | <outra pessoa> | <...> | <...> | <nome> | sim |\n| <manter o agente no ar> | <TI> | <TI> | <dono do processo> | <...> | <nome> | não |\n| <mudar prompt, modelo, ferramenta ou limite> | <quem aplica> | <quem aprova> | <quem usa> | <equipe> | <nome> | sim, a mudança exata |\n| <pausar o agente> | <nome> | <nome> | - | <quem assume o trabalho> | <nome> | não |\n\nREGRAS\n1. Um nome por linha na coluna Responde. Agente nunca. TI só em linha técnica.\n2. Em linha com aprovação, quem executa não é quem responde.\n3. Toda ferramenta de IA em uso na área tem uma linha (inclusive as que a TI não conhece).\n4. Mesmo nome em mais da metade das linhas: rever substitutos e carga."
+        },
+        {
+          "rot": "Teste rápido da matriz (6 perguntas)",
+          "icone": "check",
+          "conteudo": "TESTE DA MATRIZ · responda sim ou não para cada pergunta\n\n[ ] 1. Toda linha tem exatamente um nome em Responde?\n[ ] 2. Nenhum agente aparece em Responde?\n[ ] 3. Em toda linha com aprovação, o executor é diferente de quem responde?\n[ ] 4. A TI só responde por linhas técnicas (manter no ar, credenciais)?\n[ ] 5. Toda linha tem um substituto, e ele sabe disso?\n[ ] 6. Há uma linha para mudar o agente, com proponente, aplicador e aprovador diferentes?\n\nUm \"não\" = a linha volta para quem é dono do processo, com prazo."
+        },
+        {
+          "rot": "Prompt · achar o conflito na matriz",
+          "icone": "chat",
+          "conteudo": "Você é auditor de controles internos. Abaixo está a matriz de\nresponsabilidades de uma operação com agentes de IA. Não reescreva a\nmatriz e não decida por mim. Aponte:\n\n1. Linhas em que a mesma pessoa (ou o mesmo agente) executa e aprova.\n2. Linhas sem um único responsável com nome, ou com agente ou TI como\n   responsável por resultado de negócio.\n3. Ações que um agente consegue fazer, pela descrição das ferramentas,\n   e que não têm linha.\n4. Pessoas que respondem por tantas linhas que viram gargalo.\n\nPara cada ponto, cite a linha e diga por que é risco.\n\nMatriz:\n\"\"\"<cole>\"\"\"\nFerramentas dos agentes:\n\"\"\"<cole a lista do que cada ferramenta permite>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Matriz da Horizonte (exemplo)",
+            "html": "<p><b>Pedido pelo WhatsApp → faturamento · matriz v1.0</b> · Horizonte, empresa fictícia de estudo</p><table><tr><th>Ação</th><th>Executa</th><th>Responde</th><th>C / I</th><th>Substituto</th></tr><tr><td>Responder dúvida de catálogo e entrega</td><td>Hora</td><td>Patrícia</td><td>I: Juliana (assume se chamada)</td><td>Juliana</td></tr><tr><td>Criar pedido até R$ 5 mil</td><td>Hora</td><td>Patrícia</td><td>I: estoque</td><td>Juliana</td></tr><tr><td>Desconto de 5% a 10%</td><td>Hora prepara</td><td>Patrícia aprova</td><td>I: Carlos (resumo semanal)</td><td>Juliana</td></tr><tr><td>Pedido acima de R$ 5 mil</td><td>Hora prepara</td><td>Patrícia aprova</td><td>I: financeiro</td><td>Carlos</td></tr><tr><td>Desconto acima de 10%</td><td>Patrícia prepara</td><td>Carlos aprova</td><td>C: financeiro</td><td>-</td></tr><tr><td>Cadastrar cliente novo</td><td>Juliana</td><td>Patrícia</td><td>C: financeiro (CNPJ)</td><td>Carlos</td></tr><tr><td>Responder e-mail do comercial@</td><td>assistente prepara</td><td>Patrícia aprova</td><td>I: Juliana</td><td>Juliana</td></tr><tr><td>Resumo de atendimento das 18 h</td><td>resumo</td><td>Juliana</td><td>C: Rafael (fornecedor)</td><td>Patrícia</td></tr><tr><td>Manter Hora e assistente no ar</td><td>Rafael</td><td>Rafael</td><td>C: Patrícia</td><td>-</td></tr><tr><td>Mudar prompt, modelo, ferramenta ou limite da Hora</td><td>Patrícia propõe, Rafael aplica</td><td>Carlos aprova</td><td>C: Juliana</td><td>-</td></tr><tr><td>Pausar a Hora</td><td>Patrícia ou Rafael</td><td>Patrícia</td><td>I: Juliana assume, Carlos</td><td>Carlos</td></tr><tr><td>Nova ferramenta de IA na área</td><td>quem pediu</td><td>Patrícia</td><td>C: Rafael · I: inventário</td><td>Carlos</td></tr></table><p>A Patrícia responde por 8 das 12 linhas: os substitutos ficam escritos e avisados.</p>"
+          },
+          {
+            "rot": "Como conferir / erros comuns",
+            "html": "<ul><li><b>Linha por agente.</b> \"Hora: Patrícia\" esconde que a Hora faz coisas de risco muito diferente. Uma linha por ação.</li><li><b>Agente como responsável.</b> \"Responde: Hora\" não significa nada quando dá errado.</li><li><b>Quem lança aprova.</b> A Patrícia prepara e aprova o próprio desconto de 12%: a linha falha no teste 3.</li><li><b>Ferramenta esquecida.</b> As ferramentas da pesquisa interna do laboratório (extensão de e-mail, gravador de reunião, chatbot pessoal) não têm linha: ninguém responde por elas.</li><li><b>Substituto que não sabe.</b> Escrever o nome não basta; avise a pessoa e diga o limite dela.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática",
+      "sub": "A matriz da Horizonte é o treino; a do seu processo é a que vale.",
+      "fonte": "Peças do laboratório: <a href=\"https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/\">configuração da Hora</a>, <a href=\"https://inematds.github.io/prof2030-lab/pecas/mcp-email/\">assistente de e-mail</a> e <a href=\"https://inematds.github.io/prof2030-lab/inventario.html\">inventário de TI</a> (F12).",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · A matriz da Horizonte",
+          "min": "30 min",
+          "texto": "Sem olhar a aba de exemplo, abra a configuração da Hora, a do assistente de e-mail e o inventário do laboratório. Liste as ações dos três agentes (Hora, assistente de e-mail, resumo de atendimento) e das pessoas no processo do pedido. Monte a matriz com o modelo, rode o teste de 6 perguntas e só depois compare com a aba.",
+          "pronto": "a matriz tem pelo menos 10 linhas cobrindo os 3 agentes; cada linha tem um único nome em Responde; nenhum agente nem o Rafael respondem por resultado comercial; nenhuma linha com aprovação tem o mesmo nome em Executa e Responde; há uma linha para mudar a Hora; e o teste de 6 perguntas deu 6 \"sim\"."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · A matriz do seu processo",
+          "min": "40 min",
+          "texto": "Faça a matriz de um processo seu em que um agente (ou uma ferramenta de IA) já trabalha. Pergunte à equipe quais ferramentas de IA cada um usa nesse processo e dê uma linha a cada uma. Rode o prompt do conflito e decida cada ponto. Mostre a matriz aos substitutos.",
+          "pronto": "a matriz está salva com todas as ações do processo e todas as ferramentas de IA citadas pela equipe; o teste de 6 perguntas dá 6 \"sim\"; e cada substituto confirmou por escrito (mensagem ou e-mail) que sabe que é substituto."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste rápido",
+      "sub": "5 perguntas. A explicação aparece depois da sua tentativa.",
+      "perguntas": [
+        {
+          "p": "A configuração da Hora diz \"responsável: Rafael (TI terceirizada)\". O que está errado?",
+          "opcoes": [
+            "Nada, porque quem instalou e configura a ferramenta é quem melhor responde por ela",
+            "O responsável deveria ser o próprio agente, que executa as ações",
+            "A TI mantém a ferramenta, mas o resultado comercial pede alguém do negócio",
+            "Falta pôr o Carlos junto, para que dois respondam pela Hora"
+          ],
+          "certa": 2,
+          "ref": "passos",
+          "explica": "São duas linhas diferentes: manter no ar (Rafael) e vender (Patrícia). Quando o desconto sai errado, quem responde é quem conhece a política comercial. Dois nomes juntos não resolvem: ninguém responde."
+        },
+        {
+          "p": "A Patrícia prepara um desconto de 12% para um cliente grande. Quem aprova?",
+          "opcoes": [
+            "O Carlos, porque quem lança não aprova e acima de 10% é com ele",
+            "A própria Patrícia, porque conhece o cliente, a margem dele e o histórico de compras",
+            "A Hora, porque calcula a margem do pedido com mais precisão"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "A regra vale para pessoas também. A Patrícia aprova o que a Hora prepara até 10%; o que ela mesma prepara acima disso vai para outra pessoa."
+        },
+        {
+          "p": "Uma linha da matriz diz \"Responde: Patrícia e Juliana\". O que fazer?",
+          "opcoes": [
+            "Manter assim, porque duas pessoas conferem melhor que uma",
+            "Acrescentar o Carlos, para desempatar sempre que as duas discordarem do caso",
+            "Deixar a linha sem nome até a próxima reunião de equipe",
+            "Escolher um nome e deixar o outro como substituto, com limite"
+          ],
+          "certa": 3,
+          "ref": "passos",
+          "explica": "Responsabilidade dividida vira responsabilidade de ninguém. Um nome em Responde; o outro vira substituto, com o limite escrito."
+        },
+        {
+          "p": "O Rafael troca o modelo da Hora por um mais barato e ele mesmo confirma que ficou bom. O que a matriz diz?",
+          "opcoes": [
+            "Está certo, porque troca de modelo é assunto técnico da TI",
+            "Basta avisar a Juliana, que é quem assume as conversas quando a Hora erra o modelo",
+            "Quem aplica a mudança não a aprova; ela vai a quem a matriz manda"
+          ],
+          "certa": 2,
+          "ref": "passos",
+          "explica": "Trocar modelo muda o comportamento do agente. Na Horizonte, a mudança é aprovada pelo Carlos depois de testada; o Rafael aplica e é consultado."
+        },
+        {
+          "p": "Na pesquisa interna, um vendedor cola a planilha de clientes num chatbot gratuito da conta pessoal. O que entra na matriz?",
+          "opcoes": [
+            "Uma linha para a ferramenta, com quem decide manter ou cortar",
+            "Nada, porque é uso pessoal, feito na conta do vendedor e fora dos sistemas da empresa",
+            "Só o nome do vendedor no campo Informado da linha da Hora"
+          ],
+          "certa": 0,
+          "ref": "codigo",
+          "explica": "É a IA na sombra (F12). Ferramenta em uso no processo sem linha é ferramenta sem dono. A decisão sobre o dado que passa por ela está no G4 e no Profissional 2030 Base."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo",
+      "itens": [
+        {
+          "t": "Por ação",
+          "texto": "Uma linha por ação, com executa, responde, consultado, informado e substituto."
+        },
+        {
+          "t": "Pessoa responde",
+          "texto": "Agente executa; responde sempre uma pessoa do negócio, com nome."
+        },
+        {
+          "t": "Quem lança não aprova",
+          "texto": "Vale para o agente e para as pessoas, como na contabilidade."
+        },
+        {
+          "t": "Mudança tem dono",
+          "texto": "Quem propõe e quem aplica não aprovam a mudança no agente."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "Caderno contábil e financeiro: quem lança não aprova",
+          "href": "https://inematds.github.io/arquiteto-agentes-contabil/",
+          "icone": "lista"
+        },
+        {
+          "t": "Caderno de advocacia: o agente prepara, o advogado assina",
+          "href": "https://inematds.github.io/arquiteto-agentes-advocacia/",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Caderno de saúde: o que fica fora do alcance do agente",
+          "href": "https://inematds.github.io/arquiteto-agentes-saude/",
+          "icone": "escudo"
+        }
+      ]
+    }
+  ]
+}

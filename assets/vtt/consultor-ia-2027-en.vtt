@@ -1,0 +1,670 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.470
+In 2027, that alone probably won't pay the bills the way it does today.
+
+2
+00:00:04.893 --> 00:00:06.133
+If you work in AI or software
+
+3
+00:00:06.133 --> 00:00:08.513
+development and make a living building automations
+
+4
+00:00:08.513 --> 00:00:10.133
+and agents, I have some news.
+
+5
+00:00:10.133 --> 00:00:13.153
+In 2027, that alone probably won't pay
+
+6
+00:00:13.153 --> 00:00:14.633
+the bills the way it does today.
+
+7
+00:00:14.633 --> 00:00:16.273
+Not because the work will disappear.
+
+8
+00:00:16.273 --> 00:00:17.913
+But because agents will do a lot
+
+9
+00:00:17.913 --> 00:00:18.273
+of it.
+
+10
+00:00:18.273 --> 00:00:20.153
+And your client will have access to
+
+11
+00:00:20.153 --> 00:00:20.933
+the same agent.
+
+12
+00:00:20.933 --> 00:00:21.973
+So in this video,
+
+13
+00:00:21.973 --> 00:00:23.333
+I want to talk about what I
+
+14
+00:00:23.333 --> 00:00:24.633
+think you need to learn now to
+
+15
+00:00:24.633 --> 00:00:25.233
+keep earning.
+
+16
+00:00:25.233 --> 00:00:26.553
+And it's not another tool.
+
+17
+00:00:26.553 --> 00:00:27.753
+Think about your work today.
+
+18
+00:00:27.753 --> 00:00:28.713
+Getting the brief,
+
+19
+00:00:28.713 --> 00:00:29.873
+connecting the API,
+
+20
+00:00:29.873 --> 00:00:30.993
+building the workflow,
+
+21
+00:00:30.993 --> 00:00:32.053
+tuning the prompt,
+
+22
+00:00:32.053 --> 00:00:32.793
+delivering.
+
+23
+00:00:32.793 --> 00:00:34.253
+The agent already does a lot of
+
+24
+00:00:34.253 --> 00:00:34.433
+that.
+
+25
+00:00:34.433 --> 00:00:35.893
+And it gets better with every new
+
+26
+00:00:35.893 --> 00:00:36.893
+generation of models.
+
+27
+00:00:36.893 --> 00:00:37.973
+When anyone can build,
+
+28
+00:00:37.973 --> 00:00:39.273
+building becomes a commodity.
+
+29
+00:00:39.273 --> 00:00:41.133
+And commodities compete on price.
+
+30
+00:00:41.133 --> 00:00:42.713
+If your pitch is “I'll build your
+
+31
+00:00:42.713 --> 00:00:44.493
+agent,” you're bidding against the price of
+
+32
+00:00:44.493 --> 00:00:45.273
+a subscription.
+
+33
+00:00:45.273 --> 00:00:46.953
+But there's one thing clients can't figure
+
+34
+00:00:46.953 --> 00:00:47.733
+out on their own,
+
+35
+00:00:47.733 --> 00:00:49.213
+even with the best agent in the
+
+36
+00:00:49.213 --> 00:00:49.493
+world.
+
+37
+00:00:49.493 --> 00:00:50.253
+Knowing what to do.
+
+38
+00:00:50.253 --> 00:00:51.533
+Which process to tackle first.
+
+39
+00:00:51.533 --> 00:00:53.213
+What's worth automating and what isn't.
+
+40
+00:00:53.213 --> 00:00:54.153
+Where the risks are.
+
+41
+00:00:54.153 --> 00:00:55.853
+And whether what was built is actually
+
+42
+00:00:55.853 --> 00:00:56.333
+working.
+
+43
+00:00:56.333 --> 00:00:57.653
+That's where the money will be in
+
+44
+00:00:57.653 --> 00:00:58.433
+2027.
+
+45
+00:00:58.433 --> 00:00:59.673
+And I see four roles.
+
+46
+00:00:59.673 --> 00:01:00.973
+The first is the consultant.
+
+47
+00:01:00.973 --> 00:01:02.453
+Instead of starting with the tool,
+
+48
+00:01:02.453 --> 00:01:03.793
+you start with the client's process.
+
+49
+00:01:03.793 --> 00:01:04.613
+You go in,
+
+50
+00:01:04.613 --> 00:01:05.393
+map it out,
+
+51
+00:01:05.393 --> 00:01:06.633
+and understand what comes in,
+
+52
+00:01:06.633 --> 00:01:08.213
+who decides, who does the work,
+
+53
+00:01:08.213 --> 00:01:09.533
+and where time gets wasted.
+
+54
+00:01:09.533 --> 00:01:11.153
+Then you deliver an assessment and a
+
+55
+00:01:11.153 --> 00:01:12.833
+plan: this stays with a person,
+
+56
+00:01:12.833 --> 00:01:13.813
+this goes to an agent,
+
+57
+00:01:13.813 --> 00:01:15.433
+this remains traditional automation,
+
+58
+00:01:15.433 --> 00:01:16.893
+and this should stop existing.
+
+59
+00:01:16.893 --> 00:01:18.493
+This is the hardest part to automate,
+
+60
+00:01:18.493 --> 00:01:20.233
+because it takes understanding the business,
+
+61
+00:01:20.233 --> 00:01:21.493
+not just the technology.
+
+62
+00:01:21.493 --> 00:01:23.253
+The second is supporting the client over
+
+63
+00:01:23.253 --> 00:01:23.733
+time.
+
+64
+00:01:23.733 --> 00:01:25.333
+An AI project doesn't end when you
+
+65
+00:01:25.333 --> 00:01:26.013
+deliver it.
+
+66
+00:01:26.013 --> 00:01:27.133
+The model changes,
+
+67
+00:01:27.133 --> 00:01:27.873
+the agent changes,
+
+68
+00:01:27.873 --> 00:01:28.533
+the process changes.
+
+69
+00:01:28.533 --> 00:01:30.333
+If you support the client month after
+
+70
+00:01:30.333 --> 00:01:31.673
+month, adjust the context,
+
+71
+00:01:31.673 --> 00:01:32.333
+review the rules,
+
+72
+00:01:32.333 --> 00:01:33.353
+and measure results,
+
+73
+00:01:33.353 --> 00:01:34.313
+you become a partner.
+
+74
+00:01:34.313 --> 00:01:35.973
+And partners get recurring contracts.
+
+75
+00:01:35.973 --> 00:01:36.913
+A builder's project ends.
+
+76
+00:01:36.913 --> 00:01:37.993
+The third is the mentor.
+
+77
+00:01:37.993 --> 00:01:39.453
+Your client will want to use agents
+
+78
+00:01:39.453 --> 00:01:40.033
+themselves.
+
+79
+00:01:40.033 --> 00:01:40.833
+You can fight that,
+
+80
+00:01:40.833 --> 00:01:42.013
+or you can teach them.
+
+81
+00:01:42.013 --> 00:01:43.693
+A mentor teaches managers and teams to
+
+82
+00:01:43.693 --> 00:01:44.433
+work with agents:
+
+83
+00:01:44.433 --> 00:01:46.213
+provide context, delegate,
+
+84
+00:01:46.213 --> 00:01:48.153
+set limits, and evaluate.
+
+85
+00:01:48.153 --> 00:01:49.473
+Instead of doing it for them,
+
+86
+00:01:49.473 --> 00:01:51.113
+you help them get good at it.
+
+87
+00:01:51.113 --> 00:01:52.133
+And when you teach,
+
+88
+00:01:52.133 --> 00:01:53.593
+you become the go-to person at the
+
+89
+00:01:53.593 --> 00:01:54.033
+company.
+
+90
+00:01:54.033 --> 00:01:55.673
+And the fourth is a role almost
+
+91
+00:01:55.673 --> 00:01:56.993
+no one has taken on yet:
+
+92
+00:01:56.993 --> 00:01:57.433
+auditor.
+
+93
+00:01:57.433 --> 00:01:59.693
+When companies have dozens of agents running,
+
+94
+00:01:59.693 --> 00:02:00.973
+someone needs to take a look.
+
+95
+00:02:00.973 --> 00:02:02.273
+What can this agent do?
+
+96
+00:02:02.273 --> 00:02:03.893
+Does it have too much autonomy?
+
+97
+00:02:03.893 --> 00:02:05.753
+Is it using data it shouldn't?
+
+98
+00:02:05.753 --> 00:02:07.233
+Who approved this decision?
+
+99
+00:02:07.233 --> 00:02:08.313
+Are the results good,
+
+100
+00:02:08.313 --> 00:02:10.293
+or do they just look good?
+
+101
+00:02:10.293 --> 00:02:12.013
+Auditing agents means reviewing process,
+
+102
+00:02:12.013 --> 00:02:13.293
+risk, and results.
+
+103
+00:02:13.293 --> 00:02:15.133
+And your technical background gives you an
+
+104
+00:02:15.133 --> 00:02:16.813
+edge here: you know where agents tend
+
+105
+00:02:16.813 --> 00:02:17.393
+to go wrong.
+
+106
+00:02:17.393 --> 00:02:19.033
+So, what should you learn now?
+
+107
+00:02:19.033 --> 00:02:20.353
+First: processes.
+
+108
+00:02:20.353 --> 00:02:21.293
+How to map,
+
+109
+00:02:21.293 --> 00:02:23.173
+measure, and redesign a process.
+
+110
+00:02:23.173 --> 00:02:24.813
+Second: agent management.
+
+111
+00:02:24.813 --> 00:02:26.253
+Goals, context, tools,
+
+112
+00:02:26.253 --> 00:02:28.253
+autonomy, evaluation, and oversight.
+
+113
+00:02:28.253 --> 00:02:29.793
+Third: the client's business.
+
+114
+00:02:29.793 --> 00:02:32.173
+Pick an industry and understand it deeply.
+
+115
+00:02:32.173 --> 00:02:33.713
+Fourth: communication.
+
+116
+00:02:33.713 --> 00:02:34.753
+Learn to explain,
+
+117
+00:02:34.753 --> 00:02:36.993
+teach, and persuade a manager who's not
+
+118
+00:02:36.993 --> 00:02:37.513
+technical.
+
+119
+00:02:37.513 --> 00:02:39.253
+And fifth: evaluation.
+
+120
+00:02:39.253 --> 00:02:40.153
+Learn to judge,
+
+121
+00:02:40.153 --> 00:02:41.133
+with clear criteria,
+
+122
+00:02:41.133 --> 00:02:43.353
+whether an agent is delivering results.
+
+123
+00:02:43.353 --> 00:02:44.813
+Notice that none of these is a
+
+124
+00:02:44.813 --> 00:02:45.213
+tool.
+
+125
+00:02:45.213 --> 00:02:47.433
+And no, your technical background isn't losing
+
+126
+00:02:47.433 --> 00:02:47.933
+its value.
+
+127
+00:02:47.933 --> 00:02:49.093
+Its role is changing.
+
+128
+00:02:49.093 --> 00:02:50.233
+Before, it was the product.
+
+129
+00:02:50.233 --> 00:02:51.893
+Now, it's what gives you the credibility
+
+130
+00:02:51.893 --> 00:02:53.253
+to diagnose, advise,
+
+131
+00:02:53.253 --> 00:02:54.053
+and audit.
+
+132
+00:02:54.053 --> 00:02:55.273
+You don't have to be the best
+
+133
+00:02:55.273 --> 00:02:55.953
+builder anymore.
+
+134
+00:02:55.953 --> 00:02:57.593
+You need to understand the technology well
+
+135
+00:02:57.593 --> 00:02:59.413
+enough to make good decisions and explain
+
+136
+00:02:59.413 --> 00:03:00.133
+them clearly.
+
+137
+00:03:00.133 --> 00:03:01.353
+How can you start this week?
+
+138
+00:03:01.353 --> 00:03:01.953
+Pick a client,
+
+139
+00:03:01.953 --> 00:03:03.033
+or your own company.
+
+140
+00:03:03.033 --> 00:03:04.253
+Choose a process.
+
+141
+00:03:04.253 --> 00:03:06.073
+Assess it before building anything:
+
+142
+00:03:06.073 --> 00:03:07.033
+what comes in,
+
+143
+00:03:07.033 --> 00:03:08.993
+who decides, where the bottleneck is,
+
+144
+00:03:08.993 --> 00:03:10.473
+and what should go to a person,
+
+145
+00:03:10.473 --> 00:03:12.173
+an agent, or automation.
+
+146
+00:03:12.173 --> 00:03:13.773
+Write it all on one page.
+
+147
+00:03:13.773 --> 00:03:16.013
+That document is already a consulting product.
+
+148
+00:03:16.013 --> 00:03:17.253
+At INEMA dot club,
+
+149
+00:03:17.253 --> 00:03:19.113
+there's a course on Agent Management with
+
+150
+00:03:19.113 --> 00:03:20.233
+seven principles,
+
+151
+00:03:20.233 --> 00:03:21.713
+and an area on AI Management in
+
+152
+00:03:21.713 --> 00:03:22.053
+events.
+
+153
+00:03:22.053 --> 00:03:22.773
+It's all open.
+
+154
+00:03:22.773 --> 00:03:24.193
+Use it as a starting point.
+
+155
+00:03:24.193 --> 00:03:26.433
+In 2027, the client will have the
+
+156
+00:03:26.433 --> 00:03:27.293
+same agent you do.
+
+157
+00:03:27.293 --> 00:03:28.753
+The difference will be knowing what to
+
+158
+00:03:28.753 --> 00:03:29.273
+do with it.
+
+159
+00:03:29.273 --> 00:03:30.253
+Stop selling builds.
+
+160
+00:03:30.253 --> 00:03:31.293
+Start selling clarity,
+
+161
+00:03:31.293 --> 00:03:32.673
+ongoing support, teaching,
+
+162
+00:03:32.673 --> 00:03:33.273
+and trust.
+
+163
+00:03:33.273 --> 00:03:34.693
+Go from builder to consultant.
+
+164
+00:03:34.693 --> 00:03:35.853
+From executor to mentor.
+
+165
+00:03:35.853 --> 00:03:37.633
+And from delivering to ensuring it works.
+
+166
+00:03:37.633 --> 00:03:39.213
+That's the kind of AI professional who
+
+167
+00:03:39.213 --> 00:03:40.533
+will earn a living in 2027.
+

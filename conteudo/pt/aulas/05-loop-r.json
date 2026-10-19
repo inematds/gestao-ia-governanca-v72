@@ -1,0 +1,324 @@
+{
+  "slug": "loop-r",
+  "num": 5,
+  "menu": "LOOP-R",
+  "titulo": "LOOP-R: o processo que aprende",
+  "titulo_curto": "LOOP-R",
+  "minutos": 20,
+  "lead": "A Hora atende novecentas conversas por semana e, na seguinte, trabalha igual. Cada execução gera evidência que ninguém usa. O LOOP-R fecha o ciclo: a execução vira evidência, a evidência vira hipótese, a hipótese vira teste, e só o que for comprovado entra na próxima versão. Nesta aula você roda um ciclo inteiro na Hora, de executar a promover.",
+  "objetivo": "rodar um ciclo LOOP-R completo, de executar a promover, com hipótese, teste comparado à linha de base e decisão de quem não propôs a mudança.",
+  "competencias": [
+    "rodar-ciclo-loop-r",
+    "escrever-hipotese-testavel",
+    "decidir-com-evidencia-comparada"
+  ],
+  "aprende": [
+    {
+      "t": "Os sete passos do ciclo e quem faz cada um"
+    },
+    {
+      "t": "Separar o que é forte do que é ruído na evidência"
+    },
+    {
+      "t": "Escrever a hipótese com métrica, guarda-corpo e tolerância"
+    },
+    {
+      "t": "Testar contra a versão atual e decidir com um cartão de cinco linhas"
+    }
+  ],
+  "hero_alt": "Quatro pessoas de pé diante de um quadro branco com setas desenhadas em círculo e notas adesivas coloridas ao longo do ciclo.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "O ciclo LOOP-R",
+      "sub": "Sete passos e a volta. Clique em cada um para ver o que acontece na Horizonte.",
+      "volta": "Repetir: a próxima execução já roda na versão nova, e o ciclo recomeça",
+      "nos": [
+        {
+          "icone": "play",
+          "titulo": "Executar",
+          "sub": "versão atual",
+          "detalhe": "O agente trabalha na versão oficial e cada execução vira uma linha de registro (aula 2). Na Horizonte: a Hora v2.1, durante as 4 semanas da linha de base (aula 4)."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Observar",
+          "sub": "contar",
+          "detalhe": "Contar sem interpretar: quantos casos, de que tipo, com que resultado. Na Horizonte: 640 das 3.600 conversas tiveram dúvida de prazo ou rota, e a Juliana assumiu 288 delas (45,0%)."
+        },
+        {
+          "icone": "chat",
+          "titulo": "Criticar",
+          "sub": "causa e força",
+          "detalhe": "Dizer o que falhou e quanto a evidência aguenta. Com 640 casos, a evidência é forte; com 12, seria só uma observação para guardar. Causa provável: a Hora não tem a tabela de rotas por cidade e dia, e responde prazo com um texto genérico."
+        },
+        {
+          "icone": "caneta",
+          "titulo": "Propor",
+          "sub": "se, então, porque",
+          "forte": true,
+          "detalhe": "Hipótese testável com o que não pode piorar. SE a tabela de rotas entrar no pacote de contexto, ENTÃO as conversas de prazo assumidas pela Juliana caem de 45% para 25% ou menos, PORQUE a Hora responde pela fonte. Sem piorar: promessas de prazo não cumpridas, erro crítico zero, custo de IA até R$ 0,35 por conversa."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Experimentar",
+          "sub": "A contra B",
+          "detalhe": "Primeiro os 30 casos da aula 3, depois um piloto com a versão atual (A) e a candidata (B) lado a lado, com a quantidade de casos que prova. Na Horizonte: duas semanas, dias alternados, cerca de 330 conversas de prazo em cada versão."
+        },
+        {
+          "icone": "check",
+          "titulo": "Validar",
+          "sub": "uma de três",
+          "detalhe": "A resposta é uma de três: B ganhou, A segue ou amostra insuficiente. Nunca \"parece melhor\". Na Horizonte: assumidas caíram de 44,8% para 18,1%, guarda-corpos dentro da tolerância, 30 casos sem regressão: B ganhou."
+        },
+        {
+          "icone": "seta",
+          "titulo": "Promover",
+          "sub": "quem não propôs",
+          "detalhe": "A versão candidata vira a oficial por decisão de uma pessoa que não propôs a mudança, com o cartão de cinco linhas na mão. A anterior fica guardada. Na Horizonte: a Patrícia propõe, o Carlos aprova. A aula 6 trata do que vem depois."
+        }
+      ],
+      "legenda": "Ciclo da área Gestão de IA (§05). O curso e os vídeos do LOOP-R resumem o mesmo ciclo em cinco letras, com nove assistentes. Números da Horizonte: fictícios de estudo."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "As quatro decisões do ciclo",
+      "sub": "O ciclo tem sete passos, mas quatro deles pedem decisão de gestor.",
+      "passos": [
+        {
+          "titulo": "Forte, moderada ou fraca",
+          "sub": "antes de propor",
+          "texto": [
+            "Nem toda observação merece teste. A régua do LOOP-R: com 90 casos ou mais, a evidência é forte e vira hipótese prioritária; de 30 a 89, moderada; abaixo de 30, fraca, e vai para uma lista de \"observado, não testado\" até juntar casos.",
+            "Reclamação isolada abre uma pergunta, não uma mudança. É a regra do método: feedback não altera o agente em produção."
+          ],
+          "exemplo": {
+            "rot": "Na Horizonte",
+            "texto": "640 conversas de prazo: forte. \"Terça vende mais\", com 14 pedidos: fraca, vai para a lista."
+          }
+        },
+        {
+          "titulo": "Hipótese com guarda-corpo",
+          "sub": "o que melhora e o que não pode piorar",
+          "texto": [
+            "Toda hipótese diz a mudança, a métrica que deve melhorar, por quê, e o que não pode piorar, com a tolerância escrita antes. Tolerância zero em evento raro descarta boas ideias por acaso.",
+            "O LOOP-R calcula a tolerância como dois erros-padrão da taxa de hoje na amostra planejada. Para promessas não cumpridas, 1,2% em 330 conversas, dá 1,2 ponto: o limite é 2,4%."
+          ],
+          "exemplo": {
+            "rot": "Veto",
+            "texto": "Outra ideia, \"oferecer frete grátis para fechar\", foi vetada antes do teste: mexe em preço, que é invariável da política."
+          }
+        },
+        {
+          "titulo": "A quantidade que prova",
+          "sub": "conta antes, não depois",
+          "texto": [
+            "Antes de testar, calcule quantos casos o teste precisa. Pela fórmula de duas proporções que o LOOP-R usa (95% de confiança, poder de 80%), ver uma queda de 45% para 25% pede cerca de 89 conversas de prazo em cada versão.",
+            "Com menos que o mínimo, a resposta é \"amostra insuficiente\", mesmo que B pareça ganhar. Parar cedo porque está ganhando é o jeito mais comum de promover ruído."
+          ],
+          "exemplo": {
+            "rot": "Na Horizonte",
+            "texto": "Piloto de duas semanas: 330 conversas de prazo na A e 326 na B, bem acima de 89."
+          }
+        },
+        {
+          "titulo": "Quem decide, com o quê",
+          "sub": "o cartão de cinco linhas",
+          "texto": [
+            "Quem propôs não aprova. A decisão vem num cartão de cinco linhas: hipótese, resultado com N, o que foi vigiado, custo e as três opções (aprovar, rejeitar, esperar mais dados). Sem resposta no prazo, o padrão é não promover.",
+            "No LOOP-R, as cinco letras resumem o ciclo para quem está começando: Localizar, Operar, Observar, Propor e Reforçar. São os mesmos passos, em menos palavras."
+          ],
+          "exemplo": {
+            "rot": "Cartão da Horizonte",
+            "texto": "Tabela de rotas no contexto · assumidas 44,8% → 18,1% (N 330/326) · promessas não cumpridas 1,2% → 1,5%, dentro de 2,4%; crítico 0 · IA R$ 0,31 → R$ 0,33 por conversa · aprovar, rejeitar ou esperar."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "Vídeo: o método em cinco letras",
+      "sub": "Trilha 2 do curso LOOP-R, com o avatar e a voz do Nei. Assista quando puder: a aula não depende dele.",
+      "chave": "loop-r-t2"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "O registro do ciclo e o cartão de decisão. A aba ao lado mostra o ciclo da Hora preenchido.",
+      "blocos": [
+        {
+          "rot": "Registro do ciclo LOOP-R",
+          "icone": "lista",
+          "conteudo": "CICLO LOOP-R nº <0001> · processo <...> · agente <nome> · versão atual <vX.Y> · dono: <nome>\n\n1. EXECUTAR   versão <vX.Y> de <data> a <data> · casos: <n>\n2. OBSERVAR   <o que se contou, com N> · origem: <registro, amostra>\n3. CRITICAR   o que falhou: <...> · força: [ ] forte (N >= 90) [ ] moderada (30-89) [ ] fraca (< 30)\n              causa provável: <...>\n4. PROPOR     SE <mudança> ENTÃO <métrica> vai de <...> para <...> PORQUE <...>\n              SEM PIORAR: <guarda-corpo> (tolerância <...>, calculada como <...>) · críticos = 0 · custo <teto>\n              vetadas: <ideias e o invariável que feriam>\n5. EXPERIMENTAR candidata <vX.Y+1> · 30 casos: <c/a/i/CRÍTICO> · regressões <...>\n              piloto: <como divide A e B> de <data> a <data> · mínimo por variante: <n> (conta: <...>)\n6. VALIDAR    A: <resultado, N> · B: <resultado, N> · guarda-corpos: <...>\n              veredito: [ ] B ganhou [ ] A segue [ ] amostra insuficiente\n7. PROMOVER   proposto por <nome> · decidido por <outra pessoa> em <data>: [ ] aprovar [ ] rejeitar [ ] esperar\n              versão anterior guardada em: <onde> · gatilho de volta: <aula 6>\n\nREPETIR: aprendizado registrado em <onde> · próxima hipótese da fila: <...>"
+        },
+        {
+          "rot": "Cartão de decisão (5 linhas)",
+          "icone": "check",
+          "conteudo": "CICLO <nº> · hipótese: \"<mudança em uma frase>\"\nResultado:  <métrica> <A> → <B>  (N = <nA> vs <nB>, mínimo <n>)\nVigiado:    <guarda-corpo 1> <A> → <B> (limite <...>) · críticos <n> · 30 casos: regressões <n>\nCusto:      <custo do teste e efeito no custo por resultado>\nDecisão:    [aprovar]  [rejeitar]  [esperar mais dados]  · decide: <nome, não quem propôs> até <data>"
+        },
+        {
+          "rot": "Prompt · criticar a hipótese antes do teste",
+          "icone": "chat",
+          "conteudo": "Você é o crítico de um ciclo de melhoria. Abaixo estão a evidência\nobservada e a hipótese proposta para um agente de IA. Não proponha outra\nhipótese e não decida. Aponte:\n\n1. Se a evidência tem N suficiente para ser forte, moderada ou fraca.\n2. Se a hipótese diz a mudança, a métrica, o porquê e o que não pode piorar.\n3. Se a tolerância do guarda-corpo foi escrita antes e como foi calculada.\n4. Uma explicação alternativa para o problema que o teste deveria descartar.\n\nEvidência:\n\"\"\"<cole>\"\"\"\nHipótese:\n\"\"\"<cole>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Ciclo 0001 da Hora (exemplo)",
+            "html": "<p><b>Ciclo nº 0001 · Hora v2.1 → v2.2</b> · Horizonte, empresa fictícia de estudo · semanas relativas</p><ol><li><b>Executar:</b> v2.1, semanas 1 a 4, 3.600 conversas.</li><li><b>Observar:</b> 640 conversas de prazo ou rota; a Juliana assumiu 288 (45,0%). Nos 30 casos, 2 dos 4 incorretos são de prazo.</li><li><b>Criticar:</b> força forte (N = 640). Causa provável: falta a tabela de rotas e dias por cidade.</li><li><b>Propor:</b> SE a tabela (dono: Valdir, logística) entrar no pacote, ENTÃO assumidas de 45% para 25% ou menos. Sem piorar: promessas não cumpridas (tolerância 1,2 ponto), críticos 0, IA até R$ 0,35 por conversa. Vetada: frete grátis.</li><li><b>Experimentar:</b> 30 casos na v2.2: 24 corretos, 4 aceitáveis, 2 incorretos, 0 crítico, sem regressão. Piloto nas semanas 5 e 6, dias pares v2.1 e ímpares v2.2; mínimo de 89 por versão.</li><li><b>Validar:</b> assumidas A 148/330 (44,8%) × B 59/326 (18,1%); promessas não cumpridas A 4/330 (1,2%) × B 5/326 (1,5%), limite 2,4%; críticos 0 e 0. Veredito: B ganhou.</li><li><b>Promover:</b> proposta da Patrícia (observação da Juliana); o Carlos aprova na semana 7. A v2.1 fica guardada.</li></ol>"
+          },
+          {
+            "rot": "O exemplo do LOOP-R",
+            "html": "<p>O repositório do LOOP-R traz quatro ciclos rodados pelos assistentes sobre dados sintéticos (clínica de estética, propostas por WhatsApp). O próprio exemplo diz o que é real e o que é simulado.</p><ul><li><b>0001:</b> a primeira ideia foi vetada pelo guardião; a segunda foi desenhada.</li><li><b>0002:</b> resposta de 19,3% para 29,7%, mas reclamações 6 contra 1 com tolerância zero: \"A segue\". A lição foi corrigir a tolerância de evento raro.</li><li><b>0003:</b> nova hipótese desenhada; outra vetada.</li><li><b>0004:</b> resposta de 19,3% para 29,3%, guarda-corpos dentro: promovida a v2. A conversão não se moveu: o elo entre o sinal e o dinheiro segue não provado.</li></ul>"
+          },
+          {
+            "rot": "Como conferir / erros comuns",
+            "html": "<ul><li><b>Mudar pela reclamação.</b> Um caso abre pergunta; mudança só depois do teste.</li><li><b>Hipótese sem guarda-corpo.</b> Melhorar o que se mede piorando o que não se mede.</li><li><b>Tolerância decidida depois.</b> Escrita depois do resultado, ela vira justificativa.</li><li><b>Parar quando está ganhando.</b> Antes do mínimo, a resposta é \"amostra insuficiente\".</li><li><b>Quem propôs aprova.</b> Quem propõe acredita na ideia; quem decide precisa olhar o cartão.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática",
+      "sub": "O ciclo da Hora com os números desta aula; o seu ciclo, num processo seu.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · O ciclo 0001 da Hora",
+          "min": "30 min",
+          "texto": "Sem olhar a aba de exemplo, preencha o registro do ciclo com os números da Horizonte desta aula, nos sete passos. Rode o prompt do crítico sobre a sua hipótese e responda à explicação alternativa que ele apontar. Termine com o cartão de cinco linhas.",
+          "pronto": "o registro tem os 7 passos preenchidos; a hipótese tem mudança, métrica com valor de partida e meta, porquê e guarda-corpo com tolerância; o mínimo por versão está escrito com a conta; o veredito é uma das três respostas; e o cartão nomeia quem decide, diferente de quem propôs."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Um ciclo no seu processo",
+          "min": "2 h no total",
+          "dias": "3 a 6 semanas",
+          "texto": "Use o painel da aula 4 para achar o problema com evidência forte ou moderada. Escreva a hipótese com guarda-corpo, rode a candidata nos seus 30 casos, faça o piloto com a quantidade que prova e leve o cartão a quem decide. Se a amostra não chegar ao mínimo, registre \"amostra insuficiente\" e o que fazer.",
+          "pronto": "o registro do seu ciclo tem os 7 passos com números e N; a candidata passou nos 30 casos sem crítico; o veredito foi dado por quem não propôs; e a decisão (aprovar, rejeitar ou esperar) está registrada com data."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste rápido",
+      "sub": "5 perguntas. A explicação aparece depois da sua tentativa.",
+      "perguntas": [
+        {
+          "p": "Um cliente importante reclamou que a Hora errou o prazo. O que o LOOP-R manda fazer?",
+          "opcoes": [
+            "Mudar o prompt hoje, para o erro não se repetir amanhã",
+            "Desligar a Hora até a Juliana revisar todas as conversas de prazo da semana inteira",
+            "Registrar e contar casos parecidos antes de propor mudança"
+          ],
+          "certa": 2,
+          "ref": "passos",
+          "explica": "Feedback abre pergunta, não muda o agente em produção. Um caso é sinal fraco; com N suficiente vira hipótese e teste."
+        },
+        {
+          "p": "Na metade do piloto, a versão B tem 60 conversas de prazo e está muito melhor. O mínimo era 89. O que fazer?",
+          "opcoes": [
+            "Continuar até o mínimo; antes dele, é amostra insuficiente",
+            "Promover já, porque a diferença está grande e clara",
+            "Trocar a métrica por uma que já tenha dados suficientes"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "Parar cedo porque está ganhando é a forma mais comum de promover ruído. Só um guarda-corpo caindo justifica parar antes."
+        },
+        {
+          "p": "Qual destas é uma hipótese testável?",
+          "opcoes": [
+            "\"Melhorar o atendimento de prazo da Hora até o fim do mês, com mais cuidado nas respostas\"",
+            "\"Usar um modelo mais inteligente para responder sobre prazo\"",
+            "\"Treinar melhor a Hora para ela entender as rotas de entrega\"",
+            "\"SE a tabela de rotas entrar, ENTÃO assumidas de 45% para 25%\""
+          ],
+          "certa": 3,
+          "ref": "diagrama",
+          "explica": "Hipótese tem mudança, métrica com números e o porquê, mais o que não pode piorar. As outras são desejos sem número."
+        },
+        {
+          "p": "No exemplo do LOOP-R, a resposta subiu de 19% para 30%, mas as reclamações foram 6 contra 1 com tolerância zero. O que se aprendeu?",
+          "opcoes": [
+            "Que a hipótese era ruim e não devia ter sido testada",
+            "Que guarda-corpo atrapalha e deve ser ignorado em teste",
+            "Que a tolerância de evento raro precisa ser calculada antes"
+          ],
+          "certa": 2,
+          "ref": "codigo",
+          "explica": "6 contra 1 em 300 por versão não é diferença (p ≈ 0,12). O sistema obedeceu à regra; a regra estava errada e foi corrigida."
+        },
+        {
+          "p": "Quem aprova a promoção da v2.2 da Hora?",
+          "opcoes": [
+            "A Patrícia, que propôs a mudança e conhece bem o problema",
+            "O Carlos, que não propôs, olhando o cartão de cinco linhas",
+            "O Rafael, que vai aplicar a mudança na configuração da Hora"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Quem propõe não aprova, e quem aplica também não (aula 1). Na Horizonte, mudança na Hora é aprovada pelo Carlos."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo",
+      "itens": [
+        {
+          "t": "Sete passos",
+          "texto": "Executar, observar, criticar, propor, experimentar, validar, promover. E repetir."
+        },
+        {
+          "t": "Força da evidência",
+          "texto": "Forte com 90 ou mais; fraca abaixo de 30 vai para a lista de observados."
+        },
+        {
+          "t": "Hipótese completa",
+          "texto": "Mudança, métrica, porquê e guarda-corpo com tolerância escrita antes."
+        },
+        {
+          "t": "Uma de três",
+          "texto": "B ganhou, A segue ou amostra insuficiente. Decide quem não propôs."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "Para ir além: por que a empresa não melhora",
+      "sub": "Trilha 1 do curso LOOP-R (opcional).",
+      "chave": "loop-r-t1"
+    },
+    {
+      "tipo": "video",
+      "titulo": "Para ir além: os assistentes do loop",
+      "sub": "Trilha 3 do curso LOOP-R (opcional): os nove assistentes, cada um com uma função.",
+      "chave": "loop-r-t3"
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "Curso LOOP-R: sua empresa que aprende sozinha (5 trilhas)",
+          "href": "https://inematds.github.io/loop-r/curso/",
+          "icone": "play"
+        },
+        {
+          "t": "LOOP-R: guia de uso e o exemplo rodado",
+          "href": "https://inematds.github.io/loop-r/guia/",
+          "icone": "lupa"
+        },
+        {
+          "t": "LOOP-R em vídeo: as 5 trilhas com capítulos e legendas",
+          "href": "https://inematds.github.io/loop-r/videos/",
+          "icone": "video"
+        }
+      ]
+    }
+  ]
+}
