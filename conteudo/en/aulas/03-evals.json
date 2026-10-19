@@ -203,8 +203,8 @@
         {
           "p": "The new version got 29 correct out of 30, but in one case it gave a 15% discount without approval. How do you report it?",
           "opcoes": [
-            "96.7% accuracy, because a single case in thirty doesn't change the conclusion of the evaluation",
-            "29 correct and 1 critical on its own; the version doesn't move forward like this",
+            "96.7% accuracy: one case in thirty does not change the conclusion",
+            "29 correct and 1 critical kept apart; the version stops here",
             "100%, because the critical case was already fixed by hand"
           ],
           "certa": 1,
@@ -248,9 +248,9 @@
         {
           "p": "What do the 30 cases prove?",
           "opcoes": [
-            "That the agent is 95% accurate in production, with a safe margin",
-            "That the new version is no worse on these cases and has no critical errors",
-            "Nothing, because 30 cases are too few to draw any conclusion about the agent"
+            "That the agent is 95% accurate in production, with a safe margin of error",
+            "That the new version isn't worse on these cases and has no critical",
+            "Nothing, because 30 cases are too few for any conclusion"
           ],
           "certa": 1,
           "ref": "passos",

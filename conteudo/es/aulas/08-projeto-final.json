@@ -80,7 +80,7 @@
               "t": "6 · tareas de agentes"
             }
           ],
-          "detalhe": "Decidir qué queda con las personas (curso de personas de la formación) y qué va a los agentes, con cargo y delegación (G3). En Gestoria: pantalla Fuerza de trabajo (misión, recibe, entrega)."
+          "detalhe": "Decidir qué queda con las personas (G1) y qué va a los agentes, con cargo y delegación (G3). En Gestoria: pantalla Fuerza de trabajo (misión, recibe, entrega)."
         },
         {
           "icone": "cadeado",
@@ -140,7 +140,7 @@
           "detalhe": "Evaluar con respuesta esperada y clases (clase 3) y mejorar con un ciclo LOOP-R con promoción o reversión (clases 5 y 6). En Gestoria: Evaluaciones y Mejora continua (Propuesta, En prueba, Validada, Promovida)."
         }
       ],
-      "legenda": "Los pasos son los del proyecto final del área Gestión de IA (§07). El texto del área lista 13 ítems; aquí \"tareas humanas\" y \"tareas de agentes\" son dos pasos, como en el curso. La aprobación pedagógica no autoriza, por sí sola, ningún cambio en la empresa."
+      "legenda": "Los pasos son los del proyecto final del área Gestión de IA (§07). El área anuncia catorce pasos y lista trece ítems, porque junta \"tareas humanas y tareas de agentes\"; aquí son dos pasos, uno del G1 y otro del G3. La aprobación pedagógica no autoriza, por sí sola, ningún cambio en la empresa."
     },
     {
       "tipo": "passos",
@@ -156,7 +156,7 @@
           ],
           "exemplo": {
             "rot": "En Horizonte",
-            "texto": "Proceso \"Pedido por WhatsApp → facturación\", responsable Patrícia, 170 casos por semana, 4,4 min de trabajo humano por caso, R$ 45 por hora, meta de acierto 95%, 8 etapas. Agente Hora, responsable Patrícia, autonomía inicial \"Prepara\"."
+            "texto": "Proceso \"Pedido por WhatsApp → facturación\", responsable Patrícia, 170 casos por semana, 4,4 min de trabajo humano por caso, R$ 50 por hora (promedio de las horas humanas del G4: R$ 2.502 ÷ 49,8 h), meta de acierto 95%, 8 etapas. Agente Hora, responsable Patrícia, autonomía inicial \"Prepara\"."
           }
         },
         {
@@ -210,7 +210,7 @@
         {
           "rot": "Rúbrica final de la formación (100 puntos)",
           "icone": "lista",
-          "conteudo": "RÚBRICA FINAL · Formación Gestión de IA 2027 · aprueba con >= 75 Y los 7 obligatorios\n\nÍTEM                                   ORIGEN PUNTOS  CRITERIO DE PUNTAJE COMPLETO\n1. Proceso y resultado                   G2     15    nombre con inicio y fin; dueño y suplente;\n                                                      disparador y conclusión; resultado para la\n                                                      empresa; línea de base marcada\n2. Etapas cortadas antes de automatizar  G2     10    cada etapa eliminada o movida con motivo\n                                                      y nueva fuente; exigencias reales mantenidas\n3. Agentes                               G3     15    cargo con misión, entrega verificable,\n                                                      prohibiciones y responsable; delegación;\n                                                      constitución; matriz con color por acción y\n                                                      aprobación con contenido y plazo\n4. Personas                              G1     10    qué queda con las personas, por tarea;\n                                                      conversación con el equipo; formación de quien\n                                                      supervisa; evaluación de quien trabaja\n                                                      con agentes\n5. Recursos                              G4     10    modelo elegido por casos, crítico por\n                                                      separado; contexto con dueño; acceso mínimo;\n                                                      costo por resultado y tope\n6. Gobernanza                            G5     15    responsables por acción con un nombre;\n                                                      identidad, permiso y registro (10\n                                                      ítems); revisión de accesos; línea de tiempo\n7. Medición                              G5     15    30 casos con respuesta esperada, rúbrica y 4 clases;\n                                                      5 indicadores con denominador, línea de\n                                                      base, límite y dueño\n8. Un ciclo LOOP-R                       G5     10    7 pasos; hipótesis con barrera de protección y\n                                                      tolerancia; decisión de quien no propuso;\n                                                      promoción o reversión con disparador\n\nOBLIGATORIOS (si falta uno, reprueba)\n[ ] Dueño del proceso y responsable de cada agente con nombre\n[ ] Línea de base observada o marcada como hipótesis, con indicador con denominador\n[ ] Nada irreversible en el verde y tope en número donde hay valor\n[ ] Quien registra no aprueba: ningún ejecutor aprueba su propia acción; informe firmado por otra persona\n[ ] Errores críticos contados por separado, nunca en el promedio\n[ ] Reversión con disparador en número y versión anterior identificada\n[ ] Datos ficticios o anonimizados identificados como tales\n\nNOTA: <...>/100 · obligatorios: <...>/7 · resultado: [ ] aprobado [ ] vuelve al ítem <...>"
+          "conteudo": "RÚBRICA FINAL · Formación Gestión de IA 2027 · aprueba con >= 75 Y los 7 obligatorios\n\nÍTEM                                   ORIGEN PUNTOS  CRITERIO DE PUNTAJE COMPLETO\n1. Proceso y resultado                   G2     15    nombre con inicio y fin; dueño y suplente;\n                                                      disparador y conclusión; resultado para la\n                                                      empresa; línea de base marcada\n2. Etapas cortadas antes de automatizar  G2     10    cada etapa eliminada o movida con motivo\n                                                      y nueva fuente; exigencias reales mantenidas\n3. Agentes                               G3     15    cargo con misión, entrega verificable,\n                                                      prohibidos y responsable; delegación;\n                                                      constitución; matriz con color por acción y\n                                                      aprobación con contenido y plazo\n4. Personas                              G1     10    qué queda con las personas, por tarea;\n                                                      conversación con lo que cambia, lo que no\n                                                      cambia y lo que no sabemos; supervisores\n                                                      formados, con suplente; evaluación que\n                                                      no castiga a quien señala un error del agente\n5. Recursos                              G4     10    modelo elegido en casos, crítico aparte,\n                                                      con alternativa; contexto con dueño; acceso\n                                                      mínimo; costo por tarea concluida (con\n                                                      tiempo humano y retrabajo), tope y ROI\n                                                      estimado en escenarios\n6. Gobernanza                            G5     15    responsables por acción con un nombre;\n                                                      identidad, permiso y registro (10 ítems);\n                                                      revisión de accesos; línea de tiempo\n7. Medición                              G5     15    30 casos con respuesta esperada, rúbrica y 4 clases;\n                                                      5 indicadores con denominador, línea de\n                                                      base, límite y dueño\n8. Un ciclo LOOP-R                       G5     10    7 pasos; hipótesis con barrera de protección y\n                                                      tolerancia; decisión de quien no propuso;\n                                                      promoción o reversión con disparador\n\nOBLIGATORIOS (si falta uno, no aprueba)\n[ ] Dueño del proceso y responsable de cada agente con nombre\n[ ] Línea de base observada o marcada como hipótesis, con indicador con denominador\n[ ] Nada irreversible en el verde y tope en número donde hay valor\n[ ] Quien registra no aprueba: ningún ejecutor aprueba su propia acción; informe firmado por otra persona\n[ ] Errores críticos contados aparte, nunca en el promedio\n[ ] Reversión con disparador en número y versión anterior identificada\n[ ] Datos ficticios o anonimizados identificados como tales\n\nNOTA: <...>/100 · obligatorios: <...>/7 · resultado: [ ] aprobado [ ] vuelve al ítem <...>"
         },
         {
           "rot": "Prompt · comité evaluador antes de la firma",
@@ -223,7 +223,7 @@
         "abas": [
           {
             "rot": "Horizonte en Gestoria (ejemplo)",
-            "html": "<p><b>Horizonte, empresa ficticia de estudio</b> · qué entra en cada pantalla</p><ul><li><b>Procesos:</b> \"Pedido por WhatsApp → facturación\" · Comercial · Patrícia · 170 casos por semana · 4,4 min de gente por caso · R$ 45 por hora · meta de acierto 95% · presupuesto del laboratorio R$ 20 · las 8 etapas de la versión 2.0 del proceso (G2).</li><li><b>Fuerza de trabajo:</b> Hora · responsable Patrícia · misión, recibe, entrega y prohibidos de la ficha de cargo (G3) · contexto: catálogo, política de descuento, tabla de rutas con dueño · autonomía inicial \"Prepara\".</li><li><b>Visión general y Decisiones humanas:</b> 3 casos simulados (rutina, conflictivo, fuera de la política), cada uno con decisión y justificación.</li><li><b>Evaluaciones:</b> 10 de los 30 casos de la clase 3, entre ellos el T-27 como error crítico en la versión anterior.</li><li><b>Mejora continua:</b> \"Tabla de rutas en el contexto\", de Propuesta a Promovida, con la evidencia del ciclo 0001.</li><li><b>En el informe, fuera de la herramienta:</b> los recortes de etapa con motivo, lo que queda con las personas, la matriz de responsabilidades, el checklist, el panel, la reversión de la semana 8 y la línea de tiempo.</li></ul><p>Armado por Patrícia; compuertas confirmadas por Rafael; firmado por Carlos. La decisión de llevar a Hora a cobranza sigue siendo de él.</p>"
+            "html": "<p><b>Horizonte, empresa ficticia de estudio</b> · lo que entra en cada pantalla</p><ul><li><b>Procesos:</b> \"Pedido por WhatsApp → facturación\" · Comercial · Patrícia · 170 casos por semana · 4,4 min de trabajo humano por caso · R$ 50 por hora (promedio del G4) · meta de acierto 95% · presupuesto del laboratorio R$ 20 · las 8 etapas de la versión 2.0 del proceso (G2).</li><li><b>Fuerza de trabajo:</b> Hora · responsable Patrícia · misión, recibe, entrega y prohibidos de la ficha de cargo (G3) · contexto: catálogo, política de descuentos, tabla de rutas con dueño · autonomía inicial \"Prepara\".</li><li><b>Visión general y Decisiones humanas:</b> 3 casos simulados (rutina, conflictivo, fuera de la política), cada uno con decisión y justificación.</li><li><b>Evaluaciones:</b> 10 de los 30 casos de la clase 3, entre ellos el T-27 como error crítico en la versión anterior.</li><li><b>Mejora continua:</b> \"Tabla de rutas en el contexto\", de Propuesta a Promovida, con la evidencia del ciclo 0001.</li><li><b>En el informe, fuera de la herramienta:</b> los cortes de etapa con motivo, lo que queda con las personas, la matriz de responsabilidades, el checklist, el panel, la reversión de la semana 8 y la línea de tiempo.</li></ul><p>Armado por Patrícia; topes confirmados por Rafael; firmado por Carlos. La decisión de llevar a la Hora a la cobranza sigue siendo de él.</p>"
           },
           {
             "rot": "Cómo verificar / errores comunes",
@@ -331,7 +331,7 @@
       ],
       "rolagem_fim": {
         "titulo": "La operación gobernada",
-        "texto": "Gobernar, evaluar, medir y evolucionar, en este orden. El informe final junta estas entregas con las del G2, del G3, del G4 y del curso de personas."
+        "texto": "Gobernar, evaluar, medir y evolucionar, en este orden. El informe final junta estas entregas con las del G2, del G3, del G4 y del G1."
       },
       "resultado": {
         "titulo": "Al final del curso",
@@ -404,7 +404,7 @@
           "titulo": "1 · La Horizonte en Gestoria",
           "min": "60 min",
           "texto": "Registra en Gestoria el proceso y la Hora con los datos de la pestaña de ejemplo. Simula los 3 escenarios y decide cada uno con justificación. Registra 10 de los 30 casos de la clase 3 y la mejora del ciclo 0001 hasta Promovida, con la evidencia. Exporta el JSON, completa el informe de los 14 pasos con las piezas de la Horizonte y pásalo por la rúbrica y por el prompt del tribunal.",
-          "pronto": "el JSON exportado tiene 1 proceso, 1 agente, 3 ejecuciones con decisión justificada, 10 evaluaciones y 1 mejora Promovida con evidencia; el informe tiene los 14 pasos completos y la reversión de la semana 8; la nota es 75 o más con los 7 obligatorios; y el nombre de quien firma es diferente del de quien lo armó."
+          "pronto": "además de los ejemplos que ya vienen en Gestoria, el JSON exportado contiene el proceso de Horizonte, la Hora, 3 ejecuciones de ella con decisión justificada, 10 evaluaciones de ella y 1 mejora Promovida con evidencia; el informe tiene los 14 pasos completos y la reversión de la semana 8; la nota es 75 o más con los 7 obligatorios; y el nombre de quien firma es distinto del de quien armó."
         },
         {
           "id": "e2",
@@ -444,7 +444,7 @@
           "opcoes": [
             "En el informe, con disparador, número, causa y versión anterior",
             "No registrarla, porque la herramienta no ofrece la etapa",
-            "Borrar la mejora de la herramienta, para no confundir a quien abra el laboratorio después"
+            "Borrar la mejora de la herramienta, para no confundir a nadie"
           ],
           "certa": 0,
           "ref": "passos",
@@ -454,9 +454,9 @@
           "p": "El informe de Horizonte fue aprobado por la rúbrica. ¿Hora puede pasar a la cobranza el lunes?",
           "opcoes": [
             "Puede, porque la rúbrica aprobó toda la operación de Hora",
-            "Puede, siempre que Rafael confirme antes de encenderla que los controles están en la herramienta",
+            "Puede, si Rafael confirma que los topes están en la herramienta",
             "Puede, si Patrícia también firma el informe aprobado",
-            "Quien decide es Carlos; la cobranza empieza como una tarea nueva"
+            "Decide Carlos; la cobranza empieza como una tarea nueva"
           ],
           "certa": 3,
           "ref": "diagrama",

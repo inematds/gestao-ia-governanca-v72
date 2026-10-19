@@ -211,7 +211,7 @@
           "p": "Un cliente importante se quejó de que Hora se equivocó con el plazo. ¿Qué manda hacer el LOOP-R?",
           "opcoes": [
             "Cambiar el prompt hoy, para que el error no se repita mañana",
-            "Apagar a Hora hasta que Juliana revise todas las conversaciones de plazo de la semana entera",
+            "Apagar la Hora hasta que Juliana revise las conversaciones de plazo",
             "Registrar y contar casos parecidos antes de proponer un cambio"
           ],
           "certa": 2,
@@ -232,9 +232,9 @@
         {
           "p": "¿Cuál de estas es una hipótesis comprobable?",
           "opcoes": [
-            "\"Mejorar la atención de Hora sobre plazos hasta fin de mes, con más cuidado en las respuestas\"",
+            "\"Mejorar la atención de plazos de la Hora hasta fin de mes\"",
             "\"Usar un modelo más inteligente para responder sobre plazos\"",
-            "\"Entrenar mejor a Hora para que entienda las rutas de entrega\"",
+            "\"Entrenar mejor a la Hora para que entienda todas las rutas de entrega\"",
             "\"SI entra la tabla de rutas, ENTONCES asumidas de 45% a 25%\""
           ],
           "certa": 3,

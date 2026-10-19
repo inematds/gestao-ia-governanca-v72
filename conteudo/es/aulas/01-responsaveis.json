@@ -189,7 +189,7 @@
           "opcoes": [
             "Nada, porque quien instaló y configura la herramienta es quien mejor responde por ella",
             "El responsable debería ser el propio agente, que ejecuta las acciones",
-            "TI mantiene la herramienta, pero el resultado comercial requiere a alguien del negocio",
+            "TI mantiene la herramienta, pero el resultado comercial pide a alguien del negocio",
             "Falta poner a Carlos también, para que dos respondan por Hora"
           ],
           "certa": 2,
@@ -199,8 +199,8 @@
         {
           "p": "Patrícia prepara un descuento de 12% para un cliente grande. ¿Quién aprueba?",
           "opcoes": [
-            "Carlos, porque quien registra no aprueba y por encima de 10% le corresponde a él",
-            "La propia Patrícia, porque conoce al cliente, su margen y su historial de compras",
+            "Carlos: quien registra no aprueba y, sobre 10%, decide él",
+            "La propia Patrícia, porque conoce bien al cliente y su margen",
             "Hora, porque calcula el margen del pedido con más precisión"
           ],
           "certa": 0,
@@ -211,7 +211,7 @@
           "p": "Una línea de la matriz dice \"Responde: Patrícia y Juliana\". ¿Qué hacer?",
           "opcoes": [
             "Dejarla así, porque dos personas revisan mejor que una",
-            "Agregar a Carlos, para desempatar siempre que las dos discrepen sobre el caso",
+            "Agregar a Carlos, para desempatar cuando las dos no estén de acuerdo",
             "Dejar la línea sin nombre hasta la próxima reunión de equipo",
             "Elegir un nombre y dejar al otro como suplente, con límite"
           ],
@@ -223,7 +223,7 @@
           "p": "Rafael cambia el modelo de Hora por uno más barato y él mismo confirma que quedó bien. ¿Qué dice la matriz?",
           "opcoes": [
             "Es correcto, porque cambiar de modelo es un asunto técnico de TI",
-            "Basta con avisar a Juliana, que es quien asume las conversaciones cuando Hora se equivoca de modelo",
+            "Basta con avisar a Juliana, que asume las conversaciones si la Hora se equivoca",
             "Quien aplica el cambio no lo aprueba; va a quien la matriz indique"
           ],
           "certa": 2,
@@ -234,7 +234,7 @@
           "p": "En la encuesta interna, un vendedor pega la hoja de clientes en un chatbot gratuito de su cuenta personal. ¿Qué entra en la matriz?",
           "opcoes": [
             "Una fila para la herramienta, con quién decide mantenerla o cortarla",
-            "Nada, porque es uso personal, hecho en la cuenta del vendedor y fuera de los sistemas de la empresa",
+            "Nada, porque es uso personal, hecho en la cuenta personal del vendedor",
             "Solo el nombre del vendedor en el campo Informado de la fila de Hora"
           ],
           "certa": 0,

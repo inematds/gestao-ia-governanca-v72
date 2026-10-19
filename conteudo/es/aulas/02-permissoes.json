@@ -199,7 +199,7 @@
           "p": "Carlos respondió \"puedes activarlo\" en WhatsApp y el asistente de correo empezó a enviar y borrar sin aprobación. ¿Qué faltó?",
           "opcoes": [
             "Una concesión escrita de cada permiso, con alcance, aprobador y vigencia",
-            "Una contraseña más fuerte y cambiada cada mes en la cuenta del correo comercial",
+            "Una contraseña más fuerte y cambiada cada mes en la cuenta del correo del área comercial",
             "Un modelo de IA más cuidadoso, que pregunte antes de borrar un correo",
             "Un aviso claro en el prompt pidiendo que el asistente nunca borre nada"
           ],
@@ -222,9 +222,9 @@
           "p": "Marcaste \"sí\" en el ítem \"registro de toda acción\", pero el agente puede borrar sus propias líneas. ¿Y ahora?",
           "opcoes": [
             "Sigue en \"sí\", porque el registro existe y está activado",
-            "Queda en \"sí\" con una nota al pie, hasta que alguien realmente borre una línea",
+            "Queda \"sí\", con una observación al pie del checklist",
             "Basta con escribir en el prompt que el agente no puede borrar",
-            "El ítem 8 falla: queda en \"no\", con responsable y plazo para el bloqueo"
+            "Falla el ítem 8: \"no\", con dueño y plazo para el bloqueo"
           ],
           "certa": 3,
           "ref": "codigo",

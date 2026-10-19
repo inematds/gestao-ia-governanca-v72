@@ -80,7 +80,7 @@
               "t": "6 · tarefas de agentes"
             }
           ],
-          "detalhe": "Decidir o que fica com as pessoas (curso de pessoas da formação) e o que vai para os agentes, com cargo e delegação (G3). No Gestoria: tela Força de trabalho (missão, recebe, entrega)."
+          "detalhe": "Decidir o que fica com as pessoas (G1) e o que vai para os agentes, com cargo e delegação (G3). No Gestoria: tela Força de trabalho (missão, recebe, entrega)."
         },
         {
           "icone": "cadeado",
@@ -140,7 +140,7 @@
           "detalhe": "Avaliar com gabarito e classes (aula 3) e melhorar com um ciclo LOOP-R com promoção ou reversão (aulas 5 e 6). No Gestoria: Avaliações e Melhoria contínua (Proposta, Em teste, Validada, Promovida)."
         }
       ],
-      "legenda": "Os passos são os do projeto final da área Gestão de IA (§07). O texto da área lista 13 itens; aqui \"tarefas humanas\" e \"tarefas de agentes\" são dois passos, como no curso. A aprovação pedagógica não autoriza, sozinha, nenhuma mudança na empresa."
+      "legenda": "Os passos são os do projeto final da área Gestão de IA (§07). A área anuncia catorze passos e lista treze itens, porque junta \"tarefas humanas e tarefas de agentes\"; aqui elas são dois passos, um do G1 e outro do G3. A aprovação pedagógica não autoriza, sozinha, nenhuma mudança na empresa."
     },
     {
       "tipo": "passos",
@@ -156,7 +156,7 @@
           ],
           "exemplo": {
             "rot": "Na Horizonte",
-            "texto": "Processo \"Pedido pelo WhatsApp → faturamento\", responsável Patrícia, 170 casos por semana, 4,4 min de gente por caso, R$ 45 por hora, meta de acerto 95%, 8 etapas. Agente Hora, responsável Patrícia, autonomia inicial \"Prepara\"."
+            "texto": "Processo \"Pedido pelo WhatsApp → faturamento\", responsável Patrícia, 170 casos por semana, 4,4 min de gente por caso, R$ 50 por hora (média das horas de gente do G4: R$ 2.502 ÷ 49,8 h), meta de acerto 95%, 8 etapas. Agente Hora, responsável Patrícia, autonomia inicial \"Prepara\"."
           }
         },
         {
@@ -210,7 +210,7 @@
         {
           "rot": "Rubrica final da formação (100 pontos)",
           "icone": "lista",
-          "conteudo": "RUBRICA FINAL · Formação Gestão de IA 2027 · aprova com >= 75 E os 7 obrigatórios\n\nITEM                                   ORIGEM PONTOS  CRITÉRIO DE PONTO CHEIO\n1. Processo e resultado                  G2     15    nome com começo e fim; dono e substituto;\n                                                      gatilho e conclusão; resultado para a\n                                                      empresa; linha de base marcada\n2. Etapas cortadas antes de automatizar  G2     10    cada etapa eliminada ou movida com motivo\n                                                      e nova fonte; exigências reais mantidas\n3. Agentes                               G3     15    cargo com missão, entrega verificável,\n                                                      proibidos e responsável; delegação;\n                                                      constituição; matriz com cor por ação e\n                                                      aprovação com conteúdo e prazo\n4. Pessoas                               G1     10    o que fica com as pessoas, por tarefa;\n                                                      conversa com a equipe; formação de quem\n                                                      supervisiona; avaliação de quem trabalha\n                                                      com agentes\n5. Recursos                              G4     10    modelo escolhido por casos, crítico à\n                                                      parte; contexto com dono; acesso mínimo;\n                                                      custo por resultado e teto\n6. Governança                            G5     15    responsáveis por ação com um nome;\n                                                      identidade, permissão e registro (10\n                                                      itens); revisão de acessos; linha do tempo\n7. Medida                                G5     15    30 casos com gabarito, rubrica e 4 classes;\n                                                      5 indicadores com denominador, linha de\n                                                      base, limite e dono\n8. Um ciclo LOOP-R                       G5     10    7 passos; hipótese com guarda-corpo e\n                                                      tolerância; decisão de quem não propôs;\n                                                      promoção ou reversão com gatilho\n\nOBRIGATÓRIOS (um faltando reprova)\n[ ] Dono do processo e responsável de cada agente com nome\n[ ] Linha de base observada ou marcada como hipótese, com indicador com denominador\n[ ] Nada irreversível no verde e teto em número onde há valor\n[ ] Quem lança não aprova: nenhum executor aprova a própria ação; relatório assinado por outra pessoa\n[ ] Erros críticos contados à parte, nunca na média\n[ ] Reversão com gatilho em número e versão anterior identificada\n[ ] Dados fictícios ou anonimizados identificados como tal\n\nNOTA: <...>/100 · obrigatórios: <...>/7 · resultado: [ ] aprovado [ ] volta para o item <...>"
+          "conteudo": "RUBRICA FINAL · Formação Gestão de IA 2027 · aprova com >= 75 E os 7 obrigatórios\n\nITEM                                   ORIGEM PONTOS  CRITÉRIO DE PONTO CHEIO\n1. Processo e resultado                  G2     15    nome com começo e fim; dono e substituto;\n                                                      gatilho e conclusão; resultado para a\n                                                      empresa; linha de base marcada\n2. Etapas cortadas antes de automatizar  G2     10    cada etapa eliminada ou movida com motivo\n                                                      e nova fonte; exigências reais mantidas\n3. Agentes                               G3     15    cargo com missão, entrega verificável,\n                                                      proibidos e responsável; delegação;\n                                                      constituição; matriz com cor por ação e\n                                                      aprovação com conteúdo e prazo\n4. Pessoas                               G1     10    o que fica com as pessoas, por tarefa;\n                                                      conversa com o que muda, o que não muda\n                                                      e o que não sabemos; supervisores\n                                                      formados, com substituto; avaliação que\n                                                      não pune quem aponta erro do agente\n5. Recursos                              G4     10    modelo escolhido em casos, crítico à\n                                                      parte, com alternativa; contexto com\n                                                      dono; acesso mínimo; custo por tarefa\n                                                      concluída (com tempo humano e retrabalho),\n                                                      teto e ROI estimado em cenários\n6. Governança                            G5     15    responsáveis por ação com um nome;\n                                                      identidade, permissão e registro (10\n                                                      itens); revisão de acessos; linha do tempo\n7. Medida                                G5     15    30 casos com gabarito, rubrica e 4 classes;\n                                                      5 indicadores com denominador, linha de\n                                                      base, limite e dono\n8. Um ciclo LOOP-R                       G5     10    7 passos; hipótese com guarda-corpo e\n                                                      tolerância; decisão de quem não propôs;\n                                                      promoção ou reversão com gatilho\n\nOBRIGATÓRIOS (um faltando reprova)\n[ ] Dono do processo e responsável de cada agente com nome\n[ ] Linha de base observada ou marcada como hipótese, com indicador com denominador\n[ ] Nada irreversível no verde e teto em número onde há valor\n[ ] Quem lança não aprova: nenhum executor aprova a própria ação; relatório assinado por outra pessoa\n[ ] Erros críticos contados à parte, nunca na média\n[ ] Reversão com gatilho em número e versão anterior identificada\n[ ] Dados fictícios ou anonimizados identificados como tal\n\nNOTA: <...>/100 · obrigatórios: <...>/7 · resultado: [ ] aprovado [ ] volta para o item <...>"
         },
         {
           "rot": "Prompt · banca antes da assinatura",
@@ -223,7 +223,7 @@
         "abas": [
           {
             "rot": "A Horizonte no Gestoria (exemplo)",
-            "html": "<p><b>Horizonte, empresa fictícia de estudo</b> · o que entra em cada tela</p><ul><li><b>Processos:</b> \"Pedido pelo WhatsApp → faturamento\" · Comercial · Patrícia · 170 casos por semana · 4,4 min de gente por caso · R$ 45 por hora · meta de acerto 95% · orçamento do laboratório R$ 20 · as 8 etapas da versão 2.0 do processo (G2).</li><li><b>Força de trabalho:</b> Hora · responsável Patrícia · missão, recebe, entrega e proibidos da ficha de cargo (G3) · contexto: catálogo, política de desconto, tabela de rotas com dono · autonomia inicial \"Prepara\".</li><li><b>Visão geral e Decisões humanas:</b> 3 casos simulados (rotina, conflitante, fora da política), cada um com decisão e justificativa.</li><li><b>Avaliações:</b> 10 dos 30 casos da aula 3, entre eles o T-27 como erro crítico na versão anterior.</li><li><b>Melhoria contínua:</b> \"Tabela de rotas no contexto\", de Proposta a Promovida, com a evidência do ciclo 0001.</li><li><b>No relatório, fora da ferramenta:</b> os cortes de etapa com motivo, o que fica com as pessoas, a matriz de responsabilidades, o checklist, o painel, a reversão da semana 8 e a linha do tempo.</li></ul><p>Montado pela Patrícia; travas confirmadas pelo Rafael; assinado pelo Carlos. A decisão de levar a Hora à cobrança continua sendo dele.</p>"
+            "html": "<p><b>Horizonte, empresa fictícia de estudo</b> · o que entra em cada tela</p><ul><li><b>Processos:</b> \"Pedido pelo WhatsApp → faturamento\" · Comercial · Patrícia · 170 casos por semana · 4,4 min de gente por caso · R$ 50 por hora (média do G4) · meta de acerto 95% · orçamento do laboratório R$ 20 · as 8 etapas da versão 2.0 do processo (G2).</li><li><b>Força de trabalho:</b> Hora · responsável Patrícia · missão, recebe, entrega e proibidos da ficha de cargo (G3) · contexto: catálogo, política de desconto, tabela de rotas com dono · autonomia inicial \"Prepara\".</li><li><b>Visão geral e Decisões humanas:</b> 3 casos simulados (rotina, conflitante, fora da política), cada um com decisão e justificativa.</li><li><b>Avaliações:</b> 10 dos 30 casos da aula 3, entre eles o T-27 como erro crítico na versão anterior.</li><li><b>Melhoria contínua:</b> \"Tabela de rotas no contexto\", de Proposta a Promovida, com a evidência do ciclo 0001.</li><li><b>No relatório, fora da ferramenta:</b> os cortes de etapa com motivo, o que fica com as pessoas, a matriz de responsabilidades, o checklist, o painel, a reversão da semana 8 e a linha do tempo.</li></ul><p>Montado pela Patrícia; travas confirmadas pelo Rafael; assinado pelo Carlos. A decisão de levar a Hora à cobrança continua sendo dele.</p>"
           },
           {
             "rot": "Como conferir / erros comuns",
@@ -331,7 +331,7 @@
       ],
       "rolagem_fim": {
         "titulo": "A operação governada",
-        "texto": "Governar, avaliar, medir e evoluir, nesta ordem. O relatório final junta essas entregas às do G2, do G3, do G4 e do curso de pessoas."
+        "texto": "Governar, avaliar, medir e evoluir, nesta ordem. O relatório final junta essas entregas às do G2, do G3, do G4 e do G1."
       },
       "resultado": {
         "titulo": "Ao final do curso",
@@ -404,7 +404,7 @@
           "titulo": "1 · A Horizonte no Gestoria",
           "min": "60 min",
           "texto": "Cadastre no Gestoria o processo e a Hora com os dados da aba de exemplo. Simule os 3 cenários e decida cada um com justificativa. Registre 10 dos 30 casos da aula 3 e a melhoria do ciclo 0001 até Promovida, com a evidência. Exporte o JSON, preencha o relatório dos 14 passos com as peças da Horizonte e passe pela rubrica e pelo prompt da banca.",
-          "pronto": "o JSON exportado tem 1 processo, 1 agente, 3 execuções com decisão justificada, 10 avaliações e 1 melhoria Promovida com evidência; o relatório tem os 14 passos preenchidos e a reversão da semana 8; a nota é 75 ou mais com os 7 obrigatórios; e o nome de quem assina é diferente de quem montou."
+          "pronto": "além dos exemplos que já vêm no Gestoria, o JSON exportado contém o processo da Horizonte, a Hora, 3 execuções dela com decisão justificada, 10 avaliações dela e 1 melhoria Promovida com evidência; o relatório tem os 14 passos preenchidos e a reversão da semana 8; a nota é 75 ou mais com os 7 obrigatórios; e o nome de quem assina é diferente de quem montou."
         },
         {
           "id": "e2",
@@ -444,7 +444,7 @@
           "opcoes": [
             "No relatório, com gatilho, número, causa e versão anterior",
             "Não registrar, porque a ferramenta não oferece a etapa",
-            "Apagar a melhoria da ferramenta, para não confundir quem abrir o laboratório depois"
+            "Apagar a melhoria da ferramenta, para não confundir ninguém"
           ],
           "certa": 0,
           "ref": "passos",
@@ -454,7 +454,7 @@
           "p": "O relatório da Horizonte foi aprovado pela rubrica. A Hora pode ir para a cobrança na segunda-feira?",
           "opcoes": [
             "Pode, porque a rubrica aprovou a operação inteira da Hora",
-            "Pode, desde que o Rafael confirme antes de ligar que as travas estão na ferramenta",
+            "Pode, se o Rafael confirmar que as travas estão na ferramenta",
             "Pode, se a Patrícia também assinar o relatório aprovado",
             "Quem decide é o Carlos; a cobrança começa como tarefa nova"
           ],

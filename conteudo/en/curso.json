@@ -138,11 +138,11 @@
     "aulas_sub": "In the order in which operations gain governance: who answers, what is allowed and logged, how you evaluate and measure, how you improve with a return loop, what the law requires. Lesson 8 brings it all together in the program's final project.",
     "cursos": {
       "titulo": "The 6 courses in the program",
-      "sub": "This is G5, the closing. The final project in lesson 8 uses everyone's deliverables: process (G2), agents (G3), resources (G4), people (G1), and governance and measurement (G5). Courses not yet published open as they become ready.",
+      "sub": "This is G5, the wrap-up. The final project in lesson 8 uses everyone's deliverables: process (G2), agents (G3), resources (G4), people (G1), and governance and measurement (G5). Suggested order: G0 → G2 → G3 → G4 → G1 → G5. All six are already published.",
       "abrir": "Open the course",
       "itens": [
         {
-          "rot": "G0 · front door",
+          "rot": "G0 · entry point · published",
           "t": "The agentic company and the 2027 manager",
           "l": "What changed in management, what the consultancies say, Brazil, the career, and your first process.",
           "href": "https://inematds.github.io/gestao-ia-base-v72/",
@@ -150,7 +150,7 @@
           "img": "assets/img/cursos/g0.jpg"
         },
         {
-          "rot": "G2 · processes",
+          "rot": "G2 · processes · published",
           "t": "Processes: a process isn't sacred",
           "l": "Take the process apart before automating it: eliminate, simplify, redesign, and decide who does each step.",
           "href": "https://inematds.github.io/gestao-ia-processos-v72/",
@@ -158,7 +158,7 @@
           "img": "assets/img/cursos/g2.jpg"
         },
         {
-          "rot": "G3 · agents",
+          "rot": "G3 · agents · published",
           "t": "Agents: hire, delegate, and supervise",
           "l": "Job role, delegation, constitution, authority limit, progressive trust, agent team, and exception queue.",
           "href": "https://inematds.github.io/gestao-ia-agentes-v72/",
@@ -166,7 +166,7 @@
           "img": "assets/img/cursos/g3.jpg"
         },
         {
-          "rot": "G4 · resources",
+          "rot": "G4 · resources · published",
           "t": "Resources: models, data, and budget",
           "l": "Choose a model for each case, take care of context and company knowledge, and measure cost per outcome.",
           "href": "https://inematds.github.io/gestao-ia-recursos-v72/",
@@ -174,7 +174,7 @@
           "img": "assets/img/cursos/g4.jpg"
         },
         {
-          "rot": "G1 · people",
+          "rot": "G1 · people · published",
           "t": "People: lead the hybrid team",
           "l": "What stays with people, the conversation about change, the junior who supervises agents, and team training.",
           "href": "https://inematds.github.io/gestao-ia-pessoas-v72/",

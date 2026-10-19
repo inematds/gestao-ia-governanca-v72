@@ -72,7 +72,7 @@
           "detalhe": "Minutos de gente (revisão, conversas assumidas, retrabalho) ÷ pedidos concluídos. Mostra o peso do trabalho humano, não só se ele existiu. Na Hora: 49,8 h no mês = 2.988 min ÷ 680 = 4,4 min por pedido."
         }
       ],
-      "legenda": "Indicadores do método Gestoria e da área Gestão de IA (§06). Na ferramenta Gestoria, os quadros da Visão geral têm os mesmos nomes: acerto, erros críticos, trabalho autônomo, custo por caso. Valores da Horizonte: fictícios de estudo."
+      "legenda": "Indicadores do método Gestoria e da área Gestão de IA (§06). Na ferramenta Gestoria, os quadros da Visão geral trazem acerto estrito, erros críticos, trabalho autônomo e custo por caso, calculados sobre os casos do laboratório. Valores da Horizonte: fictícios de estudo."
     },
     {
       "tipo": "passos",
@@ -200,7 +200,7 @@
           "p": "Os atendimentos da Hora subiram de 702 para 901 por semana. O que isso prova?",
           "opcoes": [
             "Que o volume subiu, e nada sobre acerto, custo ou trabalho de gente",
-            "Que a Hora está se pagando, porque atende muito mais gente por semana do que em setembro",
+            "Que a Hora está se pagando, porque atende mais gente por semana",
             "Que a satisfação subiu junto, já que mais clientes procuram a Hora"
           ],
           "certa": 0,
@@ -234,7 +234,7 @@
           "p": "Por que usar mediana e p95 no tempo, em vez da média?",
           "opcoes": [
             "Porque um pedido travado puxa a média e esconde o caso típico",
-            "Porque a média é mais difícil de calcular numa planilha comum",
+            "Porque a média é mais difícil de calcular numa planilha simples",
             "Porque o fornecedor do agente exige esse formato no contrato"
           ],
           "certa": 0,
@@ -244,7 +244,7 @@
         {
           "p": "A amostra da semana teve 39 corretas em 40 e um erro crítico. Como fica o painel?",
           "opcoes": [
-            "Qualidade 97,5%, e o crítico entra só no relatório do fim do mês, junto com os outros",
+            "Qualidade 97,5%, e o crítico entra só no relatório do mês",
             "Qualidade 97,5% e 1 crítico ao lado, que dispara a ação escrita",
             "Qualidade 100%, porque o caso crítico foi corrigido a tempo"
           ],

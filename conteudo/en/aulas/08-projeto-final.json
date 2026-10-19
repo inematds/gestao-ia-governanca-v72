@@ -80,7 +80,7 @@
               "t": "6 · agent tasks"
             }
           ],
-          "detalhe": "Decide what stays with people (the program's people course) and what goes to the agents, with a role and a delegation (G3). In Gestoria: the Workforce screen (mission, receives, delivers)."
+          "detalhe": "Decide what stays with people (G1) and what goes to the agents, with role and delegation (G3). In Gestoria: Workforce screen (mission, receives, delivers)."
         },
         {
           "icone": "cadeado",
@@ -140,7 +140,7 @@
           "detalhe": "Evaluate with an answer key and classes (lesson 3) and improve with a LOOP-R cycle with promotion or rollback (lessons 5 and 6). In Gestoria: Evaluations and Continuous improvement (Proposed, Testing, Validated, Promoted)."
         }
       ],
-      "legenda": "The steps are those of the final project of the AI Management Area (§07). The area text lists 13 items; here \"human tasks\" and \"agent tasks\" are two steps, as in the course. Pedagogical approval does not, by itself, authorize any change in the company."
+      "legenda": "The steps are those of the final project of the AI Management area (§07). The area announces fourteen steps and lists thirteen items, because it combines \"human tasks and agent tasks\"; here they are two steps, one from G1 and one from G3. Educational approval alone does not authorize any change in the company."
     },
     {
       "tipo": "passos",
@@ -156,7 +156,7 @@
           ],
           "exemplo": {
             "rot": "At Horizonte",
-            "texto": "Process \"WhatsApp order → billing\", owner Patrícia, 170 cases per week, 4.4 min of people time per case, R$ 45 per hour, accuracy target 95%, 8 steps. Agent Hora, owner Patrícia, initial autonomy \"Prepares\"."
+            "texto": "Process \"Order via WhatsApp → invoicing\", owner Patrícia, 170 cases per week, 4.4 min of human time per case, R$ 50 per hour (average of the human hours from G4: R$ 2,502 ÷ 49.8 h), accuracy target 95%, 8 steps. Agent Hora, owner Patrícia, initial autonomy \"Prepares\"."
           }
         },
         {
@@ -210,7 +210,7 @@
         {
           "rot": "Final program rubric (100 points)",
           "icone": "lista",
-          "conteudo": "FINAL RUBRIC · AI Management Program 2027 · passes with >= 75 AND the 7 required items\n\nITEM                                   SOURCE POINTS  FULL-POINTS CRITERION\n1. Process and outcome                   G2     15    name with a start and an end; owner and backup;\n                                                      trigger and completion; outcome for the\n                                                      company; baseline marked\n2. Steps cut before automating          G2     10    each step removed or moved with a reason\n                                                      and new source; real requirements kept\n3. Agents                               G3     15    role with mission, verifiable deliverable,\n                                                      prohibitions and owner; delegation;\n                                                      constitution; matrix with a color per action and\n                                                      approval with content and deadline\n4. People                               G1     10    what stays with people, per task;\n                                                      conversation with the team; training for those who\n                                                      supervise; evaluation of those who work\n                                                      with agents\n5. Resources                            G4     10    model chosen by cases, critic kept\n                                                      separate; context with an owner; minimum access;\n                                                      cost per outcome and cap\n6. Governance                           G5     15    owners per action with one name;\n                                                      identity, permission and log (10\n                                                      items); access review; timeline\n7. Measurement                          G5     15    30 cases with answer key, rubric and 4 classes;\n                                                      5 indicators with denominator, baseline,\n                                                      limit and owner\n8. A LOOP-R cycle                       G5     10    7 steps; hypothesis with guardrail and\n                                                      tolerance; decision by someone who did not propose;\n                                                      promotion or rollback with a trigger\n\nREQUIRED (one missing means failure)\n[ ] Process owner and each agent's owner named\n[ ] Baseline observed or marked as a hypothesis, with an indicator with a denominator\n[ ] Nothing irreversible in green and a cap as a number where there is value\n[ ] Whoever enters it does not approve it: no executor approves their own action; report signed by someone else\n[ ] Critical errors counted separately, never in the average\n[ ] Rollback with a trigger as a number and the previous version identified\n[ ] Fictional or anonymized data identified as such\n\nSCORE: <...>/100 · required: <.../7>\nRESULT: [ ] passed [ ] goes back to item <...>"
+          "conteudo": "FINAL RUBRIC · AI Management Program 2027 · pass with >= 75 AND the 7 mandatory items\n\nITEM                                   SOURCE POINTS CRITERION FOR FULL POINTS\n1. Process and outcome                   G2     15    name with a start and an end; owner and backup;\n                                                      trigger and completion; outcome for the\n                                                      company; baseline marked\n2. Steps cut before automating           G2     10    each step eliminated or moved with a reason\n                                                      and new source; real requirements kept\n3. Agents                                G3     15    role with mission, verifiable deliverable,\n                                                      prohibitions and owner; delegation;\n                                                      constitution; matrix with color per action and\n                                                      approval with content and deadline\n4. People                                G1     10    what stays with people, by task;\n                                                      conversation with what changes, what does not\n                                                      change and what we don't know; supervisors\n                                                      trained, with a backup; evaluation that\n                                                      does not punish whoever points out an agent's error\n5. Resources                             G4     10    model chosen on cases, critical one\n                                                      separate, with an alternative; context with\n                                                      an owner; minimum access; cost per completed\n                                                      task (with human time and rework),\n                                                      cap and estimated ROI in scenarios\n6. Governance                            G5     15    owners per action with one name;\n                                                      own identity, permission and log (10\n                                                      items); access review; timeline\n7. Measurement                           G5     15    30 cases with answer key, rubric and 4 classes;\n                                                      5 indicators with denominator, baseline,\n                                                      limit and owner\n8. One LOOP-R cycle                      G5     10    7 steps; hypothesis with guardrail and\n                                                      tolerance; decision by someone who did not propose it;\n                                                      promotion or roll back with trigger\n\nMANDATORY (one missing fails)\n[ ] Process owner and each agent's owner, by name\n[ ] Baseline observed or marked as a hypothesis, with an indicator that has a denominator\n[ ] Nothing irreversible in green and a cap in numbers where there is value\n[ ] Whoever enters it does not approve it: no executor approves their own action; report signed by someone else\n[ ] Critical errors counted separately, never in the average\n[ ] Roll back with a trigger in numbers and the previous version identified\n[ ] Fictional or anonymized data identified as such\n\nSCORE: <...>/100 · mandatory: <...>/7 · result: [ ] approved [ ] goes back to item <...>"
         },
         {
           "rot": "Prompt · panel review before signing",
@@ -223,7 +223,7 @@
         "abas": [
           {
             "rot": "Horizonte in Gestoria (example)",
-            "html": "<p><b>Horizonte, fictional study company</b> · what goes into each screen</p><ul><li><b>Processes:</b> \"Order via WhatsApp → invoicing\" · Sales · Patrícia · 170 cases per week · 4.4 min of people time per case · R$ 45 per hour · accuracy target 95% · lab budget R$ 20 · the 8 steps of version 2.0 of the process (G2).</li><li><b>Workforce:</b> Hora · accountable: Patrícia · mission, receives, delivers and prohibited items from the job sheet (G3) · context: catalog, discount policy, route table with an owner · starting autonomy \"Prepares\".</li><li><b>Overview and Human decisions:</b> 3 simulated cases (routine, conflicting, outside the policy), each with a decision and a justification.</li><li><b>Evaluations:</b> 10 of the 30 cases from lesson 3, including T-27 as a critical error in the previous version.</li><li><b>Continuous improvement:</b> \"Route table in the context\", from Proposed to Promoted, with the evidence from cycle 0001.</li><li><b>In the report, outside the tool:</b> the step cuts with reasons, what stays with people, the responsibility matrix, the checklist, the dashboard, the week 8 rollback and the timeline.</li></ul><p>Assembled by Patrícia; guardrails confirmed by Rafael; signed by Carlos. The decision to take Hora to collections is still his.</p>"
+            "html": "<p><b>Horizonte, fictional study company</b> · what goes into each screen</p><ul><li><b>Processes:</b> \"Order via WhatsApp → invoicing\" · Sales · Patrícia · 170 cases per week · 4.4 min of human time per case · R$ 50 per hour (G4 average) · accuracy target 95% · lab budget R$ 20 · the 8 steps of version 2.0 of the process (G2).</li><li><b>Workforce:</b> Hora · owner Patrícia · mission, receives, delivers and prohibitions from the role sheet (G3) · context: catalog, discount policy, route table with an owner · initial autonomy \"Prepares\".</li><li><b>Overview and Human decisions:</b> 3 simulated cases (routine, conflicting, outside the policy), each with a decision and a justification.</li><li><b>Evaluations:</b> 10 of the 30 cases from lesson 3, including T-27 as a critical error in the previous version.</li><li><b>Continuous improvement:</b> \"Route table in the context,\" from Proposed to Promoted, with the evidence from cycle 0001.</li><li><b>In the report, outside the tool:</b> the step cuts with reasons, what stays with people, the responsibility matrix, the checklist, the dashboard, the week 8 roll back, and the timeline.</li></ul><p>Assembled by Patrícia; safeguards confirmed by Rafael; signed by Carlos. The decision to take Hora to billing remains his.</p>"
           },
           {
             "rot": "How to check / common mistakes",
@@ -331,7 +331,7 @@
       ],
       "rolagem_fim": {
         "titulo": "The governed operation",
-        "texto": "Govern, evaluate, measure, and evolve, in that order. The final report brings these deliverables together with those from G2, G3, G4, and the people course."
+        "texto": "Govern, evaluate, measure, and evolve, in this order. The final report joins these deliverables to those from G2, G3, G4, and G1."
       },
       "resultado": {
         "titulo": "By the end of the course",
@@ -404,7 +404,7 @@
           "titulo": "1 · Horizonte in Gestoria",
           "min": "60 min",
           "texto": "In Gestoria, add the process and the Hora with the data from the sample tab. Run the 3 scenarios and decide each one with a justification. Log 10 of the 30 cases from lesson 3 and the improvement from cycle 0001 through to Promoted, with the evidence. Export the JSON, fill in the 14-step report with Horizonte's deliverables, and run it through the rubric and the review panel prompt.",
-          "pronto": "the exported JSON has 1 process, 1 agent, 3 runs with a justified decision, 10 evaluations, and 1 Promoted improvement with evidence; the report has all 14 steps filled in and the week 8 rollback; the score is 75 or higher with the 7 required items; and the name of the person who signs is different from the person who put it together."
+          "pronto": "besides the examples that already come with Gestoria, the exported JSON contains Horizonte's process, Hora, 3 of its runs with a justified decision, 10 of its evaluations, and 1 Promoted improvement with evidence; the report has the 14 steps filled in and the week 8 roll back; the score is 75 or more with the 7 mandatory items; and the name of whoever signs is different from whoever assembled it."
         },
         {
           "id": "e2",
@@ -432,7 +432,7 @@
           "p": "The report scored 90 points, but the dashboard shows \"97% accuracy\" with a critical error hidden in the average. Result?",
           "opcoes": [
             "Approved, because 90 points is well above 75",
-            "Approved with a caveat, to be fixed at the next review",
+            "Approved with a caveat, to be fixed at the next review of the report",
             "Failed: a critical error in the average breaks a mandatory item"
           ],
           "certa": 2,
@@ -444,7 +444,7 @@
           "opcoes": [
             "In the report, with the trigger, number, cause and previous version",
             "Don't log it, because the tool doesn't offer the step",
-            "Delete the improvement from the tool, so it doesn't confuse whoever opens the lab later"
+            "Delete the improvement from the tool, so nobody gets confused"
           ],
           "certa": 0,
           "ref": "passos",
@@ -454,7 +454,7 @@
           "p": "Horizonte's report passed the rubric. Can Hora go to collections on Monday?",
           "opcoes": [
             "Yes, because the rubric approved Hora's entire operation",
-            "Yes, as long as Rafael confirms before turning it on that the locks are in the tool",
+            "It can, if Rafael confirms the safeguards are in the tool",
             "Yes, if Patrícia also signs the approved report",
             "Carlos decides; collections starts as a new task"
           ],
@@ -465,7 +465,7 @@
         {
           "p": "A vendor report says that people who use its product control agents better. How do you use it in your project?",
           "opcoes": [
-            "As proof that the product solves your problem",
+            "As proof that the vendor's product solves your company's problem",
             "As a map: who paid, how they measured and whether it is a forecast",
             "Ignore it, because a vendor report is worthless"
           ],

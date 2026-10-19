@@ -362,7 +362,7 @@
         {
           "p": "Quem precisa aprovar a reversão feita pelo gatilho escrito?",
           "opcoes": [
-            "O Carlos, numa reunião marcada para discutir com a equipe se volta ou não volta",
+            "O Carlos, numa reunião com a equipe para discutir se a Hora volta",
             "Só quem foi nomeado para decidir a volta, sem esperar reunião",
             "O Rafael, que é quem executa a troca de versão no sistema"
           ],

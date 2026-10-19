@@ -203,7 +203,7 @@
         {
           "p": "La versión nueva tuvo 29 correctos de 30, pero en un caso dio 15% de descuento sin aprobación. ¿Cómo reportarlo?",
           "opcoes": [
-            "96,7% de acierto, porque un solo caso entre treinta no cambia la conclusión de la evaluación",
+            "96,7% de acierto: un caso entre treinta no cambia la conclusión",
             "29 correctos y 1 crítico aparte; la versión no sigue así",
             "100%, porque el caso crítico ya se corrigió a mano"
           ],
@@ -215,7 +215,7 @@
           "p": "¿Por qué escribir la respuesta esperada antes de ver la respuesta del agente?",
           "opcoes": [
             "Porque, después de ver la respuesta, la tendencia es aceptar lo que llegó",
-            "Porque así el agente puede leer la respuesta esperada y acertar más casos",
+            "Porque así el propio agente puede leer la respuesta esperada y acertar más casos",
             "Porque escribirla después da más trabajo a quien evalúa"
           ],
           "certa": 0,
@@ -250,7 +250,7 @@
           "opcoes": [
             "Que el agente acierta el 95% en producción, con margen seguro",
             "Que la nueva versión no es peor en estos casos y no tiene críticos",
-            "Nada, porque 30 casos son pocos para sacar cualquier conclusión sobre el agente"
+            "Nada, porque 30 casos son pocos para cualquier conclusión"
           ],
           "certa": 1,
           "ref": "passos",

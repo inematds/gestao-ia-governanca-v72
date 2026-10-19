@@ -199,7 +199,7 @@
           "p": "O Carlos respondeu \"pode ligar\" no WhatsApp e o assistente de e-mail passou a enviar e apagar sem aprovação. O que faltou?",
           "opcoes": [
             "Concessão escrita de cada permissão, com escopo, aprovador e validade",
-            "Uma senha mais forte e trocada todo mês na conta do e-mail comercial",
+            "Uma senha mais forte e trocada todo mês na conta do e-mail do comercial",
             "Um modelo de IA mais cuidadoso, que pergunte antes de apagar e-mail",
             "Um aviso claro no prompt pedindo que o assistente nunca apague nada"
           ],
@@ -222,7 +222,7 @@
           "p": "Você marcou \"sim\" no item \"registro de toda ação\", mas o agente consegue apagar as próprias linhas. E agora?",
           "opcoes": [
             "Continua \"sim\", porque o registro existe e está ligado",
-            "Fica \"sim\" com uma observação no rodapé, até alguém de fato apagar uma linha",
+            "Fica \"sim\", com uma observação no rodapé do checklist",
             "Basta escrever no prompt que o agente não pode apagar",
             "Item 8 falha: fica \"não\", com dono e prazo para a trava"
           ],

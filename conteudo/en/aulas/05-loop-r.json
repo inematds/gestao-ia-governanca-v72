@@ -211,7 +211,7 @@
           "p": "An important customer complained that Hora got the delivery time wrong. What does LOOP-R say to do?",
           "opcoes": [
             "Change the prompt today, so the error doesn't happen again tomorrow",
-            "Turn Hora off until Juliana reviews all of the week's delivery-time conversations",
+            "Turn Hora off until Juliana reviews the deadline conversations",
             "Log it and count similar cases before proposing a change"
           ],
           "certa": 2,
@@ -232,10 +232,10 @@
         {
           "p": "Which of these is a testable hypothesis?",
           "opcoes": [
-            "\"Improve Hora's delivery-time answers by the end of the month, with more care in the replies\"",
+            "\"Improve Hora's handling of deadline questions by the end of the month\"",
             "\"Use a smarter model to answer about delivery times\"",
-            "\"Train Hora better so it understands the delivery routes\"",
-            "\"IF the route table is added, THEN conversations handled by people drop from 45% to 25%\""
+            "\"Train Hora better so it understands all the delivery routes\"",
+            "\"IF the route table goes in, THEN takeovers drop from 45% to 25%\""
           ],
           "certa": 3,
           "ref": "diagrama",

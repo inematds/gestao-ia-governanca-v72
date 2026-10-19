@@ -200,7 +200,7 @@
           "p": "A Patrícia prepara um desconto de 12% para um cliente grande. Quem aprova?",
           "opcoes": [
             "O Carlos, porque quem lança não aprova e acima de 10% é com ele",
-            "A própria Patrícia, porque conhece o cliente, a margem dele e o histórico de compras",
+            "A própria Patrícia, porque conhece bem o cliente e a margem dele",
             "A Hora, porque calcula a margem do pedido com mais precisão"
           ],
           "certa": 0,
@@ -211,7 +211,7 @@
           "p": "Uma linha da matriz diz \"Responde: Patrícia e Juliana\". O que fazer?",
           "opcoes": [
             "Manter assim, porque duas pessoas conferem melhor que uma",
-            "Acrescentar o Carlos, para desempatar sempre que as duas discordarem do caso",
+            "Acrescentar o Carlos, para desempatar quando as duas discordarem",
             "Deixar a linha sem nome até a próxima reunião de equipe",
             "Escolher um nome e deixar o outro como substituto, com limite"
           ],
@@ -223,7 +223,7 @@
           "p": "O Rafael troca o modelo da Hora por um mais barato e ele mesmo confirma que ficou bom. O que a matriz diz?",
           "opcoes": [
             "Está certo, porque troca de modelo é assunto técnico da TI",
-            "Basta avisar a Juliana, que é quem assume as conversas quando a Hora erra o modelo",
+            "Basta avisar a Juliana, que assume as conversas se a Hora errar",
             "Quem aplica a mudança não a aprova; ela vai a quem a matriz manda"
           ],
           "certa": 2,
@@ -234,7 +234,7 @@
           "p": "Na pesquisa interna, um vendedor cola a planilha de clientes num chatbot gratuito da conta pessoal. O que entra na matriz?",
           "opcoes": [
             "Uma linha para a ferramenta, com quem decide manter ou cortar",
-            "Nada, porque é uso pessoal, feito na conta do vendedor e fora dos sistemas da empresa",
+            "Nada, porque é uso pessoal, feito na conta do próprio vendedor",
             "Só o nome do vendedor no campo Informado da linha da Hora"
           ],
           "certa": 0,

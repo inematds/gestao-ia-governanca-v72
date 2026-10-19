@@ -51,7 +51,7 @@
           "icone": "relogio",
           "titulo": "Under discussion",
           "sub": "keep watching",
-          "detalhe": "What was reported and is not a rule. In Brazil, PL 2338/2023 was reported as stalled in the Chamber, with a vote after the elections. This is a secondary source: the bill's official record was not checked. It goes on the timeline as \"watch\", never as an obligation."
+          "detalhe": "What was reported and is not a rule. In Brazil, PL 2338/2023 was reported as stalled in the Chamber of Deputies. This is a secondary source: the bill's official record was not consulted. It goes on the timeline as \"watch,\" never as an obligation."
         },
         {
           "icone": "usuario",
@@ -88,7 +88,7 @@
           ],
           "exemplo": {
             "rot": "AI literacy",
-            "texto": "At Horizonte it isn't a legal obligation, but it's cheap good practice: training the team (the people course in the program) is the literacy."
+            "texto": "At Horizonte it is not a legal obligation, but it is a cheap good practice: the team's training (the G1 training track) is the literacy."
           }
         },
         {
@@ -184,7 +184,7 @@
           "opcoes": [
             "Under discussion: reported as stalled, secondary source",
             "As an obligation with a date, so the company can get ahead",
-            "It doesn't go in, because Congress hasn't approved it yet"
+            "It does not go in, because Congress has not approved it yet"
           ],
           "certa": 0,
           "ref": "diagrama",
@@ -194,7 +194,7 @@
           "p": "Horizonte only sells in inland São Paulo state. What should you do with the EU AI Act item?",
           "opcoes": [
             "Delete it from the timeline, because it doesn't apply to the company",
-            "Treat it as an obligation, to be safe, until legal says in writing that it doesn't apply",
+            "Treat it as an obligation, to be safe, until legal weighs in",
             "Keep it, marked \"does not apply today,\" with the reason written down"
           ],
           "certa": 2,
@@ -205,7 +205,7 @@
           "p": "A hotel chain sends a questionnaire about how Horizonte controls AI. Where do you start?",
           "opcoes": [
             "Buy a market certification before answering",
-            "By pulling the evidence folder with the pieces from the program",
+            "From the evidence folder with the program's pieces",
             "Answer that the company doesn't use AI in its orders yet",
             "Ask the model vendor to answer on behalf of the company"
           ],

@@ -203,7 +203,7 @@
         {
           "p": "A versão nova teve 29 corretos em 30, mas num caso deu 15% de desconto sem aprovação. Como reportar?",
           "opcoes": [
-            "96,7% de acerto, porque um caso só em trinta não muda a conclusão da avaliação",
+            "96,7% de acerto: um caso em trinta não muda a conclusão",
             "29 corretos e 1 crítico à parte; a versão não segue assim",
             "100%, porque o caso crítico já foi corrigido à mão"
           ],
@@ -250,7 +250,7 @@
           "opcoes": [
             "Que o agente acerta 95% em produção, com margem segura",
             "Que a nova versão não é pior nesses casos e não tem crítico",
-            "Nada, porque 30 casos são poucos para tirar qualquer conclusão sobre o agente"
+            "Nada, porque 30 casos são poucos para qualquer conclusão"
           ],
           "certa": 1,
           "ref": "passos",

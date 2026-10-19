@@ -362,8 +362,8 @@
         {
           "p": "Who needs to approve a rollback done by the written trigger?",
           "opcoes": [
-            "Carlos, in a meeting scheduled to discuss with the team whether to roll back or not",
-            "Only the person named to decide the rollback, without waiting for a meeting",
+            "Carlos, in a meeting with the team to discuss whether Hora comes back",
+            "Only whoever was named to decide the rollback, with no meeting",
             "Rafael, who is the one who performs the version swap in the system"
           ],
           "certa": 1,

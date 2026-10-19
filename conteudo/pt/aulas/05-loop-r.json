@@ -211,7 +211,7 @@
           "p": "Um cliente importante reclamou que a Hora errou o prazo. O que o LOOP-R manda fazer?",
           "opcoes": [
             "Mudar o prompt hoje, para o erro não se repetir amanhã",
-            "Desligar a Hora até a Juliana revisar todas as conversas de prazo da semana inteira",
+            "Desligar a Hora até a Juliana revisar as conversas de prazo",
             "Registrar e contar casos parecidos antes de propor mudança"
           ],
           "certa": 2,
@@ -232,9 +232,9 @@
         {
           "p": "Qual destas é uma hipótese testável?",
           "opcoes": [
-            "\"Melhorar o atendimento de prazo da Hora até o fim do mês, com mais cuidado nas respostas\"",
+            "\"Melhorar o atendimento de prazo da Hora até o fim do mês\"",
             "\"Usar um modelo mais inteligente para responder sobre prazo\"",
-            "\"Treinar melhor a Hora para ela entender as rotas de entrega\"",
+            "\"Treinar melhor a Hora para ela entender todas as rotas de entrega\"",
             "\"SE a tabela de rotas entrar, ENTÃO assumidas de 45% para 25%\""
           ],
           "certa": 3,

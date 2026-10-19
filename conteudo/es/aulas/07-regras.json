@@ -51,7 +51,7 @@
           "icone": "relogio",
           "titulo": "En discusión",
           "sub": "sigue",
-          "detalhe": "Lo que fue informado por la prensa y no es regla. En Brasil, el PL 2338/2023 fue informado como detenido en la Cámara, con votación después de las elecciones. Es fuente secundaria: la ficha oficial del proyecto no fue consultada. Entra en la línea de tiempo como \"seguir\", nunca como obligación."
+          "detalhe": "Lo que fue informado por la prensa y no es regla. En Brasil, el PL 2338/2023 fue informado como detenido en la Cámara. Es fuente secundaria: la ficha oficial del proyecto no fue consultada. Entra en la línea de tiempo como \"seguir\", nunca como obligación."
         },
         {
           "icone": "usuario",
@@ -88,7 +88,7 @@
           ],
           "exemplo": {
             "rot": "Alfabetización",
-            "texto": "En Horizonte no es una obligación legal, pero es una buena práctica barata: la formación del equipo (el curso de personas de la formación) es la alfabetización."
+            "texto": "En Horizonte no es obligación legal, pero es una buena práctica barata: la formación del equipo (la ruta de formación del G1) es la alfabetización."
           }
         },
         {
@@ -184,7 +184,7 @@
           "opcoes": [
             "En discusión: informado como detenido, fuente secundaria",
             "Como obligación con fecha, para que la empresa se anticipe",
-            "No entra, porque aún no fue aprobado en el Congreso"
+            "No entra, porque todavía no fue aprobado por el Congreso"
           ],
           "certa": 0,
           "ref": "diagrama",
@@ -194,7 +194,7 @@
           "p": "Horizonte solo vende en el interior de São Paulo. ¿Qué hacer con el ítem del EU AI Act?",
           "opcoes": [
             "Borrarlo de la línea de tiempo, porque no se aplica a la empresa",
-            "Tratarlo como obligación, por precaución, hasta que el área jurídica diga por escrito que no se aplica",
+            "Tratar como obligación, por precaución, hasta que el área jurídica opine",
             "Mantenerlo, marcado \"no se aplica hoy\", con el motivo escrito"
           ],
           "certa": 2,
@@ -205,7 +205,7 @@
           "p": "Una red de hoteles envía un cuestionario sobre cómo Horizonte controla la IA. ¿Por dónde empezar?",
           "opcoes": [
             "Contratar una certificación de mercado antes de responder",
-            "Con la carpeta de evidencias con las piezas de la formación",
+            "Por la carpeta de evidencias con lo hecho en la formación",
             "Responder que la empresa aún no usa IA en los pedidos",
             "Pedirle al proveedor del modelo que responda por la empresa"
           ],

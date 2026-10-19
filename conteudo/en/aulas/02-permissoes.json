@@ -199,7 +199,7 @@
           "p": "Carlos replied \"go ahead and turn it on\" on WhatsApp, and the email assistant started sending and deleting without approval. What was missing?",
           "opcoes": [
             "A written grant for each permission, with scope, approver, and expiration",
-            "A stronger password, changed every month on the business email account",
+            "A stronger password, changed every month, on the sales team's email account",
             "A more careful AI model that asks before deleting an email",
             "A clear warning in the prompt asking the assistant to never delete anything"
           ],
@@ -222,9 +222,9 @@
           "p": "You marked \"yes\" on the item \"log of every action,\" but the agent can delete its own lines. Now what?",
           "opcoes": [
             "It stays \"yes,\" because the log exists and is turned on",
-            "It stays \"yes\" with a footnote, until someone actually deletes a line",
+            "It stays \"yes,\" with a note at the bottom of the checklist",
             "Just write in the prompt that the agent can't delete",
-            "Item 8 fails: it becomes \"no,\" with an owner and a deadline for the lock"
+            "Item 8 fails: \"no,\" with an owner and a deadline for the lock"
           ],
           "certa": 3,
           "ref": "codigo",

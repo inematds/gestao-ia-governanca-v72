@@ -72,7 +72,7 @@
           "detalhe": "Human minutes (review, conversations taken over, rework) ÷ orders completed. It shows the weight of the human work, not just whether it happened. At Hora: 49.8 h in the month = 2,988 min ÷ 680 = 4.4 min per order."
         }
       ],
-      "legenda": "Indicators from the Gestoria method and the AI Management area (§06). In the Gestoria tool, the Overview boards have the same names: accuracy, critical errors, autonomous work, cost per case. Horizonte values: fictional, for study."
+      "legenda": "Indicators from the Gestoria method and the AI Management Area (§06). In the Gestoria tool, the Overview panels show strict accuracy, critical errors, autonomous work, and cost per case, calculated over the lab's cases. Horizonte values: fictional, for study."
     },
     {
       "tipo": "passos",
@@ -200,7 +200,7 @@
           "p": "Hora's conversations rose from 702 to 901 per week. What does that prove?",
           "opcoes": [
             "That volume went up, and nothing about accuracy, cost, or people's work",
-            "That Hora is paying for itself, because it serves far more people per week than in September",
+            "That Hora is paying for itself, because it serves more people every week",
             "That satisfaction rose too, since more customers are turning to Hora"
           ],
           "certa": 0,
@@ -224,7 +224,7 @@
           "opcoes": [
             "The numbers from before July, rebuilt from memory by the team",
             "The market average for sales agents, taken from a report",
-            "Four measured weeks of the current version, with the earlier period as estimated"
+            "Four measured weeks now; the \"before\" marked as estimated"
           ],
           "certa": 2,
           "ref": "passos",
@@ -234,7 +234,7 @@
           "p": "Why use the median and p95 for time, instead of the average?",
           "opcoes": [
             "Because one stuck request pulls the average up and hides the typical case",
-            "Because the average is harder to calculate in an ordinary spreadsheet",
+            "Because the average is harder to calculate in a simple spreadsheet",
             "Because the agent's vendor requires that format in the contract"
           ],
           "certa": 0,
@@ -244,8 +244,8 @@
         {
           "p": "This week's sample had 39 correct out of 40 and one critical error. What does the panel look like?",
           "opcoes": [
-            "Quality 97.5%, and the critical error only goes into the end-of-month report, with the others",
-            "Quality 97.5% and 1 critical error beside it, which triggers the written action",
+            "Quality 97.5%, and the critical error goes only into the monthly report",
+            "Quality 97.5%, plus 1 critical error that triggers the written action",
             "Quality 100%, because the critical case was fixed in time"
           ],
           "certa": 1,

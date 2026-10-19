@@ -199,8 +199,8 @@
         {
           "p": "Patrícia prepares a 12% discount for a large customer. Who approves it?",
           "opcoes": [
-            "Carlos, because whoever enters it does not approve it, and above 10% it's his call",
-            "Patrícia herself, because she knows the customer, their margin and their purchase history",
+            "Carlos: whoever prepares it doesn't approve, and above 10% is his",
+            "Patrícia herself, because she knows the client and the client's margin well",
             "Hora, because it calculates the order margin more precisely"
           ],
           "certa": 0,
@@ -211,8 +211,8 @@
           "p": "A matrix row says \"Accountable: Patrícia and Juliana\". What should you do?",
           "opcoes": [
             "Keep it, because two people check better than one",
-            "Add Carlos, to break the tie whenever the two disagree on a case",
-            "Leave the row without a name until the next team meeting",
+            "Add Carlos, to break the tie when the two disagree",
+            "Leave the row without a name until the next team meeting happens",
             "Pick one name and make the other the backup, with a limit"
           ],
           "certa": 3,
@@ -223,8 +223,8 @@
           "p": "Rafael swaps Hora's model for a cheaper one and confirms himself that it turned out fine. What does the matrix say?",
           "opcoes": [
             "That's right, because switching models is a technical matter for IT",
-            "Just tell Juliana, who takes over the conversations when Hora gets the model wrong",
-            "Whoever applies the change does not approve it; it goes to whoever the matrix says"
+            "Just tell Juliana, who takes over the conversations if Hora gets it wrong",
+            "Whoever applies the change doesn't approve it; the matrix says who"
           ],
           "certa": 2,
           "ref": "passos",
@@ -234,7 +234,7 @@
           "p": "In the internal survey, a salesperson pastes the customer spreadsheet into a free chatbot on their personal account. What goes into the matrix?",
           "opcoes": [
             "One line for the tool, with who decides whether to keep or cut it",
-            "Nothing, because it's personal use, done on the salesperson's account and outside the company's systems",
+            "Nothing, because it is personal use, done on the salesperson's own account",
             "Just the salesperson's name in the Informed field of Hora's line"
           ],
           "certa": 0,

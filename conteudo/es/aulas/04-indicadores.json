@@ -72,7 +72,7 @@
           "detalhe": "Minutos de personas (revisión, conversaciones asumidas, retrabajo) ÷ pedidos concluidos. Muestra el peso del trabajo humano, no solo si existió. En Hora: 49,8 h en el mes = 2.988 min ÷ 680 = 4,4 min por pedido."
         }
       ],
-      "legenda": "Indicadores del método Gestoria y del área Gestión de IA (§06). En la herramienta Gestoria, los cuadros de la Visión general tienen los mismos nombres: acierto, errores críticos, trabajo autónomo, costo por caso. Valores de Horizonte: ficticios, de estudio."
+      "legenda": "Indicadores del método Gestoria y del área Gestión de IA (§06). En la herramienta Gestoria, los cuadros de la Visión general muestran acierto estricto, errores críticos, trabajo autónomo y costo por caso, calculados sobre los casos del laboratorio. Valores de Horizonte: ficticios de estudio."
     },
     {
       "tipo": "passos",
@@ -200,7 +200,7 @@
           "p": "Las atenciones de Hora subieron de 702 a 901 por semana. ¿Qué prueba eso?",
           "opcoes": [
             "Que el volumen subió, y nada sobre acierto, costo o trabajo de personas",
-            "Que Hora se está pagando, porque atiende a mucha más gente por semana que en septiembre",
+            "Que la Hora se está pagando, porque atiende a más gente por semana",
             "Que la satisfacción subió junto, ya que más clientes buscan a Hora"
           ],
           "certa": 0,
@@ -224,7 +224,7 @@
           "opcoes": [
             "Los números de antes de julio, reconstruidos de memoria por el equipo",
             "El promedio del mercado para agentes de ventas, sacado de un informe",
-            "Cuatro semanas medidas de la versión actual, con el antes como estimado"
+            "Cuatro semanas medidas de la versión actual; el antes, como estimado"
           ],
           "certa": 2,
           "ref": "passos",
@@ -234,7 +234,7 @@
           "p": "¿Por qué usar mediana y p95 en el tiempo, en vez del promedio?",
           "opcoes": [
             "Porque un pedido trabado jala el promedio y esconde el caso típico",
-            "Porque el promedio es más difícil de calcular en una hoja de cálculo común",
+            "Porque el promedio es más difícil de calcular en una planilla simple",
             "Porque el proveedor del agente exige ese formato en el contrato"
           ],
           "certa": 0,
@@ -244,7 +244,7 @@
         {
           "p": "La muestra de la semana tuvo 39 correctas de 40 y un error crítico. ¿Cómo queda el panel?",
           "opcoes": [
-            "Calidad 97,5%, y el crítico entra solo en el informe de fin de mes, junto con los otros",
+            "Calidad 97,5%, y el crítico entra solo en el informe del mes",
             "Calidad 97,5% y 1 crítico al lado, que dispara la acción escrita",
             "Calidad 100%, porque el caso crítico se corrigió a tiempo"
           ],

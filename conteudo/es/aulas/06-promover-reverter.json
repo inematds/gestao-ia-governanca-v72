@@ -339,7 +339,7 @@
         {
           "p": "Después de la promoción, la meta de la v2.2 seguía excelente, pero una barrera de protección pasó del límite escrito. ¿Qué vale?",
           "opcoes": [
-            "La barrera de protección: el disparador escrito de antemano manda volver",
+            "La barrera: el disparador escrito de antemano manda volver",
             "La meta, porque el cambio vino para mejorarla",
             "El promedio entre la meta y la barrera de protección esa semana"
           ],
@@ -353,7 +353,7 @@
             "Revertir, porque empeoró respecto al 1,5% del piloto",
             "Apagar el agente hasta que logística revise las rutas",
             "Abrir un nuevo ciclo de prueba antes de decidir cualquier cosa",
-            "Mantener y seguir vigilando: está dentro de la variación normal"
+            "Mantener y vigilar: está dentro de la variación normal"
           ],
           "certa": 3,
           "ref": "passos",
@@ -362,7 +362,7 @@
         {
           "p": "¿Quién necesita aprobar la reversión hecha por el disparador escrito?",
           "opcoes": [
-            "Carlos, en una reunión programada para discutir con el equipo si se vuelve o no",
+            "Carlos, en una reunión con el equipo para discutir si la Hora vuelve",
             "Solo quien fue nombrado para decidir la vuelta, sin esperar reunión",
             "Rafael, que es quien ejecuta el cambio de versión en el sistema"
           ],

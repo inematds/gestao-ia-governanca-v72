@@ -51,7 +51,7 @@
           "icone": "relogio",
           "titulo": "Em discussão",
           "sub": "acompanhe",
-          "detalhe": "O que foi noticiado e não é regra. No Brasil, o PL 2338/2023 foi noticiado como parado na Câmara, com votação depois das eleições. É fonte secundária: a ficha oficial do projeto não foi consultada. Entra na linha do tempo como \"acompanhar\", nunca como obrigação."
+          "detalhe": "O que foi noticiado e não é regra. No Brasil, o PL 2338/2023 foi noticiado como parado na Câmara. É fonte secundária: a ficha oficial do projeto não foi consultada. Entra na linha do tempo como \"acompanhar\", nunca como obrigação."
         },
         {
           "icone": "usuario",
@@ -88,7 +88,7 @@
           ],
           "exemplo": {
             "rot": "Letramento",
-            "texto": "Na Horizonte não é obrigação legal, mas é boa prática barata: a formação da equipe (o curso de pessoas da formação) é o letramento."
+            "texto": "Na Horizonte não é obrigação legal, mas é boa prática barata: a formação da equipe (a trilha de formação do G1) é o letramento."
           }
         },
         {
@@ -184,7 +184,7 @@
           "opcoes": [
             "Em discussão: noticiado como parado, fonte secundária",
             "Como obrigação com data, para a empresa se antecipar",
-            "Não entra, porque ainda não foi aprovado no Congresso"
+            "Não entra, porque ainda não foi aprovado pelo Congresso"
           ],
           "certa": 0,
           "ref": "diagrama",
@@ -194,7 +194,7 @@
           "p": "A Horizonte só vende no interior de São Paulo. O que fazer com o item do EU AI Act?",
           "opcoes": [
             "Apagar da linha do tempo, porque não se aplica à empresa",
-            "Tratar como obrigação, por precaução, até o jurídico dizer por escrito que não se aplica",
+            "Tratar como obrigação, por precaução, até o jurídico opinar",
             "Manter, marcado \"não se aplica hoje\", com o motivo escrito"
           ],
           "certa": 2,
